@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DRP Property - Dhorimanna's No.1 Property Dealer</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif}
+body{background:#f8fafc;color:#1e293b}
+header{background:#0f172a;color:white;padding:15px 20px;display:flex;justify-content:space-between;align-items:center}
+header h1{font-size:22px;color:#38bdf8}
+header span{font-size:12px;color:#94a3b8;display:block}
+.hero{background:#0f172a;color:white;text-align:center;padding:60px 20px}
+.hero h2{font-size:32px;margin-bottom:10px}
+.hero p{font-size:16px;color:#cbd5e1;margin-bottom:25px}
+.btn{display:inline-block;background:#38bdf8;color:#0f172a;padding:14px 28px;border-radius:30px;font-weight:bold;text-decoration:none;font-size:16px}
+.section{padding:30px 20px;max-width:1000px;margin:auto}
+.section h3{font-size:24px;margin-bottom:20px;text-align:center;color:#0f172a}
+.cards{display:grid;grid-template-columns:1fr;gap:20px}
+.card{background:white;border-radius:15px;overflow:hidden;box-shadow:0 4px 15px rgba(0,0,0,0.1)}
+.card img{width:100%;height:200px;object-fit:cover}
+.card-body{padding:15px}
+.card-body h4{font-size:18px;margin-bottom:5px}
+.price{color:#0ea5e9;font-weight:bold;font-size:18px;margin:8px 0}
+.tag{background:#e0f2fe;color:#0284c7;padding:4px 10px;border-radius:20px;font-size:12px;display:inline-block}
+.contact{background:#0f172a;color:white;text-align:center;padding:40px 20px;border-radius:20px;margin:20px}
+.whatsapp{background:#25D366;color:white}
+.call{background:white;color:#0f172a}
+footer{text-align:center;padding:20px;color:#64748b;font-size:14px}
+</style>
+</head>
+<body>
+<header>
+<div><h1>DRP PROPERTY<span>Dhorimanna | Barmer</span></h1></div>
+<div>🏠</div>
+</header>
+<div class="hero">
+<h2>Dhorimanna Me Apna Plot / Makan</h2>
+<p>100% Trusted Property Dealer</p>
+<a class="btn" href="https://wa.me/919784664741?text=Namaste%20DRP%20Property">📲 WhatsApp Par Baat Karein</a>
+</div>
+<div class="section">
+<h3>🔥 Latest Properties</h3>
+<div class="cards">
+<div class="card">
+<img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=600">
+<div class="card-body">
+<span class="tag">For Sale</span>
+<h4>2 BHK House - Dhorimanna</h4>
+<p>Main Road - 1500 Sq Ft</p>
+<div class="price">₹ 18.5 Lakh</div>
+<a class="btn" style="padding:8px 16px;font-size:14px" href="https://wa.me/919784664741">Details</a>
+</div>
+</div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600">
+<div class="card-body">
+<span class="tag">Plot</span>
+<h4>Plot 40x60 - Near Bus Stand</h4>
+<p>Dhorimanna</p>
+<div class="price">₹ 7.2 Lakh</div>
+<a class="btn" style="padding:8px 16px;font-size:14px" href="https://wa.me/919784664741">Details</a>
+</div>
+</div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=600">
+<div class="card-body">
+<span class="tag">For Rent</span>
+<h4>Shop For Rent - Main Market</h4>
+<p>Dhorimanna Market</p>
+<div class="price">₹ 8,000 / Month</div>
+<a class="btn" style="padding:8px 16px;font-size:14px" href="https://wa.me/919784664741">Details</a>
+</div>
+</div>
+</div>
+</div>
+<div class="contact">
+<h3 style="color:white">Direct Contact Karo</h3>
+<p style="margin:15px 0;color:#94a3b8">DRP Property - Dhorimanna</p>
+<a class="btn whatsapp" href="https://wa.me/919784664741">WhatsApp: 9784664741</a>
+<a class="btn call" href="tel:+919784664741">📞 Call Karo</a>
+</div>
+<footer>© 2026 DRP Property</footer>
+</body>
+</html>
