@@ -3,116 +3,78 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>LinesLegal.com</title>
+<title>LinesLegal.com x Drpcom.info</title>
 <style>
 *{margin:0;padding:0;box-sizing:border-box;font-family:Arial}
-body{background:#f7fbf9}
-.header{background:#fff;padding:10px 14px;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;box-shadow:0 2px 8px rgba(0,0,0,.06);z-index:10}
-.logo{font-weight:bold;color:#0d3b8a}
-.search{flex:1;margin:0 10px;padding:8px 12px;border-radius:20px;border:1px solid #ddd;font-size:13px;max-width:280px}
-.hbtn{padding:7px 14px;border-radius:6px;text-decoration:none;font-size:12px;font-weight:bold;margin-left:6px;cursor:pointer;border:none}
-.login{background:#f1f5f9;color:#333;border:1px solid #ddd}
-.sell{background:#16a34a;color:#fff}
-.wa{background:#25D366;color:#fff}
-.main{padding:22px 14px;text-align:center;background:#eef8f3}
-.main h1{font-size:21px}
-.main p{font-size:12px;color:#666;margin:8px 0 12px}
-.f{padding:6px 14px;border-radius:20px;border:1px solid #ddd;background:#fff;font-size:13px;margin:3px;display:inline-block}
-.f.active{background:#0d3b8a;color:#fff}
-.featured{padding:14px}
-.cards{display:flex;gap:12px;overflow-x:auto}
-.card{min-width:200px;max-width:220px;background:#fff;border-radius:12px;overflow:hidden;box-shadow:0 2px 10px rgba(0,0,0,.06);flex-shrink:0}
-.card img{width:100%;height:110px;object-fit:cover}
-.card-body{padding:10px}
-.price{color:#16a34a;font-weight:bold;font-size:13px}
-.sub{font-size:10px;color:#888}
-#paymentBox{display:none;padding:20px;background:#fff;border-top:4px solid #0d3b8a}
-.input{width:100%;padding:12px;margin:8px 0;border:1px solid #ddd;border-radius:8px;font-size:14px}
-.upi{display:block;padding:12px;margin-top:10px;border-radius:8px;text-align:center;text-decoration:none;font-weight:bold;font-size:14px}
-.upi-b{background:#0d3b8a;color:#fff}
-.upi-l{background:#eef4ff;color:#0d3b8a;border:1px solid #0d3b8a}
-.support{background:#fff;padding:12px 14px;display:flex;gap:10px;flex-wrap:wrap;font-size:12px;border-top:1px solid #eee}
-.footer{background:#0a1931;color:#cbd5e1;padding:14px;text-align:center;font-size:11px}
+body{background:#eaeded}
+.header{background:#131921;padding:10px 14px;display:flex;align-items:center;gap:10px;color:#fff;position:sticky;top:0;z-index:20;flex-wrap:wrap}
+.logo{font-weight:bold;font-size:14px}
+.logo span{color:#febd69;font-size:10px;display:block}
+.searchbar{flex:1;display:flex;background:#fff;border-radius:4px;overflow:hidden;max-width:600px;min-width:180px}
+.searchbar input{flex:1;padding:10px;border:none;outline:none;font-size:13px}
+.searchbar button{background:#febd69;border:none;padding:0 14px;font-weight:bold}
+.nav a{color:#fff;text-decoration:none;font-size:11px;margin-left:10px;border:1px solid #fff;padding:5px 8px;border-radius:4px}
+.nav a.sell{background:#16a34a;border-color:#16a34a}
+.main{display:flex;gap:14px;padding:14px}
+.sidebar{width:210px;background:#fff;padding:12px;border-radius:4px;height:fit-content;flex-shrink:0}
+.state{font-size:12px;padding:6px 8px;border:1px solid #eee;margin:3px 0;border-radius:4px;background:#f8f9fa}
+.products{flex:1;display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:12px}
+.pcard{background:#fff;border-radius:8px;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,.08)}
+.pcard img{width:100%;height:150px;object-fit:cover}
+.pbody{padding:10px}
+.pprice{color:#B12704;font-size:16px;font-weight:bold}
+.pbadge{background:#067D62;color:#fff;font-size:9px;padding:2px 5px;border-radius:3px;display:inline-block}
+.pbtn{display:block;background:#FFD814;border:1px solid #FCD200;padding:7px;text-align:center;border-radius:6px;text-decoration:none;color:#000;font-size:11px;font-weight:bold;margin-top:5px}
+.section{margin:14px;background:#fff;padding:18px;border-radius:8px}
+.section h2{font-size:18px;color:#131921;margin-bottom:8px}
+.section p{font-size:13px;color:#555;line-height:1.5}
+#paymentBox{display:none;padding:18px;background:#fff;border-top:5px solid #febd69;margin:14px;border-radius:8px}
+.input{width:100%;padding:10px;margin:6px 0;border:1px solid #ddd;border-radius:6px}
+.upi{display:block;padding:10px;margin-top:8px;border-radius:6px;text-align:center;text-decoration:none;font-weight:bold;font-size:12px}
+.upi-b{background:#131921;color:#febd69}
+.upi-l{background:#fff;color:#131921;border:1px solid #131921}
+.footer{background:#232F3E;color:#ddd;padding:14px;text-align:center;font-size:11px}
+@media(max-width:700px){.sidebar{display:none}.products{grid-template-columns:repeat(2,1fr)}}
 </style>
 </head>
 <body>
 
 <div class="header">
-<div class="logo">📍 LinesLegal.com</div>
-<input class="search" placeholder="Search location, property...">
-<div>
-<button class="hbtn login" onclick="showPay()">Login</button>
-<button class="hbtn sell" onclick="showPay()">+ Sell Property</button>
-<a class="hbtn wa" href="https://wa.me/919521289940">WhatsApp</a>
+<div class="logo">📍 LinesLegal.com<br><span>X Drpcom.info - All India</span></div>
+<div class="searchbar"><input placeholder="Rajasthan, Delhi, Pune, Mumbai..."><button>🔍</button></div>
+<div class="nav">
+<a href="#about" onclick="document.getElementById('about').scrollIntoView({behavior:'smooth'})">About</a>
+<a href="#loginSystem" onclick="showPay()">Login</a>
+<a href="#idSystem" onclick="showPay()">Create ID</a>
+<a href="#system" onclick="document.getElementById('system').scrollIntoView({behavior:'smooth'})">System</a>
+<a class="sell" onclick="showPay()">+ Sell</a>
 </div>
+</div>
+
+<div style="background:#37475A;color:#fff;padding:7px 14px;font-size:11px;display:flex;gap:10px;overflow-x:auto">
+<span>Rajasthan</span><span>Delhi</span><span>Pune</span><span>Mumbai</span><span>Bengaluru</span><span>Hyderabad</span><span>Tamil Nadu</span><span>Kerala</span><span>Haryana</span><span>UP</span>
 </div>
 
 <div class="main">
-<h1>Buy, Sell & Rent Properties - Trusted Marketplace</h1>
-<p>Discover verified plots, houses, shops and rentals</p>
-<div><span class="f active">Plot</span><span class="f">House</span><span class="f">Shop</span><span class="f">Rent</span></div>
+<div class="sidebar">
+<h4>🏙️ States</h4>
+<div class="state">📍 Rajasthan</div><div class="state">📍 Delhi</div><div class="state">📍 Pune</div><div class="state">📍 Mumbai</div><div class="state">📍 Bengaluru</div><div class="state">📍 Hyderabad</div><div class="state">📍 Tamil Nadu</div><div class="state">📍 Kerala</div><div class="state">📍 Haryana</div><div class="state">📍 UP</div>
+<br><h4>📞 Numbers</h4>
+<div class="state">Platform: 97846 64741</div>
+<div class="state">WhatsApp: 95212 89940</div>
+<div class="state">Advocate: 92848 36899</div>
 </div>
 
-<div class="featured">
-<b>Featured Properties</b>
-<div class="cards" style="margin-top:10px">
-<div class="card"><img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9"><div class="card-body"><h4 style="font-size:12px">Baner, Pune - 3BHK Villa</h4><div class="price">₹ 45,00,000</div><div class="sub">For Sale</div></div></div>
-<div class="card"><img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef"><div class="card-body"><h4 style="font-size:12px">Hinjewadi - Commercial Plot</h4><div class="price">₹ 28,50,000</div><div class="sub">For Sale</div></div></div>
-<div class="card"><img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00"><div class="card-body"><h4 style="font-size:12px">Koregaon Park - 2BHK Rent</h4><div class="price">₹ 12,000/month</div><div class="sub">Rental</div></div></div>
-</div>
-</div>
-
-<div id="paymentBox">
-<h2 style="text-align:center;color:#0a1931">Create ID - LinesLegal.com</h2>
-<p style="text-align:center;font-size:13px;color:#666">Login nahi ho raha? Yaha ID banao - 2 min me</p>
-
-<div style="max-width:380px;margin:16px auto;background:#f8fbff;padding:16px;border-radius:12px;border:1px solid #dbeafe">
-<input class="input" id="name" placeholder="Aapka Naam">
-<input class="input" id="mobile" placeholder="Mobile Number - 97846 64741">
-<input class="input" id="pass" type="password" placeholder="Password Banao">
-<button class="hbtn sell" style="width:100%;padding:12px;margin-top:8px" onclick="goToPayment()">ID Banao & Payment Dekho →</button>
-<p style="font-size:11px;color:#888;margin-top:8px;text-align:center">ID banate hi neeche payment khulega</p>
-</div>
-
-<div id="payOptions" style="display:none">
-<div style="display:flex;gap:14px;flex-wrap:wrap;justify-content:center">
-<div style="border:1px solid #ddd;border-radius:12px;padding:16px;min-width:240px;max-width:320px;background:#fff">
-<h3>NORMAL ID - 199 Rs</h3>
-<a class="upi upi-b" href="upi://pay?pa=9784664741@ybl&pn=LinesLegal&am=199&cu=INR&tn=Normal%20ID">Pay 199 - 9784664741@ybl</a>
-<a class="upi upi-l" href="upi://pay?pa=mahmudbuildingcontractorarchit-2@oksbi&pn=LinesLegal&am=199&cu=INR&tn=Normal%20ID">mahmudbuildingcontractorarchit-2@oksbi</a>
-<a class="upi upi-l" href="upi://pay?pa=danishkhn0096@ibl&pn=LinesLegal&am=199&cu=INR&tn=Normal%20ID">danishkhn0096@ibl</a>
-</div>
-<div style="border:2px solid #0d3b8a;border-radius:12px;padding:16px;min-width:240px;max-width:320px;background:#fff">
-<h3>VERIFIED ID - 599 Rs</h3>
-<a class="upi upi-b" href="upi://pay?pa=danishkhann99@ybl&pn=LinesLegal&am=599&cu=INR&tn=Verified%20ID">Pay 599 - danishkhann99@ybl</a>
-<a class="upi upi-b" href="upi://pay?pa=9784664741@naviaxis&pn=LinesLegal&am=599&cu=INR&tn=Verified%20ID">9784664741@naviaxis</a>
-<a class="upi upi-l" href="upi://pay?pa=danishkhn0096@ibl&pn=LinesLegal&am=599&cu=INR&tn=Verified%20ID">danishkhn0096@ibl</a>
-</div>
-</div>
-<div style="text-align:center;margin-top:14px">
-<a class="hbtn wa" href="https://wa.me/919521289940?text=LinesLegal%20ID%20Payment%20Done" style="padding:12px 20px">WhatsApp Par Screenshot Bhejo - 95212 89940</a>
-</div>
+<div class="products">
+<div class="pcard"><img src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6"><div class="pbody"><span class="pbadge">Rajasthan</span><h3 style="font-size:12px">Jaipur - 1500 sqft Plot</h3><div class="pprice">₹22,00,000</div><a class="pbtn" onclick="showPay()">Buy Now</a></div></div>
+<div class="pcard"><img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c"><div class="pbody"><span class="pbadge">Delhi</span><h3 style="font-size:12px">Delhi Dwarka - Shop</h3><div class="pprice">₹65,00,000</div><a class="pbtn" onclick="showPay()">Buy Now</a></div></div>
+<div class="pcard"><img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9"><div class="pbody"><span class="pbadge">Pune</span><h3 style="font-size:12px">Pune Baner Villa</h3><div class="pprice">₹45,00,000</div><a class="pbtn" onclick="showPay()">Buy Now</a></div></div>
+<div class="pcard"><img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750"><div class="pbody"><span class="pbadge">Mumbai</span><h3 style="font-size:12px">Mumbai Andheri Flat</h3><div class="pprice">₹85,00,000</div><a class="pbtn" onclick="showPay()">Buy Now</a></div></div>
+<div class="pcard"><img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c"><div class="pbody"><span class="pbadge">Bengaluru</span><h3 style="font-size:12px">Bengaluru Villa</h3><div class="pprice">₹78,00,000</div><a class="pbtn" onclick="showPay()">Buy Now</a></div></div>
+<div class="pcard"><img src="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde"><div class="pbody"><span class="pbadge">Hyderabad</span><h3 style="font-size:12px">Hyderabad Office</h3><div class="pprice">₹35,000/mo</div><a class="pbtn" onclick="showPay()">Rent Now</a></div></div>
+<div class="pcard"><img src="https://images.unsplash.com/photo-1600607688969-a5bfcd646154"><div class="pbody"><span class="pbadge">Tamil Nadu</span><h3 style="font-size:12px">Chennai 2BHK</h3><div class="pprice">₹42,00,000</div><a class="pbtn" onclick="showPay()">Buy Now</a></div></div>
+<div class="pcard"><img src="https://images.unsplash.com/photo-1600573472550-8090b5e0745b"><div class="pbody"><span class="pbadge">Kerala</span><h3 style="font-size:12px">Kochi House</h3><div class="pprice">₹55,00,000</div><a class="pbtn" onclick="showPay()">Buy Now</a></div></div>
 </div>
 </div>
 
-<div class="support">
-<div>📞 97846 64741</div><div>💬 95212 89940</div><div>⚖️ 92848 36899</div><div>UPI: 9784664741@ybl | danishkhann99@ybl</div>
-</div>
-<div class="footer">© LinesLegal.com | 1000+ Properties | Verified | WhatsApp: 9784664741</div>
-
-<script>
-function showPay(){
-document.getElementById('paymentBox').style.display='block';
-document.getElementById('paymentBox').scrollIntoView({behavior:'smooth'});
-}
-function goToPayment(){
-let n=document.getElementById('name').value;
-let m=document.getElementById('mobile').value;
-let p=document.getElementById('pass').value;
-if(n=='' || m=='' || p==''){alert('Bhai Naam, Mobile, Password teeno bharo!');return;}
-document.getElementById('payOptions').style.display='block';
-document.getElementById('payOptions').scrollIntoView({behavior:'smooth'});
-}
-</script>
-</body>
-</html>
+<!-- ABOUT SYSTEM - YAH
