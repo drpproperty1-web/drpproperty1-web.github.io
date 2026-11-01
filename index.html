@@ -1,88 +1,74 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>D R P - Pure India Verified Property</title>
+<title>LinesLegal.com | DRP Property - Bhai Ki Site</title>
 <style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:system-ui,Arial}
-body{background:#fff;color:#123}
-header{display:flex;justify-content:space-between;align-items:center;padding:14px 6%;background:#fff;box-shadow:0 2px 12px rgba(0,0,0,.08);position:sticky;top:0;z-index:99}
-.logo{font-weight:900;font-size:26px;color:#0a3d7a}
-.logo b{background:#0f61b3;color:#fff;padding:2px 10px;border-radius:8px}
-nav a{margin-left:16px;text-decoration:none;color:#444;font-weight:600}
-.login{background:#0f61b3;color:#fff!important;padding:9px 20px;border-radius:8px}
-.hero{display:flex;flex-wrap:wrap;align-items:center;padding:60px 6%;background:linear-gradient(135deg,#eaf2ff 0%,#ffffff 60%);gap:30px}
-.hero-left{flex:1 1 420px}
-.hero-left h1{font-size:44px;line-height:1.1;color:#0a3d7a}
-.hero-left p{margin:16px 0 22px;color:#5a6d8a;line-height:1.6}
-.btns{display:flex;gap:12px;flex-wrap:wrap}
-.btn1{background:#0f61b3;color:#fff;padding:13px 26px;border-radius:8px;text-decoration:none;font-weight:800}
-.btn2{border:2px solid #0f61b3;color:#0f61b3;padding:11px 24px;border-radius:8px;text-decoration:none;font-weight:800;background:#fff}
-.cover{flex:1 1 380px;height:360px;background:linear-gradient(135deg,#0f61b3,#3fa0ff);border-radius:20px;display:grid;place-items:center;color:#fff;font-size:70px;box-shadow:0 20px 40px rgba(15,97,179,.3)}
-.contact-bar{display:flex;gap:14px;flex-wrap:wrap;padding:18px 6%;background:#fff;border-top:1px solid #e8eef7;border-bottom:1px solid #e8eef7}
-.cbox{flex:1 1 200px;border:1px solid #dde6f0;border-radius:14px;padding:14px;display:flex;gap:12px;align-items:center}
-.cbox b{display:block;color:#0a3d7a;font-size:14px}
-.cbox span{font-size:13px;color:#5a6d8a}
-.cbox a{font-weight:900;color:#0f61b3;text-decoration:none;font-size:15px}
-.pricing{padding:60px 6%;background:#f6f8fc;text-align:center}
-.pricing h2{font-size:34px;color:#0a3d7a}
-.cards{display:flex;gap:22px;justify-content:center;flex-wrap:wrap;margin-top:28px}
-.card{background:#fff;border:2px solid #dde6f0;border-radius:18px;padding:26px;max-width:360px;text-align:left;flex:1 1 300px}
-.card.best{border-color:#0f61b3;box-shadow:0 12px 30px rgba(15,97,179,.18);transform:scale(1.02)}
-.price{font-size:38px;font-weight:900;color:#0a3d7a}
-.card ul{list-style:none;margin:14px 0}
-.card li{margin:7px 0;font-size:14px}
-.card li::before{content:"✔ ";color:#0f61b3;font-weight:700}
-.buy{display:block;text-align:center;margin-top:12px;padding:12px;border-radius:10px;text-decoration:none;font-weight:900;border:2px solid #0f61b3;color:#0f61b3}
-.best .buy{background:#0f61b3;color:#fff}
-footer{background:#0a3d7a;color:#b9c9e2;padding:36px 6%;display:flex;flex-wrap:wrap;gap:30px}
-footer a{color:#b9c9e2;text-decoration:none;font-size:14px;display:block;margin:4px 0}
-.float-wp{position:fixed;bottom:20px;right:20px;background:#25D366;color:#fff;width:60px;height:60px;border-radius:50%;display:grid;place-items:center;font-size:28px;text-decoration:none;box-shadow:0 6px 18px rgba(0,0,0,.35);z-index:9999}
-.float-call{position:fixed;bottom:90px;right:20px;background:#0f61b3;color:#fff;padding:10px 14px;border-radius:30px;text-decoration:none;font-weight:800;font-size:12px;box-shadow:0 6px 18px rgba(0,0,0,.35);z-index:9999}
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif}
+body{background:#f8fbff;color:#222}
+.navbar{background:#0a1931;color:#fff;padding:14px 20px;display:flex;justify-content:space-between;align-items:center}
+.navbar a{color:#fff;text-decoration:none;margin-left:16px;font-size:14px}
+.btn{padding:10px 18px;border-radius:8px;text-decoration:none;font-weight:bold;display:inline-block;cursor:pointer}
+.btn-blue{background:#0d3b8a;color:#fff}
+.btn-outline{background:#fff;color:#0d3b8a;border:2px solid #0d3b8a}
+.support-bar{display:flex;gap:12px;padding:16px 20px;flex-wrap:wrap;background:#eef4ff}
+.support-card{background:#fff;border:1px solid #dbeafe;padding:12px;border-radius:12px;flex:1;min-width:160px;font-size:13px}
+#paymentSection{display:none;background:#fff;padding:30px 20px;border-top:4px solid #0d3b8a}
+.pricing{display:flex;gap:18px;flex-wrap:wrap;justify-content:center;margin-top:20px}
+.card{border:1px solid #e5e7eb;border-radius:16px;padding:22px;flex:1;min-width:260px;max-width:380px}
+.card.vip{border:2px solid #0d3b8a;box-shadow:0 10px 30px rgba(13,59,138,.15)}
+.price{font-size:30px;font-weight:bold;color:#0d3b8a}
+.upi{display:block;width:100%;text-align:center;padding:12px;margin-top:10px;border-radius:10px;text-decoration:none;font-weight:bold}
+.upi-blue{background:#0d3b8a;color:#fff}
+.upi-light{background:#eef4ff;color:#0d3b8a;border:1px solid #0d3b8a}
+.upi-whats{background:#25D366;color:#fff}
 </style>
 </head>
 <body>
-<header><div class="logo"><b>⌖</b> D R P</div><nav><a href="#">About</a><a href="#">Services</a><a href="#" class="login">Login</a></nav></header>
 
-<section class="hero">
-<div class="hero-left">
-<h1>Pure India Verified Property Platform</h1>
-<p>Discover, list, and verify properties across India with trusted listings, secure transactions, and government-compliant verification.</p>
-<div class="btns"><a class="btn1" href="#price">Get Started →</a><a class="btn2" href="#">Explore Properties</a></div>
-</div>
-<div class="cover">🗺️🏘️</div>
-</section>
-
-<!-- YAHI HAI NAYA CLEAR CONTACT SECTION -->
-<div class="contact-bar">
-<div class="cbox">📞<div><b>Platform Support</b><span>Listing & Help</span><br><a href="tel:+919784664741">97846 64741</a></div></div>
-<div class="cbox" style="border-color:#25D366">💬<div><b>WhatsApp Sale</b><span>Instant Chat - ID Buy</span><br><a href="https://wa.me/919521289940" style="color:#25D366">95212 89940</a></div></div>
-<div class="cbox" style="border-color:#0a3d7a">⚖️<div><b>Advocate Team</b><span>Legal Verification</span><br><a href="tel:+919284836899">92848 36899</a></div></div>
+<div class="navbar">
+<div><b>⚖️ LinesLegal.com</b> | <span style="color:#93c5fd">DRP - Bhai Ki Site</span></div>
+<div><a href="#" onclick="showPayment()">Bhai Ki Site</a></div>
 </div>
 
-<section id="price" class="pricing">
-<h2>Simple, Transparent Pricing</h2>
-<div class="cards">
+<div style="padding:40px 20px;background:#fff">
+<h1>LinesLegal.com <span style="color:#0d3b8a">x Pure India Verified Property</span></h1>
+<p>Legal + Property Verification. Bhai ki DRP site hamari site se join hai.</p><br>
+<a class="btn btn-blue" onclick="showPayment()">Get Started → Auto Payment</a>
+<a class="btn btn-outline" href="http://drpcom.info" target="_blank">Bhai Ki Site Dekho</a>
+</div>
+
+<div class="support-bar">
+<div class="support-card"><b>Platform Support</b><br>97846 64741<br>9784664741@ybl</div>
+<div class="support-card"><b>WhatsApp Sale</b><br>95212 89940</div>
+<div class="support-card"><b>Advocate Team</b><br>92848 36899<br>danishkhann99@ybl</div>
+<div class="support-card"><b>UPI</b><br>mahmudbuildingcontractorarchit-2@oksbi<br>danishkhn0096@ibl</div>
+</div>
+
+<div id="paymentSection">
+<h2 style="text-align:center;color:#0a1931">Select ID & Pay - Auto UPI</h2>
+<div class="pricing">
 <div class="card">
-<div style="font-size:12px;font-weight:800;color:#7a8aa5">NORMAL ID</div>
-<div class="price">199 Rs <span style="font-size:14px;font-weight:400">/month</span></div>
-<ul><li>List your land or property</li><li>Browse verified buyer enquiries</li><li>Basic chat & email support</li></ul>
-<a class="buy" href="https://wa.me/919521289940?text=Hi%20Normal%20ID%20199%20Rs%20chahiye">Get Normal ID - 95212 89940</a>
+<h3>NORMAL ID</h3><div class="price">199 Rs</div>
+<a class="upi upi-blue" href="upi://pay?pa=9784664741@ybl&pn=DRP&am=199&cu=INR&tn=Normal%20ID">Pay 199 - 9784664741@ybl</a>
+<a class="upi upi-light" href="upi://pay?pa=mahmudbuildingcontractorarchit-2@oksbi&pn=DRP&am=199&cu=INR&tn=Normal%20ID">Pay via mahmudbuildingcontractorarchit-2@oksbi</a>
+<a class="upi upi-whats" href="https://wa.me/919521289940?text=Normal%20ID%20199">WhatsApp 95212 89940</a>
 </div>
-<div class="card best">
-<div style="font-size:12px;font-weight:900;color:#0f61b3">✔ VERIFICATION ID</div>
-<div class="price">599 Rs <span style="font-size:14px;font-weight:400">/month</span></div>
-<ul><li>Blue tick verified badge</li><li>Priority visibility & promotions</li><li>Advocate Team Support - 92848 36899</li></ul>
-<a class="buy" href="https://wa.me/919521289940?text=Hi%20Blue%20Tick%20ID%20599%20Rs%20chahiye">Get Verified ID</a>
+<div class="card vip">
+<h3>✅ VERIFICATION ID</h3><div class="price">599 Rs</div>
+<a class="upi upi-blue" href="upi://pay?pa=danishkhann99@ybl&pn=DRP&am=599&cu=INR&tn=Verified%20ID">Pay 599 - danishkhann99@ybl</a>
+<a class="upi upi-blue" href="upi://pay?pa=9784664741@naviaxis&pn=DRP&am=599&cu=INR&tn=Verified%20ID">Pay via 9784664741@naviaxis</a>
+<a class="upi upi-light" href="upi://pay?pa=danishkhn0096@ibl&pn=DRP&am=599&cu=INR&tn=Verified%20ID">Pay via danishkhn0096@ibl</a>
 </div>
 </div>
-</section>
+</div>
 
-<footer><div><b style="color:#fff">D R P Property</b><br><small>Making property discovery safe.</small></div><div><b style="color:#fff">Contact</b><a>📞 Platform Support: 97846 64741</a><a>💬 WhatsApp Sale: 95212 89940</a><a>⚖️ Advocate Team: 92848 36899</a></div></footer>
-
-<a class="float-call" href="tel:+919784664741">📞 Platform: 97846 64741</a>
-<a class="float-wp" href="https://wa.me/919521289940?text=Hi%20DRP%20Sale%20Team" target="_blank">💬</a>
+<script>
+function showPayment(){
+document.getElementById('paymentSection').style.display='block';
+document.getElementById('paymentSection').scrollIntoView({behavior:'smooth'});
+}
+</script>
 </body>
 </html>
