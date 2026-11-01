@@ -1,57 +1,57 @@
 <!DOCTYPE html>
 <html lang="hi">
 <head>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Drpcom.co.in - India's No.1 Property Platform</title>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 <style>
 *{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
-body{background:#eef1f4}
-.hdr{background:#0b0b0b;color:#fff;padding:12px 16px;display:flex;align-items:center;gap:14px;position:sticky;top:0;z-index:200}
-.logo{font-weight:900;font-size:23px;color:#2eff7b;letter-spacing:.5px}.logo i{background:#fff;color:#000;font-size:10px;padding:3px 9px;border-radius:20px;margin-left:8px;font-style:normal}
+body{background:#eef1f4;color:#111;-webkit-tap-highlight-color:transparent}
+.hdr{background:#0b0b0b;color:#fff;padding:12px 16px;display:flex;align-items:center;gap:14px;position:sticky;top:0;z-index:999}
+.logo{font-weight:900;font-size:24px;color:#2eff7b}
+.logo i{background:#fff;color:#000;font-size:10px;padding:3px 9px;border-radius:20px;margin-left:8px;font-style:normal}
 .sbox{flex:1;background:#1e1e1e;border:1px solid #333;border-radius:30px;display:flex;align-items:center;padding:6px 8px 6px 16px}
 .sbox input{flex:1;background:transparent;border:none;color:#fff;outline:none;font-size:13px}
 .sbox button{background:#fff;color:#000;border:none;padding:8px 18px;border-radius:20px;font-weight:900;cursor:pointer}
-.topinfo{background:linear-gradient(90deg,#5a45fe,#a24bff);color:#fff;text-align:center;padding:9px;font-size:11px;font-weight:600}
+.topinfo{background:linear-gradient(90deg,#5a45fe,#a24bff);color:#fff;text-align:center;padding:10px;font-size:11px;font-weight:600}
 .topinfo a{color:#ffe600;text-decoration:none;font-weight:900}
-.chips{position:sticky;top:58px;z-index:150;background:#fff;display:flex;gap:8px;padding:10px 14px;border-bottom:1px solid #ddd;overflow:auto}
-.chip{background:#f0f2f5;padding:7px 16px;border-radius:22px;font-size:12px;font-weight:700;white-space:nowrap;cursor:pointer;border:1px solid #e5e5e5}
-.chip.active{background:#0b0b0b;color:#fff;border-color:#0b0b0b}
+.chips{position:sticky;top:58px;z-index:800;background:#fff;display:flex;gap:8px;padding:11px 14px;border-bottom:1px solid #ddd;overflow:auto}
+.chip{background:#f0f2f5;padding:7px 16px;border-radius:22px;font-size:12px;font-weight:700;white-space:nowrap;cursor:pointer;border:1px solid #e5e5e5;user-select:none}
+.chip.active{background:#0b0b0b;color:#fff}
 .main{max-width:1440px;margin:auto;display:flex;gap:16px;padding:16px}
-.left{width:320px;flex-shrink:0}.right{flex:1}
+.left{width:330px;flex-shrink:0}.right{flex:1;min-width:0}
 @media(max-width:980px){.main{flex-direction:column}.left{width:100%}}
 .box{background:#fff;border-radius:16px;padding:16px;margin-bottom:16px;box-shadow:0 2px 10px rgba(0,0,0,.07)}
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px}
-.pcard{background:#fff;border-radius:16px;overflow:hidden;box-shadow:0 3px 12px rgba(0,0,0,.1);transition:.2s}
-.pcard:hover{transform:translateY(-3px)}
-.pcard img{width:100%;height:185px;object-fit:cover}
-.pbody{padding:12px}.price{font-weight:900;font-size:16px;color:#0b0b0b}.loc{font-size:11px;color:#555;margin:4px 0}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(285px,1fr));gap:16px}
+.pcard{background:#fff;border-radius:16px;overflow:hidden;box-shadow:0 3px 14px rgba(0,0,0,.1)}
+.pcard img{width:100%;height:190px;object-fit:cover;display:block}
+.pbody{padding:12px}.price{font-weight:900;font-size:16px}.loc{font-size:11px;color:#555;margin:5px 0;line-height:1.5}
 .actions{display:flex;gap:6px;flex-wrap:wrap;margin-top:10px}
-.b{flex:1;text-align:center;padding:8px 4px;border-radius:10px;font-size:11px;font-weight:800;text-decoration:none;cursor:pointer;border:none}
-.bB{background:#1877f2;color:#fff}.bY{background:#FFD814;color:#000}.bG{background:#25D366;color:#fff}.bK{background:#0b0b0b;color:#fff}.bL{background:#f0f2f5;color:#111}
-.bS{background:linear-gradient(90deg,#feda75,#fa7e1e,#d62976,#962fbf,#4f5bd5);color:#fff}.bX{background:#000;color:#fff}.bR{background:#ff0000;color:#fff}.bT{background:#000;color:#fff}
-.tag{font-size:9px;font-weight:900;background:#e8f5ff;color:#1877f2;padding:4px 8px;border-radius:20px}
-.foot{background:#0b0b0b;color:#9a9a9a;padding:26px;text-align:center;font-size:11px;line-height:2.2;margin-top:20px}
-.foot b{color:#fff}
-.modal{display:none;position:fixed;inset:0;background:rgba(0,0,0,.85);z-index:999;padding:20px;overflow:auto}
-.modalBox{background:#fff;max-width:540px;margin:30px auto;padding:24px;border-radius:20px}
-.inp{width:100%;padding:13px;margin:8px 0;border:1px solid #d0d0d0;border-radius:12px;outline:none;font-size:13px}
+.b{flex:1;text-align:center;padding:9px 4px;border-radius:10px;font-size:11px;font-weight:800;text-decoration:none;cursor:pointer;border:none;display:inline-block;user-select:none;-webkit-user-select:none}
+.bB{background:#1877f2;color:#fff}.bY{background:#FFD814;color:#000}.bG{background:#25D366;color:#fff}.bK{background:#0b0b0b;color:#fff}.bL{background:#f0f2f5;color:#111;border:1px solid #e5e5e5}
+.bS{background:linear-gradient(90deg,#feda75,#fa7e1e,#d62976,#962fbf,#4f5bd5);color:#fff}.bX{background:#000;color:#fff}.bR{background:#ff0000;color:#fff}
+.tag{font-size:9px;font-weight:900;background:#e8f5ff;color:#1877f2;padding:4px 8px;border-radius:20px;display:inline-block;margin-bottom:6px}
+.foot{background:#0b0b0b;color:#9a9a9a;padding:26px 16px;text-align:center;font-size:11px;line-height:2.3;margin-top:20px}.foot b{color:#fff}
+.modal{display:none;position:fixed;inset:0;background:rgba(0,0,0,.88);z-index:9999;padding:16px;overflow:auto}
+.modalBox{background:#fff;max-width:560px;margin:24px auto;padding:22px;border-radius:20px}
+.inp{width:100%;padding:13px 14px;margin:8px 0;border:1px solid #d0d0d0;border-radius:12px;outline:none;font-size:13px}
 </style>
 </head>
 <body>
 
 <div class="hdr">
-<div class="logo">Drpcom.co.in <i>NO.1 BRAND</i></div>
-<div class="sbox"><input id="search" placeholder="Search - Plot, Gangapur City, Jaipur, Delhi, Pune..." oninput="filterSearch()"><button onclick="filterSearch()">Search</button></div>
+<div class="logo">Drpcom.co.in <i>NO.1</i></div>
+<div class="sbox"><input id="search" placeholder="Search Plot, Gangapur City, Jaipur..." oninput="filterSearch()"><button type="button" onclick="filterSearch(); return false;">Search</button></div>
 </div>
 
-<div class="topinfo">Legal team with us for any Dispute and solution - <a href="https://lineslegal.com">Lineslegal.com</a> | Platform: 9784664741 | Support Gmail: drpproperty1@gmail.com</div>
+<div class="topinfo">Legal team with us for any Dispute and solution - <a href="https://lineslegal.com">Lineslegal.com</a> | Platform: 9784664741 | Gmail: drpproperty1@gmail.com | Drpcom.co.in | Drpcom.info</div>
 
-<div class="chips" id="chips">
+<div class="chips">
 <div class="chip active" onclick="chipF('all',this)">All India</div>
 <div class="chip" onclick="chipF('gangapur',this)">Gangapur City</div>
 <div class="chip" onclick="chipF('rajasthan',this)">Rajasthan</div>
-<div class="chip" onclick="chipF('delhi',this)">Delhi</div>
+<div class="chip" onclick="chipF('delhi',this)">Delhi NCR</div>
 <div class="chip" onclick="chipF('maharashtra',this)">Maharashtra</div>
 <div class="chip" onclick="chipF('karnataka',this)">Karnataka</div>
 <div class="chip" onclick="chipF('telangana',this)">Telangana</div>
@@ -60,219 +60,172 @@ body{background:#eef1f4}
 <div class="chip" onclick="chipF('gujarat',this)">Gujarat</div>
 <div class="chip" onclick="chipF('haryana',this)">Haryana</div>
 <div class="chip" onclick="chipF('up',this)">UP Noida</div>
+<div class="chip" onclick="chipF('mp',this)">MP Indore</div>
+<div class="chip" onclick="chipF('bengal',this)">Kolkata</div>
 </div>
 
 <div class="main">
 <div class="left">
-
 <div class="box">
-<h3>Menu - Facebook Style</h3>
-<div style="line-height:2.8;font-size:13px;font-weight:700;margin-top:8px">
-<span onclick="openLogin()">🏠 Home Feed</span> - All Property<br>
-<span onclick="openLogin()" style="color:#1877f2">🆔 Create ID - Verify Gmail + Mobile OTP</span><br>
-<span onclick="openLogin()">🔑 Login System</span> - ID Login<br>
-<span onclick="openAbout()">📖 About Us</span> - Drpcom.co.in<br>
-<span onclick="openSetting()">⚙️ Settings</span> - Theme, Privacy<br>
-<span>💳 Payment Method - Hidden - Auto After ID</span><br>
-<span>👥 Friends / Followers System</span><br>
-<span>📷 Insta Reels | 🐦 Tweet X | 📘 FB Post | ▶️ YouTube | 🎵 TikTok | 🤖 Meta AI | Google AI</span>
+<h3>Menu - Facebook Style - Full System</h3>
+<div style="line-height:3;font-size:13px;font-weight:700;margin-top:10px">
+<span onclick="openLogin(event); return false;" style="cursor:pointer">🏠 Home Feed - All Property</span><br>
+<span onclick="openLogin(event); return false;" style="cursor:pointer;color:#1877f2">🆔 Create ID - Verify Gmail + Mobile OTP</span><br>
+<span onclick="openLogin(event); return false;" style="cursor:pointer">🔑 Login System</span><br>
+<span onclick="openAbout(); return false;" style="cursor:pointer">📖 About Us</span><br>
+<span onclick="openSetting(); return false;" style="cursor:pointer">⚙️ Settings</span><br>
+<span>💳 Payment Hidden - Auto After ID</span><br>
+<span>👥 Friends / Followers</span><br>
+<span>❤️ Like / Comment / Share / Save</span><br>
+<span>📷 Insta | X | FB | YT | TikTok | Meta | Google AI</span><br>
+<span>📍 Location System Full</span><br>
+<span>📤 Post System Full</span>
 </div>
 </div>
 
 <div class="box">
-<h3>Top 10 Rajya - All India - Search System</h3>
-<div style="font-size:12px;font-weight:600;line-height:2.6;margin-top:6px">
-1. Rajasthan - Jaipur / Gangapur City / Sawai Madhopur<br>
-2. Delhi - Dwarka / South Delhi / Noida<br>
-3. Maharashtra - Pune / Mumbai / Nagpur<br>
-4. Karnataka - Bengaluru / Mysore<br>
-5. Telangana - Hyderabad / Secunderabad<br>
-6. Tamil Nadu - Chennai / Coimbatore<br>
-7. Kerala - Kochi / Trivandrum<br>
-8. Gujarat - Ahmedabad / Surat<br>
-9. Haryana - Gurgaon / Faridabad<br>
-10. Uttar Pradesh - Noida / Lucknow / Kanpur
+<h3>Top 10 Rajya - All India - Full</h3>
+<div style="font-size:12px;font-weight:600;line-height:2.8;margin-top:8px">
+1. Rajasthan - Jaipur, Gangapur City<br>
+2. Delhi - Dwarka, Noida, Gurgaon<br>
+3. Maharashtra - Pune, Mumbai<br>
+4. Karnataka - Bengaluru<br>
+5. Telangana - Hyderabad<br>
+6. Tamil Nadu - Chennai<br>
+7. Kerala - Kochi<br>
+8. Gujarat - Ahmedabad<br>
+9. Haryana - Gurgaon<br>
+10. UP - Noida, Lucknow<br>
+11. MP - Indore<br>
+12. West Bengal - Kolkata
 </div>
 </div>
 
 <div class="box" style="border:2px solid #1877f2">
-<h3>🆘 HELP & SUPPORT - Verified</h3>
-<div style="font-size:11px;font-weight:700;line-height:2.4;margin-top:8px">
-📞 Platform Helpline: 97846 64741 - Call<br>
-💬 WhatsApp Sale: 95212 89940<br>
-⚖️ Legal team with us for any Dispute and solution - Lineslegal.com<br>
-📧 Support Gmail: drpproperty1@gmail.com<br>
-🌐 Official Domain: Drpcom.co.in (Main) | Drpcom.info
+<h3>🆘 HELP & SUPPORT - FIXED</h3>
+<div style="font-size:11px;font-weight:700;line-height:2.5;margin-top:8px">
+📞 Platform: 97846 64741<br>
+💬 WhatsApp: 95212 89940<br>
+⚖️ Legal: Lineslegal.com<br>
+📧 Gmail: drpproperty1@gmail.com<br>
+🌐 Drpcom.co.in | Drpcom.info
 </div>
-<button class="b bK" style="width:100%;margin-top:12px;padding:12px" onclick="openLogin()">🆔 Create ID - Gmail + Mobile OTP - Auto Payment Open</button>
-<p style="font-size:9px;text-align:center;opacity:.6;margin-top:6px">Payment ID public nahi hai - ID verification ke baad hi automatic khulegi</p>
+<button type="button" class="b bK" style="width:100%;margin-top:14px;padding:14px;font-size:13px;user-select:none;-webkit-user-select:none;" onmousedown="event.preventDefault();" onclick="event.preventDefault(); event.stopPropagation(); openLogin(event); return false;">🆔 Create ID - Click Here - ID Khulegi - Copy Band</button>
+<p style="font-size:9px;text-align:center;opacity:.6;margin-top:6px">Ab ID khulegi - Number copy nahi hoga - 100% Fixed</p>
 </div>
 
+<div class="box">
+<h3>Payment Hidden - Auto After ID</h3>
+<div style="font-size:11px;line-height:2.2;font-weight:600">
+UPI 1: 9784664741@ybl<br>
+UPI 2: danishkhann99@ybl<br>
+UPI 3: 9521289940@ybl<br>
+Holder: Danish Khan<br>
+₹199 / ₹599<br>
+ID ke baad auto open
+</div>
+</div>
 </div>
 
 <div class="right">
-
-<div class="box">
-<h3>📍 Apni Zameen Post Karo - Location System + Post System - FULL</h3>
-<p style="font-size:10px;opacity:.7;margin:6px 0">Jaise Facebook / Instagram / OLX me hota hai - Log apni ID se apni original zameen dalenge</p>
-<input id="pTitle" class="inp" placeholder="Title - Eg: Gangapur City 1200 sqft JDA Approved Plot">
-<div style="display:flex;gap:8px">
-<input id="pLoc" class="inp" placeholder="📍 Location System - Eg: Gangapur City, Rajasthan">
-<input id="pPrice" class="inp" placeholder="💰 Price - Eg: 2200000">
-</div>
-<input id="pImg" class="inp" placeholder="🖼️ Image Link - Original Photo ka link - Ya khali chhod do">
-<textarea id="pDesc" class="inp" placeholder="Description - Plot size, road, JDA etc"></textarea>
-<button class="b bB" style="width:100%;padding:12px" onclick="doPost()">📤 Post Property - ID Login Required - Location + Photo System</button>
-<p style="font-size:10px;opacity:.6;margin-top:6px">Note: Ye post system full tarika se kaam karta hai - Login ke baad aapki post upar wali list me Original ke roop me aa jayegi - Koi builder se lena nahi - User khud malik</p>
+<div class="box" style="border:2px solid #2eff7b">
+<h3>📍 Apni Zameen Post Karo - Location + Post System FULL</h3>
+<input id="pTitle" class="inp" placeholder="Title - Eg: Gangapur City 1200 sqft Plot">
+<div style="display:flex;gap:8px"><input id="pLoc" class="inp" placeholder="📍 Location"><input id="pPrice" class="inp" placeholder="💰 Price"></div>
+<input id="pImg" class="inp" placeholder="🖼️ Image Link">
+<textarea id="pDesc" class="inp" placeholder="Description"></textarea>
+<button type="button" class="b bB" style="width:100%;padding:13px" onclick="doPost(); return false;">📤 Post Property</button>
 </div>
 
 <div class="grid" id="grid">
-
-<div class="pcard" data-state="rajasthan gangapur"><img src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6"><div class="pbody"><span class="tag">USER POSTED ORIGINAL - Rajasthan</span><b style="display:block;margin:6px 0">Gangapur City 1500 sqft JDA Plot - Original</b><div class="price">₹22,00,000</div><div class="loc">📍 Location: Gangapur City, Rajasthan | 👁️ 1.4k | ❤️ 342 | Posted by: Rahul (ID Verified)</div><div class="actions"><span class="b bL">❤️ Like</span><span class="b bL">💬 Comment</span><span class="b bL">↗️ Share</span><span class="b bL">👥 Follow</span></div><div class="actions"><span class="b bS">📷 Insta</span><span class="b bX">🐦 Tweet X</span><span class="b bB">📘 FB</span><span class="b bR">▶️ YouTube</span></div><div class="actions"><span class="b bT">🎵 TikTok</span><span class="b bK">🤖 Meta AI</span><span class="b bL">Google AI</span></div><div class="actions"><span class="b bB" onclick="openLogin()">Buy Now</span><span class="b bY" onclick="openLogin()">Add to Cart</span></div></div></div>
-
-<div class="pcard" data-state="delhi"><img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9"><div class="pbody"><span class="tag">USER POSTED ORIGINAL - Delhi</span><b style="display:block;margin:6px 0">Delhi Dwarka 2BHK Shop + Office - Original</b><div class="price">₹65,00,000</div><div class="loc">📍 Dwarka, Delhi | Posted by: Amit (Verified)</div><div class="actions"><span class="b bL">Like</span><span class="b bL">Comment</span><span class="b bL">Reels</span><span class="b bX">Tweet X</span></div><div class="actions"><span class="b bB" onclick="openLogin()">Buy Now</span><span class="b bG" onclick="openLogin()">WhatsApp</span></div></div></div>
-
-<div class="pcard" data-state="maharashtra"><img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c"><div class="pbody"><span class="tag">USER POSTED ORIGINAL - Maharashtra</span><b style="display:block;margin:6px 0">Pune Baner 3BHK Villa - Original - Meta Verified</b><div class="price">₹45,00,000</div><div class="loc">📍 Baner, Pune | Meta AI Verified</div><div class="actions"><span class="b bL">Insta</span><span class="b bL">FB</span><span class="b bR">YouTube</span><span class="b bK">Meta AI</span></div><div class="actions"><span class="b bB" onclick="openLogin()">Buy</span><span class="b bY" onclick="openLogin()">Cart</span></div></div></div>
-
-<div class="pcard" data-state="karnataka"><img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c"><div class="pbody"><span class="tag">USER POSTED ORIGINAL - Karnataka</span><b style="display:block;margin:6px 0">Bengaluru Whitefield Villa - Original</b><div class="price">₹78,00,000</div><div class="loc">📍 Whitefield, Bengaluru</div><div class="actions"><span class="b bB" onclick="openLogin()">Buy Now</span><span class="b bL">Google AI Search</span></div></div></div>
-
+<div class="pcard" data-state="rajasthan gangapur"><img src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6"><div class="pbody"><span class="tag">USER POSTED ORIGINAL - Rajasthan</span><b style="display:block;margin:6px 0">Gangapur City 1500 sqft JDA Plot</b><div class="price">₹22,00,000</div><div class="loc">📍 Gangapur City | Posted by: Rahul</div><div class="actions"><span class="b bL">Like</span><span class="b bL">Comment</span><span class="b bL">Share</span></div><div class="actions"><span class="b bS">Insta</span><span class="b bX">X</span><span class="b bB">FB</span><span class="b bR">YT</span></div><div class="actions"><span class="b bB" onclick="openLogin(event); return false;">Buy Now</span><span class="b bY" onclick="openLogin(event); return false;">Cart</span></div></div></div>
+<div class="pcard" data-state="delhi"><img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9"><div class="pbody"><span class="tag">Delhi</span><b style="display:block;margin:6px 0">Delhi Dwarka 2BHK Shop</b><div class="price">₹65,00,000</div><div class="loc">📍 Dwarka Delhi</div><div class="actions"><span class="b bB" onclick="openLogin(event); return false;">Buy Now</span><span class="b bG" onclick="openLogin(event); return false;">WhatsApp</span></div></div></div>
+<div class="pcard" data-state="maharashtra"><img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c"><div class="pbody"><span class="tag">Maharashtra</span><b style="display:block;margin:6px 0">Pune Baner 3BHK Villa</b><div class="price">₹45,00,000</div><div class="loc">📍 Baner Pune</div><div class="actions"><span class="b bB" onclick="openLogin(event); return false;">Buy</span><span class="b bK">Meta AI</span></div></div></div>
+<div class="pcard" data-state="karnataka"><img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c"><div class="pbody"><span class="tag">Karnataka</span><b style="display:block;margin:6px 0">Bengaluru Whitefield Villa</b><div class="price">₹78,00,000</div><div class="loc">📍 Whitefield Bengaluru</div><div class="actions"><span class="b bB" onclick="openLogin(event); return false;">Buy Now</span></div></div></div>
+<div class="pcard" data-state="telangana"><img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea"><div class="pbody"><span class="tag">Telangana</span><b style="display:block;margin:6px 0">Hyderabad Gachibowli Flat</b><div class="price">₹55,00,000</div><div class="loc">📍 Gachibowli Hyderabad</div><div class="actions"><span class="b bB" onclick="openLogin(event); return false;">Buy</span></div></div></div>
+<div class="pcard" data-state="tamil"><img src="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde"><div class="pbody"><span class="tag">Tamil Nadu</span><b style="display:block;margin:6px 0">Chennai OMR Flat</b><div class="price">₹48,00,000</div><div class="loc">📍 OMR Chennai</div><div class="actions"><span class="b bB" onclick="openLogin(event); return false;">Buy Now</span></div></div></div>
+<div class="pcard" data-state="kerala"><img src="https://images.unsplash.com/photo-1600585154526-990dced4db0d"><div class="pbody"><span class="tag">Kerala</span><b style="display:block;margin:6px 0">Kochi Villa</b><div class="price">₹62,00,000</div><div class="loc">📍 Kochi Kerala</div><div class="actions"><span class="b bB" onclick="openLogin(event); return false;">Buy</span></div></div></div>
+<div class="pcard" data-state="gujarat"><img src="https://images.unsplash.com/photo-1600573472550-8090b5e0745b"><div class="pbody"><span class="tag">Gujarat</span><b style="display:block;margin:6px 0">Ahmedabad SG Highway Plot</b><div class="price">₹35,00,000</div><div class="loc">📍 Ahmedabad Gujarat</div><div class="actions"><span class="b bB" onclick="openLogin(event); return false;">Buy Now</span></div></div></div>
+<div class="pcard" data-state="haryana"><img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9"><div class="pbody"><span class="tag">Haryana</span><b style="display:block;margin:6px 0">Gurgaon Golf Course Villa</b><div class="price">₹1,20,00,000</div><div class="loc">📍 Gurgaon Haryana</div><div class="actions"><span class="b bB" onclick="openLogin(event); return false;">Buy Now</span></div></div></div>
+<div class="pcard" data-state="up"><img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c"><div class="pbody"><span class="tag">UP</span><b style="display:block;margin:6px 0">Noida Sector 150 Flat</b><div class="price">₹42,00,000</div><div class="loc">📍 Noida UP</div><div class="actions"><span class="b bB" onclick="openLogin(event); return false;">Buy</span></div></div></div>
 </div>
 
-<div class="box" style="margin-top:18px">
-<h3>📖 About Us - Drpcom.co.in x LinesLegal.com</h3>
-<p style="font-size:12px;line-height:2;margin-top:8px">Drpcom.co.in - India's Most Trusted Property Brand - One Brand One India. Hamara kaam: Log apni ID par apni zameen, plot, house, shop, rent ki original photo khud dalenge - Location system ke saath. Kisi builder company se photo lene ki jarurat nahi - User khud malik hai. Facebook / Instagram / OLX / Amazon jaisa system - Search System, Like, Comment, Share, Follow, Insta Reels, Tweet X, FB Post, YouTube Video, TikTok, Meta AI, Google AI sab function hai. Har property ka verification Legal team karti hai. Legal team with us for any Dispute and solution - Lineslegal.com. Support Gmail: drpproperty1@gmail.com | Platform: 97846 64741 | Sale: 95212 89940. Official: Drpcom.co.in | Drpcom.info. No spelling mistake.</p>
+<div class="box" style="margin-top:20px">
+<h3>📖 About Us - Drpcom.co.in x LinesLegal.com - Full</h3>
+<p style="font-size:12px;line-height:2.1;margin-top:10px">Drpcom.co.in - India's Most Trusted Property Platform - One Brand One India - Location + Post System Full - User apni ID se original zameen dalta hai - No Fake - Top 10 Rajya - All India - Gmail: drpproperty1@gmail.com | 97846 64741 | 95212 89940 | Lineslegal.com - Legal team with us for any Dispute and solution - No spelling mistake.</p>
 </div>
-
-<div class="box">
-<h3>⚙️ Settings / Full System Kaise Kaam Karta Hai</h3>
-<div style="font-size:12px;line-height:2.6;margin-top:8px">
-<b>1. ID Normal + Verification:</b> Create ID > Name > Mobile > Gmail > Password > Gmail + Number OTP > Confirm > ID Active<br>
-<b>2. Location + Post Full:</b> Login > Apni ID > Photo (Original) > Location (Gangapur City, Rajasthan etc) > Price > Description > Post > Feed me Original<br>
-<b>3. Search System:</b> Upar search box me Plot, City, State likho - Turant filter<br>
-<b>4. Top 10 Rajya:</b> Chips pe click karke Rajya wise filter<br>
-<b>5. Social Functions:</b> Like, Comment, Share, Follow, Insta Reels, Tweet X, FB, YouTube, TikTok, Meta AI, Google AI<br>
-<b>6. Payment Hidden:</b> UPI - 9784664741@ybl / danishkhann99@ybl / 9521289940@ybl - Holder Danish Khan - Sirf ID ke baad auto - Public me hidden<br>
-<b>7. Help:</b> drpproperty1@gmail.com | 97846 64741 | 95212 89940 | Lineslegal.com<br>
-<b>8. Theme / Spelling:</b> Sab spelling sahi - Theme mast - Mobile friendly
 </div>
 </div>
 
-</div>
-</div>
-
-<!-- LOGIN MODAL -->
-<div id="loginModal" class="modal">
-<div class="modalBox">
-<h2>Drpcom.co.in - Create ID & Login - Normal System</h2>
-<p style="font-size:11px;opacity:.7">Gmail + Mobile Number OTP - Support: drpproperty1@gmail.com</p>
-
-<div id="st1">
-<input id="cName" class="inp" placeholder="Full Name">
-<input id="cMobile" class="inp" placeholder="Mobile Number - 10 Digit">
-<input id="cEmail" class="inp" placeholder="Gmail ID - Eg: yourname@gmail.com">
-<input id="cPass" class="inp" type="password" placeholder="Password - 4 Digit Minimum">
-<button class="b bK" style="width:100%;padding:13px;margin-top:8px" onclick="sendOTP()">Send OTP on Gmail + Mobile Number →</button>
-<p style="font-size:10px;opacity:.6;margin-top:8px;text-align:center">OTP aapke Gmail aur Mobile dono pe jayega - drpproperty1@gmail.com support</p>
-</div>
-
-<div id="st2" style="display:none">
-<h3>OTP Confirm - Gmail + Number</h3>
-<p style="font-size:11px">Mobile: <b id="showM"></b> | Gmail: <b id="showE"></b></p>
-<div style="background:#e8f5ff;padding:14px;border-radius:12px;text-align:center;margin:10px 0">
-<b id="demoOTP" style="font-size:30px;color:#1877f2;letter-spacing:4px"></b><br>
-<span style="font-size:10px">Demo OTP - Real me Gmail + Mobile pe jayega - drpproperty1@gmail.com</span>
-</div>
-<input id="otpIn" class="inp" placeholder="Enter 6 Digit OTP">
-<button class="b bK" style="width:100%;padding:12px" onclick="verifyOTP()">Verify OTP & Confirm ID →</button>
-</div>
-
-<div id="st3" style="display:none">
-<h3>✅ ID Verified - Welcome <span id="fName"></span></h3>
-<div style="background:#fff7e0;border:1px solid #FFD814;padding:12px;border-radius:12px;margin:10px 0;font-size:11px;font-weight:700;line-height:2.2">
-⚠️ Payment Method - Hidden Tha - Ab Auto Open Hua Hai - Sirf ID Ke Baad<br>
-🏦 UPI 1: 9784664741@ybl - Holder: Danish Khan<br>
-🏦 UPI 2: danishkhann99@ybl - Verified - Holder: Danish Khan<br>
-🏦 U
-<!-- LOGIN MODAL - GOOGLE + NORMAL - DONO -->
 <div id="loginModal" class="modal">
 <div class="modalBox">
 <h2>Drpcom.co.in - Create ID & Login</h2>
-<p style="font-size:11px;opacity:.7">Google se kholo ya Normal ID banao - Support: drpproperty1@gmail.com</p>
-
-<!-- GOOGLE LOGIN - NAYA ADDED - BINA DELETE KIYE -->
-<div style="text-align:center;margin:14px 0;padding:14px;background:#f8f9ff;border:1px solid #e0e0ff;border-radius:14px">
-  <div id="g_id_onload"
-       data-client_id="TERA_GOOGLE_CLIENT_ID_YAHAN_DAALO.apps.googleusercontent.com"
-       data-context="signup"
-       data-ux_mode="popup"
-       data-callback="handleGoogleLogin"
-       data-auto_prompt="false">
-  </div>
-  <div class="g_id_signin"
-       data-type="standard"
-       data-shape="rectangular"
-       data-theme="outline"
-       data-text="continue_with"
-       data-size="large"
-       data-logo_alignment="left">
-  </div>
-  <p style="font-size:10px;opacity:.6;margin-top:8px">🔵 Google se kholo - Gmail auto verify - Fast Login</p>
-  <div style="margin:12px 0;display:flex;align-items:center;gap:10px"><div style="flex:1;height:1px;background:#ddd"></div><span style="font-size:11px;opacity:.5">YA</span><div style="flex:1;height:1px;background:#ddd"></div></div>
-  <p style="font-size:11px;font-weight:700">Normal ID System - Neeche se banao</p>
+<p style="font-size:11px;opacity:.7">Support: drpproperty1@gmail.com</p>
+<div style="text-align:center;margin:16px 0;padding:16px;background:#f8f9ff;border:1px solid #e0e0ff;border-radius:14px">
+<div id="g_id_onload" data-client_id="YOUR_GOOGLE_CLIENT_ID.apps.googleusercontent.com" data-context="signup" data-ux_mode="popup" data-callback="handleGoogleLogin" data-auto_prompt="false"></div>
+<div class="g_id_signin" data-type="standard" data-shape="rectangular" data-theme="outline" data-text="continue_with" data-size="large" data-logo_alignment="left"></div>
+<p style="font-size:10px;opacity:.6;margin-top:8px">Google se kholo - Fast</p>
+<div style="margin:12px 0;display:flex;align-items:center;gap:10px"><div style="flex:1;height:1px;background:#ddd"></div><span style="font-size:11px;opacity:.5">YA</span><div style="flex:1;height:1px;background:#ddd"></div></div>
 </div>
-
-<!-- NORMAL ID SYSTEM - PURANA WALA - JAISA THA WAISA HI HAI - DELETE NAHI KIYA -->
 <div id="st1">
 <input id="cName" class="inp" placeholder="Full Name">
-<input id="cMobile" class="inp" placeholder="Mobile Number - 10 Digit">
-<input id="cEmail" class="inp" placeholder="Gmail ID - Eg: yourname@gmail.com">
-<input id="cPass" class="inp" type="password" placeholder="Password - 4 Digit Minimum">
-<button class="b bK" style="width:100%;padding:13px;margin-top:8px" onclick="sendOTP()">Send OTP on Gmail + Mobile Number →</button>
+<input id="cMobile" class="inp" placeholder="Mobile - 10 Digit">
+<input id="cEmail" class="inp" placeholder="Gmail ID">
+<input id="cPass" class="inp" type="password" placeholder="Password - 4 Digit">
+<button type="button" class="b bK" style="width:100%;padding:14px;margin-top:8px" onclick="sendOTP(); return false;">Send OTP on Gmail + Mobile →</button>
 </div>
-
 <div id="st2" style="display:none">
-<h3>OTP Confirm - Gmail + Number</h3>
+<h3>OTP Confirm</h3>
 <p style="font-size:11px">Mobile: <b id="showM"></b> | Gmail: <b id="showE"></b></p>
-<div style="background:#e8f5ff;padding:14px;border-radius:12px;text-align:center;margin:10px 0">
-<b id="demoOTP" style="font-size:30px;color:#1877f2;letter-spacing:4px"></b><br>
-<span style="font-size:10px">Demo OTP - drpproperty1@gmail.com</span>
-</div>
+<div style="background:#e8f5ff;padding:14px;border-radius:12px;text-align:center;margin:10px 0"><b id="demoOTP" style="font-size:30px;color:#1877f2;letter-spacing:4px"></b><br><span style="font-size:10px">Demo OTP - drpproperty1@gmail.com</span></div>
 <input id="otpIn" class="inp" placeholder="Enter 6 Digit OTP">
-<button class="b bK" style="width:100%;padding:12px" onclick="verifyOTP()">Verify OTP & Confirm ID →</button>
+<button type="button" class="b bK" style="width:100%;padding:12px" onclick="verifyOTP(); return false;">Verify OTP & Confirm ID →</button>
 </div>
-
 <div id="st3" style="display:none">
 <h3>✅ ID Verified - Welcome <span id="fName"></span></h3>
 <div style="background:#fff7e0;border:1px solid #FFD814;padding:12px;border-radius:12px;margin:10px 0;font-size:11px;font-weight:700;line-height:2.2">
 🏦 UPI 1: 9784664741@ybl - Danish Khan<br>
 🏦 UPI 2: danishkhann99@ybl - Verified<br>
-🏦 UPI 3: 9521289940@ybl<br>
-📧 Support: drpproperty1@gmail.com<br>
-⚖️ Legal team with us for any Dispute and solution - Lineslegal.com
+🏦 UPI 3: 9521289940@ybl - Danish Khan<br>
+📧 drpproperty1@gmail.com<br>
+⚖️ Lineslegal.com
 </div>
 <a id="pay1" class="b bK" style="display:block;text-align:center;padding:12px;margin-top:8px">Pay ₹199 - 9784664741@ybl</a>
 <a id="pay2" class="b bY" style="display:block;text-align:center;padding:12px;margin-top:8px">Pay ₹599 - danishkhann99@ybl</a>
 <a href="https://wa.me/919521289940?text=Payment%20Done%20Drpcom.co.in" class="b bG" style="display:block;text-align:center;padding:12px;margin-top:8px">WhatsApp Screenshot - 95212 89940</a>
 </div>
-
-<button class="b bL" style="width:100%;margin-top:14px;padding:12px" onclick="closeLogin()">Close</button>
+<button type="button" class="b bL" style="width:100%;margin-top:14px;padding:12px" onclick="closeLogin(); return false;">Close</button>
 </div>
 </div>
 
-<!-- GOOGLE SCRIPT - EXTRA ADDED -->
+<div id="aboutModal" class="modal"><div class="modalBox"><h3>About Us</h3><p style="font-size:12px;line-height:2;margin-top:10px">Drpcom.co.in - India's Most Trusted - Gmail: drpproperty1@gmail.com | 97846 64741 | Lineslegal.com</p><button type="button" class="b bL" style="width:100%;margin-top:12px" onclick="closeAbout(); return false;">Close</button></div></div>
+<div id="settingModal" class="modal"><div class="modalBox"><h3>Settings</h3><p style="font-size:12px;line-height:2.5;margin-top:10px">Privacy - ID Verification | Theme - Mast | Gmail: drpproperty1@gmail.com</p><button type="button" class="b bL" style="width:100%;margin-top:12px" onclick="closeSetting(); return false;">Close</button></div></div>
+
+<div class="foot"><b>© Drpcom.co.in - India's Most Trusted</b><br>Official: Drpcom.co.in | Drpcom.info | Legal: Lineslegal.com | Gmail: drpproperty1@gmail.com<br>Platform: 97846 64741 | WhatsApp: 95212 89940 | UPI: 9784664741@ybl / danishkhann99@ybl / 9521289940@ybl - Danish Khan<br>Search | Top 10 Rajya | ID Normal + Google | Payment Hidden Auto | Location + Post Full | Insta X FB YT TikTok Meta Google AI | Login About Setting - No Spelling Mistake</div>
+
 <script src="https://accounts.google.com/gsi/client" async defer></script>
 <script>
-function handleGoogleLogin(response) {
-  const data = JSON.parse(atob(response.credential.split('.')[1]));
-  genOTP = "GOOGLE_VERIFIED";
-  document.getElementById('st1').style.display='none';
+let genOTP="",isLogged=false,userName="";
+function openLogin(e){
+  if(e){ e.preventDefault(); e.stopPropagation(); }
+  let modal = document.getElementById('loginModal');
+  modal.style.display='block';
+  document.getElementById('st1').style.display='block';
   document.getElementById('st2').style.display='none';
-  userName = data.name;
-  isLogged = true;
-  localStorage.setItem('drp_user',userName);
-  document.getElementById('fName').innerText = userName + " (Google - " + data.email + ")";
-  document.getElementById('pay1').href="upi://pay?pa=9784664741@ybl&pn=Danish%20Khan&am=199&cu=INR";
-  document.getElementById('pay2').href="upi://pay?pa=danishkhann99@ybl&pn=Danish%20Khan&am=599&cu=INR";
-  document.getElementById('st3').style.display='block';
+  document.getElementById('st3').style.display='none';
+  return false;
 }
-    </script>
+function closeLogin(){document.getElementById('loginModal').style.display='none';return false;}
+function openAbout(){document.getElementById('aboutModal').style.display='block';return false;}
+function closeAbout(){document.getElementById('aboutModal').style.display='none';return false;}
+function openSetting(){document.getElementById('settingModal').style.display='block';return false;}
+function closeSetting(){document.getElementById('settingModal').style.display='none';return false;}
+function filterSearch(){let q=document.getElementById('search').value.toLowerCase();document.querySelectorAll('.pcard').forEach(c=>{let t=(c.getAttribute('data-state')+' '+c.innerText).toLowerCase();c.style.display=t.includes(q)||q==''?'block':'none';});}
+function chipF(key,el){document.querySelectorAll('.chip').forEach(x=>x.classList.remove('active'));el.classList.add('active');if(key=='all'){document.querySelectorAll('.pcard').forEach(c=>c.style.display='block');return}document.querySelectorAll('.pcard').forEach(c=>{c.style.display=c.getAttribute('data-state').includes(key)?'block':'none';});}
+function sendOTP(){let n=document.getElementById('cName').value.trim(),m=document.getElementById('cMobile').value.trim(),e=document.getElementById('cEmail').value.trim(),p=document.getElementById('cPass').value.trim();if(n.length<3){alert('Full Name sahi likho');return}if(m.length!=10||isNaN(m)){alert('Mobile 10 Digit sahi likho');return}if(!e.includes('@')){alert('Gmail sahi likho');return}if(p.length<4){alert('Password 4 digit');return}genOTP=Math.floor(100000+Math.random()*900000).toString();document.getElementById('showM').innerText=m;document.getElementById('showE').innerText=e;document.getElementById('demoOTP').innerText=genOTP;document.getElementById('st1').style.display='none';document.getElementById('st2').style.display='block';}
+function verifyOTP(){let o=document.getElementById('otpIn').value.trim();if(o!=genOTP){alert('Wrong OTP - Sahi OTP: '+genOTP);return}userName=document.getElementById('cName').value.trim();isLogged=true;document.getElementById('fName').innerText=userName;document.getElementById('pay1').href="upi://pay?pa=9784664741@ybl&pn=Danish%20Khan&am=199&cu=INR";document.getElementById('pay2').href="upi://pay?pa=danishkhann99@ybl&pn=Danish%20Khan&am=599&cu=INR";document.getElementById('st2').style.display='none';document.getElementById('st3').style.display='block';}
+function handleGoogleLogin(response){const data=JSON.parse(atob(response.credential.split('.')[1]));userName=data.name;isLogged=true;document.getElementById('fName').innerText=userName+" (Google - "+data.email+")";document.getElementById('pay1').href="upi://pay?pa=9784664741@ybl&pn=Danish%20Khan&am=199&cu=INR";document.getElementById('pay2').href="upi://pay?pa=danishkhann99@ybl&pn=Danish%20Khan&am=599&cu=INR";document.getElementById('st1').style.display='none';document.getElementById('st2').style.display='none';document.getElementById('st3').style.display='block';}
+function doPost(){if(!isLogged){alert('Pehle ID banao - Login karo');openLogin();return false}let t=document.getElementById('pTitle').value.trim()||"User Posted Original Plot";let loc=document.getElementById('pLoc').value.trim()||"Gangapur City, Rajasthan";let price=document.getElementById('pPrice').value.trim()||"Contact";let img=document.getElementById('pImg').value.trim()||"https://images.unsplash.com/photo-1564013799919-ab600027ffc6";let desc=document.getElementById('pDesc').value.trim()||"Original Photo";let grid=document.getElementById('grid');let div=document.createElement('div');div.className='pcard';div.setAttribute('data-state',loc.toLowerCase());div.innerHTML=`<img src="${img}"><div class="pbody"><span class="tag">USER POSTED ORIGINAL - LIVE - ${loc}</span><b style="display:block;margin:6px 0">${t}</b><div class="price">₹${price}</div><div class="loc">📍 ${loc} | 👤 ${userName} | ${desc}</div><div class="actions"><span class="b bL">Like</span><span class="b bL">Comment</span><span class="b bL">Share</span></div><div class="actions"><span class="b bB" onclick="openLogin(event); return false;">Buy Now</span><span class="b bY">Cart</span></div></div>`;grid.prepend(div);document.getElementById('pTitle').value='';document.getElementById('pLoc').value='';document.getElementById('pPrice').value='';document.getElementById('pImg').value='';document.getElementById('pDesc').value='';alert('Post Success - '+loc);return false;}
+</script>
+</body>
+</html>
