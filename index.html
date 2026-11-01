@@ -1,57 +1,83 @@
 <!DOCTYPE html>
-<html lang="hi">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>DRP Properties - Advocate Verified Property in Pali</title>
+<title>D R P - Pure India Verified Property</title>
 <style>
-body{margin:0;font-family:Arial,sans-serif;background:#fff;color:#333}
-header{background:#0d6efd;color:white;padding:15px;text-align:center}
-header a{color:white;text-decoration:none;font-weight:bold}
-.hero{background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('https://images.unsplash.com/photo-1560518883-ce09059eeffa');background-size:cover;color:white;padding:60px 15px;text-align:center}
-.btn{background:#ffc107;color:black;padding:12px 25px;border-radius:6px;text-decoration:none;font-weight:bold;display:inline-block;margin-top:15px}
-.trust{background:#f0f7ff;border:2px solid #0d6efd;border-radius:12px;margin:20px 10px;padding:20px;text-align:center}
-.box{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin-top:15px}
-.card{background:white;padding:12px;border-radius:8px;flex:1;min-width:140px;box-shadow:0 2px 5px #ccc;font-size:14px}
-footer{background:#222;color:white;text-align:center;padding:20px;margin-top:20px}
-footer a{color:#ffc107}
+*{margin:0;padding:0;box-sizing:border-box;font-family:system-ui,Arial}
+body{background:#fff;color:#123}
+header{display:flex;justify-content:space-between;align-items:center;padding:14px 6%;background:#fff;box-shadow:0 2px 12px rgba(0,0,0,.08);position:sticky;top:0;z-index:99}
+.logo{font-weight:900;font-size:26px;color:#0a3d7a;display:flex;align-items:center;gap:8px}
+.logo b{background:#0f61b3;color:#fff;padding:2px 10px;border-radius:8px}
+nav a{margin-left:16px;text-decoration:none;color:#444;font-weight:600}
+.login{background:#0f61b3;color:#fff!important;padding:9px 20px;border-radius:8px}
+.hero{display:flex;flex-wrap:wrap;align-items:center;padding:60px 6%;background:linear-gradient(135deg,#eaf2ff 0%,#ffffff 60%);gap:30px}
+.hero-left{flex:1 1 420px}
+.hero-left h1{font-size:44px;line-height:1.1;color:#0a3d7a}
+.hero-left p{margin:16px 0 22px;color:#5a6d8a;line-height:1.6}
+.btns{display:flex;gap:12px;flex-wrap:wrap}
+.btn1{background:#0f61b3;color:#fff;padding:13px 26px;border-radius:8px;text-decoration:none;font-weight:800}
+.btn2{border:2px solid #0f61b3;color:#0f61b3;padding:11px 24px;border-radius:8px;text-decoration:none;font-weight:800;background:#fff}
+.cover{flex:1 1 380px;height:360px;background:linear-gradient(135deg,#0f61b3,#3fa0ff);border-radius:20px;display:grid;place-items:center;color:#fff;font-size:90px;box-shadow:0 20px 40px rgba(15,97,179,.3);position:relative;overflow:hidden}
+.cover::after{content:"INDIA MAP + HOMES + VERIFIED";position:absolute;bottom:14px;font-size:11px;letter-spacing:2px;opacity:.8}
+.pricing{padding:60px 6%;background:#f6f8fc;text-align:center}
+.pricing h2{font-size:34px;color:#0a3d7a}
+.cards{display:flex;gap:22px;justify-content:center;flex-wrap:wrap;margin-top:28px}
+.card{background:#fff;border:2px solid #dde6f0;border-radius:18px;padding:26px;max-width:360px;text-align:left;flex:1 1 300px}
+.card.best{border-color:#0f61b3;box-shadow:0 12px 30px rgba(15,97,179,.18);transform:scale(1.02)}
+.price{font-size:38px;font-weight:900;color:#0a3d7a}
+.card ul{list-style:none;margin:14px 0}
+.card li{margin:7px 0;font-size:14px}
+.card li::before{content:"✔ ";color:#0f61b3;font-weight:700}
+.buy{display:block;text-align:center;margin-top:12px;padding:12px;border-radius:10px;text-decoration:none;font-weight:900;border:2px solid #0f61b3;color:#0f61b3}
+.best .buy{background:#0f61b3;color:#fff}
+.feat{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:26px;padding:50px 6%;text-align:center}
+.ic{width:56px;height:56px;background:#0f61b3;color:#fff;border-radius:50%;display:grid;place-items:center;margin:0 auto 10px;font-size:24px}
+footer{background:#0a3d7a;color:#b9c9e2;padding:36px 6%;display:flex;flex-wrap:wrap;gap:30px}
+footer a{color:#b9c9e2;text-decoration:none;font-size:14px;display:block;margin:4px 0}
 </style>
 </head>
 <body>
-
-<header>
-  <h1 style="margin:0;">DRP Properties Pali</h1>
-  <p style="margin:5px 0;">Legal Partner: <a href="https://lineslegal.com" target="_blank">LinesLegal.com</a></p>
-</header>
-
-<div class="hero">
-  <h2>Pali Me 100% Verified Jameen / Plot</h2>
-  <p>Har Property Advocate + Tehsil Record Se Checked</p>
-  <a class="btn" href="https://wa.me/919784664741">WhatsApp Par Sampark Kare</a>
+<header><div class="logo"><b>⌖</b> D R P</div><nav><a href="#">About</a><a href="#">Services</a><a href="#" class="login">Login</a></nav></header>
+<section class="hero">
+<div class="hero-left">
+<h1>Pure India Verified Property Platform</h1>
+<p>Discover, list, and verify properties across India with trusted listings, secure transactions, and government-compliant verification.</p>
+<div class="btns"><a class="btn1" href="#price">Get Started →</a><a class="btn2" href="#">Explore Properties</a></div>
+<div style="margin-top:18px;font-size:13px;font-weight:700;display:flex;gap:14px;flex-wrap:wrap"><span>✔ 10k+ Verified</span><span>🛡 RERA Compliant</span><span>★ 500+ Builders</span></div>
 </div>
+<div class="cover">🗺️🏘️</div>
+</section>
 
-<div class="trust">
-  <h2 style="color:#0d6efd;margin:0 0 10px 0;">✅ Har Property Legal Verified Hai</h2>
-  <p>DRP ki har property <b>LinesLegal.com</b> dwara verify hoti hai</p>
-  <div class="box">
-    <div class="card">👨‍⚖️<br><b>Advocate Partner</b><br>LinesLegal.com<br><a href="https://lineslegal.com" target="_blank">Visit Site</a></div>
-    <div class="card">📜<br><b>7 Documents</b><br>Jamabandi, Khasra, Registry, Naksha, Mutation</div>
-    <div class="card">🏛️<br><b>Tehsil Verified</b><br>Tehsil / Revenue Record se Milaan</div>
-  </div>
-  <a href="https://lineslegal.com" target="_blank" style="display:inline-block;margin-top:15px;background:#0d6efd;color:white;padding:10px 20px;border-radius:6px;text-decoration:none;font-weight:bold;">Legal Verification Dekhe</a>
+<section id="price" class="pricing">
+<h2>Simple, Transparent Pricing</h2>
+<div class="cards">
+<div class="card">
+<div style="font-size:12px;font-weight:800;color:#7a8aa5">NORMAL ID</div>
+<div class="price">199 Rs <span style="font-size:14px;font-weight:400">/month</span></div>
+<p style="font-size:13px;color:#5a6d8a">for individuals who want to list own land and buyers</p>
+<ul><li>List your land or property</li><li>Browse verified buyer enquiries</li><li>Basic chat & email support</li><li>Access to standard listings</li></ul>
+<a class="buy" href="#">Get Normal ID</a>
 </div>
-
-<div style="padding:20px;text-align:center;">
-  <h2>Available Properties</h2>
-  <p>Call kare: +91 9784664741</p>
-  <p>Apni property yaha add kare, ye demo section hai</p>
+<div class="card best">
+<div style="font-size:12px;font-weight:900;color:#0f61b3">✔ VERIFICATION ID • Most Popular</div>
+<div class="price">599 Rs <span style="font-size:14px;font-weight:400">/month</span></div>
+<p style="font-size:13px;color:#5a6d8a">for big companies builders with <b style="color:#0f61b3">blue tick</b> verified badge</p>
+<ul><li>Blue tick verified badge</li><li>Priority visibility & promotions</li><li>Dedicated manager & 24/7 support</li><li>Bulk listings & analytics</li><li>Legal & documentation help</li></ul>
+<a class="buy" href="#">Get Verified ID</a>
 </div>
+</div>
+</section>
 
-<footer>
-  <p>© DRP Properties Pali</p>
-  <p>Legal Partner: <a href="https://lineslegal.com">LinesLegal.com</a> - Full Service Law Firm</p>
-  <p>Tehsil Record Verified Properties</p>
-</footer>
+<section class="feat">
+<div><div class="ic">✔</div><h3>Verified Listings</h3><p style="font-size:13px;color:#5a6d8a">Ownership & legal clearance verified</p></div>
+<div><div class="ic">🛡</div><h3>Secure Transactions</h3><p style="font-size:13px;color:#5a6d8a">Safe payments & document handling</p></div>
+<div><div class="ic">📍</div><h3>Pan-India Coverage</h3><p style="font-size:13px;color:#5a6d8a">All states and cities</p></div>
+<div><div class="ic">🎧</div><h3>24/7 Support</h3><p style="font-size:13px;color:#5a6d8a">Dedicated support every step</p></div>
+</section>
 
+<footer><div><b style="color:#fff">D R P</b> Property Platform<br><small>Making property discovery safe & trusted.</small></div><div><b style="color:#fff">Company</b><a>About</a><a>Careers</a><a>Press</a></div><div><b style="color:#fff">Contact</b><a>support@drpcom.info</a><a>+91 92848 36899</a></div></footer>
+<div style="text-align:center;padding:10px;background:#eaf2ff;font-size:11px">© 2026 D R P | Privacy | Terms</div>
 </body>
 </html>
