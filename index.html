@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,7 +9,7 @@
 *{margin:0;padding:0;box-sizing:border-box;font-family:system-ui,Arial}
 body{background:#fff;color:#123}
 header{display:flex;justify-content:space-between;align-items:center;padding:14px 6%;background:#fff;box-shadow:0 2px 12px rgba(0,0,0,.08);position:sticky;top:0;z-index:99}
-.logo{font-weight:900;font-size:26px;color:#0a3d7a;display:flex;align-items:center;gap:8px}
+.logo{font-weight:900;font-size:26px;color:#0a3d7a}
 .logo b{background:#0f61b3;color:#fff;padding:2px 10px;border-radius:8px}
 nav a{margin-left:16px;text-decoration:none;color:#444;font-weight:600}
 .login{background:#0f61b3;color:#fff!important;padding:9px 20px;border-radius:8px}
@@ -19,8 +20,12 @@ nav a{margin-left:16px;text-decoration:none;color:#444;font-weight:600}
 .btns{display:flex;gap:12px;flex-wrap:wrap}
 .btn1{background:#0f61b3;color:#fff;padding:13px 26px;border-radius:8px;text-decoration:none;font-weight:800}
 .btn2{border:2px solid #0f61b3;color:#0f61b3;padding:11px 24px;border-radius:8px;text-decoration:none;font-weight:800;background:#fff}
-.cover{flex:1 1 380px;height:360px;background:linear-gradient(135deg,#0f61b3,#3fa0ff);border-radius:20px;display:grid;place-items:center;color:#fff;font-size:90px;box-shadow:0 20px 40px rgba(15,97,179,.3);position:relative;overflow:hidden}
-.cover::after{content:"INDIA MAP + HOMES + VERIFIED";position:absolute;bottom:14px;font-size:11px;letter-spacing:2px;opacity:.8}
+.cover{flex:1 1 380px;height:360px;background:linear-gradient(135deg,#0f61b3,#3fa0ff);border-radius:20px;display:grid;place-items:center;color:#fff;font-size:70px;box-shadow:0 20px 40px rgba(15,97,179,.3)}
+.contact-bar{display:flex;gap:14px;flex-wrap:wrap;padding:18px 6%;background:#fff;border-top:1px solid #e8eef7;border-bottom:1px solid #e8eef7}
+.cbox{flex:1 1 200px;border:1px solid #dde6f0;border-radius:14px;padding:14px;display:flex;gap:12px;align-items:center}
+.cbox b{display:block;color:#0a3d7a;font-size:14px}
+.cbox span{font-size:13px;color:#5a6d8a}
+.cbox a{font-weight:900;color:#0f61b3;text-decoration:none;font-size:15px}
 .pricing{padding:60px 6%;background:#f6f8fc;text-align:center}
 .pricing h2{font-size:34px;color:#0a3d7a}
 .cards{display:flex;gap:22px;justify-content:center;flex-wrap:wrap;margin-top:28px}
@@ -32,23 +37,30 @@ nav a{margin-left:16px;text-decoration:none;color:#444;font-weight:600}
 .card li::before{content:"✔ ";color:#0f61b3;font-weight:700}
 .buy{display:block;text-align:center;margin-top:12px;padding:12px;border-radius:10px;text-decoration:none;font-weight:900;border:2px solid #0f61b3;color:#0f61b3}
 .best .buy{background:#0f61b3;color:#fff}
-.feat{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:26px;padding:50px 6%;text-align:center}
-.ic{width:56px;height:56px;background:#0f61b3;color:#fff;border-radius:50%;display:grid;place-items:center;margin:0 auto 10px;font-size:24px}
 footer{background:#0a3d7a;color:#b9c9e2;padding:36px 6%;display:flex;flex-wrap:wrap;gap:30px}
 footer a{color:#b9c9e2;text-decoration:none;font-size:14px;display:block;margin:4px 0}
+.float-wp{position:fixed;bottom:20px;right:20px;background:#25D366;color:#fff;width:60px;height:60px;border-radius:50%;display:grid;place-items:center;font-size:28px;text-decoration:none;box-shadow:0 6px 18px rgba(0,0,0,.35);z-index:9999}
+.float-call{position:fixed;bottom:90px;right:20px;background:#0f61b3;color:#fff;padding:10px 14px;border-radius:30px;text-decoration:none;font-weight:800;font-size:12px;box-shadow:0 6px 18px rgba(0,0,0,.35);z-index:9999}
 </style>
 </head>
 <body>
 <header><div class="logo"><b>⌖</b> D R P</div><nav><a href="#">About</a><a href="#">Services</a><a href="#" class="login">Login</a></nav></header>
+
 <section class="hero">
 <div class="hero-left">
 <h1>Pure India Verified Property Platform</h1>
 <p>Discover, list, and verify properties across India with trusted listings, secure transactions, and government-compliant verification.</p>
 <div class="btns"><a class="btn1" href="#price">Get Started →</a><a class="btn2" href="#">Explore Properties</a></div>
-<div style="margin-top:18px;font-size:13px;font-weight:700;display:flex;gap:14px;flex-wrap:wrap"><span>✔ 10k+ Verified</span><span>🛡 RERA Compliant</span><span>★ 500+ Builders</span></div>
 </div>
 <div class="cover">🗺️🏘️</div>
 </section>
+
+<!-- YAHI HAI NAYA CLEAR CONTACT SECTION -->
+<div class="contact-bar">
+<div class="cbox">📞<div><b>Platform Support</b><span>Listing & Help</span><br><a href="tel:+919784664741">97846 64741</a></div></div>
+<div class="cbox" style="border-color:#25D366">💬<div><b>WhatsApp Sale</b><span>Instant Chat - ID Buy</span><br><a href="https://wa.me/919521289940" style="color:#25D366">95212 89940</a></div></div>
+<div class="cbox" style="border-color:#0a3d7a">⚖️<div><b>Advocate Team</b><span>Legal Verification</span><br><a href="tel:+919284836899">92848 36899</a></div></div>
+</div>
 
 <section id="price" class="pricing">
 <h2>Simple, Transparent Pricing</h2>
@@ -56,28 +68,21 @@ footer a{color:#b9c9e2;text-decoration:none;font-size:14px;display:block;margin:
 <div class="card">
 <div style="font-size:12px;font-weight:800;color:#7a8aa5">NORMAL ID</div>
 <div class="price">199 Rs <span style="font-size:14px;font-weight:400">/month</span></div>
-<p style="font-size:13px;color:#5a6d8a">for individuals who want to list own land and buyers</p>
-<ul><li>List your land or property</li><li>Browse verified buyer enquiries</li><li>Basic chat & email support</li><li>Access to standard listings</li></ul>
-<a class="buy" href="#">Get Normal ID</a>
+<ul><li>List your land or property</li><li>Browse verified buyer enquiries</li><li>Basic chat & email support</li></ul>
+<a class="buy" href="https://wa.me/919521289940?text=Hi%20Normal%20ID%20199%20Rs%20chahiye">Get Normal ID - 95212 89940</a>
 </div>
 <div class="card best">
-<div style="font-size:12px;font-weight:900;color:#0f61b3">✔ VERIFICATION ID • Most Popular</div>
+<div style="font-size:12px;font-weight:900;color:#0f61b3">✔ VERIFICATION ID</div>
 <div class="price">599 Rs <span style="font-size:14px;font-weight:400">/month</span></div>
-<p style="font-size:13px;color:#5a6d8a">for big companies builders with <b style="color:#0f61b3">blue tick</b> verified badge</p>
-<ul><li>Blue tick verified badge</li><li>Priority visibility & promotions</li><li>Dedicated manager & 24/7 support</li><li>Bulk listings & analytics</li><li>Legal & documentation help</li></ul>
-<a class="buy" href="#">Get Verified ID</a>
+<ul><li>Blue tick verified badge</li><li>Priority visibility & promotions</li><li>Advocate Team Support - 92848 36899</li></ul>
+<a class="buy" href="https://wa.me/919521289940?text=Hi%20Blue%20Tick%20ID%20599%20Rs%20chahiye">Get Verified ID</a>
 </div>
 </div>
 </section>
 
-<section class="feat">
-<div><div class="ic">✔</div><h3>Verified Listings</h3><p style="font-size:13px;color:#5a6d8a">Ownership & legal clearance verified</p></div>
-<div><div class="ic">🛡</div><h3>Secure Transactions</h3><p style="font-size:13px;color:#5a6d8a">Safe payments & document handling</p></div>
-<div><div class="ic">📍</div><h3>Pan-India Coverage</h3><p style="font-size:13px;color:#5a6d8a">All states and cities</p></div>
-<div><div class="ic">🎧</div><h3>24/7 Support</h3><p style="font-size:13px;color:#5a6d8a">Dedicated support every step</p></div>
-</section>
+<footer><div><b style="color:#fff">D R P Property</b><br><small>Making property discovery safe.</small></div><div><b style="color:#fff">Contact</b><a>📞 Platform Support: 97846 64741</a><a>💬 WhatsApp Sale: 95212 89940</a><a>⚖️ Advocate Team: 92848 36899</a></div></footer>
 
-<footer><div><b style="color:#fff">D R P</b> Property Platform<br><small>Making property discovery safe & trusted.</small></div><div><b style="color:#fff">Company</b><a>About</a><a>Careers</a><a>Press</a></div><div><b style="color:#fff">Contact</b><a>support@drpcom.info</a><a>+91 92848 36899</a></div></footer>
-<div style="text-align:center;padding:10px;background:#eaf2ff;font-size:11px">© 2026 D R P | Privacy | Terms</div>
+<a class="float-call" href="tel:+919784664741">📞 Platform: 97846 64741</a>
+<a class="float-wp" href="https://wa.me/919521289940?text=Hi%20DRP%20Sale%20Team" target="_blank">💬</a>
 </body>
 </html>
