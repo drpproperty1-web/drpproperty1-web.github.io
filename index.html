@@ -193,3 +193,86 @@ body{background:#eef1f4}
 🏦 UPI 1: 9784664741@ybl - Holder: Danish Khan<br>
 🏦 UPI 2: danishkhann99@ybl - Verified - Holder: Danish Khan<br>
 🏦 U
+<!-- LOGIN MODAL - GOOGLE + NORMAL - DONO -->
+<div id="loginModal" class="modal">
+<div class="modalBox">
+<h2>Drpcom.co.in - Create ID & Login</h2>
+<p style="font-size:11px;opacity:.7">Google se kholo ya Normal ID banao - Support: drpproperty1@gmail.com</p>
+
+<!-- GOOGLE LOGIN - NAYA ADDED - BINA DELETE KIYE -->
+<div style="text-align:center;margin:14px 0;padding:14px;background:#f8f9ff;border:1px solid #e0e0ff;border-radius:14px">
+  <div id="g_id_onload"
+       data-client_id="TERA_GOOGLE_CLIENT_ID_YAHAN_DAALO.apps.googleusercontent.com"
+       data-context="signup"
+       data-ux_mode="popup"
+       data-callback="handleGoogleLogin"
+       data-auto_prompt="false">
+  </div>
+  <div class="g_id_signin"
+       data-type="standard"
+       data-shape="rectangular"
+       data-theme="outline"
+       data-text="continue_with"
+       data-size="large"
+       data-logo_alignment="left">
+  </div>
+  <p style="font-size:10px;opacity:.6;margin-top:8px">🔵 Google se kholo - Gmail auto verify - Fast Login</p>
+  <div style="margin:12px 0;display:flex;align-items:center;gap:10px"><div style="flex:1;height:1px;background:#ddd"></div><span style="font-size:11px;opacity:.5">YA</span><div style="flex:1;height:1px;background:#ddd"></div></div>
+  <p style="font-size:11px;font-weight:700">Normal ID System - Neeche se banao</p>
+</div>
+
+<!-- NORMAL ID SYSTEM - PURANA WALA - JAISA THA WAISA HI HAI - DELETE NAHI KIYA -->
+<div id="st1">
+<input id="cName" class="inp" placeholder="Full Name">
+<input id="cMobile" class="inp" placeholder="Mobile Number - 10 Digit">
+<input id="cEmail" class="inp" placeholder="Gmail ID - Eg: yourname@gmail.com">
+<input id="cPass" class="inp" type="password" placeholder="Password - 4 Digit Minimum">
+<button class="b bK" style="width:100%;padding:13px;margin-top:8px" onclick="sendOTP()">Send OTP on Gmail + Mobile Number →</button>
+</div>
+
+<div id="st2" style="display:none">
+<h3>OTP Confirm - Gmail + Number</h3>
+<p style="font-size:11px">Mobile: <b id="showM"></b> | Gmail: <b id="showE"></b></p>
+<div style="background:#e8f5ff;padding:14px;border-radius:12px;text-align:center;margin:10px 0">
+<b id="demoOTP" style="font-size:30px;color:#1877f2;letter-spacing:4px"></b><br>
+<span style="font-size:10px">Demo OTP - drpproperty1@gmail.com</span>
+</div>
+<input id="otpIn" class="inp" placeholder="Enter 6 Digit OTP">
+<button class="b bK" style="width:100%;padding:12px" onclick="verifyOTP()">Verify OTP & Confirm ID →</button>
+</div>
+
+<div id="st3" style="display:none">
+<h3>✅ ID Verified - Welcome <span id="fName"></span></h3>
+<div style="background:#fff7e0;border:1px solid #FFD814;padding:12px;border-radius:12px;margin:10px 0;font-size:11px;font-weight:700;line-height:2.2">
+🏦 UPI 1: 9784664741@ybl - Danish Khan<br>
+🏦 UPI 2: danishkhann99@ybl - Verified<br>
+🏦 UPI 3: 9521289940@ybl<br>
+📧 Support: drpproperty1@gmail.com<br>
+⚖️ Legal team with us for any Dispute and solution - Lineslegal.com
+</div>
+<a id="pay1" class="b bK" style="display:block;text-align:center;padding:12px;margin-top:8px">Pay ₹199 - 9784664741@ybl</a>
+<a id="pay2" class="b bY" style="display:block;text-align:center;padding:12px;margin-top:8px">Pay ₹599 - danishkhann99@ybl</a>
+<a href="https://wa.me/919521289940?text=Payment%20Done%20Drpcom.co.in" class="b bG" style="display:block;text-align:center;padding:12px;margin-top:8px">WhatsApp Screenshot - 95212 89940</a>
+</div>
+
+<button class="b bL" style="width:100%;margin-top:14px;padding:12px" onclick="closeLogin()">Close</button>
+</div>
+</div>
+
+<!-- GOOGLE SCRIPT - EXTRA ADDED -->
+<script src="https://accounts.google.com/gsi/client" async defer></script>
+<script>
+function handleGoogleLogin(response) {
+  const data = JSON.parse(atob(response.credential.split('.')[1]));
+  genOTP = "GOOGLE_VERIFIED";
+  document.getElementById('st1').style.display='none';
+  document.getElementById('st2').style.display='none';
+  userName = data.name;
+  isLogged = true;
+  localStorage.setItem('drp_user',userName);
+  document.getElementById('fName').innerText = userName + " (Google - " + data.email + ")";
+  document.getElementById('pay1').href="upi://pay?pa=9784664741@ybl&pn=Danish%20Khan&am=199&cu=INR";
+  document.getElementById('pay2').href="upi://pay?pa=danishkhann99@ybl&pn=Danish%20Khan&am=599&cu=INR";
+  document.getElementById('st3').style.display='block';
+}
+    </script>
