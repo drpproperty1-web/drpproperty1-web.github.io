@@ -1,186 +1,65 @@
-
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Drpcom.co.in - Most Trusted Property Platform</title>
+<title>Drpcom.co.in - India's Most Trusted Property Brand</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;800;900&display=swap" rel="stylesheet">
 <style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:Arial}
-body{background:#f0f2f5}
-.header{background:#fff;padding:10px 14px;display:flex;align-items:center;gap:10px;position:sticky;top:0;z-index:100;box-shadow:0 2px 8px rgba(0,0,0,.1)}
-.logo{font-weight:800;font-size:18px;color:#0a1931}
-.logo span{font-size:10px;background:#16a34a;color:#fff;padding:3px 8px;border-radius:5px;margin-left:5px}
-.searchBox{flex:1;display:flex;gap:6px;max-width:600px}
-.search{flex:1;background:#f0f2f5;border:none;padding:10px 14px;border-radius:20px;outline:none;font-size:13px}
-.searchBtn{background:#0a1931;color:#fff;border:none;padding:10px 16px;border-radius:20px;font-weight:bold;cursor:pointer}
-.nav a{font-size:12px;background:#f0f2f5;padding:7px 10px;border-radius:6px;text-decoration:none;color:#000;font-weight:bold;margin-left:4px;cursor:pointer}
-.nav a.green{background:#16a34a;color:#fff}
-.trust{background:#0a1931;color:#fff;text-align:center;padding:6px;font-size:11px}
-.filterBar{background:#fff;padding:10px 14px;display:flex;gap:8px;overflow-x:auto;border-bottom:1px solid #ddd}
-.filterBar select{padding:7px 10px;border-radius:20px;border:1px solid #ddd;font-size:12px;background:#f0f2f5;font-weight:600}
-.storyRow{background:#fff;padding:10px;display:flex;gap:12px;overflow-x:auto;border-bottom:1px solid #ddd}
-.story{text-align:center;min-width:60px}
-.story img{width:52px;height:52px;border-radius:50%;border:2px solid #0a1931;object-fit:cover}
-.story p{font-size:10px;margin-top:3px;font-weight:600}
-.main{display:flex;gap:14px;padding:14px;max-width:1350px;margin:auto}
-.left{width:220px}
-@media(max-width:900px){.left{display:none}}
-.card{background:#fff;padding:12px;border-radius:10px;margin-bottom:12px;box-shadow:0 1px 4px rgba(0,0,0,.08)}
-.center{flex:1;max-width:720px;margin:auto}
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:10px}
-.pcard{background:#fff;border-radius:10px;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,.07);border:1px solid #e4e6eb}
-.pcard img{width:100%;height:145px;object-fit:cover}
-.pbody{padding:9px}
-.price{color:#0a1931;font-weight:800;font-size:15px}
-.tag{font-size:9px;background:#0a1931;color:#fff;padding:2px 6px;border-radius:4px;font-weight:700}
-.tagG{background:#16a34a}
-.btn{display:block;background:#0a1931;color:#fff;text-align:center;padding:8px;border-radius:7px;text-decoration:none;font-size:11px;font-weight:700;margin-top:5px;cursor:pointer}
-.btnY{background:#FFD814;color:#000;border:1px solid #FCD200}
-.btns{display:flex;gap:5px;margin-top:5px}
-.btns a{flex:1}
-.right{width:280px}
-@media(max-width:1100px){.right{display:none}}
-.item{font-size:12px;background:#f0f2f5;padding:8px;border-radius:7px;margin:5px 0;font-weight:500;cursor:pointer}
-#payBox{display:none;background:#fff;margin:14px;padding:20px;border-radius:12px;border-top:5px solid #0a1931}
-.inp{width:100%;padding:11px;margin:6px 0;border:1px solid #ddd;border-radius:8px}
-.upi{display:block;padding:11px;margin-top:6px;border-radius:8px;text-align:center;text-decoration:none;font-weight:700;font-size:11px}
-.upiB{background:#0a1931;color:#fff}
-.upiL{background:#fff;color:#000;border:1px solid #ddd}
-#setBox{display:none;position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,.6);z-index:200;padding:20px}
-.footer{background:#0a1931;color:#cbd5e1;padding:18px;text-align:center;font-size:11px;line-height:1.7}
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',Arial}
+body{background:#000;color:#fff}
+.header{position:sticky;top:0;z-index:99;background:rgba(0,0,0,.9);backdrop-filter:blur(20px);border-bottom:1px solid #222;padding:10px 14px;display:flex;align-items:center;gap:12px}
+.logo{font-weight:900;font-size:24px;background:linear-gradient(90deg,#43e97b,#38f9d7);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.logo span{font-size:10px;background:#fff;color:#000;padding:3px 8px;border-radius:20px;-webkit-text-fill-color:#000;margin-left:6px}
+.search{flex:1;display:flex;max-width:700px;background:rgba(255,255,255,.1);border:1px solid #333;border-radius:28px;padding:4px 6px 4px 16px}
+.search input{flex:1;background:transparent;border:none;outline:none;color:#fff;font-size:14px}
+.search button{background:#fff;color:#000;border:none;padding:10px 20px;border-radius:20px;font-weight:900;cursor:pointer}
+.bar{background:linear-gradient(90deg,#667eea,#764ba2);text-align:center;padding:6px;font-size:11px;font-weight:700}
+.bar a{color:#FFD814;text-decoration:none}
+.chips{display:flex;gap:8px;padding:10px 14px;overflow-x:auto;background:#0a0a0a;border-bottom:1px solid #222}
+.chip{padding:8px 14px;background:rgba(255,255,255,.08);border:1px solid #333;border-radius:20px;font-size:12px;white-space:nowrap;cursor:pointer}
+.chip:hover{background:#fff;color:#000}
+.main{display:flex;gap:12px;max-width:1500px;margin:auto;padding:12px}
+.left{width:320px}
+@media(max-width:1100px){.left{width:100%}}
+.center{flex:1}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:12px;margin-top:12px}
+.card{background:rgba(255,255,255,.06);border:1px solid #222;border-radius:16px;padding:14px;margin-bottom:12px}
+.pcard{background:#111;border:1px solid #222;border-radius:16px;overflow:hidden}
+.pcard img{width:100%;height:200px;object-fit:cover}
+.pbody{padding:12px}
+.price{font-size:18px;font-weight:900}
+.social{display:flex;gap:6px;margin-top:8px}
+.social a{flex:1;padding:8px;text-align:center;border-radius:8px;color:#fff;text-decoration:none;font-weight:800;font-size:11px}
+.btn{width:100%;padding:12px;border-radius:10px;text-align:center;font-weight:900;font-size:12px;text-decoration:none;display:block;margin-top:8px;cursor:pointer;border:none}
+.btnW{background:#fff;color:#000}.btnY{background:#FFD814;color:#000}.btnG{background:#25D366;color:#fff}
+.modal{display:none;position:fixed;inset:0;background:rgba(0,0,0,.85);backdrop-filter:blur(20px);z-index:999;padding:20px;overflow:auto}
+.modalBox{background:#111;border:1px solid #333;max-width:500px;margin:30px auto;padding:20px;border-radius:20px}
+.inp{width:100%;padding:12px;margin:6px 0;border-radius:10px;border:1px solid #333;background:rgba(255,255,255,.08);color:#fff;outline:none}
+.footer{background:#080808;border-top:1px solid #222;padding:20px;text-align:center;font-size:11px;line-height:2;opacity:.8}
+.footer a{color:#FFD814;text-decoration:none;font-weight:800}
 </style>
 </head>
 <body>
 
 <div class="header">
-<div class="logo">Drpcom.co.in <span>Most Trusted</span></div>
-<div class="searchBox">
-<input class="search" id="googleSearch" placeholder="Search Plot, Gangapur, Jaipur...">
-<button class="searchBtn" onclick="doSearch()">Search</button>
-</div>
-<div class="nav">
-<a href="#about">About</a>
-<a onclick="showPay()">Login</a>
-<a onclick="showPay()">Create ID</a>
-<a onclick="openSet()">Setting</a>
-<a class="green" onclick="showPay()">+ Sell</a>
-</div>
+<div class="logo">Drpcom.co.in <span>NO.1</span></div>
+<div class="search"><input id="sInput" placeholder="Search Plot, Gangapur, Jaipur..."><button onclick="filterAll()">Search</button></div>
+<div style="display:flex;gap:8px"><div onclick="openLogin()" style="cursor:pointer">👤</div><div onclick="openAbout()" style="cursor:pointer">ℹ️</div><div onclick="openSet()" style="cursor:pointer">⚙️</div></div>
 </div>
 
-<div class="trust">🔒 Drpcom.co.in - Most Trusted & Powerful Platform - Legal team with us for any Dispute and solution</div>
+<div class="bar">Legal team with us for any Dispute and solution - <a href="https://lineslegal.com" target="_blank">Lineslegal.com</a> | Platform: 9784664741 | Insta FB X YT Google se Powerful</div>
 
-<div class="filterBar">
-<select id="district" onchange="filterAll()"><option value="">Zila (District) - All</option><option value="sawai madhopur">Sawai Madhopur</option><option value="jaipur">Jaipur</option><option value="delhi">Delhi</option></select>
-<select id="tehsil" onchange="filterAll()"><option value="">Tehsil - All</option><option value="gangapur city">Gangapur City</option><option value="bamanwas">Bamanwas</option></select>
-<select id="city" onchange="filterAll()"><option value="">City - All</option><option value="gangapur city">Gangapur City</option><option value="jaipur">Jaipur</option></select>
-</div>
-
-<div class="storyRow">
-<div class="story" onclick="setSearch('Rajasthan')"><img src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6"><p>Rajasthan</p></div>
-<div class="story" onclick="setSearch('Delhi')"><img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c"><p>Delhi</p></div>
-<div class="story" onclick="setSearch('Pune')"><img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9"><p>Pune</p></div>
-<div class="story" onclick="setSearch('Mumbai')"><img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750"><p>Mumbai</p></div>
+<div class="chips">
+<div class="chip" onclick="setS('All')">All</div>
+<div class="chip" onclick="setS('Gangapur City')">Gangapur City</div>
+<div class="chip" onclick="setS('Sawai Madhopur')">Sawai Madhopur</div>
+<div class="chip" onclick="setS('Jaipur')">Jaipur</div>
+<div class="chip" onclick="setS('Plot')">Plot</div>
 </div>
 
 <div class="main">
 <div class="left">
-<div class="card">
-<h4>Drpcom.co.in Menu</h4>
-<div class="item" onclick="showPay()">🆔 Create ID</div>
-<div class="item" onclick="showPay()">🔐 Login</div>
-<div class="item" onclick="document.getElementById('about').scrollIntoView({behavior:'smooth'})">📖 About</div>
-<div class="item" onclick="openSet()">⚙️ Setting</div>
-</div>
-</div>
 
-<div class="center">
-<div class="grid" id="productGrid">
-<div class="pcard" data-search="rajasthan sawai madhopur gangapur city plot"><img src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6"><div class="pbody"><span class="tag">Rajasthan</span> <span class="tag tagG">Customer ID</span><h4 style="font-size:12px;margin:4px 0">Gangapur City Plot - Drpcom.co.in</h4><div class="price">₹8,50,000</div><div class="btns"><a class="btn" onclick="showPay()">Buy Now</a><a class="btn btnY" onclick="showPay()">Cart</a></div><a class="btn" style="background:#25D366" href="https://wa.me/919521289940">WP - WhatsApp</a></div></div>
-<div class="pcard" data-search="rajasthan jaipur plot"><img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9"><div class="pbody"><span class="tag">Rajasthan</span> <span class="tag tagG">Trusted</span><h4 style="font-size:12px;margin:4px 0">Jaipur Plot - Drpcom.co.in</h4><div class="price">₹22,00,000</div><a class="btn" style="background:#25D366" href="https://wa.me/919521289940">WP WhatsApp</a></div></div>
-</div>
-
-<div class="card" id="about" style="margin-top:14px">
-<h3>About - Drpcom.co.in</h3>
-<p style="font-size:12px;margin-top:8px;line-height:1.6"><b>Drpcom.co.in</b> is Most Trusted Property Platform. <b>Legal team with us for any Dispute and solution.</b> We provide property buying selling platform with legal team support for dispute solution.</p>
-</div>
-</div>
-
-<div class="right">
-<div class="card" style="border:2px solid #16a34a">
-<h4>Help & Payment - Drpcom.co.in</h4>
-<div class="item">📞 Platform: 97846 64741</div>
-<div class="item">💬 WP Sale: 95212 89940</div>
-<div class="item" style="background:#0a1931;color:#fff">Legal team with us for any Dispute and solution</div>
-<div class="item">UPI: 9784664741@ybl</div>
-<div class="item">UPI: danishkhann99@ybl</div>
-</div>
-</div>
-</div>
-
-<div id="payBox">
-<h2 style="text-align:center">Drpcom.co.in - ID & Payment</h2>
-<div style="max-width:440px;margin:14px auto;background:#f0f2f5;padding:14px;border-radius:10px">
-<input class="inp" id="name" placeholder="Full Name">
-<input class="inp" id="mobile" placeholder="Mobile">
-<input class="inp" id="pass" type="password" placeholder="Password">
-<button onclick="goPay()" style="width:100%;background:#0a1931;color:#fff;border:none;padding:12px;border-radius:7px;font-weight:bold;cursor:pointer">Create ID & Show Payment →</button>
-</div>
-<div id="payOpt" style="display:none;max-width:760px;margin:auto">
-<div style="display:flex;gap:10px;flex-wrap:wrap;justify-content:center">
-<div style="background:#fff;border:1px solid #ddd;border-radius:8px;padding:12px;min-width:250px;flex:1">
-<h3>Normal ID - 199 Rs</h3>
-<a class="upi upiB" href="upi://pay?pa=9784664741@ybl&pn=Drpcom.co.in&am=199&cu=INR">Pay 199 - 9784664741@ybl</a>
-</div>
-<div style="background:#fff;border:2px solid #0a1931;border-radius:8px;padding:12px;min-width:250px;flex:1">
-<h3>Verified ID - 599 Rs</h3>
-<a class="upi upiB" href="upi://pay?pa=danishkhann99@ybl&pn=Drpcom.co.in&am=599&cu=INR">Pay 599 - danishkhann99@ybl</a>
-<a class="upi" style="background:#25D366;color:#fff" href="https://wa.me/919521289940?text=Payment%20Done%20Drpcom.co.in">WP - WhatsApp 95212 89940</a>
-</div>
-</div>
-</div>
-</div>
-
-<div id="setBox">
-<div style="background:#fff;max-width:420px;margin:40px auto;padding:18px;border-radius:10px">
-<h3>Setting - Drpcom.co.in</h3>
-<div class="item">Main Domain: Drpcom.co.in</div>
-<div class="item">Legal team with us for any Dispute and solution</div>
-<button onclick="document.getElementById('setBox').style.display='none'" style="margin-top:10px;width:100%;padding:10px;background:#0a1931;color:#fff;border:none;border-radius:6px">Close</button>
-</div>
-</div>
-
-<div class="footer">
-<b>© Drpcom.co.in - Most Trusted Platform</b><br>
-Platform: 97846 64741 | WP Sale: 95212 89940<br>
-Legal team with us for any Dispute and solution<br>
-UPI: danishkhann99@ybl | 9784664741@ybl | 9784664741@naviaxis<br>
-Drpcom.co.in
-</div>
-
-<script>
-function showPay(){document.getElementById('payBox').style.display='block';document.getElementById('payBox').scrollIntoView({behavior:'smooth'});}
-function goPay(){let n=document.getElementById('name').value;let m=document.getElementById('mobile').value;let p=document.getElementById('pass').value;if(n==''||m==''||p==''){alert('Name, Mobile, Password bharo - Drpcom.co.in');return;}document.getElementById('payOpt').style.display='block';document.getElementById('payOpt').scrollIntoView({behavior:'smooth'});}
-function openSet(){document.getElementById('setBox').style.display='block';}
-function setSearch(t){document.getElementById('googleSearch').value=t;doSearch();}
-function doSearch(){filterAll();}
-function filterAll(){
-  let q=document.getElementById('googleSearch').value.toLowerCase();
-  let d=document.getElementById('district').value.toLowerCase();
-  let t=document.getElementById('tehsil').value.toLowerCase();
-  let c=document.getElementById('city').value.toLowerCase();
-  let cards=document.querySelectorAll('.pcard');
-  cards.forEach(card=>{
-    let data=card.getAttribute('data-search');
-    let match=true;
-    if(q && !data.includes(q)) match=false;
-    if(d && !data.includes(d)) match=false;
-    if(t && !data.includes(t)) match=false;
-    if(c && !data.includes(c)) match=false;
-    card.style.display=match?'block':'none';
-  });
-}
-document.getElementById('googleSearch').addEventListener('input', filterAll);
-</script>
-</body>
-</html>
+<!-- FINAL HELP & PAYMENT BOX - FULL JOD DIYA -->
+<div style="background:#fff;color:#000;border:3px solid #febd69;border-radius:12px;padding:14px;margin-bottom:12px;font-family:Poppins">
