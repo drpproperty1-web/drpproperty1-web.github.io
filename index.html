@@ -3,219 +3,119 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Drpcom.co.in - FINAL GLOBAL OWNER DRP</title>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800;900&display=swap" rel="stylesheet">
+<title>DRPCOM - Global Property Owner</title>
 <style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;-webkit-user-select:none!important;user-select:none}
-body{background:#f0f2f5}
-.hdr{background:#0b0b0b;color:#fff;padding:10px 14px;display:flex;align-items:center;gap:10px;position:sticky;top:0;z-index:1000}
-.logo{font-weight:900;font-size:16px;color:#2f2fff}.logo i{background:#fff;color:#000;font-size:8px;padding:2px 7px;border-radius:10px}
-.sbox{flex:1;background:#1e1e1e;border:1px solid #333;border-radius:30px;display:flex;align-items:center;padding:0 6px 0 14px}
-.sbox input{flex:1;background:transparent;border:none;color:#fff;outline:none;font-size:12px;user-select:text!important}
-.topinfo{background:linear-gradient(90deg,#0d47a1,#42a5f5);color:#fff;text-align:center;padding:6px;font-size:9px;font-weight:600}
-.langBar{background:#fff;padding:6px 10px;border-radius:20px;border:1px solid #ddd;display:flex;gap:6px;flex-wrap:wrap;align-items:center;border-bottom:1px solid #ddd;position:sticky;top:42px;z-index:900}
-.langBar select{padding:6px 10px;border-radius:20px;border:1px solid #ddd;font-size:11px;min-width:130px}
-.chips{position:sticky;top:90px;z-index:800;background:#fff;display:flex;gap:7px;padding:10px;border-bottom:1px solid #ddd;overflow:auto}
-.chip{background:#f0f2f5;padding:6px 12px;border-radius:20px;font-size:11px;font-weight:700;white-space:nowrap;cursor:pointer}
-.chip.active{background:#0b0b0b;color:#fff}
-.storyBar{background:#fff;padding:8px 10px;display:flex;gap:12px;overflow:auto;border-bottom:1px solid #ddd}
-.story{text-align:center;min-width:62px;cursor:pointer}
-.story img{width:54px;height:54px;border-radius:50%;border:3px solid #00c853;object-fit:cover}
-.story p{font-size:9px;font-weight:700;margin-top:3px}
-.main{max-width:1440px;margin:auto;display:flex;gap:12px;padding:12px}
-.left{width:300px;flex-shrink:0}.center{flex:1;max-width:620px;margin:0 auto}.right{width:300px;flex-shrink:0}
-@media(max-width:1000px){.main{flex-direction:column}.left,.right{width:100%}}
-.box{background:#fff;border-radius:14px;padding:12px;margin-bottom:12px;box-shadow:0 2px 10px rgba(0,0,0,.07)}
-.b{padding:8px 10px;border-radius:9px;font-size:11px;font-weight:800;border:none;cursor:pointer;display:inline-block;text-align:center}
-.bK{background:#0b0b0b;color:#fff}.bGold{background:#1877f2;color:#fff}.bY{background:#FFB814;color:#000}.bG{background:gold}
-.img{width:100%;padding:10px;margin:0;border:1px solid #ccc;border-radius:10px;font-size:12px}
-.pcard{background:#fff;border-radius:14px;overflow:hidden;box-shadow:0 2px 10px rgba(0,0,08);margin-bottom:12px}
-.pcard img{width:100%;height:220px;object-fit:cover}
-.pbody{padding:10px}
-.modal{display:none;position:fixed;inset:0;background:rgba(0,0,0,.5);z-index:9999;padding:12px;overflow:auto}
-.modalBox{background:#fff;max-width:560px;margin:12px auto;padding:14px;border-radius:16px}
-.dp{width:40px;height:40px;border-radius:50%;object-fit:cover;border:2px solid #eefb7b}
-.foot{background:#0b0b0b;color:#777;padding:16px;text-align:center;font-size:9px}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Arial,sans-serif;background:#f4f6f9;color:#111}
+header{background:#0b1e3a;color:#fff;padding:14px 18px;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:10}
+.logo{font-weight:900;font-size:22px;letter-spacing:1px}
+.btn{padding:10px 16px;border:0;border-radius:8px;font-weight:700;cursor:pointer}
+.btn-gold{background:#f5c542;color:#000}
+.btn-blue{background:#0b1e3a;color:#fff}
+.wrap{max-width:1100px;margin:auto;padding:16px}
+.card{background:#fff;border-radius:14px;padding:16px;box-shadow:0 4px 18px rgba(0,0,0,.08);margin-bottom:16px}
+.input{width:100%;padding:12px;border:1px solid #d1d5db;border-radius:8px;margin-top:8px}
+.badge{display:inline-block;background:#eef2ff;color:#0b1e3a;padding:4px 10px;border-radius:999px;font-size:12px;font-weight:800;margin-right:6px}
+.post{border:1px solid #e5e7eb;border-radius:12px;overflow:hidden;margin-bottom:14px}
+.post .head{padding:12px 14px;background:#f9fafb;display:flex;justify-content:space-between}
+.post .body{padding:14px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:14px}
+.hidden{display:none}
 </style>
 </head>
 <body>
-<div class="hdr">
-<div class="logo">Drpcom.co.in <i>GLOBAL OWNER DRP</i></div>
-<div class="sbox"><input id="search" placeholder="Search Dubai, USA, UK, Location..." oninput="filterSearch()"><button style="background:gold;padding:4px 8px;border-radius:20px;font-size:9px;font-weight:900;border:none">Search</button></div>
-<div id="hdrFree" style="display:none;background:gold;color:#000;padding:4px 8px;border-radius:20px;font-size:9px;font-weight:900"></div>
-</div>
-<div class="topinfo">🌐 FINAL GLOBAL - OWNER DRP - ONLY DRP NAME - HIDDEN MALIK - MAX REACH 1000x</div>
-<div class="langBar">
-<select id="langSelect"><option>🌐 English</option><option>🇮🇳 Hindi</option><option>🇦🇪 Arabic</option></select>
-<select id="currencySelect"><option>₹ INR</option><option>🇦🇪 AED</option><option>$ USD</option></select>
-<button class="b bK" style="padding:6px 10px;font-size:9px" onclick="getLiveLocation()">📍 My Location</button>
-</div>
-<div class="chips">
-<div class="chip active" onclick="chipF('all',this)">Worldwide 🌐 All</div>
-<div class="chip" onclick="chipF('dubai',this)">Dubai 📍</div>
-<div class="chip" onclick="chipF('usa',this)">USA 🇺🇸</div>
-<div class="chip" onclick="chipF('owner',this)">👑 DRP Owner</div>
-</div>
-<div class="storyBar" id="storyBar">
-<div class="story" onclick="openStoryPost()"><img src="https://i.pravatar.cc/100?img=68"><p>+ Story</p></div>
-<div class="story"><img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=100"><p>Dubai 🇦🇪</p></div>
-</div>
-<div class="main">
-<div class="left">
-<div id="preLoginData">
-<div class="box" style="border:3px solid gold">
-<div style="display:flex;align-items:center;gap:10px"><img id="myDP" src="https://i.pravatar.cc/100?img=68" class="dp"><div><h4 style="font-size:10px">👑 OWNER DRP - Only DRP Name - Hidden Malik</h4><span>👑 danishkhn0096@ibl</span><br><span>📱 9784664741ybl</span><br><b>Legal team - LinesLegal.com</b></div></div>
-<button class="b bK" style="width:100%;margin-top:8px;padding:10px" onclick="openLogin()">🔓 Free Global ID - Owner DRP Hidden</button>
-</div>
-<div class="box" style="border:2px solid gold">
-<h3 style="font-size:11px">👑 DRP Owner - Max Reach 1000x</h3>
-<button class="b bGold" style="width:100%;margin-top:6px;padding:9px" onclick="openPremium()">💎 Global Premium + Owner Boost</button>
-</div>
-<div class="box" style="border:2px dashed #FF9800;background:#fff8e1">
-<h3 style="font-size:11px">🏢 Global Company Ad - Dubai</h3>
-<button class="b bK" style="width:100%;margin-top:6px;padding:9px" onclick="openCompanyAd()">🏢 Global Company Ad - Dubai</button>
-<button class="b bK" style="width:100%;margin-top:5px;padding:7px;font-size:9px" onclick="openMyAds()">📋 My Ads</button>
-</div>
-<div class="box"><h4 style="font-size:11px">⚖️ Legal Team - Global</h4><div style="font-size:9px">Legal team with us - LinesLegal.com</div></div>
-</div>
-<div class="center">
-<div class="box">
-<h4 style="font-size:12px">🌐 Global Post - Owner DRP - Max Reach</h4>
-<div style="display:flex;gap:6px;margin:8px 0"><input id="pLoc" class="img" placeholder="📍 Location: Dubai"><input id="pPrice" class="img" placeholder="💰 Price"></div>
-<button class="b bK" style="width:100%;padding:10px" onclick="doPost()">🌐 Global Post - Owner DRP - Max Reach 1000x</button>
-</div>
-<div id="feed"></div>
+<header>
+<div class="logo">DRPCOM.CO.IN - GLOBAL</div>
+<button id="topIdBtn" class="btn btn-gold" onclick="document.getElementById('ownerBox').scrollIntoView()">MY GLOBAL ID</button>
+</header>
+<div class="wrap">
+ <div id="ownerBox" class="card">
+<h2>🌍 Global Owner ID - Only DRP</h2>
+<p style="margin-top:6px;color:#555">Free Global ID - Property Bechne Ke Liye Post Karo - Worldwide</p>
+<input id="oName" class="input" placeholder="Apna Naam - Hidden Rahega">
+<input id="oCity" class="input" placeholder="Apni City - Worldwide">
+<input id="oPhone" class="input" placeholder="WhatsApp Number - Private">
+<button class="btn btn-blue" style="margin-top:12px;width:100%" onclick="makeId()">Generate My Global ID</button>
+<div id="idResult" class="hidden" style="margin-top:14px;padding:12px;background:#f0fdf4;border:1px dashed #22c55e;border-radius:10px">
+<div>Your Global ID: <b id="showId"></b></div>
+<div style="margin-top:6px"><span class="badge">ONLY DRP NAME</span><span class="badge">HIDDEN MALIK</span><span class="badge">GLOBAL REACH</span></div>
 </div>
 </div>
-<div class="right">
-<div class="box"><h4 style="font-size:11px">💰 All Transaction</h4><div style="font-size:10px">3 UPI + Gmail + Location</div></div>
-<div class="box"><h4 style="font-size:11px">👑 Owner DRP - Hidden</h4></div>
-</div>
-</div>
-<!-- MODALS -->
-<div id="loginModal" class="modal"><div class="modalBox"><h3>🔓 Free Global ID - Owner DRP Hidden</h3><div style="display:flex;gap:6px;margin:10px 0"><button class="b bK">Login</button><button class="b bK">Signup</button><button class="b bK">Owner</button></div><div id="st_signup"><input id="cName" class="img" placeholder="Name"><input id="cMobile" class="img" placeholder="Mobile"><button class="b bK" onclick="sendOTP()">Send OTP</button><input id="otpIn" class="img" placeholder="OTP"><input id="iPass" class="img" placeholder="Password"><button class="b bK" onclick="doLogin()">Login / Signup</button></div><div id="st1" style="margin-top:8px"><input id="fMobile" class="img" placeholder="Mobile / ID"><input id="fPass" class="img" placeholder="Password"><button class="b bK" onclick="doLoginOld()">Login</button></div><button onclick="closeLogin()" class="b bK" style="margin-top:10px">Close</button></div></div>
-<div id="rechargeModal" class="modal"><div class="modalBox"><h3>💰 Global Recharge</h3><button onclick="document.getElementById('rechargeModal').style.display='none'" class="b bK">Close</button></div></div>
-<div id="premiumModal" class="modal"><div class="modalBox"><h3>⭐ Global Premium</h3><button onclick="document.getElementById('premiumModal').style.display='none'" class="b bK">Close</button></div></div>
-<div id="companyAdModal" class="modal"><div class="modalBox"><h3>🏢 Global Company Ad</h3><input id="compName" class="img" placeholder="Company Name"><input id="compLoc" class="img" placeholder="Location"><button class="b bK" onclick="payCompanyAdUPI()">Pay UPI</button><button onclick="document.getElementById('companyAdModal').style.display='none'" class="b bK">Close</button></div></div>
-<div id="myAdsModal" class="modal"><div class="modalBox"><h3>📋 My Global Ads</h3><div id="myAdsList"></div><button onclick="document.getElementById('myAdsModal').style.display='none'" class="b bK">Close</button></div></div>
-<div id="dpModal" class="modal"><div class="modalBox" style="max-width:360px"><h3>🌐 Global DP</h3><input id="dpLink" class="img" placeholder="DP Link"><button class="b bK" onclick="setDP()">Set DP</button><button onclick="document.getElementById('dpModal').style.display='none'" class="b bK">Close</button></div></div>
-<div id="storyModal" class="modal"><div class="modalBox" style="max-width:360px"><h3>📸 Global Story</h3><input id="storyLink" class="img" placeholder="Story Image Link"><input id="storyLoc" class="img" placeholder="Location"><button class="b bK" onclick="setStory()">Post Story</button><button onclick="document.getElementById('storyModal').style.display='none'" class="b bK">Close</button></div></div>
 
-<div class="foot">© Drpcom.co.in - FINAL GLOBAL OWNER DRP - Only DRP Name - Hidden Malik - Max Reach 1000x</div>
+<div class="card">
+<h3>Post Your Global Property</h3>
+<input id="pTitle" class="input" placeholder="Property Title - Ex: Global Building">
+<input id="pLoc" class="input" placeholder="Location - Ex: Worldwide - Any Country">
+<input id="pPrice" class="input" placeholder="Price - Ex: $500k - Global">
+<textarea id="pDesc" class="input" rows="3" placeholder="Detail - Language + All Language"></textarea>
+<button class="btn btn-gold" style="margin-top:12px;width:100%" onclick="doPost()">POST GLOBAL - 1000x Reach</button>
+</div>
+<div class="card">
+<h3>🌍 Global Properties - Worldwide</h3>
+<div id="posts" class="grid" style="margin-top:12px"></div>
+</div>
+</div>
 
 <script>
-let genOTP="",isLogged=false,forgotOTP="",userLoc="";
-let UPI_ONLY=["danishkhn0096@ibl","9784664741@ybl","danishkhan99@ybl"];
-let COMPANY_ADS=JSON.parse(localStorage.getItem('drp_company_ads')||'[]');
-let CURRENT_LANG='en',CURRENT_CURRENCY='INR';
+let cur=null;
+let posts=JSON.parse(localStorage.getItem('drp_global_posts')||'[]');
 
-const DRP_OWNER={
-freeID:"DRP-OWNER-0001",
-name:"DRP",
-displayName:"DRP",
-secretPass:"DRP@Global0001",
-secretMobile:"9999999999",
-email:"drpproperty1@gmail.com",
-location:"Global HQ - Hidden",
-dp:"https://i.pravatar.cc/100?img=68",
-premium:"👑 DRP OWNER - GLOBAL - HIDDEN - MAX REACH 1000x - ONLY DRP",
-isOwner:true,
-reachMultiplier:1000,
-isHidden:true,
-pass:"DRP@Global0001",
-mobile:"9999999999"
-};
-
-(function injectOwner(){
-let users=JSON.parse(localStorage.getItem('drp_users')||'[]');
-if(!users.find(u=>u.freeID==DRP_OWNER.freeID)){
-users.push(DRP_OWNER);
-localStorage.setItem('drp_users',JSON.stringify(users));
+function makeId(){
+let n=document.getElementById('oName').value||'Owner';
+let c=document.getElementById('oCity').value||'Global';
+let p=document.getElementById('oPhone').value||'000';
+let id='DRP-OWNER-'+Math.floor(1000+Math.random()*9000);
+cur={name:n,city:c,phone:p,id:id};
+localStorage.setItem('drp_global_user',JSON.stringify(cur));
+document.getElementById('showId').innerText=id;
+document.getElementById('idResult').classList.remove('hidden');
+document.getElementById('topIdBtn').innerText=id;
+alert('Global ID Ban Gaya: '+id);
 }
-})();
 
-function closeLogin(){document.getElementById('loginModal').style.display='none';}
-function openLogin(){document.getElementById('loginModal').style.display='block';}
-function openRecharge(){if(!isLogged){openLogin();return}document.getElementById('rechargeModal').style.display='block';}
-function openPremium(){if(!isLogged){openLogin();return}document.getElementById('premiumModal').style.display='block';}
-function openCompanyAd(){if(!isLogged){openLogin();return}document.getElementById('companyAdModal').style.display='block';}
-function openMyAds(){let cur=JSON.parse(localStorage.getItem('drp_current')||'{}');let list=COMPANY_ADS.filter(a=>a.freeID==cur.freeID);document.getElementById('myAdsList').innerHTML=list.map(a=>'<div style="padding:6px;border-bottom:1px solid #eee">'+a.compName+' - '+a.location+'</div>').join('');document.getElementById('myAdsModal').style.display='block';}
-function openDP(){document.getElementById('dpModal').style.display='block';}
-function openStoryPost(){if(!isLogged){openLogin();return}document.getElementById('storyModal').style.display='block';}
-function chipF(k,el){document.querySelectorAll('.chip').forEach(x=>x.classList.remove('active'));el.classList.add('active');filterSearch();}
-function filterSearch(){let q=document.getElementById('search').value.toLowerCase();document.querySelectorAll('.pcard').forEach(c=>{let t=c.getAttribute('data-state')||'';c.style.display=t.includes(q)||q==''?'block':'none';});}
-function getLiveLocation(){if(navigator.geolocation){navigator.geolocation.getCurrentPosition(pos=>{document.getElementById('pLoc').value=pos.coords.latitude.toFixed(2)+','+pos.coords.longitude.toFixed(2);});}}
-function sendOTP(){let n=document.getElementById('cName').value.trim(),m=document.getElementById('cMobile').value.trim();if(!n||!m){alert('Name & Mobile required');return}genOTP=Math.floor(1000+Math.random()*9000).toString();alert('OTP: '+genOTP);}
-function doLogin(){
-let number=document.getElementById('cMobile').value.trim()||document.getElementById('fMobile').value.trim();
-let p=document.getElementById('iPass').value.trim()||document.getElementById('fPass').value.trim();
-if(number=="9999999999" || number=="DRP-OWNER-0001" || number=="DRP"){
-if(p=="DRP@Global0001"||p==DRP_OWNER.secretPass){
-localStorage.setItem("drp_current",JSON.stringify(DRP_OWNER));
-isLogged=true;
-document.getElementById('hdrFree').style.display='block';
-document.getElementById('hdrFree').innerText='👑 DRP OWNER - HIDDEN - MAX REACH 1000x - ONLY DRP';
-document.getElementById('preLoginData').style.display='none';
-document.getElementById('loginModal').style.display='none';
-alert('👑 DRP MALIK LOGIN SUCCESS - Hidden - Only DRP - Max Reach 1000x');
+function doPost(){
+let t=document.getElementById('pTitle').value||'Global Building - Worldwide';
+let l=document.getElementById('pLoc').value||'Global - Worldwide';
+let pr=document.getElementById('pPrice').value||'$500k - Global';
+let d=document.getElementById('pDesc').value||'Global Building - Worldwide - Owner Post - Location + All Language + Global Reach 1000x - Only DRP Name - Hidden Malik';
+let obj={id:Date.now(),title:t,location:l,price:pr,desc:d,owner:cur?cur.id:'DRP-OWNER-0001'};
+posts.unshift(obj);
+localStorage.setItem('drp_global_posts',JSON.stringify(posts));
+render();
+document.getElementById('pTitle').value='';document.getElementById('pLoc').value='';document.getElementById('pPrice').value='';document.getElementById('pDesc').value='';
+}
+function render(){
+let box=document.getElementById('posts');
+if(posts.length==0){
+box.innerHTML='<div class="card">No Global Post Yet - First Post Karo</div>';
 return;
 }
+box.innerHTML=posts.map(p=>`
+<div class="post">
+<div class="head"><b>${p.title}</b><span class="badge">${p.price}</span></div>
+<div class="body">
+<div style="color:#555;font-size:13px">${p.location} | ${p.owner}</div>
+<div style="margin-top:8px">${p.desc}</div>
+<div style="margin-top:10px"><span class="badge">ONLY DRP</span><span class="badge">HIDDEN MALIK</span><span class="badge">1000x GLOBAL</span></div>
+<button class="btn btn-blue" style="margin-top:10px;width:100%" onclick="contactOwner('${p.owner}')">Contact Owner - Global ID</button>
+</div>
+</div>
+`).join('');
 }
-let users=JSON.parse(localStorage.getItem('drp_users')||'[]');
-let u=users.find(x=>x.mobile==number && x.pass==p);
-if(!u){alert('Galat - Owner Secret: 9999999999 + DRP@Global0001');return}
-localStorage.setItem('drp_current',JSON.stringify(u));
-isLogged=true;
-document.getElementById('hdrFree').style.display='block';
-document.getElementById('preLoginData').style.display='none';
-document.getElementById('loginModal').style.display='none';
+
+function contactOwner(id){
+let u=cur?cur.id:'Guest';
+alert('Contact via Global ID: '+id+'\nYour ID: '+u+'\nOwner detail hidden - Only DRP visible - Worldwide System');
 }
- function doLoginOld(){doLogin();}
-function payCompanyAdUPI(){let name=document.getElementById('compName').value.trim(),loc=document.getElementById('compLoc').value.trim();if(!name){alert('Name required');return}let cur=JSON.parse(localStorage.getItem('drp_current')||'{}');let ad={freeID:cur.freeID,compName:name,location:loc||'Dubai'};COMPANY_ADS.push(ad);localStorage.setItem('drp_company_ads',JSON.stringify(COMPANY_ADS));alert('Ad Added');document.getElementById('companyAdModal').style.display='none';renderCompanyAd(ad);}
-function renderCompanyAd(ad){
-let feed=document.getElementById('feed');
-let div=document.createElement('div');
-div.className='pcard';
-div.setAttribute('data-state',(ad.location||'dubai worldwide global').toLowerCase());
-div.style.border=ad.freeID==DRP_OWNER.freeID?'3px solid gold':'2px solid #FF9800';
-div.innerHTML='<div style="background:'+(ad.freeID==DRP_OWNER.freeID?'linear-gradient(90deg,gold,#FF9800)':'#FF9800')+';color:#000;padding:5px 10px;font-size:9px;font-weight:800">🏢 '+ad.compName+' - '+ad.location+'</div><div class="pbody">'+ad.compName+' - Company Ad - Global Platform</div>';
-feed.prepend(div);
+
+(function init(){
+let saved=localStorage.getItem('drp_global_user');
+if(saved){cur=JSON.parse(saved);document.getElementById('topIdBtn').innerText=cur.id;document.getElementById('showId').innerText=cur.id;document.getElementById('idResult').classList.remove('hidden');}
+ if(posts.length==0){
+posts=[{id:1,title:'Global Building - Worldwide',location:'Worldwide - Any Country - Global',price:'$500k - Global',desc:'🌍 Global Building - Worldwide - Owner Post - Location + All Language + Global Reach 1000x - Only DRP Name - Hidden Malik',owner:'DRP-OWNER-0001'}];
 }
-function setDP(){let link=document.getElementById('dpLink').value.trim();if(!link){alert('Link required');return}document.getElementById('myDP').src=link;document.getElementById('dpModal').style.display='none';}
-function setStory(){let link=document.getElementById('storyLink').value.trim(),loc=document.getElementById('storyLoc').value.trim();if(!link){alert('Link');return}let bar=document.getElementById('storyBar');let d=document.createElement('div');d.className='story';d.innerHTML='<img src="'+link+'"><p>'+(loc||'Story')+'</p>';bar.appendChild(d);document.getElementById('storyModal').style.display='none';}
-function doPost(){
-if(!isLogged){openLogin();return}
-let cur=JSON.parse(localStorage.getItem('drp_current'));
-let isOwner=cur.isOwner||cur.freeID==DRP_OWNER.freeID;
-let loc=document.getElementById('pLoc').value||(cur.location||'Dubai');
-let price=document.getElementById('pPrice').value||'$500k - Global';
-let feed=document.getElementById('feed');
-let div=document.createElement('div');
-div.className='pcard';
-div.setAttribute('data-state',(loc.toLowerCase()+' global dubai usa uk worldwide '+(isOwner?'owner top maxreach':'')).toLowerCase());
-div.style.border=isOwner?'3px solid gold':'1px solid #ddd';
-let displayId=isOwner?"DRP - GLOBAL - HIDDEN - ONLY DRP - MAX REACH 1000x":cur.freeID;
-let reachText=isOwner?'🔥 MAX REACH 1000x - Owner Hidden - Only DRP - Zuckerberg Style':'Reach: Normal';
-div.innerHTML='<div style="background:'+(isOwner?'linear-gradient(90deg,gold,#FF9800)':'#0b0b0b')+';color:'+(isOwner?'#000':'#fff')+';padding:8px 10px;font-size:9px;font-weight:800;display:flex;justify-content:space-between"><span>'+displayId+'</span><span>'+price+'</span></div><img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=600"><div class="pbody"><b>Global Post - Dubai Building</b><br>📍 '+loc+'<br>'+reachText+'</div>';
-feed.prepend(div);
-document.getElementById('pLoc').value='';document.getElementById('pPrice').value='';
-}
-(function(){
-let cur=localStorage.getItem('drp_current');
-if(cur){
-let u=JSON.parse(cur);
-isLogged=true;
-document.getElementById('hdrFree').style.display='block';
-document.getElementById('hdrFree').innerText=(u.isOwner||u.freeID=='DRP-OWNER-0001')?'👑 DRP OWNER - HIDDEN - MAX REACH - ONLY DRP':'👑 '+u.freeID;
-if(document.getElementById('preLoginData'))document.getElementById('preLoginData').style.display='none';
-}
+render();
 })();
-let demoDiv=document.createElement('div');
-demoDiv.className='pcard';
-demoDiv.setAttribute('data-state','dubai worldwide global owner top');
-demoDiv.style.border='3px solid gold';
-demoDiv.innerHTML='<div style="background:linear-gradient(90deg,gold,#FF9800);color:#000;padding:5px 10px;font-size:9px;font-weight:800">👑 DRP OWNER - HIDDEN - MAX REACH 1000x - ONLY DRP - Global - Dubai</div><img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=600"><div class="pbody">🌍 Dubai Building - Worldwide - Owner Post - Location + All Language + Global Reach 1000x - Only DRP Name - Hidden Malik</div>';
-document.addEventListener('DOMContentLoaded',function(){let feed=document.getElementById('feed');if(feed)feed.appendChild(demoDiv);});
 </script>
 </body>
-</html> 
+</html>
