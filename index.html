@@ -5,183 +5,182 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>DRP - Global Platform</title>
 <style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:Inter,system-ui,Arial}
+*{margin:0;padding:0;box-sizing:border-box;font-family:Inter,system-ui}
 body{background:#f0f2f5;color:#111}
-.top{position:sticky;top:0;z-index:99;background:#0a1931;color:#fff;padding:10px 14px;display:flex;justify-content:space-between;align-items:center}
+.top{position:sticky;top:0;z-index:99;background:#0a1931;color:#fff;padding:12px;display:flex;justify-content:space-between;align-items:center}
 .logo{font-weight:800;letter-spacing:1px}
-.card{background:#fff;border-radius:12px;padding:12px;margin:10px;box-shadow:0 2px 10px rgba(0,0,0,.06)}
-input,textarea,select{width:100%;padding:11px 12px;border:1px solid #ddd;border-radius:10px;margin:6px 0;outline:none}
+.card{background:#fff;border-radius:12px;padding:12px;margin:10px;box-shadow:0 2px 8px rgba(0,0,0,0.08)}
+input,textarea,select{width:100%;padding:11px 12px;border:1px solid #ddd;border-radius:10px;margin:6px 0;font-size:14px}
 button{width:100%;padding:11px;border:0;border-radius:10px;font-weight:700;cursor:pointer}
 .btn-dark{background:#0a1931;color:#fff}
-.btn-yellow{background:#ffcc00;color:#111}
-.btn-light{background:#eef2ff;color:#0a1931}
-.flex{display:flex;gap:8px}
+.btn-yellow{background:#ffcc00;color:#000}
+.btn-light{background:#e9ecef;color:#111}
 .hidden{display:none}
-.badge{display:inline-block;background:#eef2ff;color:#0a1931;padding:3px 8px;border-radius:20px;font-size:11px;margin:2px}
-.post-img{width:100%;border-radius:10px;margin-top:8px;max-height:320px;object-fit:cover}
-.nav{position:fixed;bottom:0;left:0;right:0;background:#fff;display:flex;justify-content:space-around;padding:8px 0;border-top:1px solid #eee;z-index:99}
-.video-box{width:100%;height:220px;background:#000;border-radius:10px}
-.kyc-box{border:1px dashed #0a1931;padding:10px;border-radius:10px;background:#f8faff}
+.tag{display:inline-block;padding:4px 10px;border-radius:20px;font-size:11px;font-weight:800;margin-left:6px}
+.tag-diamond{background:linear-gradient(135deg,#b9f2ff,#00d4ff);border:1px solid #00aacc;color:#003344}
+.tag-blue{background:#e7f3ff;border:1px solid #1877f2;color:#1877f2}
+.tag-gold{background:#fff8dc;border:1px solid #daa520;color:#8b6914}
+.tag-paid{background:#fff3cd;border:1px solid #ffcc00;color:#664d00}
+.post-title{font-size:17px;font-weight:900}
+.post-meta{font-size:11px;color:#666;margin:3px 0}
+.footer{height:80px}
 </style>
 </head>
 <body>
 <div class="top">
 <div class="logo">DRP - GLOBAL</div>
-<div style="display:flex;gap:8px">
-<button id="adminBtn" style="width:auto;padding:6px 10px" class="btn-light">MY GLOBAL ID</button>
+<button id="adminBtn" class="btn-light" style="width:auto;padding:6px 12px;border-radius:20px">MY GLOBAL ID</button>
+</div>
+
+<div id="authPage">
+<div class="card">
+<p style="font-size:13px;font-weight:800;margin-bottom:6px">Create Original ID Like FB / Insta Celebrity System</p>
+<input id="fullName" placeholder="Full Name - As per Original Proof">
+<input id="userName" placeholder="Choose Username - Unique">
+<input id="pass" type="password" placeholder="Create Password - FB Rules">
+<div class="card" style="margin:6px 0;background:#f9f9f9;border:1px dashed #aaa">
+<b style="font-size:12px">KYC - Must for Selling/Buying</b><br>
+<small>Selfie + Proof - Private - Owner locked</small>
+<input type="file" id="kyc1" accept="image/*">
+<input type="file" id="kyc2" accept="image/*,.pdf">
+<small>Upload Original Proof for Blue Tick / Gold</small>
+<select id="idType">
+<option>Normal ID - Paid - UPI/WhatsApp Show</option>
+<option>Celebrity - Blue Tick - Need Original Proof</option>
+<option>PM/President/Govt - Gold Tick - Verification Needed</option>
+</select>
+</div>
+<button class="btn-dark" onclick="createID()">Create My Global ID - Worldwide</button>
+<button class="btn-light" onclick="login()" style="margin-top:8px">Login</button>
+<p style="text-align:center;padding:8px;color:#666;font-size:11px">Legal team with us for any Dispute and solution - lineslegal.com</p>
 </div>
 </div>
 
-<div id="authPage" class="card">
-<h3>DRP Global ID - Worldwide Access</h3>
-<p style="font-size:12px;color:#555;margin:4px 0 8px">Create Original ID like FB / Insta Celebrity System</p>
-<input id="regName" placeholder="Full Name - As per Original Proof">
-<input id="regUser" placeholder="Choose Username - Unique">
-<input id="regPass" type="password" placeholder="Create Password - FB Rules">
-<div class="kyc-box">
-<b style="font-size:12px">KYC - Must for Selling/Buying</b>
-<input type="file" id="kycSelfie" accept="image/*">
-<small style="font-size:11px">Upload Selfie - Required</small>
-<input type="file" id="kycProof" accept="image/*,.pdf">
-<small style="font-size:11px">Upload Original Proof for Blue Tick</small>
-<select id="idType">
-<option value="normal">Normal ID</option>
-<option value="celebrity">Celebrity / Business - Need Original Proof</option>
-</select>
-</div>
-<div class="flex">
-<button class="btn-dark" onclick="createID()">Create My Global ID - Worldwide</button>
-<button class="btn-light" onclick="loginID()" style="width:auto">Login</button>
-</div>
-<p style="font-size:11px;text-align:center;padding:12px;color:#666">Legal team with us for any Dispute and solution - lineslegal.com</p>
-</div>
 <div id="mainApp" class="hidden">
 <div class="card">
 <h4>Post Your Global Content</h4>
-<input id="postTitle" placeholder="Title - Global Property / Interior / Reel">
-<textarea id="postDetail" placeholder="Detail - Language + All Language - Worldwide"></textarea>
-<input id="postPrice" placeholder="Price - Ex: $500k - Global / Optional">
-<input type="file" id="postMedia" accept="image/*,video/*">
-<div class="flex">
-<button class="btn-yellow" onclick="createPost()" style="background:#ffcc00">POST GLOBAL - 1000x Reach</button>
-<button class="btn-light" onclick="startNewsFeed()" style="width:auto">World News</button>
+<input id="pTitle" placeholder="Title - Global Property / Interior / Reel">
+<textarea id="pDetail" placeholder="Detail - Language + All Language - Worldwide"></textarea>
+<input id="pPrice" placeholder="Price - Ex: $500k - Global / Optional">
+<input type="file" id="pFile" accept="image/*,video/*">
+<div style="display:flex;gap:8px">
+<button class="btn-yellow" onclick="createPost()" style="flex:1">POST GLOBAL - 1000x Reach</button>
+<button class="btn-light" onclick="loadPosts()" style="width:auto">World News</button>
 </div>
 </div>
 
 <div class="card">
 <h4>Global Video Call - Public to Public</h4>
-<div class="flex">
-<input id="callID" placeholder="Enter User Global ID to Call">
+<div style="display:flex;gap:6px;margin-top:6px">
+<input id="callId" placeholder="Enter User Global ID to Call" style="flex:1">
 <button class="btn-dark" onclick="startCall()" style="width:auto">Call</button>
 <button class="btn-light" onclick="endCall()" style="width:auto">End</button>
 </div>
-<video id="localVideo" autoplay muted class="video-box hidden"></video>
-<video id="remoteVideo" autoplay class="video-box hidden" style="margin-top:6px"></video>
-<small style="font-size:11px;color:#666">Website ke andar hi call hoga, admin ko call nahi jayega.</small>
-</div>
-<div id="feed" class="feed"></div>
+<small>Website ke andar hi call hoga, admin ko call nahi jayega.</small>
+<video id="localVideo" autoplay muted class="hidden" style="width:100%;height:180px;background:#000;border-radius:10px;margin-top:8px"></video>
 </div>
 
-<div id="adminPage" class="card hidden">
-<h3>Admin Settings - Private - Not Public</h3>
-<p style="font-size:11px;color:red">Ye data public me kabhi show nahi hoga.</p>
-<div style="background:#fff6e6;padding:10px;border-radius:10px;margin:8px 0">
-<b>Private Contact (Hidden)</b><br>
-<small>Website: DRPCOM.CO.IN<br>Email: DRPPROPERTY1@GMAIL.COM<br>Number: 9784664741<br>UPI: danishkhann99@ybl / 9784664741@ybl / danishkhn0096@ibl<br>Earning: Boost Post / Ads / Verification Fee</small>
+<div id="feedContainer"></div>
+
+<div class="card" style="text-align:center;font-size:11px;color:#555">
+Legal team with us for any Dispute and solution - lineslegal.com<br>
+💎 DIAMOND = Owner (You) | ✅ Blue = Celebrity | 👑 Gold = PM/President | 💰 Paid = Public<br>
+Platform is Website now, App will launch later.
 </div>
-<input value="danishkhann99@ybl" placeholder="Main UPI">
-<input value="$5 / $10 / $50" placeholder="Boost Price">
+<div class="footer"></div>
+</div>
+
+<div id="adminPage" class="hidden">
+<div class="card" style="background:#fff9c4;border:2px solid #ffcc00">
+<h3>Private - 💎 DIAMOND OWNER ONLY</h3>
+<p><b>Owner Number:</b> 9784664741</p>
+<p><b>Status:</b> 💎 DIAMOND OWNER - No Blue Tick Needed</p>
+<p><b>Global ID:</b> <span id="showGid"></span></p>
+<button class="btn-dark" onclick="logout()" style="background:#ff4444;margin:8px 0">Logout - Bahar Aana</button>
 <button class="btn-dark" onclick="closeAdmin()">Close Private Settings</button>
 </div>
-
-<div class="nav" style="position:fixed;bottom:0;left:0;right:0;background:#fff;display:flex;justify-content:space-around;padding:8px 0;border-top:1px solid #eee;z-index:99">
-<div onclick="showPage('feed')"><b>HOME</b></div>
-<div onclick="showPage('reels')"><b>REELS</b></div>
-<div onclick="showPage('groups')"><b>GROUPS</b></div>
-<div onclick="showPage('pages')"><b>PAGES</b></div>
-<div onclick="showPage('profile')"><b>MY ID</b></div>
-</div>
-
-<div class="card" style="font-size:11px;text-align:center;padding:12px;color:#666;margin-bottom:60px">
-Legal team with us for any Dispute and solution - lineslegal.com<br>
-DRP - Global Platform - Worldwide - No Copy Number System<br>
-Platform is Website now, App will launch later.
 </div>
 
 <script>
 let currentUser=null;
-let posts=JSON.parse(localStorage.getItem('drp_posts')||'[]');
-let users=JSON.parse(localStorage.getItem('drp_users')||'[]');
-function createID(){
- const name=document.getElementById('regName').value.trim();
- const username=document.getElementById('regUser').value.trim();
- const pass=document.getElementById('regPass').value;
- const selfie=document.getElementById('kycSelfie').files[0];
- const proof=document.getElementById('kycProof').files[0];
- const type=document.getElementById('idType').value;
- if(!name||!username||!pass){alert('Fill all');return}
- if(!selfie){alert('KYC Selfie Must');return}
- if(type==='celebrity' && !proof){alert('Original Proof Must for Celebrity ID');return}
- const user={id:'DRP-OWNER-'+Math.floor(1000+Math.random()*9000),name,username,pass,type,verified:type==='celebrity'?'pending':'normal',reach:'10000x'}
- users.push(user);localStorage.setItem('drp_users',JSON.stringify(users));
- currentUser=user;
- document.getElementById('authPage').classList.add('hidden');
- document.getElementById('mainApp').classList.remove('hidden');
- renderFeed();alert('Global ID Created: '+user.id);
+const LS_USER='drp_current_session';
+const LS_POSTS='drp_all_posts';
+function getTag(uname, type){
+ let u=(uname||'').toLowerCase();
+ if(u==='drpowner' || u==='owner' || u.includes('drp_owner')) return {icon:'💎', text:'DIAMOND OWNER', cls:'tag-diamond'};
+ if((type||'').includes('Celebrity')) return {icon:'✅', text:'BLUE TICK - CELEBRITY', cls:'tag-blue'};
+ if((type||'').includes('PM')) return {icon:'👑', text:'GOLD - PM/PRESIDENT', cls:'tag-gold'};
+ if(u.includes('celebrity')||u.includes('star')) return {icon:'✅', text:'BLUE TICK - CELEBRITY', cls:'tag-blue'};
+ if(u.includes('pm')||u.includes('president')||u.includes('gov')) return {icon:'👑', text:'GOLD - PM/PRESIDENT', cls:'tag-gold'};
+ return {icon:'💰', text:'PAID ID - VERIFIED', cls:'tag-paid'};
 }
-function loginID(){
- const u=document.getElementById('regUser').value.trim();
- const p=document.getElementById('regPass').value;
- const found=users.find(x=>x.username===u && x.pass===p);
- if(!found){alert('No ID, create new');return}
- currentUser=found;
+function init(){
+ let sess=localStorage.getItem(LS_USER);
+ if(sess){ try{ currentUser=JSON.parse(sess); showMain(); loadPosts(); return;}catch(e){} }
+ let posts=localStorage.getItem(LS_POSTS); if(posts){ renderPosts(JSON.parse(posts)); }
+}
+function createID(){
+ let name=document.getElementById('fullName').value.trim();
+ let uname=document.getElementById('userName').value.trim();
+ let pass=document.getElementById('pass').value.trim();
+ let idType=document.getElementById('idType').value;
+ if(!name||!uname||!pass){alert('Fill all');return;}
+ let gid=uname.toUpperCase()+'-'+Math.floor(1000+Math.random()*9000);
+ let obj={name,uname,pass,gid,idType};
+ localStorage.setItem('drp_user_'+uname, JSON.stringify(obj));
+ localStorage.setItem(LS_USER, JSON.stringify(obj));
+ currentUser=obj;
+ alert('ID Created: '+gid+' | '+getTag(uname,idType).text+' | Auto Login ON - Ab bahar nahi aaoge');
+ showMain();
+}
+function login(){
+ let uname=document.getElementById('userName').value.trim();
+ let pass=document.getElementById('pass').value.trim();
+ let data=localStorage.getItem('drp_user_'+uname);
+ if(!data){alert('ID not found - Create first');return;}
+ let u=JSON.parse(data); if(u.pass!==pass){alert('Wrong password');return;}
+ localStorage.setItem(LS_USER, JSON.stringify(u)); currentUser=u; showMain(); loadPosts();
+}
+function showMain(){
  document.getElementById('authPage').classList.add('hidden');
  document.getElementById('mainApp').classList.remove('hidden');
- renderFeed();
+ document.getElementById('adminPage').classList.add('hidden');
+ if(currentUser){ let t=getTag(currentUser.uname, currentUser.idType); document.getElementById('showGid').innerHTML=t.icon+' '+t.text+' | '+currentUser.gid; }
 }
 function createPost(){
- if(!currentUser){alert('Login first');return}
- const title=document.getElementById('postTitle').value;
- const detail=document.getElementById('postDetail').value;
- const price=document.getElementById('postPrice').value;
- const file=document.getElementById('postMedia').files[0];
- if(!title||!detail){alert('Add title detail');return}
- let mediaUrl='';if(file){mediaUrl=URL.createObjectURL(file)}
- const post={id:Date.now(),title,detail,price,mediaUrl,owner:currentUser.name,username:currentUser.username,likes:0,comments:[],reach:currentUser.reach,type:file && file.type.includes('video')?'reel':'post',time:new Date().toLocaleString()}
- posts.unshift(post);localStorage.setItem('drp_posts',JSON.stringify(posts));renderFeed();
+ let t=document.getElementById('pTitle').value.trim();
+ let d=document.getElementById('pDetail').value.trim();
+ let p=document.getElementById('pPrice').value.trim();
+ if(!t){alert('Title needed');return;}
+ let now=new Date(); let dateStr=now.toLocaleDateString('en-GB')+', '+now.toLocaleTimeString('en-GB');
+ let tag=getTag(currentUser.uname, currentUser.idType);
+ let post={id:Date.now(),title:t,detail:d,price:p||'$150k / 1.2 Cr - Negotiable - 10000x',uname:currentUser.uname,gid:currentUser.gid,date:dateStr,likes:0,tag:tag};
+ let all=JSON.parse(localStorage.getItem(LS_POSTS)||'[]'); all.unshift(post); localStorage.setItem(LS_POSTS, JSON.stringify(all));
+ renderPosts(all);
+ document.getElementById('pTitle').value=''; document.getElementById('pDetail').value=''; document.getElementById('pPrice').value='';
+ alert('Posted as '+tag.text+' - 10000x Reach!');
 }
-function renderFeed(){
- const feed=document.getElementById('feed');feed.innerHTML='';
- let allPosts=[...posts];
- if(allPosts.length===0){allPosts.push({id:1,title:'World News - Global Market',detail:'Global news auto feed - Property + Business + Worldwide - All languages',price:'Global',owner:'DRP News System',username:'drpnews',likes:12,comments:[],reach:'10000x',type:'news',time:'Just now'})}
- feed.innerHTML=allPosts.map(p=>`
- <div class="card">
- <div style="display:flex;justify-content:space-between"><b>${p.title} - Worldwide</b><span style="display:inline-block;background:#eef2ff;padding:3px 8px;border-radius:20px;font-size:11px">${p.price} - ${p.reach}</span></div>
- <small style="color:#666">Owner Post - Worldwide - Any Country | ${p.username} | ${p.time}</small>
- ${p.mediaUrl ? (p.type==='reel' ? `<video src="${p.mediaUrl}" controls style="width:100%;border-radius:10px;margin-top:8px"></video>` : `<img src="${p.mediaUrl}" style="width:100%;border-radius:10px;margin-top:8px">`) : ''}
- <p style="margin:8px 0;font-size:13px">${p.detail} - Only DRP - ${p.owner}</p>
- <div style="display:flex;gap:8px"><button onclick="likePost(${p.id})" style="width:auto;padding:6px 10px;background:#eef2ff;border-radius:10px;border:0">Like (${p.likes})</button><button onclick="commentPost(${p.id})" style="width:auto;padding:6px 10px;background:#eef2ff;border-radius:10px;border:0">Comment</button><button onclick="sharePost(${p.id})" style="width:auto;padding:6px 10px;background:#eef2ff;border-radius:10px;border:0">Share</button></div>
- </div>`).join('');
+function renderPosts(list){
+ let c=document.getElementById('feedContainer'); c.innerHTML='';
+ list.forEach(post=>{
+  let tag=post.tag||getTag(post.uname,'');
+  let div=document.createElement('div'); div.className='card';
+  div.innerHTML=`<div style="display:flex;justify-content:space-between;align-items:center"><b class="post-title">${post.title}</b><span class="tag ${tag.cls}">${tag.icon} ${tag.text}</span></div><div class="post-meta">${post.uname} | ${post.date} | ${post.gid}</div><div style="margin:8px 0;font-size:14px">${post.detail}</div><div style="font-size:12px;margin-bottom:6px"><b>${post.price}</b> - ${tag.text} - 10000x</div><div style="display:flex;gap:8px"><button class="btn-light" onclick="likePost(${post.id})" style="width:auto">Like (${post.likes})</button><button class="btn-light" style="width:auto">Comment</button><button class="btn-light" style="width:auto">Share</button></div>`;
+  c.appendChild(div);
+ });
 }
-function likePost(id){const p=posts.find(x=>x.id===id);if(p){p.likes++;localStorage.setItem('drp_posts',JSON.stringify(posts));renderFeed();}}
-function commentPost(id){const t=prompt('Comment:');if(!t)return;const p=posts.find(x=>x.id===id);p.comments.push({user:currentUser.username,text:t});localStorage.setItem('drp_posts',JSON.stringify(posts));renderFeed();}
-function sharePost(id){alert('Link copied - Share system like FB');}
-function startNewsFeed(){
- const news=[{title:'Global Property News',detail:'Worldwide property market update'},{title:'Business World News',detail:'Amazon x FB x Insta x Google system worldwide'},{title:'Interior Reel News',detail:'Interior reels trending worldwide'}];
- news.forEach(n=>{posts.unshift({id:Date.now()+Math.random(),title:n.title,detail:n.detail,price:'World News',owner:'Global News System',username:'worldnews',likes:5,comments:[],reach:'10000x',type:'news',time:'News Feed'})});
- localStorage.setItem('drp_posts',JSON.stringify(posts));renderFeed();alert('Sari duniya ki news feed me aa gayi');
-}
-let localStream;
-async function startCall(){try{localStream=await navigator.mediaDevices.getUserMedia({video:true,audio:true});document.getElementById('localVideo').srcObject=localStream;document.getElementById('localVideo').classList.remove('hidden');document.getElementById('remoteVideo').classList.remove('hidden');alert('Video call started inside website');}catch(e){alert('Camera permission needed');}}
-function endCall(){if(localStream){localStream.getTracks().forEach(t=>t.stop());}document.getElementById('localVideo').classList.add('hidden');document.getElementById('remoteVideo').classList.add('hidden');}
+function loadPosts(){ let all=JSON.parse(localStorage.getItem(LS_POSTS)||'[]'); renderPosts(all); }
+function likePost(id){ let all=JSON.parse(localStorage.getItem(LS_POSTS)||'[]'); let p=all.find(x=>x.id===id); if(p){p.likes++; localStorage.setItem(LS_POSTS, JSON.stringify(all)); renderPosts(all);} }
+function closeAdmin(){ document.getElementById('adminPage').classList.add('hidden'); document.getElementById('mainApp').classList.remove('hidden'); }
+function logout(){ if(confirm('Logout?')){ localStorage.removeItem(LS_USER); location.reload(); } }
 document.getElementById('adminBtn').onclick=()=>{
- let p=prompt('Enter Owner Private Password:');
- if(p==='9784664741'){document.getElementById('adminPage').classList.remove('hidden');document.getElementById('mainApp').classList.add('hidden');}
- else{alert('Only Owner can see private data');}
+ let pr=prompt('Enter Owner Private Password:');
+ if(pr==='9784664741'){ document.getElementById('adminPage').classList.remove('hidden'); document.getElementById('mainApp').classList.add('hidden'); document.getElementById('authPage').classList.add('hidden'); }
+ else{ alert('Only Owner can see private data'); }
 }
-function closeAdmin(){document.getElementById('adminPage').classList.add('hidden');document.getElementById('mainApp').classList.remove('hidden');}
-function showPage(p){renderFeed();}
-renderFeed();
+function startCall(){ alert('Call feature - WebRTC will be added'); }
+function endCall(){ alert('Call ended'); }
+window.onload=init;
 </script>
 </body>
 </html>
