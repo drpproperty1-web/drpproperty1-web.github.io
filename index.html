@@ -1,163 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>DRP - Global Platform</title>
-<style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:Inter,system-ui}
-body{background:#f0f2f5;color:#111}
-.top{position:sticky;top:0;z-index:99;background:#0a1931;color:#fff;padding:12px;display:flex;justify-content:space-between;align-items:center}
-.logo{font-weight:800;letter-spacing:1px}
-.card{background:#fff;border-radius:12px;padding:12px;margin:10px;box-shadow:0 2px 8px rgba(0,0,0,0.08)}
-.profile-card{background:linear-gradient(135deg,#0a1931,#1e3a5f);color:#fff;border:2px solid #00d4ff}
-.profile-photo{width:60px;height:60px;border-radius:50%;background:#ffcc00;color:#000;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:22px;border:3px solid #fff}
-input,textarea,select{width:100%;padding:11px 12px;border:1px solid #ddd;border-radius:10px;margin:6px 0;font-size:14px}
-button{width:100%;padding:11px;border:0;border-radius:10px;font-weight:700;cursor:pointer}
-.btn-dark{background:#0a1931;color:#fff}
-.btn-yellow{background:#ffcc00;color:#000}
-.btn-light{background:#e9ecef;color:#111}
-.hidden{display:none}
-.tag{display:inline-block;padding:4px 10px;border-radius:20px;font-size:11px;font-weight:800}
-.tag-diamond{background:linear-gradient(135deg,#b9f2ff,#00d4ff);border:1px solid #00aacc;color:#003344}
-.tag-blue{background:#e7f3ff;border:1px solid #1877f2;color:#1877f2}
-.tag-gold{background:#fff8dc;border:1px solid #daa520;color:#8b6914}
-.tag-paid{background:#fff3cd;border:1px solid #ffcc00;color:#664d00}
-.post-title{font-size:17px;font-weight:900}
-.post-meta{font-size:11px;color:#666;margin:3px 0}
-</style>
-</head>
-<body>
-<div class="top">
-<div class="logo">DRP - GLOBAL</div>
-<button id="adminBtn" class="btn-light" style="width:auto;padding:6px 12px;border-radius:20px;font-size:11px">MY GLOBAL ID</button>
-</div>
-
-<div id="authPage">
-<div class="card">
-<b>Create Original ID</b>
-<input id="fullName" placeholder="Full Name">
-<input id="userName" placeholder="Username - Unique">
-<input id="pass" type="password" placeholder="Password">
-<select id="idType">
-<option>Normal ID - Paid</option>
-<option>Celebrity - Blue Tick</option>
-<option>PM/President - Gold Tick</option>
-</select>
-<button class="btn-dark" onclick="createID()">Create ID</button>
-<button class="btn-light" onclick="login()" style="margin-top:8px">Login</button>
-</div>
-</div>
-
-<div id="mainApp" class="hidden">
-
-<div class="card profile-card">
-<div style="display:flex;gap:12px;align-items:center">
-<div class="profile-photo" id="pPhoto">DR</div>
-<div>
-<div style="display:flex;align-items:center;gap:6px"><b style="font-size:16px" id="pName">Drpowner</b> <span class="tag tag-diamond" id="pTag">💎 DIAMOND OWNER</span></div>
-<div style="font-size:12px;opacity:0.9;margin-top:4px" id="pGid">DRP - GLOBAL - 1234 - DRP OWNER</div>
-<div style="font-size:11px;opacity:0.7;margin-top:2px">Owner | Phagi, Rajasthan | Worldwide</div>
-</div>
-</div>
-</div>
-
-<div class="card">
-<h4>Post Your Global Content</h4>
-<input id="pTitle" placeholder="Phagi Luxury Villa...">
-<textarea id="pDetail" placeholder="Detail..."></textarea>
-<input id="pPrice" placeholder="Price">
-<button class="btn-yellow" onclick="createPost()">POST GLOBAL - 1000x Reach</button>
-</div>
-
-<div id="feedContainer"></div>
-</div>
-
-<div id="adminPage" class="hidden">
-<div class="card" style="background:#fff9c4;border:2px solid #ffcc00">
-<h3>Private - 💎 DIAMOND OWNER ONLY</h3>
-<p id="showGid"></p>
-<button class="btn-dark" onclick="logout()" style="background:#ff4444;margin:8px 0">Logout</button>
-<button class="btn-dark" onclick="closeAdmin()">Close</button>
-</div>
-</div>
-
+<!-- PROFILE CLICKABLE + DP UPLOAD + POST MEDIA -->
 <script>
-let currentUser=null;
-const LS_USER='drp_current_session';
-const LS_POSTS='drp_all_posts';
-function getTag(uname, type){
- let u=(uname||'').toLowerCase();
- if(u==='drpowner' || u==='owner' || u.includes('drp_owner')) return {icon:'💎', text:'DIAMOND OWNER', cls:'tag-diamond'};
- if((type||'').includes('Celebrity')) return {icon:'✅', text:'BLUE TICK', cls:'tag-blue'};
- if((type||'').includes('PM')) return {icon:'👑', text:'GOLD TICK', cls:'tag-gold'};
- return {icon:'💰', text:'PAID ID', cls:'tag-paid'};
+// Extra functions add karo old code me
+function openProfileSettings(){
+ let name=prompt('Apna Naam likho:', currentUser.uname);
+ if(name) { currentUser.uname=name; localStorage.setItem(LS_USER, JSON.stringify(currentUser)); showMain(); }
 }
-function init(){
- let sess=localStorage.getItem(LS_USER);
- if(sess){ try{ currentUser=JSON.parse(sess); showMain(); loadPosts(); return;}catch(e){} }
+function uploadDP(){
+ let input=document.createElement('input'); input.type='file'; input.accept='image/*';
+ input.onchange=e=>{
+  let reader=new FileReader();
+  reader.onload=ev=>{
+   localStorage.setItem('drp_dp_'+currentUser.uname, ev.target.result);
+   document.getElementById('pPhoto').innerHTML=`<img src="${ev.target.result}" style="width:60px;height:60px;border-radius:50%;object-fit:cover">`;
+  }; reader.readAsDataURL(e.target.files[0]);
+ }; input.click();
 }
-function createID(){
- let name=document.getElementById('fullName').value.trim();
- let uname=document.getElementById('userName').value.trim();
- let pass=document.getElementById('pass').value.trim();
- let idType=document.getElementById('idType').value;
- if(!name||!uname||!pass){alert('Fill all');return;}
- let gid=uname.toUpperCase()+'-'+Math.floor(1000+Math.random()*9000);
- let obj={name,uname,pass,gid,idType};
- localStorage.setItem('drp_user_'+uname, JSON.stringify(obj));
- localStorage.setItem(LS_USER, JSON.stringify(obj));
- currentUser=obj; showMain();
-}
-function login(){
- let uname=document.getElementById('userName').value.trim();
- let pass=document.getElementById('pass').value.trim();
- let data=localStorage.getItem('drp_user_'+uname);
- if(!data){alert('ID not found');return;}
- let u=JSON.parse(data); if(u.pass!==pass){alert('Wrong');return;}
- localStorage.setItem(LS_USER, JSON.stringify(u)); currentUser=u; showMain(); loadPosts();
-}
-function showMain(){
- document.getElementById('authPage').classList.add('hidden');
- document.getElementById('mainApp').classList.remove('hidden');
- if(currentUser){
-  let t=getTag(currentUser.uname, currentUser.idType);
-  document.getElementById('pName').innerText=currentUser.uname;
-  document.getElementById('pTag').innerText=t.icon+' '+t.text;
-  document.getElementById('pGid').innerText=currentUser.gid+' - DRP OWNER';
-  document.getElementById('pPhoto').innerText=currentUser.uname.substring(0,2).toUpperCase();
-  document.getElementById('showGid').innerText=t.icon+' '+t.text+' | '+currentUser.gid;
- }
-}
-function createPost(){
- let t=document.getElementById('pTitle').value.trim()||'Phagi Luxury Villa - Rajasthani Heritage + Modern - Worldwide';
- let d=document.getElementById('pDetail').value.trim()||'Only DRP - DRP OWNER - 10000x Reach - Worldwide Property - Original';
- let p=document.getElementById('pPrice').value.trim()||'$150k / 1.2 Cr - Negotiable - 10000x - 💎 DIAMOND OWNER';
- if(!currentUser)return;
- let now=new Date(); let dateStr=now.toLocaleDateString('en-GB')+', '+now.toLocaleTimeString('en-GB');
- let tag=getTag(currentUser.uname, currentUser.idType);
- let post={id:Date.now(),title:t,detail:d,price:p,uname:currentUser.uname,gid:currentUser.gid,date:dateStr,likes:0,tag:tag};
- let all=JSON.parse(localStorage.getItem(LS_POSTS)||'[]'); all.unshift(post); localStorage.setItem(LS_POSTS, JSON.stringify(all));
- renderPosts(all);
- alert('Posted as '+tag.text+'!');
-}
-function renderPosts(list){
- let c=document.getElementById('feedContainer'); c.innerHTML='';
- list.forEach(post=>{
-  let tag=post.tag||getTag(post.uname,'');
-  let div=document.createElement('div'); div.className='card';
-  div.innerHTML=`<div style="display:flex;justify-content:space-between"><b class="post-title">${post.title}</b><span class="tag ${tag.cls}">${tag.icon} ${tag.text}</span></div><div class="post-meta">${post.uname} | ${post.date} | ${post.gid}</div><div style="margin:8px 0">${post.detail}</div><div style="font-size:12px"><b>${post.price}</b></div><div style="display:flex;gap:8px;margin-top:8px"><button class="btn-light" style="width:auto">Like (${post.likes})</button><button class="btn-light" style="width:auto">Comment</button><button class="btn-light" style="width:auto">Share</button></div>`;
-  c.appendChild(div);
- });
-}
-function loadPosts(){ let all=JSON.parse(localStorage.getItem(LS_POSTS)||'[]'); renderPosts(all); }
-function closeAdmin(){ document.getElementById('adminPage').classList.add('hidden'); document.getElementById('mainApp').classList.remove('hidden'); }
-function logout(){ if(confirm('Logout?')){ localStorage.removeItem(LS_USER); location.reload(); } }
-document.getElementById('adminBtn').onclick=()=>{
- let pr=prompt('Enter Password:');
- if(pr==='9784664741'){ document.getElementById('adminPage').classList.remove('hidden'); document.getElementById('mainApp').classList.add('hidden'); }
-}
-window.onload=init;
 </script>
-</body>
-</html>
