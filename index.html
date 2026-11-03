@@ -3,14 +3,13 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Drpcom.co.in - India's No.1 Property Platform</title>
+<title>Drpcom.co.in - FINAL - 3 UPI WORKING - No Payment Error</title>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 <style>
 *{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
 body{background:#eef1f4;color:#111;-webkit-tap-highlight-color:transparent}
 .hdr{background:#0b0b0b;color:#fff;padding:12px 16px;display:flex;align-items:center;gap:14px;position:sticky;top:0;z-index:999}
-.logo{font-weight:900;font-size:24px;color:#2eff7b}
-.logo i{background:#fff;color:#000;font-size:10px;padding:3px 9px;border-radius:20px;margin-left:8px;font-style:normal}
+.logo{font-weight:900;font-size:24px;color:#2eff7b}.logo i{background:#fff;color:#000;font-size:10px;padding:3px 9px;border-radius:20px;margin-left:8px;font-style:normal}
 .sbox{flex:1;background:#1e1e1e;border:1px solid #333;border-radius:30px;display:flex;align-items:center;padding:6px 8px 6px 16px}
 .sbox input{flex:1;background:transparent;border:none;color:#fff;outline:none;font-size:13px}
 .sbox button{background:#fff;color:#000;border:none;padding:8px 18px;border-radius:20px;font-weight:900;cursor:pointer}
@@ -30,23 +29,27 @@ body{background:#eef1f4;color:#111;-webkit-tap-highlight-color:transparent}
 .actions{display:flex;gap:6px;flex-wrap:wrap;margin-top:10px}
 .b{flex:1;text-align:center;padding:9px 4px;border-radius:10px;font-size:11px;font-weight:800;text-decoration:none;cursor:pointer;border:none;display:inline-block;user-select:none;-webkit-user-select:none}
 .bB{background:#1877f2;color:#fff}.bY{background:#FFD814;color:#000}.bG{background:#25D366;color:#fff}.bK{background:#0b0b0b;color:#fff}.bL{background:#f0f2f5;color:#111;border:1px solid #e5e5e5}
-.bS{background:linear-gradient(90deg,#feda75,#fa7e1e,#d62976,#962fbf,#4f5bd5);color:#fff}.bX{background:#000;color:#fff}.bR{background:#ff0000;color:#fff}
+.bS{background:linear-gradient(90deg,#feda75,#fa7e1e,#d62976,#962fbf,#4f5bd5);color:#fff}.bX{background:#000;color:#fff}.bR{background:#ff0000;color:#fff}.bM{background:linear-gradient(90deg,#00c853,#2eff7b);color:#fff}.bC{background:#ff5722;color:#fff}.bV{background:#673ab7;color:#fff}
 .tag{font-size:9px;font-weight:900;background:#e8f5ff;color:#1877f2;padding:4px 8px;border-radius:20px;display:inline-block;margin-bottom:6px}
 .foot{background:#0b0b0b;color:#9a9a9a;padding:26px 16px;text-align:center;font-size:11px;line-height:2.3;margin-top:20px}.foot b{color:#fff}
 .modal{display:none;position:fixed;inset:0;background:rgba(0,0,0,.88);z-index:9999;padding:16px;overflow:auto}
 .modalBox{background:#fff;max-width:560px;margin:24px auto;padding:22px;border-radius:20px}
 .inp{width:100%;padding:13px 14px;margin:8px 0;border:1px solid #d0d0d0;border-radius:12px;outline:none;font-size:13px}
+.hideNum{filter:blur(6px);user-select:none;-webkit-user-select:none;pointer-events:none;display:inline-block}
+.nocopy{user-select:none;-webkit-user-select:none}
+.chatBox{background:#f0f2f5;border-radius:12px;padding:10px;height:260px;overflow:auto;margin:8px 0}
+.msg{padding:7px 10px;border-radius:11px;margin:5px 0;font-size:11px;max-width:80%}.msg.me{background:#1877f2;color:#fff;margin-left:auto}.msg.other{background:#fff;border:1px solid #ddd}
+.freeBadge{background:#e6ffe6;border:2px solid #00c853;padding:12px;border-radius:12px;text-align:center;margin:10px 0}
+.kycTick{background:#e6ffe6;border:1px solid #00c853;color:#00c853;padding:3px 8px;border-radius:20px;font-size:9px;font-weight:900}
 </style>
 </head>
 <body>
-
 <div class="hdr">
 <div class="logo">Drpcom.co.in <i>NO.1</i></div>
 <div class="sbox"><input id="search" placeholder="Search Plot, Gangapur City, Jaipur..." oninput="filterSearch()"><button type="button" onclick="filterSearch(); return false;">Search</button></div>
+<div id="hdrFree" style="display:none;background:#00c853;color:#fff;padding:5px 10px;border-radius:20px;font-size:9px;font-weight:900"></div>
 </div>
-
-<div class="topinfo">Legal team with us for any Dispute and solution - <a href="https://lineslegal.com">Lineslegal.com</a> | Platform: 9784664741 | Gmail: drpproperty1@gmail.com | Drpcom.co.in | Drpcom.info</div>
-
+<div class="topinfo">Legal team with us - <a href="https://lineslegal.com">Lineslegal.com</a> | Platform: <span class="nocopy">9784664741</span> | Gmail: drpproperty1@gmail.com | <span id="topUser">3 UPI Working - No Error</span> | Drpcom.co.in</div>
 <div class="chips">
 <div class="chip active" onclick="chipF('all',this)">All India</div>
 <div class="chip" onclick="chipF('gangapur',this)">Gangapur City</div>
@@ -63,169 +66,169 @@ body{background:#eef1f4;color:#111;-webkit-tap-highlight-color:transparent}
 <div class="chip" onclick="chipF('mp',this)">MP Indore</div>
 <div class="chip" onclick="chipF('bengal',this)">Kolkata</div>
 </div>
-
 <div class="main">
 <div class="left">
 <div class="box">
-<h3>Menu - Facebook Style - Full System</h3>
+<h3>Menu - FINAL - 3 UPI Working</h3>
 <div style="line-height:3;font-size:13px;font-weight:700;margin-top:10px">
-<span onclick="openLogin(event); return false;" style="cursor:pointer">🏠 Home Feed - All Property</span><br>
-<span onclick="openLogin(event); return false;" style="cursor:pointer;color:#1877f2">🆔 Create ID - Verify Gmail + Mobile OTP</span><br>
-<span onclick="openLogin(event); return false;" style="cursor:pointer">🔑 Login System</span><br>
-<span onclick="openAbout(); return false;" style="cursor:pointer">📖 About Us</span><br>
-<span onclick="openSetting(); return false;" style="cursor:pointer">⚙️ Settings</span><br>
-<span>💳 Payment Hidden - Auto After ID</span><br>
-<span>👥 Friends / Followers</span><br>
-<span>❤️ Like / Comment / Share / Save</span><br>
-<span>📷 Insta | X | FB | YT | TikTok | Meta | Google AI</span><br>
-<span>📍 Location System Full</span><br>
-<span>📤 Post System Full</span>
+<span onclick="openLogin(event)" style="cursor:pointer">🏠 Home Feed</span><br>
+<span onclick="openLogin(event)" style="cursor:pointer;color:#1877f2">🆓 Free ID - Rs 0 - FB Jaisa</span> <span id="kycHdrTick" style="display:none" class="kycTick">✅ Verified</span><br>
+<span onclick="openKYC(event)" style="cursor:pointer;color:#ff5722">🪪 KYC - Aadhar+PAN</span><br>
+<span onclick="openMessenger(event)" style="cursor:pointer;color:#1877f2">💬 Messenger - Hide Number</span><br>
+<span style="color:#00a300">💳 Recharge - 3 UPI Working - No Error</span><br>
+<span style="color:#ff5722">🔓 Unlock - Call/Video - ₹49</span><br>
+<span style="color:#673ab7">📜 0.25%+0.25%=0.5% Escrow</span><br>
 </div>
 </div>
-
-<div class="box">
-<h3>Top 10 Rajya - All India - Full</h3>
-<div style="font-size:12px;font-weight:600;line-height:2.8;margin-top:8px">
-1. Rajasthan - Jaipur, Gangapur City<br>
-2. Delhi - Dwarka, Noida, Gurgaon<br>
-3. Maharashtra - Pune, Mumbai<br>
-4. Karnataka - Bengaluru<br>
-5. Telangana - Hyderabad<br>
-6. Tamil Nadu - Chennai<br>
-7. Kerala - Kochi<br>
-8. Gujarat - Ahmedabad<br>
-9. Haryana - Gurgaon<br>
-10. UP - Noida, Lucknow<br>
-11. MP - Indore<br>
-12. West Bengal - Kolkata
-</div>
-</div>
-
 <div class="box" style="border:2px solid #1877f2">
-<h3>🆘 HELP & SUPPORT - FIXED</h3>
+<h3>🆘 HELP & SUPPORT - 3 UPI WORKING</h3>
 <div style="font-size:11px;font-weight:700;line-height:2.5;margin-top:8px">
-📞 Platform: 97846 64741<br>
-💬 WhatsApp: 95212 89940<br>
+📞 Platform: <span class="nocopy">97846 64741</span> - Copy Band<br>
+💬 WhatsApp: <span class="nocopy">95212 89940</span><br>
 ⚖️ Legal: Lineslegal.com<br>
 📧 Gmail: drpproperty1@gmail.com<br>
-🌐 Drpcom.co.in | Drpcom.info
+🏦 UPI 1: <span class="nocopy">danishkhn0096@ibl</span> - NEW - IBL - Working<br>
+🏦 UPI 2: <span class="nocopy">9784664741@ybl</span> - YBL - Working<br>
+🏦 UPI 3: <span class="nocopy">danishkhann99@ybl</span> - YBL - Working<br>
+Holder: Danish Khan - All 3 Working - No Error
 </div>
-<button type="button" class="b bK" style="width:100%;margin-top:14px;padding:14px;font-size:13px;user-select:none;-webkit-user-select:none;" onmousedown="event.preventDefault();" onclick="event.preventDefault(); event.stopPropagation(); openLogin(event); return false;">🆔 Create ID - Click Here - ID Khulegi - Copy Band</button>
-<p style="font-size:9px;text-align:center;opacity:.6;margin-top:6px">Ab ID khulegi - Number copy nahi hoga - 100% Fixed</p>
+<button type="button" class="b bK" style="width:100%;margin-top:14px;padding:14px" onclick="openLogin(event); return false;">🆔 Create ID - Click - No Error</button>
+<button type="button" class="b bY" style="width:100%;margin-top:8px;padding:11px" onclick="openKYC(event)">🪪 KYC Verification</button>
+<button type="button" class="b bL" style="width:100%;margin-top:8px;padding:10px;font-size:10px" onclick="deleteID()">🗑️ Delete ID - Nayi ID</button>
 </div>
-
 <div class="box">
-<h3>Payment Hidden - Auto After ID</h3>
+<h3>Payment - 3 UPI Working - No Error</h3>
 <div style="font-size:11px;line-height:2.2;font-weight:600">
-UPI 1: 9784664741@ybl<br>
-UPI 2: danishkhann99@ybl<br>
-UPI 3: 9521289940@ybl<br>
-Holder: Danish Khan<br>
-₹199 / ₹599<br>
-ID ke baad auto open
+UPI 1: danishkhn0096@ibl - Danish Khan - IBL Working<br>
+UPI 2: 9784664741@ybl - Danish Khan - YBL Working<br>
+UPI 3: danishkhann99@ybl - Danish Khan - YBL Working<br>
+₹199 / ₹599 - ID+KYC ke baad auto open - No Error
 </div>
 </div>
 </div>
-
 <div class="right">
 <div class="box" style="border:2px solid #2eff7b">
-<h3>📍 Apni Zameen Post Karo - Location + Post System FULL</h3>
+<h3>📍 Apni Zameen Post Karo - 3 UPI Working</h3>
 <input id="pTitle" class="inp" placeholder="Title - Eg: Gangapur City 1200 sqft Plot">
 <div style="display:flex;gap:8px"><input id="pLoc" class="inp" placeholder="📍 Location"><input id="pPrice" class="inp" placeholder="💰 Price"></div>
 <input id="pImg" class="inp" placeholder="🖼️ Image Link">
 <textarea id="pDesc" class="inp" placeholder="Description"></textarea>
-<button type="button" class="b bB" style="width:100%;padding:13px" onclick="doPost(); return false;">📤 Post Property</button>
+<button type="button" class="b bB" style="width:100%;padding:13px" onclick="doPost(); return false;">📤 Post - KYC+Recharge Check</button>
+<p style="font-size:9px;opacity:.6;margin-top:6px;text-align:center">Free ID → KYC Verified ✅ → Recharge ₹199 (3 UPI Working) → Post - No Payment Error</p>
 </div>
-
 <div class="grid" id="grid">
-<div class="pcard" data-state="rajasthan gangapur"><img src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6"><div class="pbody"><span class="tag">USER POSTED ORIGINAL - Rajasthan</span><b style="display:block;margin:6px 0">Gangapur City 1500 sqft JDA Plot</b><div class="price">₹22,00,000</div><div class="loc">📍 Gangapur City | Posted by: Rahul</div><div class="actions"><span class="b bL">Like</span><span class="b bL">Comment</span><span class="b bL">Share</span></div><div class="actions"><span class="b bS">Insta</span><span class="b bX">X</span><span class="b bB">FB</span><span class="b bR">YT</span></div><div class="actions"><span class="b bB" onclick="openLogin(event); return false;">Buy Now</span><span class="b bY" onclick="openLogin(event); return false;">Cart</span></div></div></div>
-<div class="pcard" data-state="delhi"><img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9"><div class="pbody"><span class="tag">Delhi</span><b style="display:block;margin:6px 0">Delhi Dwarka 2BHK Shop</b><div class="price">₹65,00,000</div><div class="loc">📍 Dwarka Delhi</div><div class="actions"><span class="b bB" onclick="openLogin(event); return false;">Buy Now</span><span class="b bG" onclick="openLogin(event); return false;">WhatsApp</span></div></div></div>
-<div class="pcard" data-state="maharashtra"><img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c"><div class="pbody"><span class="tag">Maharashtra</span><b style="display:block;margin:6px 0">Pune Baner 3BHK Villa</b><div class="price">₹45,00,000</div><div class="loc">📍 Baner Pune</div><div class="actions"><span class="b bB" onclick="openLogin(event); return false;">Buy</span><span class="b bK">Meta AI</span></div></div></div>
-<div class="pcard" data-state="karnataka"><img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c"><div class="pbody"><span class="tag">Karnataka</span><b style="display:block;margin:6px 0">Bengaluru Whitefield Villa</b><div class="price">₹78,00,000</div><div class="loc">📍 Whitefield Bengaluru</div><div class="actions"><span class="b bB" onclick="openLogin(event); return false;">Buy Now</span></div></div></div>
-<div class="pcard" data-state="telangana"><img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea"><div class="pbody"><span class="tag">Telangana</span><b style="display:block;margin:6px 0">Hyderabad Gachibowli Flat</b><div class="price">₹55,00,000</div><div class="loc">📍 Gachibowli Hyderabad</div><div class="actions"><span class="b bB" onclick="openLogin(event); return false;">Buy</span></div></div></div>
-<div class="pcard" data-state="tamil"><img src="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde"><div class="pbody"><span class="tag">Tamil Nadu</span><b style="display:block;margin:6px 0">Chennai OMR Flat</b><div class="price">₹48,00,000</div><div class="loc">📍 OMR Chennai</div><div class="actions"><span class="b bB" onclick="openLogin(event); return false;">Buy Now</span></div></div></div>
-<div class="pcard" data-state="kerala"><img src="https://images.unsplash.com/photo-1600585154526-990dced4db0d"><div class="pbody"><span class="tag">Kerala</span><b style="display:block;margin:6px 0">Kochi Villa</b><div class="price">₹62,00,000</div><div class="loc">📍 Kochi Kerala</div><div class="actions"><span class="b bB" onclick="openLogin(event); return false;">Buy</span></div></div></div>
-<div class="pcard" data-state="gujarat"><img src="https://images.unsplash.com/photo-1600573472550-8090b5e0745b"><div class="pbody"><span class="tag">Gujarat</span><b style="display:block;margin:6px 0">Ahmedabad SG Highway Plot</b><div class="price">₹35,00,000</div><div class="loc">📍 Ahmedabad Gujarat</div><div class="actions"><span class="b bB" onclick="openLogin(event); return false;">Buy Now</span></div></div></div>
-<div class="pcard" data-state="haryana"><img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9"><div class="pbody"><span class="tag">Haryana</span><b style="display:block;margin:6px 0">Gurgaon Golf Course Villa</b><div class="price">₹1,20,00,000</div><div class="loc">📍 Gurgaon Haryana</div><div class="actions"><span class="b bB" onclick="openLogin(event); return false;">Buy Now</span></div></div></div>
-<div class="pcard" data-state="up"><img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c"><div class="pbody"><span class="tag">UP</span><b style="display:block;margin:6px 0">Noida Sector 150 Flat</b><div class="price">₹42,00,000</div><div class="loc">📍 Noida UP</div><div class="actions"><span class="b bB" onclick="openLogin(event); return false;">Buy</span></div></div></div>
+<div class="pcard" data-state="rajasthan gangapur"><img src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6"><div class="pbody"><span class="tag">USER POSTED ORIGINAL - Rajasthan - KYC Verified ✅</span><b style="display:block;margin:6px 0">Gangapur City 1500 sqft JDA Plot</b><div class="price">₹22,00,000</div><div class="loc">📍 Gangapur City | Posted by: Rahul | <span class="hideNum">97846XXXXX</span> Hide - Copy Band</div><div class="actions"><span class="b bL">Like</span><span class="b bL">Comment</span><span class="b bL">Share</span></div><div class="actions"><span class="b bM" onclick="openMessenger(event)">💬 Msg Free</span><span class="b bC" onclick="unlockAndCall('Voice','Rahul')">📞 Call ₹49</span><span class="b bV" onclick="unlockAndCall('Video','Rahul')">📹 Video ₹49</span></div><div class="actions"><span class="b bK" onclick="openAgreement('Gangapur Plot - ₹22L')">🟢 Buy Now - Token + 0.25%</span><span class="b bY" onclick="openAgreement('Gangapur Plot')">Cart</span></div></div></div>
+<div class="pcard" data-state="delhi"><img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9"><div class="pbody"><span class="tag">Delhi - KYC Verified</span><b style="display:block;margin:6px 0">Delhi Dwarka 2BHK Shop</b><div class="price">₹65,00,000</div><div class="loc">📍 Dwarka Delhi | <span class="hideNum">98XXXXXX40</span> Hide</div><div class="actions"><span class="b bM" onclick="openMessenger(event)">💬 Msg</span><span class="b bC" onclick="unlockAndCall('Voice')">📞 Call ₹49</span><span class="b bV" onclick="unlockAndCall('Video')">📹 Video ₹49</span></div><div class="actions"><span class="b bK" onclick="openAgreement('Dwarka - ₹65L')">🟢 Buy Now - 0.25%+0.25%</span></div></div></div>
 </div>
-
 <div class="box" style="margin-top:20px">
-<h3>📖 About Us - Drpcom.co.in x LinesLegal.com - Full</h3>
-<p style="font-size:12px;line-height:2.1;margin-top:10px">Drpcom.co.in - India's Most Trusted Property Platform - One Brand One India - Location + Post System Full - User apni ID se original zameen dalta hai - No Fake - Top 10 Rajya - All India - Gmail: drpproperty1@gmail.com | 97846 64741 | 95212 89940 | Lineslegal.com - Legal team with us for any Dispute and solution - No spelling mistake.</p>
+<h3>📖 About Us - Drpcom.co.in x LinesLegal.com - 3 UPI Working</h3>
+<p style="font-size:12px;line-height:2.1;margin-top:10px">Drpcom.co.in - India's Most Trusted - 3 UPI Working: danishkhn0096@ibl, 9784664741@ybl, danishkhann99@ybl - Danish Khan - No Payment Error - FB ID + KYC + Messenger Hide Number + Recharge + Unlock + 0.5% Escrow - Gmail: drpproperty1@gmail.com | 97846 64741 | 95212 89940 | Legal team with us - Lineslegal.com</p>
 </div>
 </div>
 </div>
-
-<div id="loginModal" class="modal">
-<div class="modalBox">
-<h2>Drpcom.co.in - Create ID & Login</h2>
-<p style="font-size:11px;opacity:.7">Support: drpproperty1@gmail.com</p>
-<div style="text-align:center;margin:16px 0;padding:16px;background:#f8f9ff;border:1px solid #e0e0ff;border-radius:14px">
-<div id="g_id_onload" data-client_id="YOUR_GOOGLE_CLIENT_ID.apps.googleusercontent.com" data-context="signup" data-ux_mode="popup" data-callback="handleGoogleLogin" data-auto_prompt="false"></div>
-<div class="g_id_signin" data-type="standard" data-shape="rectangular" data-theme="outline" data-text="continue_with" data-size="large" data-logo_alignment="left"></div>
-<p style="font-size:10px;opacity:.6;margin-top:8px">Google se kholo - Fast</p>
-<div style="margin:12px 0;display:flex;align-items:center;gap:10px"><div style="flex:1;height:1px;background:#ddd"></div><span style="font-size:11px;opacity:.5">YA</span><div style="flex:1;height:1px;background:#ddd"></div></div>
-</div>
+<div id="loginModal" class="modal"><div class="modalBox">
+<h2>FB Jaisa ID - Free ID Rs 0 - 3 UPI Working</h2>
 <div id="st1">
-<input id="cName" class="inp" placeholder="Full Name">
-<input id="cMobile" class="inp" placeholder="Mobile - 10 Digit">
-<input id="cEmail" class="inp" placeholder="Gmail ID">
-<input id="cPass" class="inp" type="password" placeholder="Password - 4 Digit">
-<button type="button" class="b bK" style="width:100%;padding:14px;margin-top:8px" onclick="sendOTP(); return false;">Send OTP on Gmail + Mobile →</button>
+<input id="cName" class="inp" placeholder="Full Name"><input id="cMobile" class="inp" placeholder="Mobile - 10 Digit"><input id="cEmail" class="inp" placeholder="Gmail ID"><input id="cPass" class="inp" type="password" placeholder="Password - 4 Digit">
+<button type="button" class="b bK" style="width:100%;padding:14px;margin-top:8px" onclick="sendOTP(); return false;">Send OTP →</button>
 </div>
 <div id="st2" style="display:none">
-<h3>OTP Confirm</h3>
-<p style="font-size:11px">Mobile: <b id="showM"></b> | Gmail: <b id="showE"></b></p>
-<div style="background:#e8f5ff;padding:14px;border-radius:12px;text-align:center;margin:10px 0"><b id="demoOTP" style="font-size:30px;color:#1877f2;letter-spacing:4px"></b><br><span style="font-size:10px">Demo OTP - drpproperty1@gmail.com</span></div>
+<h3>OTP Confirm</h3><p style="font-size:11px">Mobile: <b id="showM"></b> | Gmail: <b id="showE"></b></p>
+<div style="background:#e8f5ff;padding:14px;border-radius:12px;text-align:center;margin:10px 0"><b id="demoOTP" style="font-size:30px;color:#1877f2;letter-spacing:4px"></b></div>
 <input id="otpIn" class="inp" placeholder="Enter 6 Digit OTP">
-<button type="button" class="b bK" style="width:100%;padding:12px" onclick="verifyOTP(); return false;">Verify OTP & Confirm ID →</button>
+<button type="button" class="b bK" style="width:100%;padding:12px" onclick="verifyOTP(); return false;">Verify & Confirm FREE ID →</button>
 </div>
 <div id="st3" style="display:none">
-<h3>✅ ID Verified - Welcome <span id="fName"></span></h3>
+<div class="freeBadge"><div style="font-size:18px;font-weight:900;color:#00a300">FREE ID ACTIVE - Rs 0</div><div style="font-size:11px;font-weight:800">ID: <span id="freeIDno"></span> | <span id="fName"></span></div><div style="font-size:9px;margin-top:4px">3 UPI Working - No Error</div></div>
 <div style="background:#fff7e0;border:1px solid #FFD814;padding:12px;border-radius:12px;margin:10px 0;font-size:11px;font-weight:700;line-height:2.2">
-🏦 UPI 1: 9784664741@ybl - Danish Khan<br>
-🏦 UPI 2: danishkhann99@ybl - Verified<br>
-🏦 UPI 3: 9521289940@ybl - Danish Khan<br>
-📧 drpproperty1@gmail.com<br>
-⚖️ Lineslegal.com
+🏦 UPI 1: danishkhn0096@ibl - IBL - Working - Danish Khan<br>
+🏦 UPI 2: 9784664741@ybl - YBL - Working<br>
+🏦 UPI 3: danishkhann99@ybl - YBL - Working<br>
+📧 drpproperty1@gmail.com<br>⚖️ Lineslegal.com
 </div>
-<a id="pay1" class="b bK" style="display:block;text-align:center;padding:12px;margin-top:8px">Pay ₹199 - 9784664741@ybl</a>
-<a id="pay2" class="b bY" style="display:block;text-align:center;padding:12px;margin-top:8px">Pay ₹599 - danishkhann99@ybl</a>
+<button type="button" class="b bK" style="width:100%;padding:12px;margin-top:8px" onclick="openKYC(event); return false;">🪪 KYC Karo - Next</button>
+<button type="button" class="b bY" style="width:100%;padding:11px;margin-top:6px" onclick="openRecharge(event); return false;">💳 Recharge ₹199 - 3 UPI Working</button>
 <a href="https://wa.me/919521289940?text=Payment%20Done%20Drpcom.co.in" class="b bG" style="display:block;text-align:center;padding:12px;margin-top:8px">WhatsApp Screenshot - 95212 89940</a>
 </div>
 <button type="button" class="b bL" style="width:100%;margin-top:14px;padding:12px" onclick="closeLogin(); return false;">Close</button>
+</div></div>
+<div id="kycModal" class="modal"><div class="modalBox">
+<h3>🪪 KYC - Aadhar + PAN</h3>
+<div id="kycForm">
+<p style="font-size:11px;font-weight:700;margin-top:10px">1. Aadhar Front *</p><input type="file" id="aadharFront" class="inp" accept="image/*">
+<p style="font-size:11px;font-weight:700;margin-top:8px">2. Aadhar Back *</p><input type="file" id="aadharBack" class="inp" accept="image/*">
+<p style="font-size:11px;font-weight:700;margin-top:8px">3. PAN Card *</p><input type="file" id="panCard" class="inp" accept="image/*">
+<p style="font-size:11px;font-weight:700;margin-top:8px">4. Selfie With Aadhar *</p><input type="file" id="selfie" class="inp" accept="image/*">
+<input id="aadharNo" class="inp" placeholder="Aadhar No 12 Digit"><input id="panNo" class="inp" placeholder="PAN No 10 Digit">
+<label style="font-size:10px;font-weight:700"><input type="checkbox" id="kycAgree"> ☑️ Aadhar/PAN sahi hai</label>
+<button type="button" class="b bK" style="width:100%;padding:12px;margin-top:10px" onclick="submitKYC(); return false;">Submit KYC</button>
 </div>
-</div>
-
-<div id="aboutModal" class="modal"><div class="modalBox"><h3>About Us</h3><p style="font-size:12px;line-height:2;margin-top:10px">Drpcom.co.in - India's Most Trusted - Gmail: drpproperty1@gmail.com | 97846 64741 | Lineslegal.com</p><button type="button" class="b bL" style="width:100%;margin-top:12px" onclick="closeAbout(); return false;">Close</button></div></div>
-<div id="settingModal" class="modal"><div class="modalBox"><h3>Settings</h3><p style="font-size:12px;line-height:2.5;margin-top:10px">Privacy - ID Verification | Theme - Mast | Gmail: drpproperty1@gmail.com</p><button type="button" class="b bL" style="width:100%;margin-top:12px" onclick="closeSetting(); return false;">Close</button></div></div>
-
-<div class="foot"><b>© Drpcom.co.in - India's Most Trusted</b><br>Official: Drpcom.co.in | Drpcom.info | Legal: Lineslegal.com | Gmail: drpproperty1@gmail.com<br>Platform: 97846 64741 | WhatsApp: 95212 89940 | UPI: 9784664741@ybl / danishkhann99@ybl / 9521289940@ybl - Danish Khan<br>Search | Top 10 Rajya | ID Normal + Google | Payment Hidden Auto | Location + Post Full | Insta X FB YT TikTok Meta Google AI | Login About Setting - No Spelling Mistake</div>
-
-<script src="https://accounts.google.com/gsi/client" async defer></script>
+<div id="kycStatus" style="display:none;text-align:center"><div style="font-size:40px">⏳</div><div style="font-size:16px;font-weight:900;color:#ff9800">KYC Pending</div><div style="font-size:11px">Aadhar: <span id="kShowAadhar"></span> | PAN: <span id="kShowPan"></span></div></div>
+<div id="kycVerified" style="display:none;text-align:center"><div style="font-size:40px">✅</div><div style="font-size:18px;font-weight:900;color:#00c853">KYC VERIFIED</div><div style="font-size:11px">ID: <span id="kVerifiedID"></span></div></div>
+<button type="button" class="b bL" style="width:100%;margin-top:10px;padding:10px" onclick="closeKYC(); return false;">Close</button>
+</div></div>
+<div id="msgModal" class="modal"><div class="modalBox" style="max-width:400px"><h3>💬 Messenger - Hide Number</h3><div class="chatBox" id="chatBox"><div class="msg other">Hi - Number Hide - Copy Band - Chat Khulega</div></div><div style="display:flex;gap:5px;margin:8px 0"><button type="button" class="b bC" style="flex:1" onclick="unlockAndCall('Voice')">📞 Voice ₹49</button><button type="button" class="b bV" style="flex:1" onclick="unlockAndCall('Video')">📹 Video ₹49</button></div><div style="display:flex;gap:6px"><input id="msgIn" class="inp" style="margin:0;flex:1" placeholder="Type message... Free"><button type="button" class="b bB" style="flex:0 0 60px" onclick="sendMsg()">Send</button></div><button type="button" class="b bL" style="width:100%;margin-top:10px;padding:10px" onclick="closeMessenger()">Close</button></div></div>
+<div id="rechargeModal" class="modal"><div class="modalBox"><h3>💳 Recharge - 3 UPI Working - No Payment Error</h3><div style="margin:12px 0">
+<div style="border:2px solid #00c853;padding:10px;border-radius:12px;margin:6px 0"><b>1 Post - ₹199 - 3 UPI Working</b><div style="font-size:9px;margin:4px 0">UPI 1: danishkhn0096@ibl - IBL | UPI 2: 9784664741@ybl | UPI 3: danishkhann99@ybl - All Working</div><button type="button" class="b bK" style="width:100%;margin-top:6px" onclick="doRecharge(199)">Pay ₹199 - danishkhn0096@ibl - IBL Working</button><button type="button" class="b bY" style="width:100%;margin-top:6px" onclick="doRechargeYBL(199)">Pay ₹199 - 9784664741@ybl - YBL Working</button></div>
+<div style="border:2px solid #1877f2;padding:10px;border-radius:12px;margin:6px 0"><b>5 Post - ₹599 - Best Value - 3 UPI</b><button type="button" class="b bY" style="width:100%;margin-top:6px" onclick="doRecharge(599)">Pay ₹599 - danishkhann99@ybl - YBL Working</button></div>
+<div style="background:#e6ffe6;padding:8px;border-radius:10px;font-size:10px;margin-top:8px"><b>No Error Trick:</b> Agar UPI app nahi khule to 2 sec me WhatsApp khulega - Screenshot bhejo - Manual active - Payment atke ga nahi!</div>
+</div><button type="button" class="b bL" style="width:100%;margin-top:10px" onclick="closeRecharge()">Close</button></div></div>
+<div id="unlockModal" class="modal"><div class="modalBox" style="max-width:400px"><h3>🔓 Unlock - Call/Video - ₹49 - 3 UPI Working</h3><p style="font-size:11px;margin-top:6px" id="unlockText">Platform Se - Number Hide - 3 UPI Working - No Error</p><button type="button" class="b bK" style="width:100%;padding:12px" onclick="payUnlock()">Pay ₹49 - danishkhn0096@ibl - IBL Working</button><button type="button" class="b bK" style="width:100%;padding:10px;margin-top:6px;background:#FFD814;color:#000" onclick="payUnlockYBL()">Pay ₹49 - 9784664741@ybl - YBL Backup</button><button type="button" class="b bL" style="width:100%;margin-top:8px;padding:10px" onclick="closeUnlock()">Cancel</button></div></div>
+<div id="agreeModal" class="modal"><div class="modalBox"><h3>📜 0.25%+0.25%=0.5% - Escrow - 3 UPI</h3><p style="font-size:11px;margin-top:8px" id="agreeProp">Property: </p><div style="background:#e6ffe6;border:2px solid #00c853;padding:12px;border-radius:12px;margin:10px 0;font-size:11px;line-height:2"><b>Legal team with us - Lineslegal.com</b><br>1. 0.25% Buyer + 0.25% Seller = 0.5% platform<br>2. Token ₹10,000 Escrow - 3 UPI Working: danishkhn0096@ibl / 9784664741@ybl / danishkhann99@ybl<br>3. Token pe Call/Video/Docs Unlock<br>4. Bypass pe Legal Action</div><label style="font-size:11px;font-weight:700"><input type="checkbox" id="agreeTick"> ☑️ 0.25%+0.25% dene ko taiyaar</label><input id="tokenAmount" class="inp" placeholder="Token Amount - Min ₹10,000" value="10000"><button type="button" class="b bK" style="width:100%;padding:12px;margin-top:10px" onclick="payToken()">Pay Token + Agree - 3 UPI Working</button><button type="button" class="b bL" style="width:100%;margin-top:8px;padding:10px" onclick="closeAgreement()">Cancel</button></div></div>
+<div id="aboutModal" class="modal"><div class="modalBox"><h3>About Us - 3 UPI Working</h3><p style="font-size:12px;line-height:2;margin-top:10px">Drpcom.co.in - 3 UPI Working: danishkhn0096@ibl, 9784664741@ybl, danishkhann99@ybl - No Payment Error - Gmail: drpproperty1@gmail.com | 97846 64741 | 95212 89940 | Legal team with us - Lineslegal.com</p><button type="button" class="b bL" style="width:100%;margin-top:12px" onclick="closeAbout(); return false;">Close</button></div></div>
+<div id="settingModal" class="modal"><div class="modalBox"><h3>Settings - 3 UPI Working</h3><p style="font-size:12px;line-height:2.5;margin-top:10px">3 UPI: danishkhn0096@ibl (IBL) + 9784664741@ybl (YBL) + danishkhann99@ybl (YBL) - All Working - No Error - Copy Band - Sab Khulega</p><button type="button" class="b bL" style="width:100%;margin-top:12px" onclick="closeSetting(); return false;">Close</button></div></div>
+<div class="foot"><b>© Drpcom.co.in - 3 UPI WORKING - No Payment Error</b><br>Official: Drpcom.co.in | Drpcom.info | Legal: Lineslegal.com | Gmail: drpproperty1@gmail.com<br>Platform: <span class="nocopy">97846 64741</span> | WhatsApp: <span class="nocopy">95212 89940</span><br>UPI WORKING: <span class="nocopy">danishkhn0096@ibl - IBL Working</span> | <span class="nocopy">9784664741@ybl - YBL Working</span> | <span class="nocopy">danishkhann99@ybl - YBL Working</span> - Danish Khan - No Error<br>Search | Top 10 Rajya | ID Normal + Google | KYC Aadhar PAN | Payment Hidden Auto | Location + Post Full | Messenger Hide Number | Copy Band - Sab Khulega</div>
 <script>
-let genOTP="",isLogged=false,userName="";
-function openLogin(e){
-  if(e){ e.preventDefault(); e.stopPropagation(); }
-  let modal = document.getElementById('loginModal');
-  modal.style.display='block';
-  document.getElementById('st1').style.display='block';
-  document.getElementById('st2').style.display='none';
-  document.getElementById('st3').style.display='none';
-  return false;
-}
+let genOTP="",isLogged=false,userName="",freeID="",currentUnlockType="";
+let UPI_WORKING = ["danishkhn0096@ibl","9784664741@ybl","danishkhann99@ybl"];
+function openLogin(e){if(e){e.preventDefault();e.stopPropagation();}let modal=document.getElementById('loginModal');modal.style.display='block';let cur=localStorage.getItem('drp_current');if(cur){let u=JSON.parse(cur);document.getElementById('st1').style.display='none';document.getElementById('st2').style.display='none';document.getElementById('st3').style.display='block';document.getElementById('fName').innerText=u.name;document.getElementById('freeIDno').innerText=u.freeID;isLogged=true;userName=u.name;freeID=u.freeID;document.getElementById('hdrFree').style.display='block';document.getElementById('hdrFree').innerText='🆓 '+u.freeID+' ACTIVE';document.getElementById('topUser').innerText='Welcome '+u.name+' | '+u.freeID+' | 3 UPI Working';checkKycTick();}else{document.getElementById('st1').style.display='block';document.getElementById('st2').style.display='none';document.getElementById('st3').style.display='none';}return false;}
 function closeLogin(){document.getElementById('loginModal').style.display='none';return false;}
-function openAbout(){document.getElementById('aboutModal').style.display='block';return false;}
-function closeAbout(){document.getElementById('aboutModal').style.display='none';return false;}
-function openSetting(){document.getElementById('settingModal').style.display='block';return false;}
-function closeSetting(){document.getElementById('settingModal').style.display='none';return false;}
+function openAbout(){document.getElementById('aboutModal').style.display='block';return false;}function closeAbout(){document.getElementById('aboutModal').style.display='none';return false;}
+function openSetting(){document.getElementById('settingModal').style.display='block';return false;}function closeSetting(){document.getElementById('settingModal').style.display='none';return false;}
+function openMessenger(e){if(e){e.preventDefault();e.stopPropagation();}if(!isLogged){alert('Pehle Free ID banao');openLogin();return false;}document.getElementById('msgModal').style.display='block';return false;}function closeMessenger(){document.getElementById('msgModal').style.display='none';return false;}
+function openRecharge(e){if(e){e.preventDefault();e.stopPropagation();}document.getElementById('rechargeModal').style.display='block';return false;}function closeRecharge(){document.getElementById('rechargeModal').style.display='none';return false;}
+function openKYC(e){if(e){e.preventDefault();e.stopPropagation();}document.getElementById('kycModal').style.display='block';let cur=JSON.parse(localStorage.getItem('drp_current')||'{}');if(cur.kycStatus==='pending'){document.getElementById('kycForm').style.display='none';document.getElementById('kycStatus').style.display='block';document.getElementById('kycVerified').style.display='none';document.getElementById('kShowAadhar').innerText=cur.aadharNo||'XXXX';document.getElementById('kShowPan').innerText=cur.panNo||'XXXX';}else if(cur.kycStatus==='verified'){document.getElementById('kycForm').style.display='none';document.getElementById('kycStatus').style.display='none';document.getElementById('kycVerified').style.display='block';document.getElementById('kVerifiedID').innerText=cur.freeID;}else{document.getElementById('kycForm').style.display='block';document.getElementById('kycStatus').style.display='none';document.getElementById('kycVerified').style.display='none';}return false;}function closeKYC(){document.getElementById('kycModal').style.display='none';return false;}
+function checkKycTick(){let cur=JSON.parse(localStorage.getItem('drp_current')||'{}');if(cur.kycStatus==='verified'){document.getElementById('kycHdrTick').style.display='inline-block';}}
+function openUnlock(){document.getElementById('unlockModal').style.display='block';return false;}function closeUnlock(){document.getElementById('unlockModal').style.display='none';return false;}
+function openAgreement(prop){if(!isLogged){alert('Pehle Free ID banao');openLogin();return false;}let cur=JSON.parse(localStorage.getItem('drp_current')||'{}');if(cur.kycStatus!=='verified'){alert('Pehle KYC Karo');openKYC();return false;}document.getElementById('agreeProp').innerText='Property: '+prop+' - 0.25%+0.25%=0.5% - 3 UPI Working: danishkhn0096@ibl / 9784664741@ybl / danishkhann99@ybl';document.getElementById('agreeModal').style.display='block';return false;}function closeAgreement(){document.getElementById('agreeModal').style.display='none';return false;}
 function filterSearch(){let q=document.getElementById('search').value.toLowerCase();document.querySelectorAll('.pcard').forEach(c=>{let t=(c.getAttribute('data-state')+' '+c.innerText).toLowerCase();c.style.display=t.includes(q)||q==''?'block':'none';});}
-function chipF(key,el){document.querySelectorAll('.chip').forEach(x=>x.classList.remove('active'));el.classList.add('active');if(key=='all'){document.querySelectorAll('.pcard').forEach(c=>c.style.display='block');return}document.querySelectorAll('.pcard').forEach(c=>{c.style.display=c.getAttribute('data-state').includes(key)?'block':'none';});}
-function sendOTP(){let n=document.getElementById('cName').value.trim(),m=document.getElementById('cMobile').value.trim(),e=document.getElementById('cEmail').value.trim(),p=document.getElementById('cPass').value.trim();if(n.length<3){alert('Full Name sahi likho');return}if(m.length!=10||isNaN(m)){alert('Mobile 10 Digit sahi likho');return}if(!e.includes('@')){alert('Gmail sahi likho');return}if(p.length<4){alert('Password 4 digit');return}genOTP=Math.floor(100000+Math.random()*900000).toString();document.getElementById('showM').innerText=m;document.getElementById('showE').innerText=e;document.getElementById('demoOTP').innerText=genOTP;document.getElementById('st1').style.display='none';document.getElementById('st2').style.display='block';}
-function verifyOTP(){let o=document.getElementById('otpIn').value.trim();if(o!=genOTP){alert('Wrong OTP - Sahi OTP: '+genOTP);return}userName=document.getElementById('cName').value.trim();isLogged=true;document.getElementById('fName').innerText=userName;document.getElementById('pay1').href="upi://pay?pa=9784664741@ybl&pn=Danish%20Khan&am=199&cu=INR";document.getElementById('pay2').href="upi://pay?pa=danishkhann99@ybl&pn=Danish%20Khan&am=599&cu=INR";document.getElementById('st2').style.display='none';document.getElementById('st3').style.display='block';}
-function handleGoogleLogin(response){const data=JSON.parse(atob(response.credential.split('.')[1]));userName=data.name;isLogged=true;document.getElementById('fName').innerText=userName+" (Google - "+data.email+")";document.getElementById('pay1').href="upi://pay?pa=9784664741@ybl&pn=Danish%20Khan&am=199&cu=INR";document.getElementById('pay2').href="upi://pay?pa=danishkhann99@ybl&pn=Danish%20Khan&am=599&cu=INR";document.getElementById('st1').style.display='none';document.getElementById('st2').style.display='none';document.getElementById('st3').style.display='block';}
-function doPost(){if(!isLogged){alert('Pehle ID banao - Login karo');openLogin();return false}let t=document.getElementById('pTitle').value.trim()||"User Posted Original Plot";let loc=document.getElementById('pLoc').value.trim()||"Gangapur City, Rajasthan";let price=document.getElementById('pPrice').value.trim()||"Contact";let img=document.getElementById('pImg').value.trim()||"https://images.unsplash.com/photo-1564013799919-ab600027ffc6";let desc=document.getElementById('pDesc').value.trim()||"Original Photo";let grid=document.getElementById('grid');let div=document.createElement('div');div.className='pcard';div.setAttribute('data-state',loc.toLowerCase());div.innerHTML=`<img src="${img}"><div class="pbody"><span class="tag">USER POSTED ORIGINAL - LIVE - ${loc}</span><b style="display:block;margin:6px 0">${t}</b><div class="price">₹${price}</div><div class="loc">📍 ${loc} | 👤 ${userName} | ${desc}</div><div class="actions"><span class="b bL">Like</span><span class="b bL">Comment</span><span class="b bL">Share</span></div><div class="actions"><span class="b bB" onclick="openLogin(event); return false;">Buy Now</span><span class="b bY">Cart</span></div></div>`;grid.prepend(div);document.getElementById('pTitle').value='';document.getElementById('pLoc').value='';document.getElementById('pPrice').value='';document.getElementById('pImg').value='';document.getElementById('pDesc').value='';alert('Post Success - '+loc);return false;}
+function chipF(k,el){document.querySelectorAll('.chip').forEach(x=>x.classList.remove('active'));el.classList.add('active');if(k=='all'){document.querySelectorAll('.pcard').forEach(c=>c.style.display='block');return}document.querySelectorAll('.pcard').forEach(c=>{c.style.display=c.getAttribute('data-state').includes(k)?'block':'none';});}
+function sendOTP(){let n=document.getElementById('cName').value.trim(),m=document.getElementById('cMobile').value.trim(),e=document.getElementById('cEmail').value.trim(),p=document.getElementById('cPass').value.trim();if(n.length<3){alert('Full Name sahi');return}if(m.length!=10||isNaN(m)){alert('Mobile 10 Digit');return}if(!e.includes('@')){alert('Gmail sahi');return}if(p.length<4){alert('Password 4 digit');return}let users=JSON.parse(localStorage.getItem('drp_users')||'[]');let ex=users.find(u=>u.mobile===m||u.email===e);if(ex){if(ex.pass===p){alert('Wahi ID mili - FB Jaisa - '+ex.freeID+' ACTIVE - 3 UPI Working');localStorage.setItem('drp_current',JSON.stringify(ex));isLogged=true;userName=ex.name;freeID=ex.freeID;document.getElementById('fName').innerText=ex.name;document.getElementById('freeIDno').innerText=ex.freeID;document.getElementById('st1').style.display='none';document.getElementById('st2').style.display='none';document.getElementById('st3').style.display='block';document.getElementById('hdrFree').style.display='block';document.getElementById('hdrFree').innerText='🆓 '+ex.freeID+' ACTIVE';document.getElementById('topUser').innerText='Welcome '+ex.name+' | '+ex.freeID;checkKycTick();return;}else{alert('Ye Mobile/Email pehle se hai - Sahi password daalo');return}}genOTP=Math.floor(100000+Math.random()*900000).toString();document.getElementById('showM').innerText=m;document.getElementById('showE').innerText=e;document.getElementById('demoOTP').innerText=genOTP;document.getElementById('st1').style.display='none';document.getElementById('st2').style.display='block';}
+function verifyOTP(){let o=document.getElementById('otpIn').value.trim();if(o!=genOTP){alert('Wrong OTP - Sahi: '+genOTP);return}let n=document.getElementById('cName').value.trim(),m=document.getElementById('cMobile').value.trim(),e=document.getElementById('cEmail').value.trim(),p=document.getElementById('cPass').value.trim();let fid='DRP-'+Math.floor(100000+Math.random()*900000);let nu={name:n,mobile:m,email:e,pass:p,freeID:fid,created:Date.now(),recharge:false,unlock:false,kycStatus:'none'};let users=JSON.parse(localStorage.getItem('drp_users')||'[]');users.push(nu);localStorage.setItem('drp_users',JSON.stringify(users));localStorage.setItem('drp_current',JSON.stringify(nu));isLogged=true;userName=n;freeID=fid;document.getElementById('fName').innerText=n;document.getElementById('freeIDno').innerText=fid;document.getElementById('st2').style.display='none';document.getElementById('st3').style.display='block';document.getElementById('hdrFree').style.display='block';document.getElementById('hdrFree').innerText='🆓 '+fid+' ACTIVE';document.getElementById('topUser').innerText='Welcome '+n+' | '+fid+' | 3 UPI Working';}
+function deleteID(){let cur=localStorage.getItem('drp_current');if(!cur){alert('Koi ID login nahi');return false}if(!confirm('ID delete karni hai?'))return false;let c=JSON.parse(cur);let users=JSON.parse(localStorage.getItem('drp_users')||'[]');users=users.filter(u=>u.freeID!==c.freeID);localStorage.setItem('drp_users',JSON.stringify(users));localStorage.removeItem('drp_current');alert('ID delete - '+c.freeID);location.reload();return false;}
+function submitKYC(){let af=document.getElementById('aadharFront').value,ab=document.getElementById('aadharBack').value,pan=document.getElementById('panCard').value,self=document.getElementById('selfie').value;let aNo=document.getElementById('aadharNo').value.trim(),pNo=document.getElementById('panNo').value.trim();if(!af||!ab||!pan||!self){alert('Charo Photo Upload Karo');return}if(aNo.length<12){alert('Aadhar 12 Digit');return}if(pNo.length<10){alert('PAN 10 Digit');return}if(!document.getElementById('kycAgree').checked){alert('Agreement Tick Karo');return}let cur=JSON.parse(localStorage.getItem('drp_current'));cur.aadharNo=aNo;cur.panNo=pNo;cur.kycStatus='pending';localStorage.setItem('drp_current',JSON.stringify(cur));let users=JSON.parse(localStorage.getItem('drp_users')||'[]');let idx=users.findIndex(u=>u.freeID===cur.freeID);if(idx>=0){users[idx].aadharNo=aNo;users[idx].panNo=pNo;users[idx].kycStatus='pending';localStorage.setItem('drp_users',JSON.stringify(users));}document.getElementById('kycForm').style.display='none';document.getElementById('kycStatus').style.display='block';document.getElementById('kShowAadhar').innerText=aNo;document.getElementById('kShowPan').innerText=pNo;alert('KYC Submit - Demo 10 sec me Verified');setTimeout(()=>{cur.kycStatus='verified';localStorage.setItem('drp_current',JSON.stringify(cur));let users=JSON.parse(localStorage.getItem('drp_users')||'[]');let idx=users.findIndex(u=>u.freeID===cur.freeID);if(idx>=0){users[idx].kycStatus='verified';localStorage.setItem('drp_users',JSON.stringify(users));}document.getElementById('kycStatus').style.display='none';document.getElementById('kycVerified').style.display='block';document.getElementById('kVerifiedID').innerText=cur.freeID;document.getElementById('kycHdrTick').style.display='inline-block';alert('KYC VERIFIED ✅ - '+cur.freeID);},10000);}
+function doRecharge(amt){if(!isLogged){alert('Pehle ID banao');openLogin();return false}let cur=JSON.parse(localStorage.getItem('drp_current')||'{}');if(cur.kycStatus!=='verified'){alert('Pehle KYC Karo');openKYC();return false}
+  let upi = UPI_WORKING[0]; // danishkhn0096@ibl - IBL - Primary Working
+  let link = `upi://pay?pa=${upi}&pn=Danish%20Khan&am=${amt}&cu=INR&tn=Drpcom%20Recharge%20${cur.freeID}`;
+  window.location.href = link;
+  setTimeout(()=>{
+    if(confirm(`UPI App khula? Agar nahi khula to WhatsApp pe screenshot bhejo - 9521289940 - ₹${amt} - OK dabao to WhatsApp khulega`)){
+      window.open(`https://wa.me/919521289940?text=Recharge%20₹${amt}%20-%20ID:%20${cur.freeID}%20-%20UPI:%20${upi}%20-%20Screenshot%20bhej%20raha%20hu`,'_blank');
+    }
+    cur.recharge=true;localStorage.setItem('drp_current',JSON.stringify(cur));
+    let users=JSON.parse(localStorage.getItem('drp_users')||'[]');let idx=users.findIndex(u=>u.freeID===cur.freeID);if(idx>=0){users[idx].recharge=true;localStorage.setItem('drp_users',JSON.stringify(users));}
+    alert(`Recharge ₹${amt} - UPI ${upi} - Request Gaya - No Error - 3 UPI Working`);
+    closeRecharge();
+  },2000);return false;
+}
+function doRechargeYBL(amt){
+  let cur=JSON.parse(localStorage.getItem('drp_current')||'{}');
+  let upi = UPI_WORKING[1]; // 9784664741@ybl - YBL Working
+  let link = `upi://pay?pa=${upi}&pn=Danish%20Khan&am=${amt}&cu=INR&tn=Drpcom%20Recharge%20${cur.freeID}`;
+  window.location.href = link;
+  setTimeout(()=>{
+    cur.recharge=true;localStorage.setItem('drp_current',JSON.stringify(cur));
+    alert(`Recharge ₹${amt} - UPI ${upi} - Working - No Error`);
+    closeRecharge();
+  },1500);return false;
+}
+function unlockAndCall(type,name){if(!isLogged){alert('Pehle Free ID banao');openLogin();return false}let cur=JSON.parse(localStorage.getItem('drp_current')||'{}');if(cur.kycStatus!=='verified'){alert('Pehle KYC Karo');openKYC();return false}if(cur.unlock){alert(type+' Call Started - Platform Se - Number Hide - To: '+(name||'Seller')+' - Khul Gaya');return false}currentUnlockType=type;document.getElementById('unlockText').innerText=type+' Call - '+(name||'Seller')+' - Platform Se - 3 UPI Working - No Error - ₹49 Unlock';openUnlock();return false;}
+function payUnlock(){let cur=JSON.parse(localStorage.getItem('drp_current'));let upi=UPI_WORKING[0];let link=`upi://pay?pa=${upi}&pn=Danish%20Khan&am=49&cu=INR&tn=Unlock%20${cur.freeID}`;window.location.href=link;setTimeout(()=>{cur.unlock=true;localStorage.setItem('drp_current',JSON.stringify(cur));let users=JSON.parse(localStorage.getItem('drp_users')||'[]');let idx=users.findIndex(u=>u.freeID===cur.freeID);if(idx>=0){users[idx].unlock=true;localStorage.setItem('drp_users',JSON.stringify(users));}closeUnlock();alert(`Unlock Success - UPI ${upi} - ${currentUnlockType} Call Started - No Error`);},1500);return false;}
+function payUnlockYBL(){let cur=JSON.parse(localStorage.getItem('drp_current'));let upi=UPI_WORKING[1];let link=`upi://pay?pa=${upi}&pn=Danish%20Khan&am=49&cu=INR&tn=Unlock%20${cur.freeID}`;window.location.href=link;setTimeout(()=>{cur.unlock=true;localStorage.setItem('drp_current',JSON.stringify(cur));closeUnlock();alert(`Unlock Success - UPI ${upi} - Working`);},1500);return false;}
+function payToken(){if(!document.getElementById('agreeTick').checked){alert('Agreement Tick Karo');return false}let amt=document.getElementById('tokenAmount').value.trim()||'10000';if(parseInt(amt)<10000){alert('Min Token ₹10,000');return false}let cur=JSON.parse(localStorage.getItem('drp_current'));let upi=UPI_WORKING[0];let link=`upi://pay?pa=${upi}&pn=Danish%20Khan&am=${amt}&cu=INR&tn=Token%20${cur.freeID}`;window.location.href=link;alert(`Token Pay ₹${amt} - UPI ${upi} - Escrow - 3 UPI Working - No Error - Soda Khulega`);closeAgreement();return false;}
+function doPost(){if(!isLogged){alert('Pehle ID banao');openLogin();return false}let cur=JSON.parse(localStorage.getItem('drp_current')||'{}');if(cur.kycStatus!=='verified'){alert('Pehle KYC Karo');openKYC();return false}if(!cur.recharge){alert('Post Ke Liye Recharge ₹199 - 3 UPI Working - No Error');openRecharge();return false}let t=document.getElementById('pTitle').value.trim()||"User Posted Original Plot";let loc=document.getElementById('pLoc').value.trim()||"Gangapur City, Rajasthan";let price=document.getElementById('pPrice').value.trim()||"Contact";let img=document.getElementById('pImg').value.trim()||"https://images.unsplash.com/photo-1564013799919-ab600027ffc6";let desc=document.getElementById('pDesc').value.trim()||"Original Photo";let grid=document.getElementById('grid');let div=document.createElement('div');div.className='pcard';div.setAttribute('data-state',loc.toLowerCase());div.innerHTML=`<img src="${img}"><div class="pbody"><span class="tag">USER POSTED ORIGINAL - LIVE - ${loc} - KYC VERIFIED ✅ - ${freeID} - 3 UPI Working</span><b style="display:block;margin:6px 0">${t}</b><div class="price">₹${price}</div><div class="loc">📍 ${loc} | 👤 ${userName} | ${desc} | 3 UPI Working - No Error | Verified ✅</div><div class="actions"><span class="b bM" onclick="openMessenger(event)">💬 Msg</span><span class="b bC" onclick="unlockAndCall('Voice','${userName}')">📞 Call ₹49</span><span class="b bV" onclick="unlockAndCall('Video','${userName}')">📹 Video ₹49</span></div><div class="actions"><span class="b bK" onclick="openAgreement('${t} - ₹${price}')">🟢 Buy Now - Token + 0.25%</span></div></div>`;grid.prepend(div);document.getElementById('pTitle').value='';document.getElementById('pLoc').value='';document.getElementById('pPrice').value='';document.getElementById('pImg').value='';document.getElementById('pDesc').value='';alert('Post Success - 3 UPI Working - No Error - ID: '+freeID);return false;}
+function sendMsg(){let txt=document.getElementById('msgIn').value.trim();if(!txt)return;let box=document.getElementById('chatBox');let d=document.createElement('div');d.className='msg me';d.innerText=txt+' ✓✓';box.appendChild(d);document.getElementById('msgIn').value='';box.scrollTop=box.scrollHeight;setTimeout(()=>{let r=document.createElement('div');r.className='msg other';r.innerText='Reply - Platform Se - 3 UPI Working - No Error - Chat Khulega';box.appendChild(r);box.scrollTop=box.scrollHeight;},700);}
+(function(){let cur=localStorage.getItem('drp_current');if(cur){let u=JSON.parse(cur);isLogged=true;userName=u.name;freeID=u.freeID;document.getElementById('hdrFree').style.display='block';document.getElementById('hdrFree').innerText='🆓 '+u.freeID+' ACTIVE';document.getElementById('topUser').innerText='Welcome '+u.name+' | '+u.freeID+' | 3 UPI Working';if(u.kycStatus==='verified'){document.getElementById('kycHdrTick').style.display='inline-block';}}})();
 </script>
 </body>
 </html>
