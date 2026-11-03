@@ -174,7 +174,11 @@ function startNewsFeed(){
 let localStream;
 async function startCall(){try{localStream=await navigator.mediaDevices.getUserMedia({video:true,audio:true});document.getElementById('localVideo').srcObject=localStream;document.getElementById('localVideo').classList.remove('hidden');document.getElementById('remoteVideo').classList.remove('hidden');alert('Video call started inside website');}catch(e){alert('Camera permission needed');}}
 function endCall(){if(localStream){localStream.getTracks().forEach(t=>t.stop());}document.getElementById('localVideo').classList.add('hidden');document.getElementById('remoteVideo').classList.add('hidden');}
-document.getElementById('adminBtn').onclick=()=>{document.getElementById('adminPage').classList.remove('hidden');document.getElementById('mainApp').classList.add('hidden');}
+document.getElementById('adminBtn').onclick=()=>{
+ let p=prompt('Enter Owner Private Password:');
+ if(p==='9784664741'){document.getElementById('adminPage').classList.remove('hidden');document.getElementById('mainApp').classList.add('hidden');}
+ else{alert('Only Owner can see private data');}
+}
 function closeAdmin(){document.getElementById('adminPage').classList.add('hidden');document.getElementById('mainApp').classList.remove('hidden');}
 function showPage(p){renderFeed();}
 renderFeed();
