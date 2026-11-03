@@ -1,234 +1,319 @@
 <!DOCTYPE html>
-<html lang="hi">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Drpcom.co.in - FINAL - 3 UPI WORKING - No Payment Error</title>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<title>Drpcom.co.in - FINAL GLOBAL OWNER DRP - All Features - No Copy No Advocate</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800;900&display=swap" rel="stylesheet">
 <style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
-body{background:#eef1f4;color:#111;-webkit-tap-highlight-color:transparent}
-.hdr{background:#0b0b0b;color:#fff;padding:12px 16px;display:flex;align-items:center;gap:14px;position:sticky;top:0;z-index:999}
-.logo{font-weight:900;font-size:24px;color:#2eff7b}.logo i{background:#fff;color:#000;font-size:10px;padding:3px 9px;border-radius:20px;margin-left:8px;font-style:normal}
-.sbox{flex:1;background:#1e1e1e;border:1px solid #333;border-radius:30px;display:flex;align-items:center;padding:6px 8px 6px 16px}
-.sbox input{flex:1;background:transparent;border:none;color:#fff;outline:none;font-size:13px}
-.sbox button{background:#fff;color:#000;border:none;padding:8px 18px;border-radius:20px;font-weight:900;cursor:pointer}
-.topinfo{background:linear-gradient(90deg,#5a45fe,#a24bff);color:#fff;text-align:center;padding:10px;font-size:11px;font-weight:600}
-.topinfo a{color:#ffe600;text-decoration:none;font-weight:900}
-.chips{position:sticky;top:58px;z-index:800;background:#fff;display:flex;gap:8px;padding:11px 14px;border-bottom:1px solid #ddd;overflow:auto}
-.chip{background:#f0f2f5;padding:7px 16px;border-radius:22px;font-size:12px;font-weight:700;white-space:nowrap;cursor:pointer;border:1px solid #e5e5e5;user-select:none}
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;-webkit-user-select:none!important;user-select:none!important}
+body{background:#f0f2f5}
+.hdr{background:#0b0b0b;color:#fff;padding:10px 14px;display:flex;align-items:center;gap:10px;position:sticky;top:0;z-index:1000}
+.logo{font-weight:900;font-size:16px;color:#2eff7b}.logo i{background:#fff;color:#000;font-size:8px;padding:2px 7px;border-radius:20px;margin-left:5px;font-style:normal}
+.sbox{flex:1;background:#1e1e1e;border:1px solid #333;border-radius:30px;display:flex;align-items:center;padding:4px 6px 4px 12px}
+.sbox input{flex:1;background:transparent;border:none;color:#fff;outline:none;font-size:12px;user-select:text!important;-webkit-user-select:text!important}
+.topinfo{background:linear-gradient(90deg,#0d47a1,#42a5f5);color:#fff;text-align:center;padding:6px;font-size:10px;font-weight:800}
+.langBar{background:#fff;padding:8px 12px;display:flex;gap:8px;align-items:center;border-bottom:1px solid #ddd;position:sticky;top:52px;z-index:900;overflow:auto}
+.langBar select{padding:6px 10px;border-radius:20px;border:1px solid #ddd;font-size:11px;font-weight:700;min-width:130px}
+.chips{position:sticky;top:96px;z-index:800;background:#fff;display:flex;gap:7px;padding:10px;border-bottom:1px solid #ddd;overflow:auto}
+.chip{background:#f0f2f5;padding:6px 12px;border-radius:20px;font-size:11px;font-weight:700;white-space:nowrap;cursor:pointer}
 .chip.active{background:#0b0b0b;color:#fff}
-.main{max-width:1440px;margin:auto;display:flex;gap:16px;padding:16px}
-.left{width:330px;flex-shrink:0}.right{flex:1;min-width:0}
-@media(max-width:980px){.main{flex-direction:column}.left{width:100%}}
-.box{background:#fff;border-radius:16px;padding:16px;margin-bottom:16px;box-shadow:0 2px 10px rgba(0,0,0,.07)}
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(285px,1fr));gap:16px}
-.pcard{background:#fff;border-radius:16px;overflow:hidden;box-shadow:0 3px 14px rgba(0,0,0,.1)}
-.pcard img{width:100%;height:190px;object-fit:cover;display:block}
-.pbody{padding:12px}.price{font-weight:900;font-size:16px}.loc{font-size:11px;color:#555;margin:5px 0;line-height:1.5}
-.actions{display:flex;gap:6px;flex-wrap:wrap;margin-top:10px}
-.b{flex:1;text-align:center;padding:9px 4px;border-radius:10px;font-size:11px;font-weight:800;text-decoration:none;cursor:pointer;border:none;display:inline-block;user-select:none;-webkit-user-select:none}
-.bB{background:#1877f2;color:#fff}.bY{background:#FFD814;color:#000}.bG{background:#25D366;color:#fff}.bK{background:#0b0b0b;color:#fff}.bL{background:#f0f2f5;color:#111;border:1px solid #e5e5e5}
-.bS{background:linear-gradient(90deg,#feda75,#fa7e1e,#d62976,#962fbf,#4f5bd5);color:#fff}.bX{background:#000;color:#fff}.bR{background:#ff0000;color:#fff}.bM{background:linear-gradient(90deg,#00c853,#2eff7b);color:#fff}.bC{background:#ff5722;color:#fff}.bV{background:#673ab7;color:#fff}
-.tag{font-size:9px;font-weight:900;background:#e8f5ff;color:#1877f2;padding:4px 8px;border-radius:20px;display:inline-block;margin-bottom:6px}
-.foot{background:#0b0b0b;color:#9a9a9a;padding:26px 16px;text-align:center;font-size:11px;line-height:2.3;margin-top:20px}.foot b{color:#fff}
-.modal{display:none;position:fixed;inset:0;background:rgba(0,0,0,.88);z-index:9999;padding:16px;overflow:auto}
-.modalBox{background:#fff;max-width:560px;margin:24px auto;padding:22px;border-radius:20px}
-.inp{width:100%;padding:13px 14px;margin:8px 0;border:1px solid #d0d0d0;border-radius:12px;outline:none;font-size:13px}
-.hideNum{filter:blur(6px);user-select:none;-webkit-user-select:none;pointer-events:none;display:inline-block}
-.nocopy{user-select:none;-webkit-user-select:none}
-.chatBox{background:#f0f2f5;border-radius:12px;padding:10px;height:260px;overflow:auto;margin:8px 0}
-.msg{padding:7px 10px;border-radius:11px;margin:5px 0;font-size:11px;max-width:80%}.msg.me{background:#1877f2;color:#fff;margin-left:auto}.msg.other{background:#fff;border:1px solid #ddd}
-.freeBadge{background:#e6ffe6;border:2px solid #00c853;padding:12px;border-radius:12px;text-align:center;margin:10px 0}
-.kycTick{background:#e6ffe6;border:1px solid #00c853;color:#00c853;padding:3px 8px;border-radius:20px;font-size:9px;font-weight:900}
+.storyBar{background:#fff;padding:8px 10px;display:flex;gap:12px;overflow:auto;border-bottom:1px solid #ddd}
+.story{text-align:center;min-width:62px;cursor:pointer}
+.story img{width:54px;height:54px;border-radius:50%;border:3px solid #00c853;object-fit:cover}
+.story p{font-size:9px;font-weight:700;margin-top:3px}
+.main{max-width:1440px;margin:auto;display:flex;gap:12px;padding:12px}
+.left{width:300px;flex-shrink:0}.center{flex:1;max-width:620px;margin:0 auto}.right{width:300px;flex-shrink:0}
+@media(max-width:1000px){.main{flex-direction:column}.left,.right{width:100%}}
+.box{background:#fff;border-radius:14px;padding:12px;margin-bottom:12px;box-shadow:0 2px 10px rgba(0,0,0,.07)}
+.b{padding:8px 10px;border-radius:9px;font-size:11px;font-weight:800;border:none;cursor:pointer;display:inline-block;text-align:center}
+.bK{background:#0b0b0b;color:#fff}.bB{background:#1877f2;color:#fff}.bY{background:#FFD814;color:#000}.bGold{background:gold;color:#000}.bInt{background:linear-gradient(90deg,#0d47a1,#42a5f5);color:#fff}.bL{background:#f0f2f5;color:#111;border:1px solid #ddd}
+.inp{width:100%;padding:10px;margin:5px 0;border:1px solid #ccc;border-radius:10px;font-size:12px;user-select:text!important;-webkit-user-select:text!important}
+.pcard{background:#fff;border-radius:14px;overflow:hidden;box-shadow:0 2px 10px rgba(0,0,0,.08);margin-bottom:12px}
+.pcard img{width:100%;height:220px;object-fit:cover}
+.pbody{padding:10px}
+.noCopy{user-select:none!important;pointer-events:none;filter:blur(0.5px)}
+.modal{display:none;position:fixed;inset:0;background:rgba(0,0,0,.9);z-index:9999;padding:12px;overflow:auto}
+.modalBox{background:#fff;max-width:560px;margin:12px auto;padding:14px;border-radius:16px}
+.dp{width:44px;height:44px;border-radius:50%;object-fit:cover;border:2px solid #2eff7b}
+.foot{background:#0b0b0b;color:#777;padding:16px;text-align:center;font-size:9px}
 </style>
+<script>
+document.addEventListener('copy',e=>e.preventDefault());
+document.addEventListener('cut',e=>e.preventDefault());
+document.addEventListener('contextmenu',e=>e.preventDefault());
+</script>
 </head>
 <body>
 <div class="hdr">
-<div class="logo">Drpcom.co.in <i>NO.1</i></div>
-<div class="sbox"><input id="search" placeholder="Search Plot, Gangapur City, Jaipur..." oninput="filterSearch()"><button type="button" onclick="filterSearch(); return false;">Search</button></div>
-<div id="hdrFree" style="display:none;background:#00c853;color:#fff;padding:5px 10px;border-radius:20px;font-size:9px;font-weight:900"></div>
+<div class="logo">Drpcom.co.in <i>GLOBAL OWNER DRP</i></div>
+<div class="sbox"><input id="search" placeholder="Search Dubai, USA, UK, Location..." oninput="filterSearch()"><button style="background:#fff;border:none;padding:5px 12px;border-radius:20px;font-weight:900;font-size:11px">Search</button></div>
+<div id="hdrFree" style="display:none;background:gold;color:#000;padding:4px 8px;border-radius:20px;font-size:8px;font-weight:900"></div>
 </div>
-<div class="topinfo">Legal team with us - <a href="https://lineslegal.com">Lineslegal.com</a> | Platform: <span class="nocopy">9784664741</span> | Gmail: drpproperty1@gmail.com | <span id="topUser">3 UPI Working - No Error</span> | Drpcom.co.in</div>
+<div class="topinfo">🌍 FINAL GLOBAL - OWNER DRP - ONLY DRP NAME - HIDDEN MALIK - MAX REACH 1000x - Zuckerberg Style - Dubai Company Ad + All Language + All Transaction + Location</div>
+
+<div class="langBar">
+<select id="langSelect" onchange="changeLanguage(this.value)">
+<option value="en">🌍 English - Global</option>
+<option value="hi">🇮🇳 Hindi - हिन्दी</option>
+<option value="bn">Bengali - বাংলা</option>
+<option value="te">Telugu - తెలుగు</option>
+<option value="mr">Marathi - मराठी</option>
+<option value="ta">Tamil - தமிழ்</option>
+<option value="gu">Gujarati - ગુજરાતી</option>
+<option value="ur">Urdu - اردو</option>
+<option value="kn">Kannada - ಕನ್ನಡ</option>
+<option value="pa">Punjabi - ਪੰਜਾਬੀ</option>
+<option value="ar">Arabic - العربية - Dubai 🇦🇪</option>
+<option value="fr">French</option>
+<option value="es">Spanish</option>
+<option value="de">German</option>
+<option value="zh">Chinese 中文</option>
+<option value="ru">Russian</option>
+</select>
+<select id="currencySelect" onchange="changeCurrency(this.value)">
+<option value="INR">₹ INR - 3 UPI - No Copy</option>
+<option value="AED">🇦🇪 AED - Dubai - Gmail</option>
+<option value="USD">$ USD - USA - Gmail</option>
+<option value="GBP">£ GBP - UK - Gmail</option>
+<option value="EUR">€ EUR - Gmail</option>
+</select>
+<button class="b bK" style="padding:6px 10px;font-size:9px" onclick="getLiveLocation()">📍 My Location</button>
+</div>
+
 <div class="chips">
-<div class="chip active" onclick="chipF('all',this)">All India</div>
-<div class="chip" onclick="chipF('gangapur',this)">Gangapur City</div>
-<div class="chip" onclick="chipF('rajasthan',this)">Rajasthan</div>
-<div class="chip" onclick="chipF('delhi',this)">Delhi NCR</div>
-<div class="chip" onclick="chipF('maharashtra',this)">Maharashtra</div>
-<div class="chip" onclick="chipF('karnataka',this)">Karnataka</div>
-<div class="chip" onclick="chipF('telangana',this)">Telangana</div>
-<div class="chip" onclick="chipF('tamil',this)">Tamil Nadu</div>
-<div class="chip" onclick="chipF('kerala',this)">Kerala</div>
-<div class="chip" onclick="chipF('gujarat',this)">Gujarat</div>
-<div class="chip" onclick="chipF('haryana',this)">Haryana</div>
-<div class="chip" onclick="chipF('up',this)">UP Noida</div>
-<div class="chip" onclick="chipF('mp',this)">MP Indore</div>
-<div class="chip" onclick="chipF('bengal',this)">Kolkata</div>
+<div class="chip active" onclick="chipF('all',this)">Worldwide 🌍 All Location</div>
+<div class="chip" onclick="chipF('dubai',this)">Dubai 🇦🇪 Location</div>
+<div class="chip" onclick="chipF('usa',this)">USA 🇺🇸</div>
+<div class="chip" onclick="chipF('uk',this)">UK 🇬🇧</div>
+<div class="chip" onclick="chipF('india',this)">India 🇮🇳</div>
+<div class="chip" onclick="chipF('owner',this)">👑 DRP Owner</div>
 </div>
+
+<div class="storyBar" id="storyBar">
+<div class="story" onclick="openStoryPost()"><img src="https://i.pravatar.cc/100?img=68"><p>➕ Story</p></div>
+<div class="story"><img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=100"><p>Dubai 🇦🇪</p></div>
+<div class="story"><img src="https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?w=100"><p>USA 🇺🇸</p></div>
+<div class="story"><img src="https://i.pravatar.cc/100?img=68"><p>DRP 👑</p></div>
+</div>
+
 <div class="main">
 <div class="left">
+<div class="box" style="border:3px solid gold">
+<div style="display:flex;align-items:center;gap:10px"><img id="myDP" src="https://i.pravatar.cc/100?img=68" class="dp"><div><b id="myName">Guest Global</b><br><span id="myID" style="font-size:9px">No ID - Global</span><br><span id="myLoc" style="font-size:8px;color:#0d47a1">📍 Location: Not Set</span></div><button class="b bK" style="margin-left:auto;font-size:9px" onclick="openDP()">DP</button></div>
+<div style="font-size:10px;font-weight:700;line-height:2;margin-top:8px">
+👑 OWNER DRP - Only DRP Name - Hidden Malik<br>
+<span class="noCopy">🏦 danishkhn0096@ibl - No Copy</span><br>
+<span class="noCopy">🏦 9784664741@ybl</span><br>
+<span class="noCopy">🏦 danishkhann99@ybl</span><br>
+<span class="noCopy">📧 drpproperty1@gmail.com - Global Gmail</span><br>
+<b>Legal team with us for any Dispute - LinesLegal.com - Global - No Advocate</b>
+</div>
+<button class="b bK" style="width:100%;margin-top:8px;padding:10px" onclick="openLogin()">🆔 Free Global ID - Owner DRP Hidden</button>
+</div>
+
+<div class="box" style="border:2px solid gold">
+<h3 style="font-size:11px">👑 DRP Owner - Max Reach 1000x - Only DRP - Hidden</h3>
+<div style="font-size:9px">Zuckerberg Elon Style - Teri ID sabse zyada reach - Naam sirf DRP - Personal naam hidden - Secret Login 9999999999</div>
+<button class="b bGold" style="width:100%;margin-top:6px;padding:9px" onclick="openPremium()">💎 Global Premium + Owner Boost</button>
+</div>
+
+<div class="box" style="border:2px dashed #ff9800;background:#fff8e1">
+<h3 style="font-size:11px">📢 Global Company Ad - Dubai Building - Location</h3>
+<div style="font-size:9px">Dubai Company Sell - Indian Buy Dubai Building - Company Ad On Our Global Platform - All Transaction</div>
+<button class="b bK" style="width:100%;margin-top:6px;padding:9px" onclick="openCompanyAd()">➕ Global Company Ad - Dubai</button>
+<button class="b bL" style="width:100%;margin-top:5px;padding:7px;font-size:9px" onclick="openMyAds()">📊 My Ads</button>
+</div>
+
+<div class="box"><h4 style="font-size:11px">⚖️ Legal Team - Global - No Advocate</h4><div style="font-size:9px">Legal team with us for any Dispute and solution - LinesLegal.com - No Advocate Word/Name - Only DRP - Hidden Owner - Global Platform<br><span class="noCopy">Platform: 97846XXXXX - No Copy</span></div></div>
+</div>
+
+<div class="center">
 <div class="box">
-<h3>Menu - FINAL - 3 UPI Working</h3>
-<div style="line-height:3;font-size:13px;font-weight:700;margin-top:10px">
-<span onclick="openLogin(event)" style="cursor:pointer">🏠 Home Feed</span><br>
-<span onclick="openLogin(event)" style="cursor:pointer;color:#1877f2">🆓 Free ID - Rs 0 - FB Jaisa</span> <span id="kycHdrTick" style="display:none" class="kycTick">✅ Verified</span><br>
-<span onclick="openKYC(event)" style="cursor:pointer;color:#ff5722">🪪 KYC - Aadhar+PAN</span><br>
-<span onclick="openMessenger(event)" style="cursor:pointer;color:#1877f2">💬 Messenger - Hide Number</span><br>
-<span style="color:#00a300">💳 Recharge - 3 UPI Working - No Error</span><br>
-<span style="color:#ff5722">🔓 Unlock - Call/Video - ₹49</span><br>
-<span style="color:#673ab7">📜 0.25%+0.25%=0.5% Escrow</span><br>
+<h4 style="font-size:12px">🌍 Global Post - Owner DRP - Max Reach - Location + All Language</h4>
+<div style="display:flex;gap:8px;margin:8px 0"><img id="postDP" src="https://i.pravatar.cc/100?img=68" style="width:36px;height:36px;border-radius:50%"><input id="pTitle" class="inp" style="flex:1;margin:0" placeholder="Post as DRP - Global - Dubai Building..."></div>
+<div style="display:flex;gap:6px"><input id="pLoc" class="inp" placeholder="📍 Location: Dubai, USA, UK"><input id="pPrice" class="inp" placeholder="💰 Price $/₹/AED"><input id="pImg" class="inp" placeholder="Image Link"></div>
+<button class="b bB" style="width:100%;padding:10px" onclick="doPost()">📤 Global Post - Owner DRP - Max Reach 1000x</button>
 </div>
+<div id="feed"></div>
 </div>
-<div class="box" style="border:2px solid #1877f2">
-<h3>🆘 HELP & SUPPORT - 3 UPI WORKING</h3>
-<div style="font-size:11px;font-weight:700;line-height:2.5;margin-top:8px">
-📞 Platform: <span class="nocopy">97846 64741</span> - Copy Band<br>
-💬 WhatsApp: <span class="nocopy">95212 89940</span><br>
-⚖️ Legal: Lineslegal.com<br>
-📧 Gmail: drpproperty1@gmail.com<br>
-🏦 UPI 1: <span class="nocopy">danishkhn0096@ibl</span> - NEW - IBL - Working<br>
-🏦 UPI 2: <span class="nocopy">9784664741@ybl</span> - YBL - Working<br>
-🏦 UPI 3: <span class="nocopy">danishkhann99@ybl</span> - YBL - Working<br>
-Holder: Danish Khan - All 3 Working - No Error
-</div>
-<button type="button" class="b bK" style="width:100%;margin-top:14px;padding:14px" onclick="openLogin(event); return false;">🆔 Create ID - Click - No Error</button>
-<button type="button" class="b bY" style="width:100%;margin-top:8px;padding:11px" onclick="openKYC(event)">🪪 KYC Verification</button>
-<button type="button" class="b bL" style="width:100%;margin-top:8px;padding:10px;font-size:10px" onclick="deleteID()">🗑️ Delete ID - Nayi ID</button>
-</div>
-<div class="box">
-<h3>Payment - 3 UPI Working - No Error</h3>
-<div style="font-size:11px;line-height:2.2;font-weight:600">
-UPI 1: danishkhn0096@ibl - Danish Khan - IBL Working<br>
-UPI 2: 9784664741@ybl - Danish Khan - YBL Working<br>
-UPI 3: danishkhann99@ybl - Danish Khan - YBL Working<br>
-₹199 / ₹599 - ID+KYC ke baad auto open - No Error
-</div>
-</div>
-</div>
+
 <div class="right">
-<div class="box" style="border:2px solid #2eff7b">
-<h3>📍 Apni Zameen Post Karo - 3 UPI Working</h3>
-<input id="pTitle" class="inp" placeholder="Title - Eg: Gangapur City 1200 sqft Plot">
-<div style="display:flex;gap:8px"><input id="pLoc" class="inp" placeholder="📍 Location"><input id="pPrice" class="inp" placeholder="💰 Price"></div>
-<input id="pImg" class="inp" placeholder="🖼️ Image Link">
-<textarea id="pDesc" class="inp" placeholder="Description"></textarea>
-<button type="button" class="b bB" style="width:100%;padding:13px" onclick="doPost(); return false;">📤 Post - KYC+Recharge Check</button>
-<p style="font-size:9px;opacity:.6;margin-top:6px;text-align:center">Free ID → KYC Verified ✅ → Recharge ₹199 (3 UPI Working) → Post - No Payment Error</p>
-</div>
-<div class="grid" id="grid">
-<div class="pcard" data-state="rajasthan gangapur"><img src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6"><div class="pbody"><span class="tag">USER POSTED ORIGINAL - Rajasthan - KYC Verified ✅</span><b style="display:block;margin:6px 0">Gangapur City 1500 sqft JDA Plot</b><div class="price">₹22,00,000</div><div class="loc">📍 Gangapur City | Posted by: Rahul | <span class="hideNum">97846XXXXX</span> Hide - Copy Band</div><div class="actions"><span class="b bL">Like</span><span class="b bL">Comment</span><span class="b bL">Share</span></div><div class="actions"><span class="b bM" onclick="openMessenger(event)">💬 Msg Free</span><span class="b bC" onclick="unlockAndCall('Voice','Rahul')">📞 Call ₹49</span><span class="b bV" onclick="unlockAndCall('Video','Rahul')">📹 Video ₹49</span></div><div class="actions"><span class="b bK" onclick="openAgreement('Gangapur Plot - ₹22L')">🟢 Buy Now - Token + 0.25%</span><span class="b bY" onclick="openAgreement('Gangapur Plot')">Cart</span></div></div></div>
-<div class="pcard" data-state="delhi"><img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9"><div class="pbody"><span class="tag">Delhi - KYC Verified</span><b style="display:block;margin:6px 0">Delhi Dwarka 2BHK Shop</b><div class="price">₹65,00,000</div><div class="loc">📍 Dwarka Delhi | <span class="hideNum">98XXXXXX40</span> Hide</div><div class="actions"><span class="b bM" onclick="openMessenger(event)">💬 Msg</span><span class="b bC" onclick="unlockAndCall('Voice')">📞 Call ₹49</span><span class="b bV" onclick="unlockAndCall('Video')">📹 Video ₹49</span></div><div class="actions"><span class="b bK" onclick="openAgreement('Dwarka - ₹65L')">🟢 Buy Now - 0.25%+0.25%</span></div></div></div>
-</div>
-<div class="box" style="margin-top:20px">
-<h3>📖 About Us - Drpcom.co.in x LinesLegal.com - 3 UPI Working</h3>
-<p style="font-size:12px;line-height:2.1;margin-top:10px">Drpcom.co.in - India's Most Trusted - 3 UPI Working: danishkhn0096@ibl, 9784664741@ybl, danishkhann99@ybl - Danish Khan - No Payment Error - FB ID + KYC + Messenger Hide Number + Recharge + Unlock + 0.5% Escrow - Gmail: drpproperty1@gmail.com | 97846 64741 | 95212 89940 | Legal team with us - Lineslegal.com</p>
+<div class="box"><h4 style="font-size:11px">💳 All Transaction - Location</h4><div style="font-size:10px">🇮🇳 INR: 3 UPI No Copy<br>🇦🇪 AED: Dubai - Gmail<br>🇺🇸 USD/£ GBP/€ EUR: Gmail - drpproperty1@gmail.com<br>UPI Abhi Nahi - Baad Me Banayega</div><button class="b bK" style="width:100%;margin-top:6px;padding:9px" onclick="openRecharge()">💳 Global Recharge</button></div>
+<div class="box"><h4 style="font-size:11px">👑 Owner DRP - Hidden - Only DRP</h4><div style="font-size:9px;line-height:1.8">Secret Login: 9999999999 + DRP@Global#0001<br>Public: Only DRP 👑 - No Personal Name<br>Reach: 1000x - Zuckerberg Style<br>Location: Global HQ Hidden<br>Language: All - Transaction: All</div></div>
+<div class="box"><h4 style="font-size:11px">👥 Final Total System</h4><div style="font-size:9px;line-height:1.8">✅ DP Story Post Like Share<br>✅ Dubai Company Ad Charge<br>✅ Premium Celebrate Blue Tick<br>✅ Global - India Tag Hata<br>✅ All Bhasha + All Transaction<br>✅ Location Dubai USA UK India<br>✅ 3 UPI No Copy Legal Team Only<br>✅ Owner DRP Hidden Max Reach 1000x</div></div>
 </div>
 </div>
-</div>
-<div id="loginModal" class="modal"><div class="modalBox">
-<h2>FB Jaisa ID - Free ID Rs 0 - 3 UPI Working</h2>
-<div id="st1">
-<input id="cName" class="inp" placeholder="Full Name"><input id="cMobile" class="inp" placeholder="Mobile - 10 Digit"><input id="cEmail" class="inp" placeholder="Gmail ID"><input id="cPass" class="inp" type="password" placeholder="Password - 4 Digit">
-<button type="button" class="b bK" style="width:100%;padding:14px;margin-top:8px" onclick="sendOTP(); return false;">Send OTP →</button>
-</div>
-<div id="st2" style="display:none">
-<h3>OTP Confirm</h3><p style="font-size:11px">Mobile: <b id="showM"></b> | Gmail: <b id="showE"></b></p>
-<div style="background:#e8f5ff;padding:14px;border-radius:12px;text-align:center;margin:10px 0"><b id="demoOTP" style="font-size:30px;color:#1877f2;letter-spacing:4px"></b></div>
-<input id="otpIn" class="inp" placeholder="Enter 6 Digit OTP">
-<button type="button" class="b bK" style="width:100%;padding:12px" onclick="verifyOTP(); return false;">Verify & Confirm FREE ID →</button>
-</div>
-<div id="st3" style="display:none">
-<div class="freeBadge"><div style="font-size:18px;font-weight:900;color:#00a300">FREE ID ACTIVE - Rs 0</div><div style="font-size:11px;font-weight:800">ID: <span id="freeIDno"></span> | <span id="fName"></span></div><div style="font-size:9px;margin-top:4px">3 UPI Working - No Error</div></div>
-<div style="background:#fff7e0;border:1px solid #FFD814;padding:12px;border-radius:12px;margin:10px 0;font-size:11px;font-weight:700;line-height:2.2">
-🏦 UPI 1: danishkhn0096@ibl - IBL - Working - Danish Khan<br>
-🏦 UPI 2: 9784664741@ybl - YBL - Working<br>
-🏦 UPI 3: danishkhann99@ybl - YBL - Working<br>
-📧 drpproperty1@gmail.com<br>⚖️ Lineslegal.com
-</div>
-<button type="button" class="b bK" style="width:100%;padding:12px;margin-top:8px" onclick="openKYC(event); return false;">🪪 KYC Karo - Next</button>
-<button type="button" class="b bY" style="width:100%;padding:11px;margin-top:6px" onclick="openRecharge(event); return false;">💳 Recharge ₹199 - 3 UPI Working</button>
-<a href="https://wa.me/919521289940?text=Payment%20Done%20Drpcom.co.in" class="b bG" style="display:block;text-align:center;padding:12px;margin-top:8px">WhatsApp Screenshot - 95212 89940</a>
-</div>
-<button type="button" class="b bL" style="width:100%;margin-top:14px;padding:12px" onclick="closeLogin(); return false;">Close</button>
-</div></div>
-<div id="kycModal" class="modal"><div class="modalBox">
-<h3>🪪 KYC - Aadhar + PAN</h3>
-<div id="kycForm">
-<p style="font-size:11px;font-weight:700;margin-top:10px">1. Aadhar Front *</p><input type="file" id="aadharFront" class="inp" accept="image/*">
-<p style="font-size:11px;font-weight:700;margin-top:8px">2. Aadhar Back *</p><input type="file" id="aadharBack" class="inp" accept="image/*">
-<p style="font-size:11px;font-weight:700;margin-top:8px">3. PAN Card *</p><input type="file" id="panCard" class="inp" accept="image/*">
-<p style="font-size:11px;font-weight:700;margin-top:8px">4. Selfie With Aadhar *</p><input type="file" id="selfie" class="inp" accept="image/*">
-<input id="aadharNo" class="inp" placeholder="Aadhar No 12 Digit"><input id="panNo" class="inp" placeholder="PAN No 10 Digit">
-<label style="font-size:10px;font-weight:700"><input type="checkbox" id="kycAgree"> ☑️ Aadhar/PAN sahi hai</label>
-<button type="button" class="b bK" style="width:100%;padding:12px;margin-top:10px" onclick="submitKYC(); return false;">Submit KYC</button>
-</div>
-<div id="kycStatus" style="display:none;text-align:center"><div style="font-size:40px">⏳</div><div style="font-size:16px;font-weight:900;color:#ff9800">KYC Pending</div><div style="font-size:11px">Aadhar: <span id="kShowAadhar"></span> | PAN: <span id="kShowPan"></span></div></div>
-<div id="kycVerified" style="display:none;text-align:center"><div style="font-size:40px">✅</div><div style="font-size:18px;font-weight:900;color:#00c853">KYC VERIFIED</div><div style="font-size:11px">ID: <span id="kVerifiedID"></span></div></div>
-<button type="button" class="b bL" style="width:100%;margin-top:10px;padding:10px" onclick="closeKYC(); return false;">Close</button>
-</div></div>
-<div id="msgModal" class="modal"><div class="modalBox" style="max-width:400px"><h3>💬 Messenger - Hide Number</h3><div class="chatBox" id="chatBox"><div class="msg other">Hi - Number Hide - Copy Band - Chat Khulega</div></div><div style="display:flex;gap:5px;margin:8px 0"><button type="button" class="b bC" style="flex:1" onclick="unlockAndCall('Voice')">📞 Voice ₹49</button><button type="button" class="b bV" style="flex:1" onclick="unlockAndCall('Video')">📹 Video ₹49</button></div><div style="display:flex;gap:6px"><input id="msgIn" class="inp" style="margin:0;flex:1" placeholder="Type message... Free"><button type="button" class="b bB" style="flex:0 0 60px" onclick="sendMsg()">Send</button></div><button type="button" class="b bL" style="width:100%;margin-top:10px;padding:10px" onclick="closeMessenger()">Close</button></div></div>
-<div id="rechargeModal" class="modal"><div class="modalBox"><h3>💳 Recharge - 3 UPI Working - No Payment Error</h3><div style="margin:12px 0">
-<div style="border:2px solid #00c853;padding:10px;border-radius:12px;margin:6px 0"><b>1 Post - ₹199 - 3 UPI Working</b><div style="font-size:9px;margin:4px 0">UPI 1: danishkhn0096@ibl - IBL | UPI 2: 9784664741@ybl | UPI 3: danishkhann99@ybl - All Working</div><button type="button" class="b bK" style="width:100%;margin-top:6px" onclick="doRecharge(199)">Pay ₹199 - danishkhn0096@ibl - IBL Working</button><button type="button" class="b bY" style="width:100%;margin-top:6px" onclick="doRechargeYBL(199)">Pay ₹199 - 9784664741@ybl - YBL Working</button></div>
-<div style="border:2px solid #1877f2;padding:10px;border-radius:12px;margin:6px 0"><b>5 Post - ₹599 - Best Value - 3 UPI</b><button type="button" class="b bY" style="width:100%;margin-top:6px" onclick="doRecharge(599)">Pay ₹599 - danishkhann99@ybl - YBL Working</button></div>
-<div style="background:#e6ffe6;padding:8px;border-radius:10px;font-size:10px;margin-top:8px"><b>No Error Trick:</b> Agar UPI app nahi khule to 2 sec me WhatsApp khulega - Screenshot bhejo - Manual active - Payment atke ga nahi!</div>
-</div><button type="button" class="b bL" style="width:100%;margin-top:10px" onclick="closeRecharge()">Close</button></div></div>
-<div id="unlockModal" class="modal"><div class="modalBox" style="max-width:400px"><h3>🔓 Unlock - Call/Video - ₹49 - 3 UPI Working</h3><p style="font-size:11px;margin-top:6px" id="unlockText">Platform Se - Number Hide - 3 UPI Working - No Error</p><button type="button" class="b bK" style="width:100%;padding:12px" onclick="payUnlock()">Pay ₹49 - danishkhn0096@ibl - IBL Working</button><button type="button" class="b bK" style="width:100%;padding:10px;margin-top:6px;background:#FFD814;color:#000" onclick="payUnlockYBL()">Pay ₹49 - 9784664741@ybl - YBL Backup</button><button type="button" class="b bL" style="width:100%;margin-top:8px;padding:10px" onclick="closeUnlock()">Cancel</button></div></div>
-<div id="agreeModal" class="modal"><div class="modalBox"><h3>📜 0.25%+0.25%=0.5% - Escrow - 3 UPI</h3><p style="font-size:11px;margin-top:8px" id="agreeProp">Property: </p><div style="background:#e6ffe6;border:2px solid #00c853;padding:12px;border-radius:12px;margin:10px 0;font-size:11px;line-height:2"><b>Legal team with us - Lineslegal.com</b><br>1. 0.25% Buyer + 0.25% Seller = 0.5% platform<br>2. Token ₹10,000 Escrow - 3 UPI Working: danishkhn0096@ibl / 9784664741@ybl / danishkhann99@ybl<br>3. Token pe Call/Video/Docs Unlock<br>4. Bypass pe Legal Action</div><label style="font-size:11px;font-weight:700"><input type="checkbox" id="agreeTick"> ☑️ 0.25%+0.25% dene ko taiyaar</label><input id="tokenAmount" class="inp" placeholder="Token Amount - Min ₹10,000" value="10000"><button type="button" class="b bK" style="width:100%;padding:12px;margin-top:10px" onclick="payToken()">Pay Token + Agree - 3 UPI Working</button><button type="button" class="b bL" style="width:100%;margin-top:8px;padding:10px" onclick="closeAgreement()">Cancel</button></div></div>
-<div id="aboutModal" class="modal"><div class="modalBox"><h3>About Us - 3 UPI Working</h3><p style="font-size:12px;line-height:2;margin-top:10px">Drpcom.co.in - 3 UPI Working: danishkhn0096@ibl, 9784664741@ybl, danishkhann99@ybl - No Payment Error - Gmail: drpproperty1@gmail.com | 97846 64741 | 95212 89940 | Legal team with us - Lineslegal.com</p><button type="button" class="b bL" style="width:100%;margin-top:12px" onclick="closeAbout(); return false;">Close</button></div></div>
-<div id="settingModal" class="modal"><div class="modalBox"><h3>Settings - 3 UPI Working</h3><p style="font-size:12px;line-height:2.5;margin-top:10px">3 UPI: danishkhn0096@ibl (IBL) + 9784664741@ybl (YBL) + danishkhann99@ybl (YBL) - All Working - No Error - Copy Band - Sab Khulega</p><button type="button" class="b bL" style="width:100%;margin-top:12px" onclick="closeSetting(); return false;">Close</button></div></div>
-<div class="foot"><b>© Drpcom.co.in - 3 UPI WORKING - No Payment Error</b><br>Official: Drpcom.co.in | Drpcom.info | Legal: Lineslegal.com | Gmail: drpproperty1@gmail.com<br>Platform: <span class="nocopy">97846 64741</span> | WhatsApp: <span class="nocopy">95212 89940</span><br>UPI WORKING: <span class="nocopy">danishkhn0096@ibl - IBL Working</span> | <span class="nocopy">9784664741@ybl - YBL Working</span> | <span class="nocopy">danishkhann99@ybl - YBL Working</span> - Danish Khan - No Error<br>Search | Top 10 Rajya | ID Normal + Google | KYC Aadhar PAN | Payment Hidden Auto | Location + Post Full | Messenger Hide Number | Copy Band - Sab Khulega</div>
+
+<div id="loginModal" class="modal"><div class="modalBox"><h3>🆔 Free Global ID - Owner DRP Hidden</h3><div style="display:flex;gap:6px;margin:8px 0"><button class="b bK" style="flex:1" onclick="showTab('signup')">New Global ID</button><button class="b bL" style="flex:1" onclick="showTab('login')">ID Wapas - Owner Secret</button></div><div id="st_signup"><input id="cName" class="inp" placeholder="Name"><input id="cMobile" class="inp" placeholder="Mobile"><input id="cEmail" class="inp" placeholder="Gmail"><input id="cLoc" class="inp" placeholder="📍 Location - Dubai/USA/UK/India"><input id="cPass" class="inp" type="password" placeholder="Password 4 Digit"><button class="b bK" style="width:100%;padding:11px" onclick="sendOTP()">OTP → Direct Global Login</button></div><div id="st_login" style="display:none"><input id="lMobile" class="inp" placeholder="Mobile - Owner: 9999999999"><input id="lPass" class="inp" type="password" placeholder="Password - Owner: DRP@Global#0001"><button class="b bGold" style="width:100%;padding:10px" onclick="doLogin()">Login - Owner DRP Hidden - Max Reach</button><button class="b bL" style="width:100%;margin-top:5px" onclick="showTab('forgot')">Password Bhula?</button><div style="font-size:8px;margin-top:6px;background:#fff8dc;padding:6px;border-radius:6px">👑 Malik Secret: 9999999999 + DRP@Global#0001 = DRP Only - No Personal Name - Max Reach 1000x - Zuckerberg Style</div></div><div id="st_forgot" style="display:none"><input id="fMobile" class="inp" placeholder="Mobile"><button class="b bY" style="width:100%" onclick="sendForgotOTP()">OTP Bhejo</button><div id="fOTPBox" style="display:none"><div style="background:#e8f5ff;padding:8px;text-align:center"><b id="fDemoOTP"></b></div><input id="fOTP" class="inp" placeholder="OTP"><input id="fNewPass" class="inp" type="password" placeholder="Naya Password"><button class="b bK" style="width:100%" onclick="resetPass()">Set</button></div></div><div id="st2" style="display:none"><div style="background:#e8f5ff;padding:10px;text-align:center"><b id="demoOTP" style="font-size:24px;color:#1877f2"></b><br><span style="font-size:10px">OTP - Location Verified - Global</span></div><input id="otpIn" class="inp" placeholder="OTP"><button class="b bK" style="width:100%" onclick="verifyOTP()">Verify Global</button></div><div id="st3" style="display:none"><div style="background:#e6ffe6;border:2px solid #00c853;padding:10px;border-radius:10px;text-align:center"><b style="color:#00a300">GLOBAL ID ACTIVE - OWNER DRP</b><br>ID: <span id="freeIDno"></span> | <span id="fName"></span><br>Location: <span id="fLoc"></span><br><span id="ownerBadge" style="display:none;background:gold;color:#000;padding:2px 8px;border-radius:20px;font-size:8px;font-weight:900">👑 DRP OWNER - HIDDEN - MAX REACH 1000x - ONLY DRP</span></div><button class="b bK" style="width:100%;margin-top:6px" onclick="closeLogin();openRecharge();">Global Recharge</button></div><button class="b bL" style="width:100%;margin-top:8px" onclick="closeLogin()">Close</button></div></div>
+
+<div id="rechargeModal" class="modal"><div class="modalBox"><h3>💳 Global Recharge - All Transaction + Location + Owner</h3><div style="display:flex;gap:6px;margin:8px 0"><button class="b bK" style="flex:1;padding:8px" onclick="showRechargeTab('india')">🇮🇳 INR - 3 UPI</button><button class="b bInt" style="flex:1;padding:8px" onclick="showRechargeTab('intl')">🌍 Global AED USD - Gmail</button></div><div id="rechargeIndia"><div style="border:2px solid #00c853;padding:10px;border-radius:10px"><b>INR Global - 1 Post ₹199 - 3 UPI Only - No Copy - Location</b><br><button class="b bK" style="width:100%;margin-top:5px" onclick="doRecharge(199,'danishkhn0096@ibl')">Pay ₹199 - UPI 1 - No Copy</button><button class="b bY" style="width:100%;margin-top:4px" onclick="doRecharge(199,'9784664741@ybl')">Pay ₹199 - UPI 2</button><button class="b bB" style="width:100%;margin-top:4px" onclick="doRecharge(199,'danishkhann99@ybl')">Pay ₹199 - UPI 3</button><button class="b bY" style="width:100%;margin-top:6px" onclick="doRecharge(599,'danishkhn0096@ibl')">Pay ₹599 - 5 Post - UPI - Location</button></div></div><div id="rechargeIntl" style="display:none"><div style="border:2px dashed #0d47a1;padding:12px;border-radius:10px;background:#e3f2fd"><b>🌍 Global Transaction - AED USD GBP - Location - Owner</b><br><span style="font-size:10px">No UPI Yet - After Earning Will Create - Gmail drpproperty1@gmail.com - Location Dubai USA</span><br><button class="b bInt" style="width:100%;margin-top:8px;padding:11px" onclick="doIntlGmail('Global Recharge ₹199 - AED/Dubai - Location')">📧 Gmail - AED/Dubai - ₹199 - Location</button><button class="b bGold" style="width:100%;margin-top:6px;padding:10px" onclick="doIntlGmail('Global Recharge $ USD - USA/UK - Location')">📧 Gmail - USD/GBP - $ - Location</button></div></div><button class="b bL" style="width:100%;margin-top:8px" onclick="closeRecharge()">Close</button></div></div>
+
+<div id="premiumModal" class="modal"><div class="modalBox"><h3>🌟 Global Premium - Celebrate - Location + Owner Boost</h3><select id="premPackage" class="inp"><option value="999">Silver ₹999 - Global + Location</option><option value="4999">Gold ₹4999 - Dubai Location Gold</option><option value="9999">Diamond ₹9999 - Blue Tick Global Location</option><option value="19999">Celebrity ₹19999 - Global Celebrate Location</option></select><div style="display:flex;gap:6px"><button class="b bK" style="flex:1;padding:10px" onclick="payPremiumUPI()">🇮🇳 INR - 3 UPI - Location</button><button class="b bInt" style="flex:1;padding:10px" onclick="payPremiumGmail()">🌍 Global - Gmail - Location</button></div><button class="b bL" style="width:100%;margin-top:6px" onclick="closePremium()">Close</button></div></div>
+
+<div id="companyAdModal" class="modal"><div class="modalBox"><h3>📢 Global Company Ad - Dubai Building - Location - All Transaction</h3><input id="compName" class="inp" placeholder="Company Name - Ex: Emaar Dubai - Location Dubai"><input id="compLoc" class="inp" placeholder="📍 Company Location - Dubai, USA, UK"><input id="compBanner" class="inp" placeholder="Banner Link - Dubai Building Image"><select id="compPackage" class="inp"><option value="499">Small ₹499/7din - Global Feed - Location</option><option value="1499">Medium ₹1499/15din - Global Top - Location</option><option value="4999">Big ₹4999/30din - Worldwide Full - Dubai Company Location - Max Reach</option></select><div style="display:flex;gap:6px"><button class="b bK" style="flex:1" onclick="payCompanyAdUPI()">🇮🇳 INR - UPI - Location</button><button class="b bInt" style="flex:1" onclick="payCompanyAdGmail()">🌍 Global AED USD - Gmail - Location</button></div><button class="b bL" style="width:100%;margin-top:6px" onclick="closeCompanyAd()">Close</button></div></div>
+
+<div id="myAdsModal" class="modal"><div class="modalBox"><h3>📊 My Global Ads - Location - Owner</h3><div id="myAdsList" style="font-size:11px"></div><button class="b bL" style="width:100%;margin-top:8px" onclick="closeMyAds()">Close</button></div></div>
+
+<div id="dpModal" class="modal"><div class="modalBox" style="max-width:360px"><h3>🖼️ Global DP - Owner DRP - Location</h3><input id="dpLink" class="inp" placeholder="DP Link"><button class="b bK" style="width:100%" onclick="setDP()">Set Global DP - Only DRP</button><button class="b bL" style="width:100%;margin-top:5px" onclick="closeDP()">Close</button></div></div>
+<div id="storyModal" class="modal"><div class="modalBox" style="max-width:360px"><h3>📸 Global Story - Owner DRP - Location</h3><input id="storyLink" class="inp" placeholder="Story Link"><input id="storyLoc" class="inp" placeholder="📍 Story Location - Dubai etc"><button class="b bK" style="width:100%" onclick="setStory()">Add Global Story - Only DRP - Max Reach</button><button class="b bL" style="width:100%;margin-top:5px" onclick="closeStory()">Close</button></div></div>
+
+<div class="foot"><b>© Drpcom.co.in - FINAL GLOBAL OWNER DRP - Only DRP Name - Hidden Malik - Max Reach 1000x - Zuckerberg Style - DP Story Like Share + Dubai Company Ad + Premium Celebrate + All Language + All Transaction + Location - 3 UPI Only - No Copy - Legal Team Only</b><br><span class="noCopy">danishkhn0096@ibl | 9784664741@ybl | danishkhann99@ybl - No Copy - drpproperty1@gmail.com - Global Gmail - All Language - All Location - Owner DRP Hidden - Only DRP</span><br><b>Legal team with us for any Dispute and solution - LinesLegal.com - No Advocate Word/Name - Global Platform - Owner DRP Hidden - Only DRP - Max Reach</b></div>
+
 <script>
-let genOTP="",isLogged=false,userName="",freeID="",currentUnlockType="";
-let UPI_WORKING = ["danishkhn0096@ibl","9784664741@ybl","danishkhann99@ybl"];
-function openLogin(e){if(e){e.preventDefault();e.stopPropagation();}let modal=document.getElementById('loginModal');modal.style.display='block';let cur=localStorage.getItem('drp_current');if(cur){let u=JSON.parse(cur);document.getElementById('st1').style.display='none';document.getElementById('st2').style.display='none';document.getElementById('st3').style.display='block';document.getElementById('fName').innerText=u.name;document.getElementById('freeIDno').innerText=u.freeID;isLogged=true;userName=u.name;freeID=u.freeID;document.getElementById('hdrFree').style.display='block';document.getElementById('hdrFree').innerText='🆓 '+u.freeID+' ACTIVE';document.getElementById('topUser').innerText='Welcome '+u.name+' | '+u.freeID+' | 3 UPI Working';checkKycTick();}else{document.getElementById('st1').style.display='block';document.getElementById('st2').style.display='none';document.getElementById('st3').style.display='none';}return false;}
-function closeLogin(){document.getElementById('loginModal').style.display='none';return false;}
-function openAbout(){document.getElementById('aboutModal').style.display='block';return false;}function closeAbout(){document.getElementById('aboutModal').style.display='none';return false;}
-function openSetting(){document.getElementById('settingModal').style.display='block';return false;}function closeSetting(){document.getElementById('settingModal').style.display='none';return false;}
-function openMessenger(e){if(e){e.preventDefault();e.stopPropagation();}if(!isLogged){alert('Pehle Free ID banao');openLogin();return false;}document.getElementById('msgModal').style.display='block';return false;}function closeMessenger(){document.getElementById('msgModal').style.display='none';return false;}
-function openRecharge(e){if(e){e.preventDefault();e.stopPropagation();}document.getElementById('rechargeModal').style.display='block';return false;}function closeRecharge(){document.getElementById('rechargeModal').style.display='none';return false;}
-function openKYC(e){if(e){e.preventDefault();e.stopPropagation();}document.getElementById('kycModal').style.display='block';let cur=JSON.parse(localStorage.getItem('drp_current')||'{}');if(cur.kycStatus==='pending'){document.getElementById('kycForm').style.display='none';document.getElementById('kycStatus').style.display='block';document.getElementById('kycVerified').style.display='none';document.getElementById('kShowAadhar').innerText=cur.aadharNo||'XXXX';document.getElementById('kShowPan').innerText=cur.panNo||'XXXX';}else if(cur.kycStatus==='verified'){document.getElementById('kycForm').style.display='none';document.getElementById('kycStatus').style.display='none';document.getElementById('kycVerified').style.display='block';document.getElementById('kVerifiedID').innerText=cur.freeID;}else{document.getElementById('kycForm').style.display='block';document.getElementById('kycStatus').style.display='none';document.getElementById('kycVerified').style.display='none';}return false;}function closeKYC(){document.getElementById('kycModal').style.display='none';return false;}
-function checkKycTick(){let cur=JSON.parse(localStorage.getItem('drp_current')||'{}');if(cur.kycStatus==='verified'){document.getElementById('kycHdrTick').style.display='inline-block';}}
-function openUnlock(){document.getElementById('unlockModal').style.display='block';return false;}function closeUnlock(){document.getElementById('unlockModal').style.display='none';return false;}
-function openAgreement(prop){if(!isLogged){alert('Pehle Free ID banao');openLogin();return false;}let cur=JSON.parse(localStorage.getItem('drp_current')||'{}');if(cur.kycStatus!=='verified'){alert('Pehle KYC Karo');openKYC();return false;}document.getElementById('agreeProp').innerText='Property: '+prop+' - 0.25%+0.25%=0.5% - 3 UPI Working: danishkhn0096@ibl / 9784664741@ybl / danishkhann99@ybl';document.getElementById('agreeModal').style.display='block';return false;}function closeAgreement(){document.getElementById('agreeModal').style.display='none';return false;}
-function filterSearch(){let q=document.getElementById('search').value.toLowerCase();document.querySelectorAll('.pcard').forEach(c=>{let t=(c.getAttribute('data-state')+' '+c.innerText).toLowerCase();c.style.display=t.includes(q)||q==''?'block':'none';});}
-function chipF(k,el){document.querySelectorAll('.chip').forEach(x=>x.classList.remove('active'));el.classList.add('active');if(k=='all'){document.querySelectorAll('.pcard').forEach(c=>c.style.display='block');return}document.querySelectorAll('.pcard').forEach(c=>{c.style.display=c.getAttribute('data-state').includes(k)?'block':'none';});}
-function sendOTP(){let n=document.getElementById('cName').value.trim(),m=document.getElementById('cMobile').value.trim(),e=document.getElementById('cEmail').value.trim(),p=document.getElementById('cPass').value.trim();if(n.length<3){alert('Full Name sahi');return}if(m.length!=10||isNaN(m)){alert('Mobile 10 Digit');return}if(!e.includes('@')){alert('Gmail sahi');return}if(p.length<4){alert('Password 4 digit');return}let users=JSON.parse(localStorage.getItem('drp_users')||'[]');let ex=users.find(u=>u.mobile===m||u.email===e);if(ex){if(ex.pass===p){alert('Wahi ID mili - FB Jaisa - '+ex.freeID+' ACTIVE - 3 UPI Working');localStorage.setItem('drp_current',JSON.stringify(ex));isLogged=true;userName=ex.name;freeID=ex.freeID;document.getElementById('fName').innerText=ex.name;document.getElementById('freeIDno').innerText=ex.freeID;document.getElementById('st1').style.display='none';document.getElementById('st2').style.display='none';document.getElementById('st3').style.display='block';document.getElementById('hdrFree').style.display='block';document.getElementById('hdrFree').innerText='🆓 '+ex.freeID+' ACTIVE';document.getElementById('topUser').innerText='Welcome '+ex.name+' | '+ex.freeID;checkKycTick();return;}else{alert('Ye Mobile/Email pehle se hai - Sahi password daalo');return}}genOTP=Math.floor(100000+Math.random()*900000).toString();document.getElementById('showM').innerText=m;document.getElementById('showE').innerText=e;document.getElementById('demoOTP').innerText=genOTP;document.getElementById('st1').style.display='none';document.getElementById('st2').style.display='block';}
-function verifyOTP(){let o=document.getElementById('otpIn').value.trim();if(o!=genOTP){alert('Wrong OTP - Sahi: '+genOTP);return}let n=document.getElementById('cName').value.trim(),m=document.getElementById('cMobile').value.trim(),e=document.getElementById('cEmail').value.trim(),p=document.getElementById('cPass').value.trim();let fid='DRP-'+Math.floor(100000+Math.random()*900000);let nu={name:n,mobile:m,email:e,pass:p,freeID:fid,created:Date.now(),recharge:false,unlock:false,kycStatus:'none'};let users=JSON.parse(localStorage.getItem('drp_users')||'[]');users.push(nu);localStorage.setItem('drp_users',JSON.stringify(users));localStorage.setItem('drp_current',JSON.stringify(nu));isLogged=true;userName=n;freeID=fid;document.getElementById('fName').innerText=n;document.getElementById('freeIDno').innerText=fid;document.getElementById('st2').style.display='none';document.getElementById('st3').style.display='block';document.getElementById('hdrFree').style.display='block';document.getElementById('hdrFree').innerText='🆓 '+fid+' ACTIVE';document.getElementById('topUser').innerText='Welcome '+n+' | '+fid+' | 3 UPI Working';}
-function deleteID(){let cur=localStorage.getItem('drp_current');if(!cur){alert('Koi ID login nahi');return false}if(!confirm('ID delete karni hai?'))return false;let c=JSON.parse(cur);let users=JSON.parse(localStorage.getItem('drp_users')||'[]');users=users.filter(u=>u.freeID!==c.freeID);localStorage.setItem('drp_users',JSON.stringify(users));localStorage.removeItem('drp_current');alert('ID delete - '+c.freeID);location.reload();return false;}
-function submitKYC(){let af=document.getElementById('aadharFront').value,ab=document.getElementById('aadharBack').value,pan=document.getElementById('panCard').value,self=document.getElementById('selfie').value;let aNo=document.getElementById('aadharNo').value.trim(),pNo=document.getElementById('panNo').value.trim();if(!af||!ab||!pan||!self){alert('Charo Photo Upload Karo');return}if(aNo.length<12){alert('Aadhar 12 Digit');return}if(pNo.length<10){alert('PAN 10 Digit');return}if(!document.getElementById('kycAgree').checked){alert('Agreement Tick Karo');return}let cur=JSON.parse(localStorage.getItem('drp_current'));cur.aadharNo=aNo;cur.panNo=pNo;cur.kycStatus='pending';localStorage.setItem('drp_current',JSON.stringify(cur));let users=JSON.parse(localStorage.getItem('drp_users')||'[]');let idx=users.findIndex(u=>u.freeID===cur.freeID);if(idx>=0){users[idx].aadharNo=aNo;users[idx].panNo=pNo;users[idx].kycStatus='pending';localStorage.setItem('drp_users',JSON.stringify(users));}document.getElementById('kycForm').style.display='none';document.getElementById('kycStatus').style.display='block';document.getElementById('kShowAadhar').innerText=aNo;document.getElementById('kShowPan').innerText=pNo;alert('KYC Submit - Demo 10 sec me Verified');setTimeout(()=>{cur.kycStatus='verified';localStorage.setItem('drp_current',JSON.stringify(cur));let users=JSON.parse(localStorage.getItem('drp_users')||'[]');let idx=users.findIndex(u=>u.freeID===cur.freeID);if(idx>=0){users[idx].kycStatus='verified';localStorage.setItem('drp_users',JSON.stringify(users));}document.getElementById('kycStatus').style.display='none';document.getElementById('kycVerified').style.display='block';document.getElementById('kVerifiedID').innerText=cur.freeID;document.getElementById('kycHdrTick').style.display='inline-block';alert('KYC VERIFIED ✅ - '+cur.freeID);},10000);}
-function doRecharge(amt){if(!isLogged){alert('Pehle ID banao');openLogin();return false}let cur=JSON.parse(localStorage.getItem('drp_current')||'{}');if(cur.kycStatus!=='verified'){alert('Pehle KYC Karo');openKYC();return false}
-  let upi = UPI_WORKING[0]; // danishkhn0096@ibl - IBL - Primary Working
-  let link = `upi://pay?pa=${upi}&pn=Danish%20Khan&am=${amt}&cu=INR&tn=Drpcom%20Recharge%20${cur.freeID}`;
-  window.location.href = link;
-  setTimeout(()=>{
-    if(confirm(`UPI App khula? Agar nahi khula to WhatsApp pe screenshot bhejo - 9521289940 - ₹${amt} - OK dabao to WhatsApp khulega`)){
-      window.open(`https://wa.me/919521289940?text=Recharge%20₹${amt}%20-%20ID:%20${cur.freeID}%20-%20UPI:%20${upi}%20-%20Screenshot%20bhej%20raha%20hu`,'_blank');
-    }
-    cur.recharge=true;localStorage.setItem('drp_current',JSON.stringify(cur));
-    let users=JSON.parse(localStorage.getItem('drp_users')||'[]');let idx=users.findIndex(u=>u.freeID===cur.freeID);if(idx>=0){users[idx].recharge=true;localStorage.setItem('drp_users',JSON.stringify(users));}
-    alert(`Recharge ₹${amt} - UPI ${upi} - Request Gaya - No Error - 3 UPI Working`);
-    closeRecharge();
-  },2000);return false;
+let genOTP="",isLogged=false,userName="",freeID="",forgotOTP="",userLoc="";
+let UPI_ONLY=["danishkhn0096@ibl","9784664741@ybl","danishkhann99@ybl"];
+let COMPANY_ADS=JSON.parse(localStorage.getItem('drp_company_ads')||'[]');
+let CURRENT_LANG='en',CURRENT_CURRENCY='INR';
+
+// 👑 DRP OWNER - HIDDEN MALIK - ONLY DRP - NO PERSONAL NAME - MAX REACH 1000x
+const DRP_OWNER={
+  freeID:"DRP-OWNER-0001",
+  name:"DRP",
+  displayName:"DRP",
+  secretPass:"DRP@Global#0001",
+  secretMobile:"9999999999",
+  email:"drpproperty1@gmail.com",
+  location:"Global HQ - Hidden",
+  dp:"https://i.pravatar.cc/100?img=68",
+  premium:"👑 DRP OWNER - GLOBAL - HIDDEN - MAX REACH 1000x - ONLY DRP",
+  isOwner:true,
+  reachMultiplier:1000,
+  isHidden:true,
+  pass:"DRP@Global#0001",
+  mobile:"9999999999"
+};
+(function injectOwner(){
+  let users=JSON.parse(localStorage.getItem('drp_users')||'[]');
+  if(!users.find(u=>u.freeID===DRP_OWNER.freeID)){
+    users.push(DRP_OWNER);
+    localStorage.setItem('drp_users',JSON.stringify(users));
+  }
+})();
+
+function openLogin(){document.getElementById('loginModal').style.display='block';let cur=localStorage.getItem('drp_current');if(cur){let u=JSON.parse(cur);isLogged=true;userName=u.name;freeID=u.freeID;userLoc=u.location||'Global';document.getElementById('hdrFree').style.display='block';let badge=u.isOwner?'👑 DRP OWNER - HIDDEN - MAX REACH - ONLY DRP':'🆓 '+u.freeID+' GLOBAL '+userLoc;document.getElementById('hdrFree').innerText=badge;document.getElementById('myName').innerText=u.isOwner?'DRP 👑':u.name;document.getElementById('myID').innerText=u.isOwner?'DRP - GLOBAL OWNER - HIDDEN - ONLY DRP - Max Reach 1000x':u.freeID+' '+(u.premium||'')+' '+userLoc;document.getElementById('myLoc').innerText='📍 Location: '+(u.isOwner?'Global HQ - Hidden - Only DRP':userLoc);if(u.dp){document.getElementById('myDP').src=u.dp;document.getElementById('postDP').src=u.dp;}showTab('st3');document.getElementById('fName').innerText=u.isOwner?'DRP 👑 - Hidden Malik - Only DRP':u.name;document.getElementById('freeIDno').innerText=u.freeID;document.getElementById('showPass').innerText=u.pass||'Hidden';document.getElementById('fLoc').innerText=u.location||userLoc;document.getElementById('ownerBadge').style.display=u.isOwner?'inline-block':'none';}else showTab('signup');}
+function closeLogin(){document.getElementById('loginModal').style.display='none';}
+function showTab(t){document.getElementById('st_signup').style.display=t=='signup'?'block':'none';document.getElementById('st_login').style.display=t=='login'?'block':'none';document.getElementById('st_forgot').style.display=t=='forgot'?'block':'none';document.getElementById('st2').style.display=t=='st2'?'block':'none';document.getElementById('st3').style.display=t=='st3'?'block':'none';if(t=='signup'||t=='login'||t=='forgot'){document.getElementById('st2').style.display='none';document.getElementById('st3').style.display='none';}}
+function openRecharge(){if(!isLogged){openLogin();return}document.getElementById('rechargeModal').style.display='block';showRechargeTab('india');}function closeRecharge(){document.getElementById('rechargeModal').style.display='none';}
+function showRechargeTab(tab){document.getElementById('rechargeIndia').style.display=tab=='india'?'block':'none';document.getElementById('rechargeIntl').style.display=tab=='intl'?'block':'none';}
+function openPremium(){if(!isLogged){openLogin();return}document.getElementById('premiumModal').style.display='block';}function closePremium(){document.getElementById('premiumModal').style.display='none';}
+function openCompanyAd(){if(!isLogged){openLogin();return}document.getElementById('companyAdModal').style.display='block';}function closeCompanyAd(){document.getElementById('companyAdModal').style.display='none';}
+function openMyAds(){let cur=JSON.parse(localStorage.getItem('drp_current')||'{}');let list=COMPANY_ADS.filter(a=>a.freeID===cur.freeID);let html='';if(list.length==0)html='<p>No Global Ads - Location Based - Pehle Ad dalo - Owner DRP Max Reach</p>';else list.forEach(a=>{html+=`<div style="border:1px solid #ddd;padding:8px;border-radius:8px;margin:5px 0"><b>${a.name}</b> - ₹${a.package} - ${a.location||'Global'} - ${a.status}<br><small>Location: ${a.location} - Only DRP Platform</small></div>`;});document.getElementById('myAdsList').innerHTML=html;document.getElementById('myAdsModal').style.display='block';}function closeMyAds(){document.getElementById('myAdsModal').style.display='none';}
+function openDP(){document.getElementById('dpModal').style.display='block';}function closeDP(){document.getElementById('dpModal').style.display='none';}
+function openStoryPost(){if(!isLogged){openLogin();return}document.getElementById('storyModal').style.display='block';}function closeStory(){document.getElementById('storyModal').style.display='none';}
+function chipF(k,el){document.querySelectorAll('.chip').forEach(x=>x.classList.remove('active'));el.classList.add('active');if(k=='all'){document.querySelectorAll('.pcard').forEach(c=>c.style.display='block');return}document.querySelectorAll('.pcard').forEach(c=>{let state=(c.getAttribute('data-state')||'').toLowerCase();let txt=c.innerText.toLowerCase();c.style.display=(state.includes(k)||txt.includes(k))?'block':'none';});}
+function filterSearch(){let q=document.getElementById('search').value.toLowerCase();document.querySelectorAll('.pcard').forEach(c=>{let t=(c.getAttribute('data-state')||'').toLowerCase()+' '+c.innerText.toLowerCase();c.style.display=t.includes(q)||q==''?'block':'none';});}
+function getLiveLocation(){if(navigator.geolocation){navigator.geolocation.getCurrentPosition(pos=>{let lat=pos.coords.latitude.toFixed(4),lon=pos.coords.longitude.toFixed(4);userLoc=lat+','+lon;document.getElementById('myLoc').innerText='📍 Location: '+userLoc+' - Live - Global';document.getElementById('pLoc').value=userLoc;document.getElementById('cLoc').value=userLoc;alert('📍 Live Location: '+userLoc+' - Global Location - Owner DRP Hidden - Only DRP');},()=>{alert('Location permission do - Global Location - Owner DRP');});}else alert('Location not supported - Global');}
+function changeLanguage(lang){CURRENT_LANG=lang;localStorage.setItem('drp_lang',lang);alert('🌐 All Language: '+lang+' - India 22 + Dunia 30 - Global Platform - Owner DRP - Only DRP - Location: '+userLoc);}
+function changeCurrency(curr){CURRENT_CURRENCY=curr;localStorage.setItem('drp_currency',curr);if(curr==='INR'){showRechargeTab('india');alert('💳 All Transaction: ₹ INR - 3 UPI - '+UPI_ONLY.join(' | ')+' - No Copy - Location - Owner DRP');}else{showRechargeTab('intl');alert('🌍 All Transaction: '+curr+' - AED USD GBP EUR - Gmail drpproperty1@gmail.com - No UPI Yet - After Earning Will Create - Global - Owner DRP - Only DRP');}}
+function sendOTP(){let n=document.getElementById('cName').value.trim(),m=document.getElementById('cMobile').value.trim(),e=document.getElementById('cEmail').value.trim(),loc=document.getElementById('cLoc').value.trim()||'Global',p=document.getElementById('cPass').value.trim();if(n.length<3||m.length!=10||!e.includes('@')||p.length<4){alert('Sab bharo - Name Mobile Gmail Password Location');return}let users=JSON.parse(localStorage.getItem('drp_users')||'[]');if(users.find(x=>x.mobile===m)){alert('ID hai - Login - Owner Secret 9999999999');showTab('login');return}genOTP=Math.floor(100000+Math.random()*900000).toString();userLoc=loc;document.getElementById('demoOTP').innerText=genOTP;document.getElementById('st_signup').style.display='none';document.getElementById('st2').style.display='block';}
+function verifyOTP(){if(document.getElementById('otpIn').value.trim()!=genOTP){alert('Wrong '+genOTP);return}let n=document.getElementById('cName').value.trim(),m=document.getElementById('cMobile').value.trim(),e=document.getElementById('cEmail').value.trim(),loc=document.getElementById('cLoc').value.trim()||userLoc||'Global',p=document.getElementById('cPass').value.trim();let fid='DRP-GLOBAL-'+Math.floor(100000+Math.random()*900000);let nu={name:n,mobile:m,email:e,pass:p,freeID:fid,location:loc,dp:'https://i.pravatar.cc/100?u='+fid,premium:'FREE GLOBAL',recharge:false};let users=JSON.parse(localStorage.getItem('drp_users')||'[]');users.push(nu);localStorage.setItem('drp_users',JSON.stringify(users));localStorage.setItem('drp_current',JSON.stringify(nu));isLogged=true;userName=n;freeID=fid;document.getElementById('fName').innerText=n;document.getElementById('freeIDno').innerText=fid;document.getElementById('fLoc').innerText=loc;document.getElementById('showPass').innerText=p;document.getElementById('st2').style.display='none';document.getElementById('st3').style.display='block';document.getElementById('myName').innerText=n;document.getElementById('myID').innerText=fid+' GLOBAL '+loc;document.getElementById('myLoc').innerText='📍 Location: '+loc;document.getElementById('hdrFree').style.display='block';document.getElementById('hdrFree').innerText='🆓 '+fid+' GLOBAL '+loc+' ACTIVE';}
+function doLogin(){
+  let m=document.getElementById('lMobile').value.trim(),p=document.getElementById('lPass').value.trim();
+  // 👑 OWNER SECRET CHECK - ONLY DRP - HIDDEN MALIK - MAX REACH
+  if((m==="9999999999"||m==="DRP-OWNER-0001"||m==="DRP") && (p==="DRP@Global#0001"||p===DRP_OWNER.secretPass)){
+    localStorage.setItem('drp_current',JSON.stringify(DRP_OWNER));
+    isLogged=true;userName="DRP";freeID=DRP_OWNER.freeID;userLoc="Global HQ - Hidden";
+    document.getElementById('hdrFree').style.display='block';
+    document.getElementById('hdrFree').innerText='👑 DRP OWNER - HIDDEN - MAX REACH 1000x - ONLY DRP - Zuckerberg Style';
+    document.getElementById('myName').innerText='DRP 👑';
+    document.getElementById('myID').innerText='DRP - GLOBAL OWNER - HIDDEN - ONLY DRP - Max Reach 1000x - No Personal Name';
+    document.getElementById('myLoc').innerText='📍 Location: Global HQ - Hidden - Only DRP';
+    document.getElementById('myDP').src=DRP_OWNER.dp;
+    document.getElementById('postDP').src=DRP_OWNER.dp;
+    document.getElementById('fName').innerText='DRP 👑 - Hidden Malik - Only DRP';
+    document.getElementById('freeIDno').innerText=DRP_OWNER.freeID;
+    document.getElementById('fLoc').innerText='Global HQ - Hidden';
+    document.getElementById('ownerBadge').style.display='inline-block';
+    showTab('st3');
+    alert('👑 DRP MALIK LOGIN SUCCESS - Hidden - No Personal Name - Only DRP - Max Reach 1000x - Zuckerberg Elon Style - Teri ID sabse zyada reach legi - Dunia me naam sirf DRP ayega - Secret: 9999999999 / DRP@Global#0001');
+    return;
+  }
+  let users=JSON.parse(localStorage.getItem('drp_users')||'[]');
+  let u=users.find(x=>x.mobile===m&&x.pass===p);
+  if(!u){alert('Galat - Owner Secret: 9999999999 + DRP@Global#0001 - Only DRP');return}
+  localStorage.setItem('drp_current',JSON.stringify(u));
+  isLogged=true;userName=u.name;freeID=u.freeID;userLoc=u.location||'Global';
+  document.getElementById('hdrFree').style.display='block';
+  document.getElementById('hdrFree').innerText=u.isOwner?'👑 DRP OWNER - HIDDEN - ONLY DRP':'🆓 '+u.freeID+' GLOBAL '+userLoc+' ACTIVE';
+  document.getElementById('myName').innerText=u.isOwner?'DRP 👑':u.name;
+  document.getElementById('myID').innerText=u.isOwner?'DRP - GLOBAL OWNER - HIDDEN - ONLY DRP':u.freeID+' '+(u.premium||'')+' '+userLoc;
+  document.getElementById('myLoc').innerText='📍 Location: '+(u.isOwner?'Global HQ - Hidden - Only DRP':userLoc);
+  if(u.dp){document.getElementById('myDP').src=u.dp;document.getElementById('postDP').src=u.dp;}
+  closeLogin();
 }
-function doRechargeYBL(amt){
-  let cur=JSON.parse(localStorage.getItem('drp_current')||'{}');
-  let upi = UPI_WORKING[1]; // 9784664741@ybl - YBL Working
-  let link = `upi://pay?pa=${upi}&pn=Danish%20Khan&am=${amt}&cu=INR&tn=Drpcom%20Recharge%20${cur.freeID}`;
-  window.location.href = link;
-  setTimeout(()=>{
-    cur.recharge=true;localStorage.setItem('drp_current',JSON.stringify(cur));
-    alert(`Recharge ₹${amt} - UPI ${upi} - Working - No Error`);
-    closeRecharge();
-  },1500);return false;
+function sendForgotOTP(){let m=document.getElementById('fMobile').value.trim();let users=JSON.parse(localStorage.getItem('drp_users')||'[]');if(!users.find(x=>x.mobile===m)){alert('ID nahi - Owner Secret 9999999999');return}forgotOTP=Math.floor(100000+Math.random()*900000).toString();document.getElementById('fDemoOTP').innerText=forgotOTP;document.getElementById('fOTPBox').style.display='block';}
+function resetPass(){if(document.getElementById('fOTP').value.trim()!=forgotOTP){alert('Wrong '+forgotOTP);return}let m=document.getElementById('fMobile').value.trim(),np=document.getElementById('fNewPass').value.trim();let users=JSON.parse(localStorage.getItem('drp_users')||'[]');let idx=users.findIndex(x=>x.mobile===m);users[idx].pass=np;localStorage.setItem('drp_users',JSON.stringify(users));localStorage.setItem('drp_current',JSON.stringify(users[idx]));alert('Password set '+np+' - Global Owner DRP - Only DRP');closeLogin();showTab('login');}
+function doRecharge(amt,upi){let cur=JSON.parse(localStorage.getItem('drp_current'));let link=`upi://pay?pa=${upi}&pn=Danish%20Khan&am=${amt}&cu=INR&tn=${cur.freeID} Global ${cur.location} Recharge Owner DRP`;window.location.href=link;setTimeout(()=>{cur.recharge=true;localStorage.setItem('drp_current',JSON.stringify(cur));alert('Global Recharge ₹'+amt+' - '+upi+' - No Copy - Location: '+cur.location+' - Owner DRP - Only DRP');closeRecharge();},700);}
+function doIntlGmail(type){if(!isLogged){openLogin();return}let cur=JSON.parse(localStorage.getItem('drp_current'));let subject=encodeURIComponent(type+' - Global - '+cur.freeID+' - '+cur.name+' - Location '+cur.location+' - '+CURRENT_CURRENCY+' - Owner DRP Only DRP');let body=encodeURIComponent('Hello Global Drpcom Team - Owner DRP - Only DRP - Hidden Malik,\n\nCurrency: '+CURRENT_CURRENCY+'\nID: '+cur.freeID+'\nName: '+(cur.isOwner?'DRP - Hidden Owner - Only DRP - No Personal Name':cur.name)+'\nEmail: '+cur.email+'\nLocation: '+cur.location+' - '+userLoc+'\nLive Location: [My Location]\nPackage: '+type+'\nLanguage: '+CURRENT_LANG+'\n\nIndian People Buy Dubai Building - Dubai Company Advertises On Our Global Platform - All Language + All Transaction + Location - Owner DRP Hidden - Only DRP - Max Reach 1000x Zuckerberg Style.\n\nPlease send payment link for '+CURRENT_CURRENCY+' via Gmail drpproperty1@gmail.com. No UPI yet - After earning will create.\n\nThanks,\n'+(cur.isOwner?'DRP 👑 - Hidden Malik - Only DRP':cur.name)+' - Global Location: '+cur.location);window.location.href=`mailto:drpproperty1@gmail.com?subject=${subject}&body=${body}`;alert('Global Gmail Sent - drpproperty1@gmail.com - '+CURRENT_CURRENCY+' - Location: '+cur.location+' - Owner DRP - Only DRP - Max Reach');closeRecharge();}
+function payPremiumUPI(){let pkg=document.getElementById('premPackage').value;let cur=JSON.parse(localStorage.getItem('drp_current'));let upi=UPI_ONLY[0];let link=`upi://pay?pa=${upi}&pn=Danish%20Khan&am=${pkg}&cu=INR&tn=Premium Global ${cur.freeID} ${cur.location} Owner DRP`;window.location.href=link;setTimeout(()=>{cur.premium='PREMIUM GLOBAL ₹'+pkg+' '+cur.location+' '+(cur.isOwner?'👑 DRP OWNER MAX REACH':'');localStorage.setItem('drp_current',JSON.stringify(cur));let users=JSON.parse(localStorage.getItem('drp_users')||'[]');let idx=users.findIndex(x=>x.freeID===cur.freeID);users[idx].premium=cur.premium;localStorage.setItem('drp_users',JSON.stringify(users));document.getElementById('myID').innerText=cur.isOwner?'DRP - GLOBAL OWNER - HIDDEN - ONLY DRP - Max Reach':cur.freeID+' '+cur.premium;alert('Global Premium Success ₹'+pkg+' - Location: '+cur.location+' - Owner DRP - Only DRP - Celebrate - All Language');closePremium();},800);}
+function payPremiumGmail(){let pkg=document.getElementById('premPackage').value;let cur=JSON.parse(localStorage.getItem('drp_current'));let subject=encodeURIComponent('Global Premium - '+cur.freeID+' - ₹'+pkg+' - Location '+cur.location+' - '+CURRENT_CURRENCY+' - Owner DRP');let body=encodeURIComponent('Hello Global Team - Owner DRP - Only DRP,\n\nGlobal Premium ID Request - Location: '+cur.location+'\nID: '+cur.freeID+'\nName: '+(cur.isOwner?'DRP Hidden Owner Only DRP':cur.name)+'\nPackage: ₹'+pkg+' - '+CURRENT_CURRENCY+'\nLocation: '+cur.location+'\nLanguage: '+CURRENT_LANG+'\nNo UPI yet - Gmail payment please - All Transaction - Owner DRP Hidden - Only DRP - Max Reach.\nThanks');window.location.href=`mailto:drpproperty1@gmail.com?subject=${subject}&body=${body}`;alert('Global Premium Gmail Sent - Location: '+cur.location+' - Owner DRP - Only DRP');closePremium();}
+function payCompanyAdUPI(){let name=document.getElementById('compName').value.trim(),loc=document.getElementById('compLoc').value.trim()||'Dubai',banner=document.getElementById('compBanner').value.trim(),pkg=document.getElementById('compPackage').value;if(!name||!banner){alert('Name+Banner+Location');return}let cur=JSON.parse(localStorage.getItem('drp_current'));let upi=UPI_ONLY[0];let link=`upi://pay?pa=${upi}&pn=Danish%20Khan&am=${pkg}&cu=INR&tn=GlobalCompanyAd ${cur.freeID} ${name} ${loc} Owner DRP`;window.location.href=link;setTimeout(()=>{let ad={id:'AD-'+Date.now(),freeID:cur.freeID,name:name,location:loc,banner:banner,package:pkg,status:'Approved Global Location Owner DRP Max Reach'};COMPANY_ADS.push(ad);localStorage.setItem('drp_company_ads',JSON.stringify(COMPANY_ADS));renderCompanyAd(ad);alert('Global Company Ad Paid ₹'+pkg+' - Location: '+loc+' - Dubai Company - Global Platform - Owner DRP - Only DRP - Max Reach');closeCompanyAd();},800);}
+function payCompanyAdGmail(){let name=document.getElementById('compName').value.trim(),loc=document.getElementById('compLoc').value.trim()||'Dubai',banner=document.getElementById('compBanner').value.trim(),pkg=document.getElementById('compPackage').value;if(!name||!banner){alert('Name+Banner+Location');return}let cur=JSON.parse(localStorage.getItem('drp_current'));let subject=encodeURIComponent('Global Company Ad - Dubai - '+cur.freeID+' - '+name+' - Location '+loc+' - ₹'+pkg+' - '+CURRENT_CURRENCY+' - Owner DRP');let body=encodeURIComponent('Hello Global Team - Owner DRP - Only DRP - Hidden Malik,\n\nDubai Company Ad Request - Location Based - Max Reach.\nID: '+cur.freeID+'\nCompany: '+name+'\nCompany Location: '+loc+'\nBanner: '+banner+'\nPackage: ₹'+pkg+' - '+CURRENT_CURRENCY+'\nUser Location: '+cur.location+'\nLanguage: '+CURRENT_LANG+'\n\nIndian People Buy Dubai Building - Dubai Company Advertises On Our Global Platform - All Language + All Transaction + Location - Owner DRP Hidden - Only DRP - Max Reach 1000x Zuckerberg Style.\n\nNo UPI yet - Gmail via payment link please.\n\nThanks');window.location.href=`mailto:drpproperty1@gmail.com?subject=${subject}&body=${body}`;alert('Global Company Ad Gmail Sent - Location: '+loc+' - Dubai Company - Owner DRP - Only DRP');closeCompanyAd();}
+function renderCompanyAd(ad){
+  let feed=document.getElementById('feed');
+  let div=document.createElement('div');
+  div.className='pcard';
+  div.setAttribute('data-state',(ad.location||'dubai worldwide global').toLowerCase()+' global dubai usa uk owner');
+  div.style.border=ad.freeID===DRP_OWNER.freeID?'3px solid gold':'2px solid #ff9800';
+  div.innerHTML=`<div style="background:${ad.freeID===DRP_OWNER.freeID?'linear-gradient(90deg,gold,#ff9800)':'#ff9800'};color:${ad.freeID===DRP_OWNER.freeID?'#000':'#fff'};padding:5px 10px;font-size:8px;font-weight:900">${ad.freeID===DRP_OWNER.freeID?'👑 DRP OWNER - HIDDEN - MAX REACH 1000x - ONLY DRP':'GLOBAL SPONSORED'} - ${ad.name} - ${ad.location||'Dubai'} Location - ₹${ad.package}</div><img src="${ad.banner}" style="height:180px"><div class="pbody"><b>${ad.freeID===DRP_OWNER.freeID?'DRP 👑 - Global Owner - Hidden - Only DRP':ad.name} - ${ad.location} - Dubai Global Company Ad - Location</b><div style="font-size:10px">📍 Location: ${ad.location} | Indian People Buy Dubai Building - Dubai Company Advertises On Global Platform - Owner DRP - Only DRP - Max Reach - All Language Transaction Location</div><div style="display:flex;gap:6px;margin-top:6px"><span class="b bK" style="flex:1">Contact ${ad.location} Company</span><span class="b bGold" style="flex:1">Global Ad ₹${ad.package} - ${ad.location} ${ad.freeID===DRP_OWNER.freeID?'👑 Max Reach':''}</span></div></div>`;
+  feed.prepend(div);
 }
-function unlockAndCall(type,name){if(!isLogged){alert('Pehle Free ID banao');openLogin();return false}let cur=JSON.parse(localStorage.getItem('drp_current')||'{}');if(cur.kycStatus!=='verified'){alert('Pehle KYC Karo');openKYC();return false}if(cur.unlock){alert(type+' Call Started - Platform Se - Number Hide - To: '+(name||'Seller')+' - Khul Gaya');return false}currentUnlockType=type;document.getElementById('unlockText').innerText=type+' Call - '+(name||'Seller')+' - Platform Se - 3 UPI Working - No Error - ₹49 Unlock';openUnlock();return false;}
-function payUnlock(){let cur=JSON.parse(localStorage.getItem('drp_current'));let upi=UPI_WORKING[0];let link=`upi://pay?pa=${upi}&pn=Danish%20Khan&am=49&cu=INR&tn=Unlock%20${cur.freeID}`;window.location.href=link;setTimeout(()=>{cur.unlock=true;localStorage.setItem('drp_current',JSON.stringify(cur));let users=JSON.parse(localStorage.getItem('drp_users')||'[]');let idx=users.findIndex(u=>u.freeID===cur.freeID);if(idx>=0){users[idx].unlock=true;localStorage.setItem('drp_users',JSON.stringify(users));}closeUnlock();alert(`Unlock Success - UPI ${upi} - ${currentUnlockType} Call Started - No Error`);},1500);return false;}
-function payUnlockYBL(){let cur=JSON.parse(localStorage.getItem('drp_current'));let upi=UPI_WORKING[1];let link=`upi://pay?pa=${upi}&pn=Danish%20Khan&am=49&cu=INR&tn=Unlock%20${cur.freeID}`;window.location.href=link;setTimeout(()=>{cur.unlock=true;localStorage.setItem('drp_current',JSON.stringify(cur));closeUnlock();alert(`Unlock Success - UPI ${upi} - Working`);},1500);return false;}
-function payToken(){if(!document.getElementById('agreeTick').checked){alert('Agreement Tick Karo');return false}let amt=document.getElementById('tokenAmount').value.trim()||'10000';if(parseInt(amt)<10000){alert('Min Token ₹10,000');return false}let cur=JSON.parse(localStorage.getItem('drp_current'));let upi=UPI_WORKING[0];let link=`upi://pay?pa=${upi}&pn=Danish%20Khan&am=${amt}&cu=INR&tn=Token%20${cur.freeID}`;window.location.href=link;alert(`Token Pay ₹${amt} - UPI ${upi} - Escrow - 3 UPI Working - No Error - Soda Khulega`);closeAgreement();return false;}
-function doPost(){if(!isLogged){alert('Pehle ID banao');openLogin();return false}let cur=JSON.parse(localStorage.getItem('drp_current')||'{}');if(cur.kycStatus!=='verified'){alert('Pehle KYC Karo');openKYC();return false}if(!cur.recharge){alert('Post Ke Liye Recharge ₹199 - 3 UPI Working - No Error');openRecharge();return false}let t=document.getElementById('pTitle').value.trim()||"User Posted Original Plot";let loc=document.getElementById('pLoc').value.trim()||"Gangapur City, Rajasthan";let price=document.getElementById('pPrice').value.trim()||"Contact";let img=document.getElementById('pImg').value.trim()||"https://images.unsplash.com/photo-1564013799919-ab600027ffc6";let desc=document.getElementById('pDesc').value.trim()||"Original Photo";let grid=document.getElementById('grid');let div=document.createElement('div');div.className='pcard';div.setAttribute('data-state',loc.toLowerCase());div.innerHTML=`<img src="${img}"><div class="pbody"><span class="tag">USER POSTED ORIGINAL - LIVE - ${loc} - KYC VERIFIED ✅ - ${freeID} - 3 UPI Working</span><b style="display:block;margin:6px 0">${t}</b><div class="price">₹${price}</div><div class="loc">📍 ${loc} | 👤 ${userName} | ${desc} | 3 UPI Working - No Error | Verified ✅</div><div class="actions"><span class="b bM" onclick="openMessenger(event)">💬 Msg</span><span class="b bC" onclick="unlockAndCall('Voice','${userName}')">📞 Call ₹49</span><span class="b bV" onclick="unlockAndCall('Video','${userName}')">📹 Video ₹49</span></div><div class="actions"><span class="b bK" onclick="openAgreement('${t} - ₹${price}')">🟢 Buy Now - Token + 0.25%</span></div></div>`;grid.prepend(div);document.getElementById('pTitle').value='';document.getElementById('pLoc').value='';document.getElementById('pPrice').value='';document.getElementById('pImg').value='';document.getElementById('pDesc').value='';alert('Post Success - 3 UPI Working - No Error - ID: '+freeID);return false;}
-function sendMsg(){let txt=document.getElementById('msgIn').value.trim();if(!txt)return;let box=document.getElementById('chatBox');let d=document.createElement('div');d.className='msg me';d.innerText=txt+' ✓✓';box.appendChild(d);document.getElementById('msgIn').value='';box.scrollTop=box.scrollHeight;setTimeout(()=>{let r=document.createElement('div');r.className='msg other';r.innerText='Reply - Platform Se - 3 UPI Working - No Error - Chat Khulega';box.appendChild(r);box.scrollTop=box.scrollHeight;},700);}
-(function(){let cur=localStorage.getItem('drp_current');if(cur){let u=JSON.parse(cur);isLogged=true;userName=u.name;freeID=u.freeID;document.getElementById('hdrFree').style.display='block';document.getElementById('hdrFree').innerText='🆓 '+u.freeID+' ACTIVE';document.getElementById('topUser').innerText='Welcome '+u.name+' | '+u.freeID+' | 3 UPI Working';if(u.kycStatus==='verified'){document.getElementById('kycHdrTick').style.display='inline-block';}}})();
+function setDP(){let link=document.getElementById('dpLink').value.trim();if(!link){alert('Link');return}document.getElementById('myDP').src=link;document.getElementById('postDP').src=link;let cur=JSON.parse(localStorage.getItem('drp_current'));cur.dp=link;localStorage.setItem('drp_current',JSON.stringify(cur));let users=JSON.parse(localStorage.getItem('drp_users')||'[]');let idx=users.findIndex(x=>x.freeID===cur.freeID);if(idx>=0){users[idx].dp=link;localStorage.setItem('drp_users',JSON.stringify(users));}closeDP();alert('Global DP Set - Only DRP - Owner Hidden - Location: '+cur.location);}
+function setStory(){let link=document.getElementById('storyLink').value.trim(),loc=document.getElementById('storyLoc').value.trim()||userLoc||'Global';if(!link){alert('Link');return}let bar=document.getElementById('storyBar');let d=document.createElement('div');d.className='story';let cur=JSON.parse(localStorage.getItem('drp_current'));let isOwner=cur.isOwner;let name=isOwner?'DRP 👑':(cur.name||userName);d.innerHTML=`<img src="${link}" style="border:3px solid ${isOwner?'gold':'#00c853'}"><p>${name} 📍${loc.slice(0,6)} ${isOwner?'👑 Max Reach':''}</p>`;bar.appendChild(d);closeStory();alert('Global Story Added - Location: '+loc+' - Only DRP - Owner Hidden - Max Reach 1000x');}
+function doPost(){
+  if(!isLogged){openLogin();return}
+  let cur=JSON.parse(localStorage.getItem('drp_current'));
+  let isOwner=cur.isOwner||cur.freeID===DRP_OWNER.freeID;
+  let t=document.getElementById('pTitle').value||(isOwner?"DRP Global Platform - Dubai Building - Worldwide - Owner Post - Max Reach 1000x - Only DRP - Hidden Malik":"Global Dubai Building - Worldwide Property - Location");
+  let loc=document.getElementById('pLoc').value||userLoc||cur.location||"Dubai";
+  let price=document.getElementById('pPrice').value||"$500k - Global";
+  let img=document.getElementById('pImg').value||"https://images.unsplash.com/photo-1512453979798-5ea266f8880c";
+  let feed=document.getElementById('feed');
+  let dp=cur.dp||DRP_OWNER.dp||"https://i.pravatar.cc/40";
+  let div=document.createElement('div');
+  div.className='pcard';
+  div.setAttribute('data-state',(loc.toLowerCase()+' global dubai usa uk worldwide '+(isOwner?'owner top maxreach':'')).toLowerCase());
+  div.style.border=isOwner?'3px solid gold':'1px solid #ddd';
+  let displayName=isOwner?"DRP 👑":cur.name;
+  let displayID=isOwner?"DRP - GLOBAL OWNER - HIDDEN - ONLY DRP - MAX REACH 1000x - Zuckerberg Style":cur.freeID+' '+(cur.premium||'')+' '+cur.location;
+  let reachText=isOwner?"🔥 MAX REACH 1000x - Owner Hidden - Only DRP - No Personal Name - Zuckerberg Elon Style - Sabse Zyada Reach":"Global User - Location Based";
+  let likes=isOwner?"12.5K 👑":(Math.floor(Math.random()*100)+"");
+  div.innerHTML=`<div style="background:${isOwner?'linear-gradient(90deg,gold,#ff9800)':'#0b0b0b'};color:${isOwner?'#000':'#fff'};padding:5px 10px;font-size:8px;font-weight:900">${isOwner?'👑 DRP OWNER - HIDDEN - ONLY DRP - MAX REACH 1000x - NO PERSONAL NAME - ZUCKERBERG STYLE':'GLOBAL POST - LOCATION - '+loc}</div><img src="${img}"><div class="pbody"><div style="display:flex;align-items:center;gap:8px"><img src="${dp}" style="width:38px;height:38px;border-radius:50%;border:2px solid ${isOwner?'gold':'#2eff7b'}"><div><b style="font-size:13px">${displayName}</b><br><span style="font-size:8px;color:#0d47a1">${displayID}<br>${reachText} | 📍 ${loc}</span></div></div><p style="font-size:12px;margin:8px 0;font-weight:${isOwner?'800':'400'}">📍 Location: ${loc} - ${t} - Global Platform - All Language ${CURRENT_LANG} - All Transaction ${CURRENT_CURRENCY} - ${isOwner?'Owner DRP Hidden - Only DRP - No Personal Name - Max Reach 1000x - Indian People Buy Dubai Building - Dubai Company Ad':'Indian People Buy Dubai Building - Dubai Company'}</p><div style="font-size:10px">📍 ${loc} | 💰 ${price} | 🌐 ${CURRENT_CURRENCY} | 🗣️ ${CURRENT_LANG} | ${isOwner?'👑 Max Reach 1000x Only DRP':''}</div><div style="display:flex;gap:6px;margin-top:8px"><span class="b ${isOwner?'bGold':'bL'}" onclick="like(this)">❤️ Like <span>${likes}</span> ${isOwner?'👑':''}</span><span class="b bL" onclick="comment(this)">💬 Comment ${isOwner?'1.2K 👑':'0'}</span><span class="b bL" onclick="share(this)">↗️ Share - Location ${isOwner?'👑 Max Reach':''}</span></div><div style="font-size:8px;color:#888;margin-top:6px">Legal team with us for any Dispute and solution - LinesLegal.com - No Advocate Word - Only DRP - Hidden Owner - Global Platform - Location: ${loc} - All Language Transaction</div></div>`;
+  feed.prepend(div);
+  if(isOwner){feed.insertBefore(div,feed.firstChild);}
+  document.getElementById('pTitle').value='';document.getElementById('pLoc').value='';document.getElementById('pPrice').value='';document.getElementById('pImg').value='';
+}
+function like(el){let s=el.querySelector('span');let txt=s.innerText;let n=parseInt(txt)||0;if(el.classList.contains('bB')||el.classList.contains('bGold')){if(txt.includes('K')){n=0;}else n--;el.classList.remove('bB');el.classList.remove('bGold');el.classList.add('bL');}else{n++;el.classList.remove('bL');el.classList.add('bB');}s.innerText=txt.includes('K')? (n>0?'12.6K 👑':'12.5K 👑') : n;}
+function comment(el){let c=prompt('Comment Global - Location - Owner DRP - Only DRP:');if(c)alert('Comment: '+c+' - Location: '+userLoc+' - Owner DRP - Only DRP - Max Reach');}
+function share(el){alert('Global Share - Location: '+userLoc+' - Link: '+location.href+' - All Language '+CURRENT_LANG+' - Owner DRP - Only DRP - Max Reach 1000x');}
+(function(){
+  let cur=localStorage.getItem('drp_current');
+  if(cur){
+    let u=JSON.parse(cur);
+    isLogged=true;userName=u.name;freeID=u.freeID;userLoc=u.location||'Global';
+    document.getElementById('hdrFree').style.display='block';
+    document.getElementById('hdrFree').innerText=u.isOwner?'👑 DRP OWNER - HIDDEN - MAX REACH - ONLY DRP':'🆓 '+u.freeID+' GLOBAL '+userLoc+' ACTIVE';
+    document.getElementById('myName').innerText=u.isOwner?'DRP 👑':u.name;
+    document.getElementById('myID').innerText=u.isOwner?'DRP - GLOBAL OWNER - HIDDEN - ONLY DRP - Max Reach 1000x':u.freeID+' '+(u.premium||'')+' '+userLoc;
+    document.getElementById('myLoc').innerText='📍 Location: '+(u.isOwner?'Global HQ - Hidden - Only DRP':userLoc);
+    if(u.dp){document.getElementById('myDP').src=u.dp;document.getElementById('postDP').src=u.dp;}
+  }
+  COMPANY_ADS.forEach(renderCompanyAd);
+  let savedLang=localStorage.getItem('drp_lang')||'en';
+  let savedCurr=localStorage.getItem('drp_currency')||'INR';
+  document.getElementById('langSelect').value=savedLang;
+  document.getElementById('currencySelect').value=savedCurr;
+  CURRENT_LANG=savedLang;
+  CURRENT_CURRENCY=savedCurr;
+  // Auto add Dubai demo global post
+  let demoDiv=document.createElement('div');
+  demoDiv.className='pcard';
+  demoDiv.setAttribute('data-state','dubai worldwide global owner top');
+  demoDiv.style.border='3px solid gold';
+  demoDiv.innerHTML=`<div style="background:linear-gradient(90deg,gold,#ff9800);color:#000;padding:5px 10px;font-size:9px;font-weight:900">👑 DRP OWNER - HIDDEN - ONLY DRP - MAX REACH 1000x - GLOBAL PLATFORM - DUBAI BUILDING - ZUCKERBERG STYLE</div><img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c"><div class="pbody"><div style="display:flex;align-items:center;gap:8px"><img src="https://i.pravatar.cc/100?img=68" style="width:38px;height:38px;border-radius:50%;border:2px solid gold"><div><b>DRP 👑</b><br><span style="font-size:8px">DRP - GLOBAL OWNER - HIDDEN - ONLY DRP - NO PERSONAL NAME - MAX REACH 1000x | 📍 Global HQ - Dubai USA UK Worldwide</span></div></div><p style="font-size:12px;margin:8px 0;font-weight:800">📍 Location: Dubai - Global Platform Launch - Indian People Buy Dubai Building - Dubai Company Advertises On Our Global Platform - Owner DRP Hidden - Only DRP - No Personal Name - Max Reach Like Zuckerberg Elon Musk - All Language + All Transaction + Location System - 3 UPI No Copy - Legal Team Only</p><div style="font-size:10px">📍 Dubai 🇦🇪 Global HQ | 💰 Global | 🌍 All Language + All Transaction + Location | 👑 Max Reach 1000x - Only DRP</div><div style="display:flex;gap:6px;margin-top:8px"><span class="b bGold" style="flex:1">❤️ Like 12.5K 👑 Max Reach</span><span class="b bL" style="flex:1">💬 Comment 1.2K</span><span class="b bL" style="flex:1">↗️ Share - Global Owner</span></div></div>`;
+  document.getElementById('feed').appendChild(demoDiv);
+})();
 </script>
 </body>
 </html>
