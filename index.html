@@ -3,91 +3,38 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>DRPCOM - Diamond Network - 12k</title>
-<link rel="stylesheet" href="style.css">
-</head>
-<body>
-<div id="app">Loading Diamond Network...</div>
-<script src="data.js"></script>
-<script src="auth.js"></script>
-<script src="profile.js"></script>
-<script src="property.js"></script>
-<script src="feed.js"></script>
-<script src="app.js"></script>
-</body>
-</html>
-*{margin:0;padding:0;box-sizing:border-box;font-family:system-ui}
-body{background:#f0f2f5}
-.header{position:sticky;top:0;background:#fff;padding:12px 14px;display:flex;justify-content:space-between;align-items:center;box-shadow:0 1px 4px #0002;z-index:99}
-.logo{font-weight:900;color:#0a6cff;font-size:22px}
-.card{background:#fff;margin:10px;border-radius:14px;padding:14px;box-shadow:0 1px 3px #0001}
-.dp{width:70px;height:70px;border-radius:50%;background:linear-gradient(135deg,#ffcc00,#ff8c00);display:flex;align-items:center;justify-content:center;font-weight:900;font-size:22px;border:3px solid #0a6cff;overflow:hidden;cursor:pointer}
-.badge{background:linear-gradient(90deg,#00c6ff,#0072ff);color:#fff;padding:5px 12px;border-radius:20px;font-size:12px;font-weight:700}
-.tabs{display:flex;gap:8px;overflow:auto;padding:10px}
-.tabs button{padding:9px 16px;border:none;background:#fff;border-radius:22px;font-weight:700}
-.tabs button.active{background:#0a6cff;color:#fff}
-.btn-blue{background:#0a6cff;color:#fff;border:none;padding:11px;border-radius:10px;font-weight:800;width:100%}
-input,textarea{width:100%;padding:11px;border:1px solid #ddd;border-radius:10px;margin:6px 0}
-.feed-media{width:100%;border-radius:12px;margin-top:10px}
-.small{font-size:12px;color:#777}
-<!DOCTYPE html>
-<html lang="hi">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>DRPCOM - Diamond Network</title>
+<title>DRPCOM Diamond</title>
 <style>
 *{margin:0;padding:0;box-sizing:border-box;font-family:system-ui}
 body{background:#f0f2f5}
-.header{position:sticky;top:0;background:#fff;padding:12px 14px;display:flex;justify-content:space-between;align-items:center;box-shadow:0 1px 4px #0002;z-index:99}
-.logo{font-weight:900;color:#0a6cff;font-size:22px}
-.card{background:#fff;margin:10px;border-radius:14px;padding:14px;box-shadow:0 1px 3px #0001}
-.dp{width:70px;height:70px;border-radius:50%;background:linear-gradient(135deg,#ffcc00,#ff8c00);display:flex;align-items:center;justify-content:center;font-weight:900;font-size:22px;border:3px solid #0a6cff;overflow:hidden;cursor:pointer}
-.badge{background:linear-gradient(90deg,#00c6ff,#0072ff);color:#fff;padding:5px 12px;border-radius:20px;font-size:12px;font-weight:700}
+.header{position:sticky;top:0;background:#fff;padding:12px;display:flex;justify-content:space-between;align-items:center;box-shadow:0 1px 4px #0002;z-index:99}
+.logo{font-weight:900;color:#0a6cff}
+.card{background:#fff;margin:10px;border-radius:14px;padding:14px}
+.dp{width:66px;height:66px;border-radius:50%;background:#ffcc00;display:flex;align-items:center;justify-content:center;font-weight:900;border:3px solid #0a6cff;cursor:pointer;overflow:hidden}
+.badge{background:#0a6cff;color:#fff;padding:4px 10px;border-radius:20px;font-size:12px;font-weight:700}
 .tabs{display:flex;gap:8px;overflow:auto;padding:10px}
-.tabs button{padding:9px 16px;border:none;background:#fff;border-radius:22px;font-weight:700}
+.tabs button{padding:8px 14px;border:none;background:#fff;border-radius:20px;font-weight:700}
 .tabs button.active{background:#0a6cff;color:#fff}
-.btn-blue{background:#0a6cff;color:#fff;border:none;padding:11px;border-radius:10px;font-weight:800;width:100%;margin-top:8px}
-input,textarea{width:100%;padding:11px;border:1px solid #ddd;border-radius:10px;margin:6px 0}
-.feed-media{width:100%;border-radius:12px;margin-top:10px}
+.btn{width:100%;background:#0a6cff;color:#fff;border:none;padding:11px;border-radius:10px;font-weight:800;margin-top:8px}
+input,textarea{width:100%;padding:10px;border:1px solid #ddd;border-radius:10px;margin:6px 0}
 .small{font-size:12px;color:#777}
 </style>
 </head>
 <body>
 <div id="app"></div>
 <script>
-window.DRP={owner:{name:'Drpowner',id:'5087',globalId:'DRP5087',city:'Phagi',role:'DIAMOND OWNER',admin:'9784664741'},stats:{total:4200,online:84}};
-
-function getDP(){return localStorage.getItem('drp_dp_single')||'';}
-function renderAuth(){return `<div class="card" style="border-left:4px solid #0a6cff"><b>🔐 ${DRP.owner.name} - ${DRP.owner.id}</b> <span class="badge">💎 ${DRP.owner.role}</span><div class="small">Global: ${DRP.owner.globalId} | ${DRP.owner.city} | KYC ✅ Video ✅ | Admin: ${DRP.owner.admin} | Single File 12k</div></div>`;}
-function renderProfile(){
- let dp=getDP(); let h=dp?`<img src="${dp}" style="width:100%;height:100%;object-fit:cover">`:'DR';
- return `<div class="card"><div style="display:flex;gap:12px;align-items:center"><div class="dp" onclick="uploadDP()">${h}</div><div style="flex:1"><div style="font-weight:900;font-size:19px">${DRP.owner.name} - ${DRP.owner.id}</div><div class="badge">💎 ${DRP.owner.role}</div><div class="small">${DRP.owner.city} • ${DRP.stats.online} online</div></div><div onclick="openSettings()" style="font-size:24px;cursor:pointer">⚙️</div></div><div style="display:flex;gap:8px;margin-top:10px"><button onclick="document.getElementById('pIn').click()" style="flex:1;padding:8px;border:none;background:#f0f2f5;border-radius:8px;font-weight:600">📷 Photo</button><button onclick="document.getElementById('vIn').click()" style="flex:1;padding:8px;border:none;background:#f0f2f5;border-radius:8px;font-weight:600">🎥 Video/Reel</button></div><input type="file" id="pIn" hidden accept="image/*"><input type="file" id="vIn" hidden accept="video/*"></div>`;
-}
-function uploadDP(){let i=document.createElement('input');i.type='file';i.accept='image/*';i.onchange=e=>{let r=new FileReader();r.onload=ev=>{localStorage.setItem('drp_dp_single',ev.target.result);renderApp();};r.readAsDataURL(e.target.files[0]);};i.click();}
-function openSettings(){let n=prompt('Naam:',DRP.owner.name);if(n){DRP.owner.name=n;localStorage.setItem('drp_user_single',n);}renderApp();}
-function saveFeed(d){let a=JSON.parse(localStorage.getItem('drp_feed_single')||'[]');a.unshift(d);localStorage.setItem('drp_feed_single',JSON.stringify(a));}
-function renderFeedInput(){return `<div class="card"><textarea id="feedTxt" placeholder="${DRP.owner.name}, kya soch rahe ho?" rows="3"></textarea><button class="btn-blue" onclick="postText()">🚀 Post karo</button></div>`;}
-function postText(){let t=document.getElementById('feedTxt').value;if(!t.trim())return;saveFeed({text:t,media:'',type:'text',time:new Date().toLocaleString(),user:DRP.owner.name});renderApp();}
-function renderFeeds(){let a=JSON.parse(localStorage.getItem('drp_feed_single')||'[]');if(a.length==0)return '<div class="card small">💎 Welcome! Pehla post karo</div>';return a.map(f=>{let m='';if(f.type=='img')m=`<img src="${f.media}" class="feed-media">`;if(f.type=='video')m=`<video src="${f.media}" controls class="feed-media"></video>`;return `<div class="card"><b>${f.user} - 5087</b> <span class="small">${f.time}</span><div style="margin-top:8px">${f.text}</div>${m}</div>`;}).join('');}
+const DRP={owner:{name:'Drpowner',id:'5087',city:'Phagi',role:'DIAMOND OWNER',admin:'9784664741'}};
+function getDP(){return localStorage.getItem('drp_dp_fix')||'';}
+function renderAuth(){return '<div class="card" style="border-left:4px solid #0a6cff"><b>🔐 '+DRP.owner.name+' - '+DRP.owner.id+'</b> <span class="badge">💎 '+DRP.owner.role+'</span><div class="small">Phagi | KYC Verified | Admin '+DRP.owner.admin+'</div></div>';}
+function renderProfile(){let dp=getDP();let h=dp?'<img src="'+dp+'" style="width:100%;height:100%;object-fit:cover">':'DR';return '<div class="card"><div style="display:flex;gap:12px;align-items:center"><div class="dp" onclick="uploadDP()">'+h+'</div><div><b>'+DRP.owner.name+' - '+DRP.owner.id+'</b><br><span class="badge">💎 DIAMOND</span><div class="small">Phagi - 84 online</div></div><div style="margin-left:auto" onclick="editName()">⚙️</div></div><div style="display:flex;gap:8px;margin-top:10px"><button onclick="document.getElementById(\'pIn\').click()" style="flex:1;padding:8px;border:none;background:#eee;border-radius:8px">📷 Photo</button><button onclick="document.getElementById(\'vIn\').click()" style="flex:1;padding:8px;border:none;background:#eee;border-radius:8px">🎥 Video</button></div><input type="file" id="pIn" hidden accept="image/*"><input type="file" id="vIn" hidden accept="video/*"></div>';}
+function uploadDP(){let i=document.createElement('input');i.type='file';i.accept='image/*';i.onchange=e=>{let r=new FileReader();r.onload=ev=>{localStorage.setItem('drp_dp_fix',ev.target.result);renderApp();};r.readAsDataURL(e.target.files[0]);};i.click();}
+function editName(){let n=prompt('Naam:',DRP.owner.name);if(n)DRP.owner.name=n;renderApp();}
+function saveFeed(d){let a=JSON.parse(localStorage.getItem('drp_feed_fix')||'[]');a.unshift(d);localStorage.setItem('drp_feed_fix',JSON.stringify(a));}
+function renderFeedInput(){return '<div class="card"><textarea id="feedTxt" placeholder="Kya soch rahe ho?" rows="3"></textarea><button class="btn" onclick="postText()">🚀 Post karo</button></div>';}
+function postText(){let t=document.getElementById('feedTxt').value;if(!t.trim())return;saveFeed({text:t,time:new Date().toLocaleString(),user:DRP.owner.name});renderApp();}
+function renderFeeds(){let a=JSON.parse(localStorage.getItem('drp_feed_fix')||'[]');if(a.length==0)return '<div class="card small">💎 Welcome! Pehla post karo</div>';return a.map(f=>{let m='';if(f.type=='img')m='<img src="'+f.media+'" style="width:100%;border-radius:12px;margin-top:10px">';if(f.type=='video')m='<video src="'+f.media+'" controls style="width:100%;border-radius:12px;margin-top:10px"></video>';return '<div class="card"><b>'+f.user+'</b> <span class="small">'+f.time+'</span><div style="margin-top:8px">'+f.text+'</div>'+m+'</div>';}).join('');}
 function bindMedia(){let p=document.getElementById('pIn'),v=document.getElementById('vIn');if(p)p.onchange=e=>{let file=e.target.files[0];if(!file)return;let r=new FileReader();r.onload=ev=>{saveFeed({text:document.getElementById('feedTxt')?.value||'Photo',media:ev.target.result,type:'img',time:new Date().toLocaleString(),user:DRP.owner.name});renderApp();};r.readAsDataURL(file);};if(v)v.onchange=e=>{let file=e.target.files[0];if(!file)return;let r=new FileReader();r.onload=ev=>{saveFeed({text:document.getElementById('feedTxt')?.value||'Video',media:ev.target.result,type:'video',time:new Date().toLocaleString(),user:DRP.owner.name});renderApp();};r.readAsDataURL(file);};}
-
-function renderApp(){
- let active=window.currentTab||'home';
- let html=`<div class="header"><div class="logo">drpcom.co.in</div><div style="font-size:12px;font-weight:800">💎 DIAMOND • ${DRP.stats.total} Users</div></div>
- <div class="tabs"><button class="${active=='home'?'active':''}" onclick="switchTab('home')">🏠 Home</button><button class="${active=='property'?'active':''}" onclick="switchTab('property')">🏠 Property</button><button class="${active=='profile'?'active':''}" onclick="switchTab('profile')">👤 Profile</button><button class="${active=='kyc'?'active':''}" onclick="switchTab('kyc')">✅ KYC</button><button class="${active=='admin'?'active':''}" onclick="switchTab('admin')">🔐 Admin</button></div>
- ${renderAuth()}
- ${active=='home'?renderProfile()+renderFeedInput()+renderFeeds():''}
- ${active=='profile'?renderProfile()+'<div class="card small">DP click karke badlo</div>'+renderFeeds():''}
- ${active=='kyc'?`<div class="card"><h3>KYC Verified - Video Done - Admin ${DRP.owner.admin}</h3></div>`:''}
- ${active=='admin'?`<div class="card"><h3>Admin ${DRP.owner.admin}</h3><input id="adminPass" type="password"><button class="btn-blue" onclick="checkAdmin()">Login</button></div>`:''}
- <div class="card" style="font-size:11px;color:#888;text-align:center">drpcom.co.in - Single File - No External - Safe - 12k Logic</div>`;
- document.getElementById('app').innerHTML=html;
- setTimeout(bindMedia,100);
-}
-function switchTab(t){window.currentTab=t;renderApp();}
-function checkAdmin(){let p=document.getElementById('adminPass').value;if(p==DRP.owner.admin)alert('Admin Success 💎');else alert('Wrong');}
-window.onload=renderApp;
+function renderApp(){let html='<div class="header"><div class="logo">drpcom.co.in</div><div style="font-size:12px;font-weight:800">💎 DIAMOND - 4200 Users</div></div>';html+='<div class="tabs"><button class="active">🏠 Home</button><button>🏠 Property</button><button>👤 Profile</button></div>';html+=renderAuth()+renderProfile()+renderFeedInput()+renderFeeds();html+='<div class="card" style="font-size:11px;color:#888;text-align:center">drpcom.co.in - Fixed - Drpowner 5087</div>';document.getElementById('app').innerHTML=html;setTimeout(bindMedia,100);}window.onload=renderApp;
 </script>
 </body>
 </html>
