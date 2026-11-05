@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="hi"><head><meta charset="UTF-8">
+<html lang="en"><head><meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>drpcom.co.in - Drpowner 5087 DIAMOND INDIA</title>
 <style>
 *{margin:0;padding:0;box-sizing:border-box;font-family:Arial}
 body{background:#f0f2f5}
-.top{background:#fff;padding:10px 15px;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:99;box-shadow:0 1px 5px #ccc}
+.top{background:#fff;padding:10px;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:99;box-shadow:0 1px 5px #ccc;gap:5px;flex-wrap:wrap}
 .logo{font-weight:900;font-size:22px;color:#1877f2}
 .logo span{color:#000}
 .btn{background:#1877f2;color:#fff;border:0;padding:8px 14px;border-radius:20px;font-weight:700;cursor:pointer}
@@ -16,47 +16,78 @@ input,textarea,select{width:100%;padding:10px;margin:6px 0;border:1px solid #ddd
 .legal{text-align:center;font-size:12px;color:#555;padding:8px}
 .legal a{color:#1877f2;font-weight:700;text-decoration:none}
 .price{border:1px solid #1877f2;border-radius:10px;padding:12px;margin:8px 0}
-.price b{font-size:18px}
 </style></head><body>
 <div class="top"><div class="logo">drp<span>com.co.in</span></div>
-<div>Drpowner 5087 💎 DIAMOND - INDIA</div>
-<button class="btn" onclick="show('ids')">ID Banao</button></div>
+<div style="font-weight:700;font-size:12px">Drpowner 5087 💎 DIAMOND - INDIA</div>
+<select id="langSel" onchange="changeLang(this.value)" style="width:auto;padding:6px;border-radius:20px;font-weight:700"><option value="en">English</option><option value="hi">Hindi</option><option value="hing">Hinglish</option><option value="ur">Urdu</option><option value="ar">Arabic</option><option value="fr">French</option><option value="es">Spanish</option><option value="ru">Russian</option><option value="zh">Chinese</option><option value="ja">Japanese</option></select>
+<button class="btn" onclick="show('ids')">Create ID</button></div>
 <div class="wrap">
 <div class="card legal">Legal Team With Us - For Any Dispute And Solution<br><a href="https://lineslegal.com">Lineslegal.com</a></div>
-<div class="card"><h3>Kya Soch Rahe Ho?</h3>
-<textarea id="postText" placeholder="Apne dil ki baat likho... Celebrity / Diamond ko rok tok nahi"></textarea>
-<input id="postLoc" placeholder="Location Khud Dalo - Jaha Bechna Hai Waha Ki">
-<input id="postPrice" placeholder="Price (Agar Property Hai To)">
+<div class="card"><h3 id="tPost">What are you thinking?</h3>
+<textarea id="postText" placeholder="Write your heart... Celebrity / Diamond No Restriction"></textarea>
+<input id="postLoc" placeholder="Enter Location Yourself - Where You Want To Sell">
+<input id="postPrice" placeholder="Price (If Property)">
 <input type="file" id="postFile" accept="image/*,video/*">
-<button class="btn2" onclick="doPost()">Post Karo</button>
-<p style="font-size:12px;color:#888;margin-top:6px">Free ID = Sirf Dekh Sakte Ho. Kaam Ke Liye Paid ID Chahiye. Public ID Post / Call Nahi Kar Sakti.</p></div>
-<div class="card"><h3>Feed - Sabke Post</h3><div id="feed"></div></div>
-<div class="card"><h3>Share - Dusre App Pe Jao</h3>
-<button class="btn" onclick="goApp('youtube')">YouTube Pe Dekho</button>
-<button class="btn" onclick="goApp('instagram')">Insta Pe Dekho</button>
-<button class="btn" onclick="goApp('facebook')">Facebook Pe Dekho</button>
-<button class="btn2" onclick="shareSite()">WhatsApp Pe Share Karo</button></div>
-<div class="card" id="ids"><h2>ID Banao - DRP ID - Ek ID Se Sab Jagah</h2>
-<input id="uName" placeholder="Apna Naam">
+<button class="btn2" onclick="doPost()" id="tPostBtn">Post Now</button>
+<p style="font-size:12px;color:#888;margin-top:6px" id="tPostNote">Free ID = Only View. For Work You Need Paid ID. Public ID Cannot Post / Call.</p></div>
+<div class="card"><h3 id="tFeed">Feed - All Posts</h3><div id="feed"></div></div>
+<div class="card"><h3 id="tShare">Share - Go To Other Apps</h3>
+<button class="btn" onclick="goApp('youtube')">Watch On YouTube</button>
+<button class="btn" onclick="goApp('instagram')">View On Instagram</button>
+<button class="btn" onclick="goApp('facebook')">View On Facebook</button>
+<button class="btn2" onclick="shareSite()">Share On WhatsApp</button></div>
+<div class="card"><h3 id="tPost">What are you thinking?</h3>
+<textarea id="postText" placeholder="Write your heart... Celebrity / Diamond No Restriction"></textarea>
+<input id="postLoc" placeholder="Enter Location Yourself - Where You Want To Sell">
+<input id="postPrice" placeholder="Price (If Property)">
+<input type="file" id="postFile" accept="image/*,video/*">
+<button class="btn2" onclick="doPost()" id="tPostBtn">Post Now</button>
+<p style="font-size:12px;color:#888;margin-top:6px" id="tPostNote">Free ID = Only View. For Work You Need Paid ID. Public ID Cannot Post / Call.</p></div>
+<div class="card"><h3 id="tFeed">Feed - All Posts</h3><div id="feed"></div></div>
+<div class="card"><h3 id="tShare">Share - Go To Other Apps</h3>
+<button class="btn" onclick="goApp('youtube')">Watch On YouTube</button>
+<button class="btn" onclick="goApp('instagram')">View On Instagram</button>
+<button class="btn" onclick="goApp('facebook')">View On Facebook</button>
+<button class="btn2" onclick="shareSite()">Share On WhatsApp</button></div>
+<div class="card" id="ids"><h2 id="tIdTitle">Create ID - DRP ID - One ID For All</h2>
+<input id="uName" placeholder="Your Name">
 <input id="uPic" placeholder="Photo Link">
-<select id="idType"><option value="free">FREE ID - Sirf Dekhne Ke Liye</option><option value="normal">NORMAL ID - Bina Mark</option><option value="blue">BLUE TICK ✅ Celebrity ID</option><option value="diamond">DIAMOND 💎 President ID</option></select>
-<button class="btn2" onclick="makeID()">Free Entry / ID Banao</button><p id="idResult"></p>
-<div class="price"><b>NORMAL ID - Bina Mark</b><br>1 Mahina - ₹199<br>3 Mahina - ₹299<br>1 Saal - ₹799<br><button class="btn" onclick="pay(199,'Normal 1 Mahina')">₹199 Pay Karo</button> <button class="btn" onclick="pay(299,'Normal 3 Mahina')">₹299</button> <button class="btn" onclick="pay(799,'Normal 1 Saal')">₹799</button></div>
-<div class="price"><b>BLUE TICK ✅ Celebrity ID</b><br>1 Mahina - ₹699<br>3 Mahina - ₹1499<br>1 Saal - ₹5999<br><button class="btn" onclick="pay(699,'Blue 1 Mahina')">₹699</button> <button class="btn" onclick="pay(1499,'Blue 3 Mahina')">₹1499</button> <button class="btn" onclick="pay(5999,'Blue 1 Saal')">₹5999</button></div>
-<div class="price"><b>DIAMOND 💎 President ID</b><br>5 Saal - ₹599999<br>Jo Dil Chahe Likho - Business Ke Liye Kuch Bhi Karo - No Rok Tok<br><button class="btn" onclick="pay(599999,'Diamond 5 Saal')">₹599999 Pay Karo</button></div>
-<div class="price"><b>AD Chalao - Kamai</b><br>Company / Log Apna Ad Chalayenge<br><button class="btn2" onclick="pay(999,'Ad')">Ad Ke Liye Pay Karo</button></div>
+<select id="idType"><option value="free">FREE ID - Only For Viewing</option><option value="normal">NORMAL ID - Without Mark</option><option value="blue">BLUE TICK ✅ Celebrity ID</option><option value="diamond">DIAMOND 💎 President ID</option></select>
+<button class="btn2" onclick="makeID()" id="tIdBtn">Free Entry / Create ID</button><p id="idResult"></p>
+<div class="price"><b>NORMAL ID - Without Mark</b><br>1 Month - ₹199<br>3 Month - ₹299<br>1 Year - ₹799<br><button class="btn" onclick="pay(199,'Normal 1 Month')">₹199 Pay</button> <button class="btn" onclick="pay(299,'Normal 3 Month')">₹299</button> <button class="btn" onclick="pay(799,'Normal 1 Year')">₹799</button></div>
+<div class="price"><b>BLUE TICK ✅ Celebrity ID</b><br>1 Month - ₹699<br>3 Month - ₹1499<br>1 Year - ₹5999<br><button class="btn" onclick="pay(699,'Blue 1 Month')">₹699</button> <button class="btn" onclick="pay(1499,'Blue 3 Month')">₹1499</button> <button class="btn" onclick="pay(5999,'Blue 1 Year')">₹5999</button></div>
+<div class="price"><b>DIAMOND 💎 President ID</b><br>5 Years - ₹599999<br>Write Whatever You Want - For Business Do Anything - No Restriction<br><button class="btn" onclick="pay(599999,'Diamond 5 Years')">₹599999 Pay</button></div>
+<div class="price"><b>AD - Earning</b><br>Company / People Will Run Their Ad<br><button class="btn2" onclick="pay(999,'Ad')">Pay For Ad</button></div>
 </div>
-<div class="card"><h3>Public ID Kya Kar Sakti Hai?</h3><p>✅ Dekh Sakti Hai - Feed, Post, Photo, Video, Reel, Property, Profile, Search, Like, Follow<br>❌ Nahi Kar Sakti - Post, Comment, Call, Message, Property Dalna, Ad Chalana<br><br><b>Celebrity / Diamond - No Rok Tok - Jo Dil Chahe Likho - Apna Desh Sambhalo - Apna Business Karo</b></p></div>
+<div class="card"><h3 id="tPublic">What Can Public ID Do?</h3><p id="tPublicText">✅ Can Do - View Feed, Post, Photo, Video, Reel, Property, Profile, Search, Like, Follow<br>❌ Cannot Do - Post, Comment, Call, Message, Add Property, Run Ad<br><br><b>Celebrity / Diamond - No Restriction - Write Whatever You Want - Handle Your Country - Do Your Business</b></p></div>
 <div class="legal">Legal Team With Us - For Any Dispute And Solution - <a href="https://lineslegal.com">Lineslegal.com</a><br>© drpcom.co.in - Drpowner 5087 DIAMOND INDIA</div>
-</div><script>
+</div>
+<script>
 let myID="PUBLIC";let posts=JSON.parse(localStorage.getItem('drp_posts')||'[]');
 function show(id){document.getElementById(id).scrollIntoView({behavior:'smooth'})}
-function makeID(){let n=document.getElementById('uName').value||'Guest';let t=document.getElementById('idType').value;myID=t;document.getElementById('idResult').innerHTML="Badhai Ho "+n+" ! Tumhari ID Ban Gayi - Type: "+t.toUpperCase()+" - Kaam Ke Liye Payment Karo";alert("ID Ban Gayi: "+t)}
-function doPost(){if(myID=="free"||myID=="PUBLIC"){alert("Kaam Karne Ke Liye Paid ID Chahiye - Normal ₹199 - Blue Tick ₹699");return}let txt=document.getElementById('postText').value;let loc=document.getElementById('postLoc').value;let pr=document.getElementById('postPrice').value;if(!txt)return alert("Kuch Likho");posts.unshift({txt,loc,pr,time:new Date().toLocaleString(),id:myID});localStorage.setItem('drp_posts',JSON.stringify(posts));render();alert("Post Ho Gaya")}
-function render(){let h="";if(posts.length==0)h="<p>Abhi Koi Post Nahi - Pehla Post Tum Karo</p>";posts.forEach(p=>{h+=`<div style="border-top:1px solid #eee;padding:10px 0"><b>${p.id.toUpperCase()} ID</b> - ${p.time}<br>${p.txt}<br>📍 ${p.loc||''} ${p.pr?' | ₹'+p.pr:''}<br><button class="btn" onclick="alert('Call Ke Liye Paid ID Chahiye')">Call Karo</button> <button onclick="like(this)">❤️ Like</button></div>`});document.getElementById('feed').innerHTML=h}
+function makeID(){let n=document.getElementById('uName').value||'Guest';let t=document.getElementById('idType').value;myID=t;document.getElementById('idResult').innerHTML="Congratulations "+n+" ! Your ID Created - Type: "+t.toUpperCase()+" - Pay For Work";alert("ID Created: "+t)}
+function doPost(){if(myID=="free"||myID=="PUBLIC"){alert("For Work You Need Paid ID - Normal Rs.199 - Blue Tick Rs.699");return}let txt=document.getElementById('postText').value;let loc=document.getElementById('postLoc').value;let pr=document.getElementById('postPrice').value;if(!txt)return alert("Write Something");posts.unshift({txt,loc,pr,time:new Date().toLocaleString(),id:myID});localStorage.setItem('drp_posts',JSON.stringify(posts));render();alert("Posted")}
+function render(){let h="";if(posts.length==0)h="<p>No Post Yet - You Do First Post</p>";posts.forEach(p=>{h+=`<div style="border-top:1px solid #eee;padding:10px 0"><b>${p.id.toUpperCase()} ID</b> - ${p.time}<br>${p.txt}<br>📍 ${p.loc||''} ${p.pr?' | ₹'+p.pr:''}<br><button class="btn" onclick="alert('For Call You Need Paid ID')">Call Now</button> <button onclick="like(this)">❤️ Like</button></div>`});document.getElementById('feed').innerHTML=h}
 function like(e){e.innerText="❤️ Liked"}
-function pay(amt,plan){let upi="danishkhann99@ybl";let url="upi://pay?pa="+upi+"&pn=DRPCOM&am="+amt+"&cu=INR&tn="+encodeURIComponent(plan);window.location.href=url;alert(plan+" Ke Liye ₹"+amt+" - UPI: danishkhann99@ybl - Agar Na Chale To Backup: danishkhn0096@ibl / 9784664741@ybl")}
-function goApp(app){alert(app+" Pe Ja Rahe Ho - DRP ID Se Login Hoga");window.open("https://"+app+".com","_blank")}
-function shareSite(){let t="drpcom.co.in - Drpowner 5087 DIAMOND INDIA - Join Karo";window.open("https://wa.me/?text="+encodeURIComponent(t),"_blank")}
-render();
+  <script>
+function changeLang(l){
+let D={
+en:{post:"What are you thinking?",loc:"Enter Location Yourself - Where You Want To Sell",price:"Price (If Property)",postBtn:"Post Now",feed:"Feed - All Posts",share:"Share - Go To Other Apps",idTitle:"Create ID - DRP ID - One ID For All",name:"Your Name",public:"What Can Public ID Do?"},
+hi:{post:"Kya Soch Rahe Ho?",loc:"Location Khud Dalo - Jaha Bechna Hai Waha Ki",price:"Price (Agar Property Hai To)",postBtn:"Post Karo",feed:"Feed - Sabke Post",share:"Share - Dusre App Pe Jao",idTitle:"ID Banao - DRP ID - Ek ID Se Sab Jagah",name:"Apna Naam",public:"Public ID Kya Kar Sakti Hai?"},
+hing:{post:"Kya Soch Rahe Ho?",loc:"Location Khud Dalo",price:"Price (Agar Property Hai To)",postBtn:"Post Karo",feed:"Feed - Sabke Post",share:"Share - Dusre App Pe Jao",idTitle:"ID Banao - DRP ID",name:"Apna Naam",public:"Public ID Kya Kar Sakti Hai?"}
+};
+let d=D[l]||D['en'];
+document.getElementById('postText').placeholder=d.post;
+document.getElementById('postLoc').placeholder=d.loc;
+document.getElementById('postPrice').placeholder=d.price;
+document.getElementById('tPostBtn').innerText=d.postBtn;
+document.getElementById('tFeed').innerText=d.feed;
+document.getElementById('tShare').innerText=d.share;
+document.getElementById('tIdTitle').innerText=d.idTitle;
+document.getElementById('uName').placeholder=d.name;
+document.getElementById('tPublic').innerText=d.public;
+localStorage.setItem('drp_lang',l);
+}
+let sl=localStorage.getItem('drp_lang')||'en';
+document.getElementById('langSel').value=sl;changeLang(sl);
 </script></body></html>
