@@ -62,6 +62,19 @@ input,textarea,select{width:100%;padding:10px;margin:6px 0;border:1px solid #ddd
 <div class="card"><h3 id="tPublic">What Can Public ID Do?</h3><p id="tPublicText">✅ Can Do - View Feed, Post, Photo, Video, Reel, Property, Profile, Search, Like, Follow<br>❌ Cannot Do - Post, Comment, Call, Message, Add Property, Run Ad<br><br><b>Celebrity / Diamond - No Restriction - Write Whatever You Want - Handle Your Country - Do Your Business</b></p></div>
 <div class="legal">Legal Team With Us - For Any Dispute And Solution - <a href="https://lineslegal.com">Lineslegal.com</a><br>© drpcom.co.in - Drpowner 5087 DIAMOND INDIA</div>
 </div>
+  <script>
+let savedID = localStorage.getItem('drp_my_id');
+if(savedID){ myID = savedID; }
+function makeID(){
+let n = document.getElementById('uName').value || 'Drpowner 5087';
+let t = document.getElementById('idType').value;
+myID = t;
+localStorage.setItem('drp_my_id', t);
+localStorage.setItem('drp_my_name', n);
+document.getElementById('idResult').innerHTML = "Congratulations "+n+" ! Your ID Created - Type: "+t.toUpperCase()+" - Ab Post Kar Sakte Ho";
+alert("ID Created: "+t+" - Ab Post Karo");
+}
+  </script>
 <script>
 let myID="PUBLIC";let posts=JSON.parse(localStorage.getItem('drp_posts')||'[]');
 function show(id){document.getElementById(id).scrollIntoView({behavior:'smooth'})}
