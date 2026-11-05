@@ -71,6 +71,84 @@ let t = document.getElementById('idType').value;
 myID = t;
 localStorage.setItem('drp_my_id', t);
 localStorage.setItem('drp_my_name', n);
+  <!-- KYC FOR DIAMOND - ONLY REAL PRESIDENT -->
+<div style="background:#fffbe6;border:2px solid gold;padding:15px;border-radius:12px;margin:10px 0;">
+<h3>💎 DIAMOND ID - KYC Verification - Only Real President</h3>
+<p style="font-size:13px;color:#333;">Har koi DIAMOND nahi ban sakta. Pehle KYC karo, Payment karo, Owner Approve karega tabhi DIAMOND milega. Bina KYC ke ID FREE hi rahegi.</p>
+
+<label>Your Name</label><br>
+<input id="kycName" placeholder="Aadhaar Wala Naam" style="width:100%;padding:10px;margin:5px 0;"><br>
+
+<label>Aadhaar Number - Last 4 Digit</label><br>
+<input id="kycAadhaar" placeholder="XXXX-XXXX-1234" style="width:100%;padding:10px;margin:5px 0;"><br>
+
+<label>Aadhaar Front Photo Link / Upload</label><br>
+<input id="kycAadhaarPic" placeholder="Photo Link Paste Karo" style="width:100%;padding:10px;margin:5px 0;"><br>
+
+<label>PAN Card Photo Link</label><br>
+<input id="kycPan" placeholder="PAN Photo Link" style="width:100%;padding:10px;margin:5px 0;"><br>
+
+<label>Live Selfie Photo Link - Face Aadhaar Se Match Hona Chahiye</label><br>
+<input id="kycSelfie" placeholder="Selfie Link" style="width:100%;padding:10px;margin:5px 0;"><br>
+
+<label>Mobile Number - OTP Ke Liye</label><br>
+<input id="kycMobile" placeholder="10 Digit Mobile" style="width:100%;padding:10px;margin:5px 0;"><br>
+
+<p style="background:#000;color:gold;padding:10px;border-radius:8px;text-align:center;">DIAMOND FEE - ₹99,999 / 5 Year - Refundable Nahi Hai Agar KYC Fake Nikla To</p>
+
+<button onclick="sendKYC()" style="width:100%;padding:12px;background:gold;color:black;font-weight:bold;border:none;border-radius:8px;">SEND KYC REQUEST FOR DIAMOND</button>
+
+<div id="kycResult" style="margin-top:10px;font-weight:bold;"></div>
+</div>
+
+<script>
+function sendKYC(){
+let n = document.getElementById('kycName').value;
+let a = document.getElementById('kycAadhaar').value;
+let m = document.getElementById('kycMobile').value;
+if(!n || !a || !m){ alert("Naam, Aadhaar Last 4, Mobile - Teeno Bharna Jaruri Hai"); return; }
+let req = {name:n, aadhaar:a, mobile:m, time:new Date().toLocaleString(), status:"PENDING"};
+let all = JSON.parse(localStorage.getItem('drp_kyc_list')||'[]');
+all.push(req);
+localStorage.setItem('drp_kyc_list', JSON.stringify(all));
+document.getElementById('kycResult').innerHTML = "✅ KYC Request Sent - "+n+" - Status: PENDING - Owner Approve Karega Tabhi DIAMOND Milega. Abhi Aapki ID FREE Hai.";
+alert("KYC Bhej Di Gayi - Owner Approve Karega");
+}
+</script>
+
+<!-- OWNER ONLY - KYC APPROVE PANEL -->
+<div style="background:#000;color:white;padding:15px;border-radius:12px;margin:10px 0;">
+<h3>👑 Owner Panel - KYC Approve - Only Drpowner 5087</h3>
+<button onclick="showKYC()" style="padding:10px;background:gold;color:black;font-weight:bold;">SHOW ALL KYC REQUESTS</button>
+<div id="kycList" style="margin-top:10px;"></div>
+</div>
+
+<script>
+function showKYC(){
+let all = JSON.parse(localStorage.getItem('drp_kyc_list')||'[]');
+if(all.length==0){ document.getElementById('kycList').innerHTML="Koi KYC Request Nahi Aayi"; return; }
+let h = "";
+all.forEach((k,i)=>{
+h += "<div style='background:#222;padding:10px;margin:5px;border-radius:8px;'>Name: "+k.name+" | Aadhaar: "+k.aadhaar+" | Mobile: "+k.mobile+" | Status: "+k.status+" <br><button onclick=\"approveKYC("+i+")\" style='background:green;color:white;padding:5px;margin-top:5px;'>APPROVE - DIAMOND DE DO</button> <button onclick=\"rejectKYC("+i+")\" style='background:red;color:white;padding:5px;'>REJECT</button></div>";
+});
+document.getElementById('kycList').innerHTML = h;
+}
+function approveKYC(i){
+let all = JSON.parse(localStorage.getItem('drp_kyc_list')||'[]');
+all[i].status="APPROVED - DIAMOND";
+localStorage.setItem('drp_kyc_list', JSON.stringify(all));
+localStorage.setItem('drp_my_id','DIAMOND');
+alert("Approved - "+all[i].name+" Ab DIAMOND President Ban Gaya");
+showKYC();
+}
+function rejectKYC(i){
+let all = JSON.parse(localStorage.getItem('drp_kyc_list')||'[]');
+all[i].status="REJECTED - FAKE KYC";
+localStorage.setItem('drp_kyc_list', JSON.stringify(all));
+alert("Rejected - Fake KYC");
+showKYC();
+}
+</script>
 document.getElementById('idResult').innerHTML = "Congratulations "+n+" ! Your ID Created - Type: "+t.toUpperCase()+" - Ab Post Kar Sakte Ho";
 alert("ID Created: "+t+" - Ab Post Karo");
 }
