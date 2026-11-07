@@ -6,7 +6,7 @@
 <title>drpcom.co.in - Trust + Jobs Platform</title>
 <style>
 *{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif;-webkit-user-select:none !important;user-select:none !important;-webkit-touch-callout:none !important}
-body{background:#f0f2f5;-webkit-user-select:none;user-select:none}
+body{background:#f0f2f5}
 img{pointer-events:none}
 .topbar{background:#1877f2;color:#fff;padding:12px 15px;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:99}
 .logo{font-size:22px;font-weight:bold}
@@ -28,12 +28,11 @@ input,select,textarea{width:100%;padding:12px;margin:6px 0 12px 0;border:1px sol
 .tabs{display:flex;gap:8px}
 .tabs button{flex:1;padding:11px;border:none;border-radius:8px;font-weight:bold;background:#eee;cursor:pointer}
 .tabs .active{background:#1877f2;color:#fff}
+.social a{padding:7px 12px;border-radius:20px;font-size:12px;text-decoration:none;font-weight:bold;display:inline-block;margin:2px}
 </style>
 </head>
 <body oncopy="return false" oncut="return false" onpaste="return false" oncontextmenu="return false" onselectstart="return false">
 <div class="topbar"><div class="logo">drpcom.co.in</div><div><select id="lang" style="width:auto;margin:0;padding:5px;border-radius:5px;border:none"><option>English</option><option>Hindi</option><option>Marathi</option><option>Telugu</option><option>Tamil</option><option>Urdu</option></select></div></div>
-
-<!-- HOME -->
 <div id="page-home">
 <div class="card" style="text-align:center">
 <h1 style="color:#1877f2">Trust + Jobs Platform</h1>
@@ -42,14 +41,13 @@ input,select,textarea{width:100%;padding:12px;margin:6px 0 12px 0;border:1px sol
 <button class="btn btn-blue" onclick="show('page-login')">Login</button>
 <button class="btn btn-yellow" onclick="show('page-buy')">Buy ID - Starting 199</button>
 </div>
-
 <div class="card" style="background:#fff3cd;border:2px solid #ffcc00">
 <h3>Official Post - drpcom.co.in</h3>
 <p>Welcome! Here You Can Earn By Showing Talent, Doing Work, Selling Land. Only Verified Seller Can Sell.</p>
 <div class="share"><span>Like</span><span>Comment</span><span>Share</span><span>Save</span></div>
-<p style="font-size:12px;color:#888;margin-top:8px">Auto Share: YouTube | Instagram | Facebook | X | TikTok | Snapchat</p>
+<p style="font-size:12px;color:#888;margin-top:8px">Auto Share - Click To Open:</p>
+<div class="social"><a href="https://www.youtube.com" target="_blank" style="background:#ff0000;color:#fff">YouTube</a><a href="https://www.instagram.com" target="_blank" style="background:#E1306C;color:#fff">Instagram</a><a href="https://www.facebook.com" target="_blank" style="background:#1877f2;color:#fff">Facebook</a><a href="https://x.com" target="_blank" style="background:#000;color:#fff">X</a><a href="https://www.tiktok.com" target="_blank" style="background:#000;color:#fff">TikTok</a><a href="https://www.snapchat.com" target="_blank" style="background:#FFFC00;color:#000">Snapchat</a></div>
 </div>
-
 <div class="card">
 <h3>ID Price</h3>
 <div class="price-box">
@@ -60,212 +58,65 @@ input,select,textarea{width:100%;padding:12px;margin:6px 0 12px 0;border:1px sol
 </div>
 <button class="btn btn-blue" onclick="show('page-buy')">Buy ID Now</button>
 </div>
-
 <div class="card">
 <h3>Feed - What People Are Selling?</h3>
-<p><b>Ramesh - Kota</b> Verified Seller<br>1000 Sq Yard Plot - 20 Lakh - Call Now</p>
+<p><b>Verified Seller - Kota</b><br>1000 Sq Yard Plot - 20 Lakh - Call Now</p>
 <div class="share"><span>Like</span><span>Comment</span><span>Share</span></div><br>
-<p><b>Priya - Jaipur</b> Artist<br>My Painting - 5000 - Follow 99 / Month</p>
+<p><b>Verified Artist - Jaipur</b><br>Painting - 5000 - Follow 99 / Month</p>
 <div class="share"><span>Like</span><span>Comment</span><span>Share</span></div>
 </div>
 </div>
-<!-- LOGIN / CREATE ID -->
 <div id="page-login" class="hide">
 <div class="card">
-<div class="tabs">
-<button id="t1" class="active" onclick="tabL()">Login</button>
-<button id="t2" onclick="tabC()">Create ID</button>
-</div>
-<div id="loginBox" style="margin-top:12px">
-<h3>Login To Your Account</h3>
-<input placeholder="Enter Mobile Number">
-<input type="password" placeholder="Enter Password">
-<button class="btn btn-blue">Login</button>
-<p style="text-align:center;font-size:13px">Forgot Password? | Login With OTP</p>
-</div>
-<div id="createBox" class="hide" style="margin-top:12px">
-<h3>Create New ID - FREE</h3>
-<input placeholder="Enter Full Name">
-<input placeholder="Enter Mobile Number">
-<input placeholder="Enter City - Example Kota">
-<input type="password" placeholder="Create Password">
-<button class="btn btn-green">Create ID - FREE</button>
-<p style="font-size:12px;text-align:center">By Creating ID You Accept Our Rules</p>
+<div class="tabs"><button id="t1" class="active" onclick="tabL()">Login</button><button id="t2" onclick="tabC()">Create ID</button></div>
+<div id="loginBox" style="margin-top:12px"><h3>Login To Your Account</h3><input placeholder="Enter Mobile Number"><input type="password" placeholder="Enter Password"><button class="btn btn-blue">Login</button><p style="text-align:center;font-size:13px">Forgot Password? | Login With OTP</p></div>
+<div id="createBox" class="hide" style="margin-top:12px"><h3>Create New ID - FREE</h3><input placeholder="Enter Full Name"><input placeholder="Enter Mobile Number"><input placeholder="Enter City - Example Kota"><input type="password" placeholder="Create Password"><button class="btn btn-green">Create ID - FREE</button><p style="font-size:12px;text-align:center">By Creating ID You Accept Our Rules</p></div>
 </div>
 </div>
-</div>
-
-<!-- BUY ID -->
 <div id="page-buy" class="hide">
-<div class="card">
-<h3>Buy ID - Select Your Plan</h3>
-<select><option>FREE - 0 - Only View</option><option>NORMAL - 199 - Post + Sell</option><option>BLUE TICK - 999 - Verified</option><option>DIAMOND - 99999 - VIP</option></select>
-<input placeholder="Enter Your Name">
-<input placeholder="Enter Mobile Number">
-<button class="btn btn-yellow" onclick="show('page-pay')">Pay Now - Secure Payment</button>
-<p style="font-size:12px;text-align:center">Payment By UPI | Card | Net Banking | Wallet</p>
+<div class="card"><h3>Buy ID - Select Your Plan</h3><select><option>FREE - 0 - Only View</option><option>NORMAL - 199 - Post + Sell</option><option>BLUE TICK - 999 - Verified</option><option>DIAMOND - 99999 - VIP</option></select><input placeholder="Enter Your Name"><input placeholder="Enter Mobile Number"><button class="btn btn-yellow" onclick="show('page-pay')">Pay Now - Secure Payment</button><p style="font-size:12px;text-align:center">Payment By UPI | Card | Net Banking | Wallet</p></div>
+<div class="card"><h3>Why Buy Paid ID?</h3><p>1. You Can Post And Sell<br>2. Your Post Will Go To Top<br>3. Buyer Will Trust Verified ID<br>4. You Can Chat With Buyer Directly</p></div>
 </div>
-<div class="card">
-<h3>Why Buy Paid ID?</h3>
-<p>1. You Can Post And Sell<br>2. Your Post Will Go To Top<br>3. Buyer Will Trust Verified ID<br>4. You Can Chat With Buyer Directly</p>
-</div>
-</div>
-
-<!-- PAYMENT -->
 <div id="page-pay" class="hide">
-<div class="card" style="text-align:center;border:2px solid #42b72a">
-<h3>Secure Payment - ESCROW Protected</h3>
-<p>Money Will First Go To Platform<br>After Delivery Seller Will Get Money<br>100 Percent Safe For Buyer And Seller</p>
-<p style="font-size:28px;font-weight:bold;color:#1877f2">Amount: 199</p>
-<button class="btn btn-green">Pay With UPI</button>
-<button class="btn btn-blue">Pay With Card</button>
-<button class="btn btn-black">Pay With Net Banking</button>
-<p style="font-size:12px">Your Payment Is Protected By ESCROW System</p>
+<div class="card" style="text-align:center;border:2px solid #42b72a"><h3>Secure Payment - ESCROW Protected</h3><p>Money Will First Go To Platform<br>After Delivery Seller Will Get Money<br>100 Percent Safe For Buyer And Seller</p><p style="font-size:28px;font-weight:bold;color:#1877f2">Amount: 199</p><button class="btn btn-green">Pay With UPI</button><button class="btn btn-blue">Pay With Card</button><button class="btn btn-black">Pay With Net Banking</button><p style="font-size:12px">Your Payment Is Protected By ESCROW System</p></div>
 </div>
-</div>
-<!-- POST - SELL ANYTHING -->
 <div id="page-post" class="hide">
-<div class="card">
-<h3>Post Your Work - Sell Anything</h3>
-<select><option>Select Category</option><option>Land / Plot</option><option>House / Shop</option><option>Art / Painting</option><option>Photo / Video</option><option>Work / Job</option></select>
-<input placeholder="Enter Title - Example 1000 Sq Yard Plot">
-<textarea placeholder="Enter Full Details - Location, Size, Price"></textarea>
-<input placeholder="Enter Price">
-<input placeholder="Enter Mobile Number">
-<button class="btn btn-green">Post Now - FREE For Paid ID</button>
-<p style="font-size:12px;text-align:center">Your Post Will Auto Share To YouTube, Instagram, Facebook</p>
+<div class="card"><h3>Post Your Work - Sell Anything</h3><select><option>Select Category</option><option>Land / Plot</option><option>House / Shop</option><option>Art / Painting</option><option>Photo / Video</option><option>Work / Job</option></select><input placeholder="Enter Title - Example 1000 Sq Yard Plot"><textarea placeholder="Enter Full Details - Location, Size, Price"></textarea><input placeholder="Enter Price"><input placeholder="Enter Mobile Number"><button class="btn btn-green">Post Now - FREE For Paid ID</button><p style="font-size:12px;text-align:center">Your Post Will Auto Share To YouTube, Instagram, Facebook</p></div>
 </div>
-</div>
-
-<!-- PROFILE -->
 <div id="page-profile" class="hide">
-<div class="card" style="text-align:center">
-<div style="width:90px;height:90px;background:#1877f2;color:#fff;border-radius:50%;margin:0 auto;line-height:90px;font-size:40px">R</div>
-<h3 style="margin-top:10px">Ramesh - Kota</h3>
-<p>Verified Seller | Blue Tick ID<br>Followers: 1250 | Following: 180 | Posts: 45</p>
-<button class="btn btn-blue">Follow - 99 / Month</button>
-<button class="btn btn-black">Chat Now</button>
+<div class="card" style="text-align:center"><div style="width:90px;height:90px;background:#1877f2;color:#fff;border-radius:50%;margin:0 auto;line-height:90px;font-size:40px">Y</div><h3 style="margin-top:10px">Your Name - Your City</h3><p>Verified Seller | Blue Tick ID<br>Followers: 0 | Following: 0 | Posts: 0</p><button class="btn btn-blue">Follow - 99 / Month</button><button class="btn btn-black">Chat Now</button></div>
+<div class="card"><h3>My Earnings</h3><p>Total Earning: 0<br>Today Earning: 0<br>Pending Payment: 0</p><button class="btn btn-green">Withdraw Money</button></div>
+<div class="card"><h3>My Posts</h3><p>No Post Yet - Create Your First Post Now</p></div>
 </div>
-<div class="card">
-<h3>My Earnings</h3>
-<p>Total Earning: 45000<br>Today Earning: 1200<br>Pending Payment: 5000</p>
-<button class="btn btn-green">Withdraw Money</button>
-</div>
-<div class="card">
-<h3>My Posts</h3>
-<p>1. Plot In Kota - 20 Lakh - Active<br>2. Painting - 5000 - Sold<br>3. House For Rent - 8000 / Month - Active</p>
-</div>
-</div>
-<!-- ART / TALENT -->
 <div id="page-kala" class="hide">
-<div class="card">
-<h3>Show Talent - Get Work</h3>
-<p>Are You Artist? Singer? Painter? Dancer? Video Creator?<br>Upload Your Talent Here - People Will Follow You - You Will Earn Every Month.</p>
-<button class="btn btn-blue">Upload Talent Video</button>
-<button class="btn btn-green">Upload Photo / Painting</button>
+<div class="card"><h3>Show Talent - Get Work</h3><p>Are You Artist? Singer? Painter? Dancer? Video Creator?<br>Upload Your Talent Here - People Will Follow You - You Will Earn Every Month.</p><button class="btn btn-blue">Upload Talent Video</button><button class="btn btn-green">Upload Photo / Painting</button></div>
+<div class="card"><h3>Top Talent Today</h3><p><b>Top Artist - Jaipur</b> - Painting Artist - Followers 8500<br>Price: 5000 Per Painting - Follow: 99 / Month</p><button class="btn btn-yellow">Follow Now</button><br><br><p><b>Top Singer - Delhi</b> - Singer - Followers 12000<br>Price: 2000 Per Song - Follow: 149 / Month</p><button class="btn btn-yellow">Follow Now</button></div>
 </div>
-<div class="card">
-<h3>Top Talent Today</h3>
-<p><b>Priya - Jaipur</b> - Painting Artist - Followers 8500<br>Price: 5000 Per Painting - Follow: 99 / Month</p>
-<button class="btn btn-yellow">Follow Now</button><br><br>
-<p><b>Amit - Delhi</b> - Singer - Followers 12000<br>Price: 2000 Per Song - Follow: 149 / Month</p>
-<button class="btn btn-yellow">Follow Now</button>
-</div>
-</div>
-
-<!-- CELEBRITY -->
 <div id="page-celebrity" class="hide">
-<div class="card" style="text-align:center;background:#fff3cd;border:2px solid #ffcc00">
-<h3>Become Celebrity</h3>
-<p>Buy Celebrity Plan - Your Name Will Go To Top<br>Everyone Will See You First - You Will Get More Followers And More Work.</p>
-<p style="font-size:24px;font-weight:bold">Celebrity Plan: 9999 / Year</p>
-<button class="btn btn-black">Become Celebrity Now</button>
+<div class="card" style="text-align:center;background:#fff3cd;border:2px solid #ffcc00"><h3>Become Celebrity</h3><p>Buy Celebrity Plan - Your Name Will Go To Top<br>Everyone Will See You First - You Will Get More Followers And More Work.</p><p style="font-size:24px;font-weight:bold">Celebrity Plan: 9999 / Year</p><button class="btn btn-black">Become Celebrity Now</button></div>
+<div class="card"><h3>Top Celebrity</h3><p>1. Top Star - 50000 Followers - Kota<br>2. Top Star - 45000 Followers - Jaipur<br>3. Top Star - 40000 Followers - Delhi</p></div>
 </div>
-<div class="card">
-<h3>Top Celebrity</h3>
-<p>1. Star Ramesh - 50000 Followers - Kota<br>2. Star Priya - 45000 Followers - Jaipur<br>3. Star Amit - 40000 Followers - Delhi</p>
-</div>
-</div>
-
-<!-- OWNER -->
 <div id="page-owner" class="hide">
-<div class="card" style="text-align:center">
-<h3>Owner Panel - Admin Only</h3>
-<p>Total Users: 12500<br>Total Posts Today: 450<br>Total Earning Today: 85000</p>
-<input placeholder="Enter Owner ID">
-<input type="password" placeholder="Enter Owner Password">
-<button class="btn btn-black">Owner Login</button>
+<div class="card" style="text-align:center"><h3>Owner Panel - Admin Only</h3><p>Total Users: 0<br>Total Posts Today: 0<br>Total Earning Today: 0</p><input placeholder="Enter Owner ID"><input type="password" placeholder="Enter Owner Password"><button class="btn btn-black">Owner Login</button></div>
+<div class="card"><h3>Owner Control</h3><p>1. Approve New Seller<br>2. Block Fake ID<br>3. Check Payment - ESCROW<br>4. Send Notice To All Users</p><button class="btn btn-blue">Open Control Panel</button></div>
 </div>
-<div class="card">
-<h3>Owner Control</h3>
-<p>1. Approve New Seller<br>2. Block Fake ID<br>3. Check Payment - ESCROW<br>4. Send Notice To All Users</p>
-<button class="btn btn-blue">Open Control Panel</button>
-</div>
-</div>
-
-<!-- HELP -->
 <div id="page-help" class="hide">
-<div class="card">
-<h3>Help - How It Works?</h3>
-<p><b>1. How To Buy ID?</b><br>Go To Buy ID - Select Plan - Pay - Your ID Will Activate.</p>
-<p><b>2. How To Sell?</b><br>Go To Post - Add Details - Buyer Will Contact You.</p>
-<p><b>3. How To Get Money?</b><br>Buyer Pays To Platform First - After Delivery Platform Sends Money To You.</p>
-<p><b>4. What Is ESCROW?</b><br>ESCROW Means Safe Payment - Money Is Safe In Middle Till Deal Is Complete.</p>
+<div class="card"><h3>Help - How It Works?</h3><p><b>1. How To Buy ID?</b><br>Go To Buy ID - Select Plan - Pay - Your ID Will Activate.</p><p><b>2. How To Sell?</b><br>Go To Post - Add Details - Buyer Will Contact You.</p><p><b>3. How To Get Money?</b><br>Buyer Pays To Platform First - After Delivery Platform Sends Money To You.</p><p><b>4. What Is ESCROW?</b><br>ESCROW Means Safe Payment - Money Is Safe In Middle Till Deal Is Complete.</p></div>
+<div class="card"><h3>Contact Support</h3><input placeholder="Enter Your Problem"><button class="btn btn-green">Send Message To Support</button></div>
 </div>
-<div class="card">
-<h3>Contact Support</h3>
-<input placeholder="Enter Your Problem">
-<button class="btn btn-green">Send Message To Support</button>
-</div>
-</div>
-<!-- BOTTOM MENU -->
 <div class="card" style="position:sticky;bottom:0;text-align:center">
-<div class="tabs">
-<button onclick="show('page-home')">Home</button>
-<button onclick="show('page-post')">Post</button>
-<button onclick="show('page-kala')">Talent / Work</button>
-<button onclick="show('page-celebrity')">Celebrity</button>
-<button onclick="show('page-profile')">Profile</button>
+<div class="tabs"><button onclick="show('page-home')">Home</button><button onclick="show('page-post')">Post</button><button onclick="show('page-kala')">Talent / Work</button><button onclick="show('page-celebrity')">Celebrity</button><button onclick="show('page-profile')">Profile</button></div>
+<div style="display:flex;gap:8px;margin-top:8px"><button class="btn btn-blue" style="flex:1" onclick="show('page-buy')">Buy ID</button><button class="btn btn-green" style="flex:1" onclick="show('page-help')">Help</button><button class="btn btn-black" style="flex:1" onclick="show('page-owner')">Owner</button></div>
 </div>
-<div style="display:flex;gap:8px;margin-top:8px">
-<button class="btn btn-blue" style="flex:1" onclick="show('page-buy')">Buy ID</button>
-<button class="btn btn-green" style="flex:1" onclick="show('page-help')">Help</button>
-<button class="btn btn-black" style="flex:1" onclick="show('page-owner')">Owner</button>
-</div>
-</div>
-
-<div class="footer">
-<p>Trust System - ESCROW - Money First To Platform - Then To Seller<br>
-People Will Pay - You Will Take - Keep Your Share - Give Rest To Them<br>
-ID - 100 Percent Yours | Celebrity / Talent - 30 Percent Yours | Land - 2 Percent Yours | Work - 10 Percent Yours<br>
-Platform Information Only - We Are Not Responsible For Deal<br>
-Legal Team - <a href="#">Lineslegal.com</a><br>
-2026 drpcom.co.in - All Rights Reserved</p>
-</div>
-
+<div class="footer"><p>Trust System - ESCROW - Money First To Platform - Then To Seller<br>People Will Pay - You Will Take - Keep Your Share - Give Rest To Them<br>ID - 100 Percent Yours | Celebrity / Talent - 30 Percent Yours | Land - 2 Percent Yours | Work - 10 Percent Yours<br>Platform Information Only - We Are Not Responsible For Deal<br>Legal Team - <a href="#">Lineslegal.com</a><br>2026 drpcom.co.in - All Rights Reserved</p></div>
 <script>
 document.addEventListener('copy',function(e){e.preventDefault();return false});
 document.addEventListener('cut',function(e){e.preventDefault();return false});
 document.addEventListener('contextmenu',function(e){e.preventDefault();return false});
 document.addEventListener('keydown',function(e){if((e.ctrlKey||e.metaKey)&&(e.keyCode==67||e.keyCode==88||e.keyCode==65||e.keyCode==85||e.keyCode==83)){e.preventDefault();return false}});
-function show(id){
-  var pages=['page-home','page-login','page-buy','page-pay','page-post','page-profile','page-kala','page-celebrity','page-owner','page-help'];
-  for(var i=0;i<pages.length;i++){var el=document.getElementById(pages[i]); if(el) el.classList.add('hide');}
-  document.getElementById(id).classList.remove('hide');
-  window.scrollTo(0,0);
-}
-function tabL(){
-  document.getElementById('loginBox').classList.remove('hide');
-  document.getElementById('createBox').classList.add('hide');
-  document.getElementById('t1').classList.add('active');
-  document.getElementById('t2').classList.remove('active');
-}
-function tabC(){
-  document.getElementById('createBox').classList.remove('hide');
-  document.getElementById('loginBox').classList.add('hide');
-  document.getElementById('t2').classList.add('active');
-  document.getElementById('t1').classList.remove('active');
-}
+function show(id){var pages=['page-home','page-login','page-buy','page-pay','page-post','page-profile','page-kala','page-celebrity','page-owner','page-help'];for(var i=0;i<pages.length;i++){var el=document.getElementById(pages[i]); if(el) el.classList.add('hide');}document.getElementById(id).classList.remove('hide');window.scrollTo(0,0);}
+function tabL(){document.getElementById('loginBox').classList.remove('hide');document.getElementById('createBox').classList.add('hide');document.getElementById('t1').classList.add('active');document.getElementById('t2').classList.remove('active');}
+function tabC(){document.getElementById('createBox').classList.remove('hide');document.getElementById('loginBox').classList.add('hide');document.getElementById('t2').classList.add('active');document.getElementById('t1').classList.remove('active');}
 </script>
 </body>
 </html>
