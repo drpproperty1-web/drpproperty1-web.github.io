@@ -5,8 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>drpcom.co.in - Trust + Jobs Platform</title>
 <style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif}
-body{background:#f0f2f5}
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif;-webkit-user-select:none !important;user-select:none !important;-webkit-touch-callout:none !important}
+body{background:#f0f2f5;-webkit-user-select:none;user-select:none}
+img{pointer-events:none}
 .topbar{background:#1877f2;color:#fff;padding:12px 15px;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:99}
 .logo{font-size:22px;font-weight:bold}
 .btn{width:100%;padding:13px;margin:7px 0;border:none;border-radius:8px;font-size:16px;font-weight:bold;cursor:pointer}
@@ -17,7 +18,7 @@ body{background:#f0f2f5}
 .card{background:#fff;margin:10px;border-radius:12px;padding:15px;box-shadow:0 1px 5px #ccc}
 .card h3{color:#1877f2;margin-bottom:8px}
 .card p{font-size:14px;color:#444;line-height:1.6}
-input,select,textarea{width:100%;padding:12px;margin:6px 0 12px 0;border:1px solid #ccc;border-radius:8px;font-size:15px}
+input,select,textarea{width:100%;padding:12px;margin:6px 0 12px 0;border:1px solid #ccc;border-radius:8px;font-size:15px;-webkit-user-select:text !important;user-select:text !important}
 .price-box{display:flex;gap:8px;flex-wrap:wrap}
 .price{flex:1;min-width:110px;border:2px solid #1877f2;border-radius:10px;padding:10px;text-align:center}
 .footer{background:#000;color:#fff;text-align:center;padding:15px;font-size:12px;margin-top:15px}
@@ -29,8 +30,8 @@ input,select,textarea{width:100%;padding:12px;margin:6px 0 12px 0;border:1px sol
 .tabs .active{background:#1877f2;color:#fff}
 </style>
 </head>
-<body>
-<div class="topbar"><div class="logo">drpcom.co.in</div><div>English</div></div>
+<body oncopy="return false" oncut="return false" onpaste="return false" oncontextmenu="return false" onselectstart="return false">
+<div class="topbar"><div class="logo">drpcom.co.in</div><div><select id="lang" style="width:auto;margin:0;padding:5px;border-radius:5px;border:none"><option>English</option><option>Hindi</option><option>Marathi</option><option>Telugu</option><option>Tamil</option><option>Urdu</option></select></div></div>
 
 <!-- HOME -->
 <div id="page-home">
@@ -39,225 +40,192 @@ input,select,textarea{width:100%;padding:12px;margin:6px 0 12px 0;border:1px sol
 <p>Show Your Talent - Get Work - Sell Land - Become Celebrity<br>People Will Pay People - Platform Will Give Trust In Middle</p>
 <button class="btn btn-green" onclick="show('page-login')">Create New ID - FREE</button>
 <button class="btn btn-blue" onclick="show('page-login')">Login</button>
-<button class="btn btn-yellow" onclick="show('page-buy')">Buy ID - Starting ₹199</button>
+<button class="btn btn-yellow" onclick="show('page-buy')">Buy ID - Starting 199</button>
 </div>
 
 <div class="card" style="background:#fff3cd;border:2px solid #ffcc00">
-<h3>⭐ Official Post - drpcom.co.in ✅</h3>
-<p>Welcome! Here You Can Earn By Showing Talent, Doing Work, Selling Land. Only KYC Verified Seller Can Sell.</p>
-<div class="share"><span>👍 Like</span><span>💬 Comment</span><span>↗️ Share</span><span>🔖 Save</span></div>
+<h3>Official Post - drpcom.co.in</h3>
+<p>Welcome! Here You Can Earn By Showing Talent, Doing Work, Selling Land. Only Verified Seller Can Sell.</p>
+<div class="share"><span>Like</span><span>Comment</span><span>Share</span><span>Save</span></div>
 <p style="font-size:12px;color:#888;margin-top:8px">Auto Share: YouTube | Instagram | Facebook | X | TikTok | Snapchat</p>
 </div>
 
 <div class="card">
-<h3>💰 ID Price</h3>
+<h3>ID Price</h3>
 <div class="price-box">
-<div class="price"><b>FREE</b><br>₹0<br><small>Only View</small></div>
-<div class="price"><b>NORMAL</b><br>₹199<br><small>Post + Sell</small></div>
-<div class="price"><b>BLUE TICK</b><br>₹999<br><small>Verified</small></div>
-<div class="price"><b>DIAMOND</b><br>₹99,999<br><small>VIP</small></div>
+<div class="price"><b>FREE</b><br>0<br><small>Only View</small></div>
+<div class="price"><b>NORMAL</b><br>199<br><small>Post + Sell</small></div>
+<div class="price"><b>BLUE TICK</b><br>999<br><small>Verified</small></div>
+<div class="price"><b>DIAMOND</b><br>99999<br><small>VIP</small></div>
 </div>
 <button class="btn btn-blue" onclick="show('page-buy')">Buy ID Now</button>
 </div>
 
 <div class="card">
-<h3>📝 Feed - What People Are Selling?</h3>
-<p><b>Ramesh - Kota</b> ✅ Verified Seller<br>1000 Sq Yard Plot - ₹20 Lakh - Call Now</p>
-<div class="share"><span>👍 Like</span><span>💬 Comment</span><span>↗️ Share</span></div><br>
-<p><b>Priya - Jaipur</b> 🎨 Artist<br>My Painting - ₹5,000 - Follow ₹99/Month</p>
-<div class="share"><span>👍 Like</span><span>💬 Comment</span><span>↗️ Share</span></div>
+<h3>Feed - What People Are Selling?</h3>
+<p><b>Ramesh - Kota</b> Verified Seller<br>1000 Sq Yard Plot - 20 Lakh - Call Now</p>
+<div class="share"><span>Like</span><span>Comment</span><span>Share</span></div><br>
+<p><b>Priya - Jaipur</b> Artist<br>My Painting - 5000 - Follow 99 / Month</p>
+<div class="share"><span>Like</span><span>Comment</span><span>Share</span></div>
 </div>
 </div>
-<!-- LOGIN PAGE -->
+<!-- LOGIN / CREATE ID -->
 <div id="page-login" class="hide">
 <div class="card">
-<h3 style="text-align:center">Login / Create New ID</h3>
-<p style="text-align:center;font-size:13px;color:#777">FREE ID Banao - OTP Se</p>
 <div class="tabs">
 <button id="t1" class="active" onclick="tabL()">Login</button>
-<button id="t2" onclick="tabC()">Create New ID</button>
-</div><br>
-<div id="loginBox">
-<label>Mobile Number</label>
-<input type="tel" placeholder="10 Digit Mobile Number">
-<label>Password</label>
-<input type="password" placeholder="Password">
-<button class="btn btn-blue" onclick="alert('Login Ho Gaya! Welcome');show('page-home')">Login</button>
-<p style="text-align:center;font-size:13px"><a href="#" onclick="document.getElementById('forgot').style.display='block'">Forgot Password? - Click</a></p>
-<div id="forgot" style="display:none">
-<input type="tel" placeholder="Mobile Number">
-<input type="text" placeholder="OTP - 1234">
-<input type="password" placeholder="Naya Password">
-<button class="btn btn-green" onclick="alert('Password Badal Gaya!')">Save New Password</button>
+<button id="t2" onclick="tabC()">Create ID</button>
 </div>
+<div id="loginBox" style="margin-top:12px">
+<h3>Login To Your Account</h3>
+<input placeholder="Enter Mobile Number">
+<input type="password" placeholder="Enter Password">
+<button class="btn btn-blue">Login</button>
+<p style="text-align:center;font-size:13px">Forgot Password? | Login With OTP</p>
 </div>
-<div id="createBox" class="hide">
-<label>Full Naam</label>
-<input type="text" placeholder="Apna Pura Naam">
-<label>Mobile Number</label>
-<input type="tel" placeholder="10 Digit Mobile">
-<button class="btn btn-blue" onclick="document.getElementById('otp').style.display='block';alert('OTP Bhej Diya - 1234')">Send OTP</button>
-<div id="otp" style="display:none">
-<input type="text" placeholder="OTP Dalein - 1234">
-<input type="password" placeholder="Password Banao">
-<button class="btn btn-green" onclick="alert('Mubarak Ho! FREE ID Ban Gayi!');show('page-buy')">Create FREE ID</button>
+<div id="createBox" class="hide" style="margin-top:12px">
+<h3>Create New ID - FREE</h3>
+<input placeholder="Enter Full Name">
+<input placeholder="Enter Mobile Number">
+<input placeholder="Enter City - Example Kota">
+<input type="password" placeholder="Create Password">
+<button class="btn btn-green">Create ID - FREE</button>
+<p style="font-size:12px;text-align:center">By Creating ID You Accept Our Rules</p>
 </div>
-</div>
-<button class="btn btn-yellow" onclick="show('page-buy')">Buy ID - ₹199 Se</button>
-<button class="btn btn-black" onclick="show('page-home')">Back To Home</button>
 </div>
 </div>
 
-<!-- BUY ID PAGE -->
+<!-- BUY ID -->
 <div id="page-buy" class="hide">
-<div class="card" style="text-align:center">
-<h3>ID Kharido - Kamai Shuru Karo</h3>
-<p>FREE - Sirf Dekho | NORMAL - Post Karo | BLUE - Bharosa | DIAMOND - VIP</p>
+<div class="card">
+<h3>Buy ID - Select Your Plan</h3>
+<select><option>FREE - 0 - Only View</option><option>NORMAL - 199 - Post + Sell</option><option>BLUE TICK - 999 - Verified</option><option>DIAMOND - 99999 - VIP</option></select>
+<input placeholder="Enter Your Name">
+<input placeholder="Enter Mobile Number">
+<button class="btn btn-yellow" onclick="show('page-pay')">Pay Now - Secure Payment</button>
+<p style="font-size:12px;text-align:center">Payment By UPI | Card | Net Banking | Wallet</p>
 </div>
-<div class="card"><h3>FREE ID - ₹0</h3><p>Sirf Dekh Sakte Ho, Like / Comment Kar Sakte Ho. Post / Bech Nahi Sakte.</p><button class="btn btn-green" onclick="show('page-login')">FREE ID Banao</button></div>
-<div class="card"><h3>NORMAL ID - ₹199</h3><p>Post Kar Sakte Ho, Bech Sakte Ho, Kaam Pa Sakte Ho.</p><button class="btn btn-blue" onclick="show('page-pay')">Buy NORMAL - ₹199</button></div>
-<div class="card"><h3>BLUE TICK ID - ₹999</h3><p>Blue Tick + Upar Dikhega + Jyada Bharosa + KYC - Photo + OTP.</p><button class="btn btn-blue" onclick="show('page-pay')">Buy BLUE TICK - ₹999</button></div>
-<div class="card"><h3>DIAMOND ID - ₹99,999</h3><p>Gold Tick + Sabse Upar + VIP + KYC - Aadhaar + PAN + Selfie.</p><button class="btn btn-black" onclick="show('page-pay')">Buy DIAMOND - ₹99,999</button></div>
-<div class="card"><h3>CELEBRITY DIAMOND - ₹99,999</h3><p>Blue + Gold Tick + Star Celebrity + Fan Follow ₹99/Month - 70% Tumhara, 30% Platform Ka.</p><button class="btn btn-black" onclick="show('page-celebrity')">Celebrity Page Dekho</button></div>
-<button class="btn btn-black" onclick="show('page-home')">Back To Home</button>
+<div class="card">
+<h3>Why Buy Paid ID?</h3>
+<p>1. You Can Post And Sell<br>2. Your Post Will Go To Top<br>3. Buyer Will Trust Verified ID<br>4. You Can Chat With Buyer Directly</p>
+</div>
 </div>
 
-<!-- PAYMENT PAGE -->
+<!-- PAYMENT -->
 <div id="page-pay" class="hide">
-<div class="card" style="text-align:center">
-<h3>💳 Payment - Safe & Secure</h3>
-<p>Paise Seedha Owner UPI Pe Jayenge<br><b>Payment Page Sirf Yahi Hai - Home / Feed Pe Kahin Payment Nahi Dikhega</b></p>
-<div style="background:#e8f5e9;padding:15px;border-radius:10px;margin:10px 0">
-<p><b>Main UPI:</b><br><span style="font-size:18px;color:#1877f2;font-weight:bold">danishkhn0096@ibl</span></p>
-<p style="margin-top:10px"><b>Backup UPI:</b><br>danishkhann99@ybl</p>
+<div class="card" style="text-align:center;border:2px solid #42b72a">
+<h3>Secure Payment - ESCROW Protected</h3>
+<p>Money Will First Go To Platform<br>After Delivery Seller Will Get Money<br>100 Percent Safe For Buyer And Seller</p>
+<p style="font-size:28px;font-weight:bold;color:#1877f2">Amount: 199</p>
+<button class="btn btn-green">Pay With UPI</button>
+<button class="btn btn-blue">Pay With Card</button>
+<button class="btn btn-black">Pay With Net Banking</button>
+<p style="font-size:12px">Your Payment Is Protected By ESCROW System</p>
 </div>
-<p style="font-size:13px;color:#555">Pay Dabao - UPI App Khulega - Payment Karo - Screenshot Owner Ko Bhejo - ID Approve Ho Jayegi</p>
-<button class="btn btn-green" onclick="alert('Payment Page Khul Raha Hai... UPI - danishkhn0096@ibl Pe Pay Karo')">Pay Now - UPI Se</button>
-<button class="btn btn-blue" onclick="alert('Request Owner Ke Paas Chali Gayi! Approve Hote Hi ID Mil Jayegi')">Payment Kar Diya - Approve Ke Liye Bhejo</button>
 </div>
-<div class="card"><h3>KYC - Bharosa Ke Liye</h3><p>NORMAL - Mobile OTP Hi Kaafi<br>BLUE - Photo + OTP<br>DIAMOND / CELEBRITY - Aadhaar + PAN + Selfie + Payment</p></div>
-<button class="btn btn-black" onclick="show('page-home')">Back To Home</button>
-</div>
-<!-- POST PAGE -->
+<!-- POST - SELL ANYTHING -->
 <div id="page-post" class="hide">
 <div class="card">
-<h3>📝 Post Karo - What Are You Thinking?</h3>
-<textarea rows="3" placeholder="Kya Bechna Hai? Kya Kala Hai? Likho... Ex: Kota me 1000 Gaj Plot - ₹20 Lakh"></textarea>
-<label>Photo / Video Chuno</label>
-<input type="file">
-<label>Price - ₹ Me</label>
-<input type="number" placeholder="Ex: 20000">
-<label>Location</label>
-<input type="text" placeholder="Ex: Keshorai Patan, Kota, Rajasthan">
-<button class="btn btn-green" onclick="alert('Post Ho Gaya! Feed Me Aa Gaya! Share Ho Gaya!');show('page-home')">Post Karo</button>
+<h3>Post Your Work - Sell Anything</h3>
+<select><option>Select Category</option><option>Land / Plot</option><option>House / Shop</option><option>Art / Painting</option><option>Photo / Video</option><option>Work / Job</option></select>
+<input placeholder="Enter Title - Example 1000 Sq Yard Plot">
+<textarea placeholder="Enter Full Details - Location, Size, Price"></textarea>
+<input placeholder="Enter Price">
+<input placeholder="Enter Mobile Number">
+<button class="btn btn-green">Post Now - FREE For Paid ID</button>
+<p style="font-size:12px;text-align:center">Your Post Will Auto Share To YouTube, Instagram, Facebook</p>
 </div>
-<div class="card">
-<h3>📸 Story - 24 Hour Wali</h3>
-<p>Story Dalo - 24 Hour Baad Apne Aap Gayab Ho Jayegi.</p>
-<input type="file">
-<button class="btn btn-blue" onclick="alert('Story Lag Gayi! 24 Hour Rahegi')">Story Lagao</button>
-</div>
-<button class="btn btn-black" onclick="show('page-home')">Back To Home</button>
 </div>
 
-<!-- PROFILE PAGE -->
+<!-- PROFILE -->
 <div id="page-profile" class="hide">
 <div class="card" style="text-align:center">
-<h3>👤 Meri Profile</h3>
-<p style="font-size:40px">👤</p>
-<p><b>Danish Khan</b> ✅ Verified Seller<br>Keshorai Patan, Rajasthan<br>Followers: 1,250 | Following: 340</p>
-<button class="btn btn-blue" onclick="show('page-post')">+ New Post</button>
-<button class="btn btn-yellow" onclick="show('page-buy')">ID Upgrade Karo</button>
+<div style="width:90px;height:90px;background:#1877f2;color:#fff;border-radius:50%;margin:0 auto;line-height:90px;font-size:40px">R</div>
+<h3 style="margin-top:10px">Ramesh - Kota</h3>
+<p>Verified Seller | Blue Tick ID<br>Followers: 1250 | Following: 180 | Posts: 45</p>
+<button class="btn btn-blue">Follow - 99 / Month</button>
+<button class="btn btn-black">Chat Now</button>
 </div>
-<div class="card"><h3>Meri Post</h3><p>1000 Gaj Plot - ₹20 Lakh - Kota<br>👍 120 | 💬 45 | ↗️ Share 80</p></div>
-<button class="btn btn-black" onclick="show('page-home')">Back To Home</button>
+<div class="card">
+<h3>My Earnings</h3>
+<p>Total Earning: 45000<br>Today Earning: 1200<br>Pending Payment: 5000</p>
+<button class="btn btn-green">Withdraw Money</button>
 </div>
-
-<!-- KALA + ROZGAR + ZAMEEN PAGE -->
+<div class="card">
+<h3>My Posts</h3>
+<p>1. Plot In Kota - 20 Lakh - Active<br>2. Painting - 5000 - Sold<br>3. House For Rent - 8000 / Month - Active</p>
+</div>
+</div>
+<!-- ART / TALENT -->
 <div id="page-kala" class="hide">
 <div class="card">
-<h3>🎨 Kala - Apni Kala Dikhao - Kamao</h3>
-<p>Gaana / Dance / Painting / Silai - Video Post Karo<br>Log Follow Karenge - ₹99/Month<br><b>70% Tumhara - 30% Platform Ka</b><br>Ex: 1000 Follow = ₹99,000 - Tumhara ₹69,300 - Platform ₹29,700</p>
-<button class="btn btn-green" onclick="show('page-post')">Kala Post Karo</button>
+<h3>Show Talent - Get Work</h3>
+<p>Are You Artist? Singer? Painter? Dancer? Video Creator?<br>Upload Your Talent Here - People Will Follow You - You Will Earn Every Month.</p>
+<button class="btn btn-blue">Upload Talent Video</button>
+<button class="btn btn-green">Upload Photo / Painting</button>
 </div>
 <div class="card">
-<h3>🔧 Rozgar - Kaam Pao</h3>
-<p>Plumber / Electrician / Mistri / Ghar Banane Wala<br>Apna Kaam Post Karo - Ex: Mai Ghar Banata Hu - ₹500/Din<br>Log Kaam Denge - <b>90% Tumhara - 10% Platform Ka</b></p>
-<button class="btn btn-blue" onclick="show('page-post')">Kaam Post Karo</button>
+<h3>Top Talent Today</h3>
+<p><b>Priya - Jaipur</b> - Painting Artist - Followers 8500<br>Price: 5000 Per Painting - Follow: 99 / Month</p>
+<button class="btn btn-yellow">Follow Now</button><br><br>
+<p><b>Amit - Delhi</b> - Singer - Followers 12000<br>Price: 2000 Per Song - Follow: 149 / Month</p>
+<button class="btn btn-yellow">Follow Now</button>
 </div>
-<div class="card">
-<h3>🏡 Zameen / Property / Saman Becho</h3>
-<p>Photo + Price + Location Post Karo<br>Buyer Direct Call / WhatsApp Karega - Direct Deal<br><b>Bada Deal - ESCROW:</b> Buyer Paise Pehle Platform Ko Dega - Platform 2% Rakhega - Cheez Milne Ke Baad 98% Seller Ko Dega<br>Ex: ₹20 Lakh Plot - Platform ₹40,000 - Seller ₹19,60,000<br><b>Chota Saman - Direct Deal - Koi Fees Nahi</b></p>
-<button class="btn btn-yellow" onclick="show('page-post')">Zameen / Saman Post Karo</button>
 </div>
-<button class="btn btn-black" onclick="show('page-home')">Back To Home</button>
-</div>
-<!-- CELEBRITY PAGE -->
+
+<!-- CELEBRITY -->
 <div id="page-celebrity" class="hide">
-<div class="card" style="text-align:center;background:#000;color:#fff">
-<h3 style="color:#ffcc00">⭐ CELEBRITY DIAMOND ID - ₹99,999</h3>
-<p style="color:#fff">Blue + Gold Tick + Star Celebrity<br>Instagram Pe 0 Milta Hai - Yaha 70% Milega!</p>
+<div class="card" style="text-align:center;background:#fff3cd;border:2px solid #ffcc00">
+<h3>Become Celebrity</h3>
+<p>Buy Celebrity Plan - Your Name Will Go To Top<br>Everyone Will See You First - You Will Get More Followers And More Work.</p>
+<p style="font-size:24px;font-weight:bold">Celebrity Plan: 9999 / Year</p>
+<button class="btn btn-black">Become Celebrity Now</button>
 </div>
 <div class="card">
-<h3>💰 Celebrity Kamai - 70-30 Model</h3>
-<p><b>1. Fan Follow - ₹99/Month</b><br>1 Lakh Fan = ₹99 Lakh<br>70% Celebrity Ko = ₹69,30,000<br>30% Platform Ko = ₹29,70,000</p>
-<p style="margin-top:10px"><b>2. Product Becho - T-Shirt / Course - ₹999</b><br>90% Celebrity Ko - 10% Platform Ko</p>
-<p style="margin-top:10px"><b>3. Post Pe Ad Aayega</b><br>Ad Ka Paisa Bhi 70-30 Me Batega</p>
-<button class="btn btn-black" onclick="show('page-pay')">Celebrity ID Lo - ₹99,999</button>
+<h3>Top Celebrity</h3>
+<p>1. Star Ramesh - 50000 Followers - Kota<br>2. Star Priya - 45000 Followers - Jaipur<br>3. Star Amit - 40000 Followers - Delhi</p>
 </div>
-<div class="card">
-<h3>⭐ Celebrity List</h3>
-<p>🌟 Star 1 - Singer - Follow ₹99/Month - Follow Karo</p>
-<button class="btn btn-blue" onclick="show('page-pay')">Follow - ₹99/Month</button>
-<p style="margin-top:10px">🌟 Star 2 - Actor - Follow ₹99/Month</p>
-<button class="btn btn-blue" onclick="show('page-pay')">Follow - ₹99/Month</button>
-</div>
-<button class="btn btn-black" onclick="show('page-home')">Back To Home</button>
 </div>
 
-<!-- OWNER PANEL -->
+<!-- OWNER -->
 <div id="page-owner" class="hide">
-<div class="card" style="text-align:center;background:#1877f2;color:#fff">
-<h3 style="color:#fff">👑 OWNER PANEL - Sirf Tera</h3>
-<p style="color:#fff">Sab Request Yaha Aayegi - Tu Approve / Reject Karega</p>
+<div class="card" style="text-align:center">
+<h3>Owner Panel - Admin Only</h3>
+<p>Total Users: 12500<br>Total Posts Today: 450<br>Total Earning Today: 85000</p>
+<input placeholder="Enter Owner ID">
+<input type="password" placeholder="Enter Owner Password">
+<button class="btn btn-black">Owner Login</button>
 </div>
 <div class="card">
-<h3>📊 Aaj Ki Kamai</h3>
-<p>Total ID Biki: 25<br>Total Kamai: ₹15,999<br>Pending KYC: 3</p>
+<h3>Owner Control</h3>
+<p>1. Approve New Seller<br>2. Block Fake ID<br>3. Check Payment - ESCROW<br>4. Send Notice To All Users</p>
+<button class="btn btn-blue">Open Control Panel</button>
 </div>
-<div class="card">
-<h3>📝 Pending Request</h3>
-<p><b>Ramesh - BLUE TICK - ₹999</b><br>Photo + OTP - Check Karo</p>
-<button class="btn btn-green" onclick="alert('APPROVE Ho Gaya! ID Mil Gayi!')">APPROVE ✅</button>
-<button class="btn btn-black" onclick="alert('REJECT Ho Gaya!')">REJECT ❌</button>
-<p style="margin-top:10px"><b>Priya - DIAMOND - ₹99,999</b><br>Aadhaar + PAN + Selfie</p>
-<button class="btn btn-green" onclick="alert('APPROVE Ho Gaya!')">APPROVE ✅</button>
-<button class="btn btn-black" onclick="alert('REJECT Ho Gaya!')">REJECT ❌</button>
-</div>
-<button class="btn btn-black" onclick="show('page-home')">Back To Home</button>
 </div>
 
-<!-- HELP PAGE -->
+<!-- HELP -->
 <div id="page-help" class="hide">
 <div class="card">
-<h3>❓ Help / Solution</h3>
-<p><b>Password Bhul Gaya?</b><br>Login > Forgot Password > OTP Se Naya Password Banao</p>
-<p style="margin-top:10px"><b>Post Nahi Ho Raha?</b><br>Pehle ID Kharido - FREE ID Me Post Nahi Hota</p>
-<p style="margin-top:10px"><b>KYC Atak Gaya?</b><br>Photo Saaf Bhejo - Owner Approve Karega</p>
-<p style="margin-top:10px"><b>Paise Nahi Aaye?</b><br>Payment Screenshot Owner Ko Bhejo</p>
-<p style="margin-top:10px"><b>Zameen Ka Deal?</b><br>ESCROW - Paise Pehle Platform Pe - Cheez Milne Ke Baad Seller Ko</p>
+<h3>Help - How It Works?</h3>
+<p><b>1. How To Buy ID?</b><br>Go To Buy ID - Select Plan - Pay - Your ID Will Activate.</p>
+<p><b>2. How To Sell?</b><br>Go To Post - Add Details - Buyer Will Contact You.</p>
+<p><b>3. How To Get Money?</b><br>Buyer Pays To Platform First - After Delivery Platform Sends Money To You.</p>
+<p><b>4. What Is ESCROW?</b><br>ESCROW Means Safe Payment - Money Is Safe In Middle Till Deal Is Complete.</p>
 </div>
-<div class="card"><h3>⚖️ Legal</h3><p>Legal Team - Lineslegal.com<br>Platform Information Only - We Are Not Responsible For Deal</p></div>
-<button class="btn btn-black" onclick="show('page-home')">Back To Home</button>
+<div class="card">
+<h3>Contact Support</h3>
+<input placeholder="Enter Your Problem">
+<button class="btn btn-green">Send Message To Support</button>
 </div>
-<!-- BOTTOM MENU - Sab Page Ke Button -->
+</div>
+<!-- BOTTOM MENU -->
 <div class="card" style="position:sticky;bottom:0;text-align:center">
 <div class="tabs">
-<button onclick="show('page-home')">🏠 Home</button>
-<button onclick="show('page-post')">➕ Post</button>
-<button onclick="show('page-kala')">🎨 Kala / Kaam</button>
-<button onclick="show('page-celebrity')">⭐ Celebrity</button>
-<button onclick="show('page-profile')">👤 Profile</button>
+<button onclick="show('page-home')">Home</button>
+<button onclick="show('page-post')">Post</button>
+<button onclick="show('page-kala')">Talent / Work</button>
+<button onclick="show('page-celebrity')">Celebrity</button>
+<button onclick="show('page-profile')">Profile</button>
 </div>
 <div style="display:flex;gap:8px;margin-top:8px">
 <button class="btn btn-blue" style="flex:1" onclick="show('page-buy')">Buy ID</button>
@@ -267,15 +235,19 @@ input,select,textarea{width:100%;padding:12px;margin:6px 0 12px 0;border:1px sol
 </div>
 
 <div class="footer">
-<p>🛡️ Bharosa System - ESCROW - Paise Pehle Platform Pe - Fir Seller Ko<br>
-Log Denge - Tu Lega - Apna Hissa Rakhega - Baki Unko Dega<br>
-ID - 100% Tera | Celebrity / Kala - 30% Tera | Zameen - 2% Tera | Kaam - 10% Tera<br>
+<p>Trust System - ESCROW - Money First To Platform - Then To Seller<br>
+People Will Pay - You Will Take - Keep Your Share - Give Rest To Them<br>
+ID - 100 Percent Yours | Celebrity / Talent - 30 Percent Yours | Land - 2 Percent Yours | Work - 10 Percent Yours<br>
 Platform Information Only - We Are Not Responsible For Deal<br>
 Legal Team - <a href="#">Lineslegal.com</a><br>
-© 2026 drpcom.co.in - All Rights Reserved</p>
+2026 drpcom.co.in - All Rights Reserved</p>
 </div>
 
 <script>
+document.addEventListener('copy',function(e){e.preventDefault();return false});
+document.addEventListener('cut',function(e){e.preventDefault();return false});
+document.addEventListener('contextmenu',function(e){e.preventDefault();return false});
+document.addEventListener('keydown',function(e){if((e.ctrlKey||e.metaKey)&&(e.keyCode==67||e.keyCode==88||e.keyCode==65||e.keyCode==85||e.keyCode==83)){e.preventDefault();return false}});
 function show(id){
   var pages=['page-home','page-login','page-buy','page-pay','page-post','page-profile','page-kala','page-celebrity','page-owner','page-help'];
   for(var i=0;i<pages.length;i++){var el=document.getElementById(pages[i]); if(el) el.classList.add('hide');}
